@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D1Task Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/D1Task" class="dashAnchor"></a>
+    <a title="D1Task Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">D1 1.0.0 Docs</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">D1 Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        D1Task Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/D1RiskParams.html">D1RiskParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1TaskComponents.html">D1TaskComponents</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1ErrorDomain">D1ErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/D1ErrorCode.html">D1ErrorCode</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>D1Task</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">D1Task</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">D1Task</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Main class for D1 SDK use cases.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>It is recommended to initialize <code>D1Task</code> as soon as the application is 
+launched or the earliest possible time.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Risk API contains session ID internally. The session ID is used by backend
+to identify the user&rsquo;s activity. The lifecycle of session ID is linked with <code>D1Task</code> 
+lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the use cases.</p>
+
+</div>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1Task(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)D1Task(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        
+                      </div>
+                      <div class="abstract">
+                        <p>Default constructor is unavailable. Please use <code><a href="../Classes/D1TaskComponents.html">D1TaskComponents</a></code> to initialize <code>D1Task</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1Task(cm)getSDKVersions"></a>
+                    <a name="//apple_ref/objc/Method/+getSDKVersions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(cm)getSDKVersions">+getSDKVersions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns SDK version(s) in D1 SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">getSDKVersions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">getSDKVersions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Dictionary with SDK name as key and SDK version as value, e.g. {&ldquo;NuDetect&rdquo;: &ldquo;2.1.0&rdquo;}</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1Task(im)startAnalyzeWithParams:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-startAnalyzeWithParams:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)startAnalyzeWithParams:completion:">-startAnalyzeWithParams:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start monitoring of events for the current page. This method
+should be called at the start of the page or when the app resumes into foreground.
+e.g. <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621510-viewwillappear?language=objc">viewWillAppear</a>,
+<a href="https://developer.apple.com/documentation/uikit/uiapplicationdidbecomeactivenotification">UIApplicationDidBecomeActiveNotification</a>.</p>
+
+<p><b>Category - Risk API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Other Risk API <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)pauseAnalyze">-[D1Task pauseAnalyze]</a></code>, <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:">-[D1Task stopAnalyzeWithCompletion:]</a></code>
+should only be called after <code>completionBlock</code> succeeds.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Possible error: <code><a href="../Enums/D1ErrorCode.html#/c:@E@D1ErrorCode@D1ErrorRisk">D1ErrorCode.D1ErrorRisk</a></code>, caused by no internet connection, incorrect
+risk credentials.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startAnalyzeWithParams</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/D1RiskParams.html">D1RiskParams</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">params</span>
+                    <span class="nf">completion</span><span class="p">:</span>
+                        <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startAnalyze</span><span class="p">(</span><span class="n">_</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1RiskParams.html">D1RiskParams</a></span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>params</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>parameter containing the details of the current page.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>block to be called when it finishes. It returns on the
+main thread. When it succeeds, it returns nil error. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1Task(im)pauseAnalyze"></a>
+                    <a name="//apple_ref/objc/Method/-pauseAnalyze" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)pauseAnalyze">-pauseAnalyze</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pause the monitoring. This method should be called when the page navigates
+to the next page (during a multi-page scenario) or when the app goes into background.
+e.g. <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621485-viewwilldisappear?language=objc">viewWillDisappear</a>,
+<a href="https://developer.apple.com/documentation/uikit/uiapplicationwillresignactivenotification">UIApplicationWillResignActiveNotification</a>.</p>
+
+<p><b>Category - Risk API</b></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">pauseAnalyze</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pauseAnalyze</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:"></a>
+                    <a name="//apple_ref/objc/Method/-stopAnalyzeWithCompletion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)stopAnalyzeWithCompletion:">-stopAnalyzeWithCompletion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop monitoring the events for the current page. This method
+should be called to get the risk payload.</p>
+
+<p><b>Category - Risk API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Integrator should send the risk payload to their backend, to be used
+in risk assessment call to D1 backend.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Possible error: <code><a href="../Enums/D1ErrorCode.html#/c:@E@D1ErrorCode@D1ErrorRisk">D1ErrorCode.D1ErrorRisk</a></code>, caused by incorrect
+risk credentials.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">stopAnalyzeWithCompletion</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSMutableData</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
+                      <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stopAnalyze</span><span class="p">(</span><span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSMutableData</span><span class="p">?,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>block to be called when it finishes. It returns on the
+main thread. When it succeeds, it return risk payload. Otherwise, it returns error details.
+This <code>completionBlock</code> returns risk payload in 
+<a href="https://developer.apple.com/documentation/foundation/nsmutabledata?language=objc">NSMutableData</a>.
+The data is already in JSON format. Integrator can use JSON conversion method
+like <a href="https://developer.apple.com/documentation/foundation/nsjsonserialization/1415493-jsonobjectwithdata?language=objc">[NSJSONSerialization JSONObjectWithData:options:error]</a>
+to convert to <a href="https://developer.apple.com/documentation/foundation/nsdictionary?language=objc">NSDictionary</a>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2021 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
