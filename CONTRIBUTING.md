@@ -1,29 +1,25 @@
-Describe in this file 
-- team organization, roles, communication 
-- the rules to be respected by your future contributors
+# Contributing to D1 Docs 
+:+1: Thanks for your interest and taking time to contribute :+1: 
 
-# Contributing guidelines
+#### Table Of Contents
 
-## Team organization
+[How to report a bug ?](#how-to-report-bug)
+[How to submit a fix ?](#how-to-submit-a-fix)
 
-### Roles
 
-## How to become a contributor
+## How to report a bug
+Please use GitHub issues by opening a new issue.
+Github issue shall include a quick summary
+  * Pre-requisite (version of components)
+  * Steps to reproduce
+  * Attach sample code if you can.
+  * Expectation vs happening
 
-### Contributor License Agreements
+  
+## How to submit a fix
 
-### Contributing code
-
-## Pull Request Checklist
-
-### License
-
-### Coding style
-
-### Testing
-
-#### Running sanity check
-
-#### Running unit tests
-
-### Issues management
+Let's give you a hint : ... Pull Request !
+  * Fork the repo and create your branch from master.
+  * Add tests if necessary
+  * Update documentation if APIs have been changed
+  * Issue that pull request!
