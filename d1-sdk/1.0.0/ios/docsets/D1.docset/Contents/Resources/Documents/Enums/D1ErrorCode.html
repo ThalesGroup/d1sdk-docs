@@ -8,9 +8,6 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
-    <script src="../js/lunr.min.js" defer></script>
-    <script src="../js/typeahead.jquery.js" defer></script>
-    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Enum/D1ErrorCode" class="dashAnchor"></a>
@@ -18,11 +15,6 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">D1 1.0.0 Docs</a></p>
-        <p class="header-right">
-          <form role="search" action="../search.json">
-            <input type="text" placeholder="Search documentation" data-typeahead>
-          </form>
-        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -73,6 +65,27 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@D1ErrorDomain">D1ErrorDomain</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackAbort">D1RaspFeedbackAbort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackCrash">D1RaspFeedbackCrash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackProceed">D1RaspFeedbackProceed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackSilence">D1RaspFeedbackSilence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspTypeDebugger">D1RaspTypeDebugger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspTypeHook">D1RaspTypeHook</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspTypeJailbreak">D1RaspTypeJailbreak</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -98,6 +111,28 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/D1ErrorCode.html">D1ErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspDetectionCallback">D1RaspDetectionCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@D1SetRaspDetectionCallback">D1SetRaspDetectionCallback</a>
               </li>
             </ul>
           </li>
@@ -323,6 +358,38 @@ certificate pinning.
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorDeviceEnvironmentUnsafe"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorDeviceEnvironmentUnsafe" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorDeviceEnvironmentUnsafe">D1ErrorDeviceEnvironmentUnsafe</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device environment is potentially unsafe.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Ensure that the device environment is safe.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorDeviceEnvironmentUnsafe</span> <span class="o">=</span> <span class="mi">10007</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@E@D1ErrorCode@D1ErrorCore"></a>
                     <a name="//apple_ref/objc/Case/D1ErrorCore" class="dashAnchor"></a>
                     <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCore">D1ErrorCore</a>
@@ -386,6 +453,80 @@ Ensure risk credentials are correct and the device has internet connection.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">D1ErrorRisk</span> <span class="o">=</span> <span class="mi">30001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorCard"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorCard" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCard">D1ErrorCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Errors encountered whilst executing card operations.</p>
+
+<p><b>Category - Card API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Integrator should check the underlying errors for more details.
+Ensure card configurations are correct and the device has internet connection.</p>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p><code><a href="../Classes/D1TaskComponents.html#/c:objc(cs)D1TaskComponents(py)d1DigitalCardURLString">D1TaskComponents.d1DigitalCardURLString</a></code>, <code><a href="../Classes/D1TaskComponents.html#/c:objc(cs)D1TaskComponents(py)issuerID">D1TaskComponents.issuerID</a></code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorCard</span> <span class="o">=</span> <span class="mi">40001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorCardNotSupported"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorCardNotSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCardNotSupported">D1ErrorCardNotSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device does not support making payment. It could be because of variety of reasons,
+e.g. hardware functionality, parental control restriction.</p>
+
+<p><b>Category - Card API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Integrator should display information to user on why it is not supported.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorCardNotSupported</span> <span class="o">=</span> <span class="mi">40002</span></code></pre>
 
                         </div>
                       </div>

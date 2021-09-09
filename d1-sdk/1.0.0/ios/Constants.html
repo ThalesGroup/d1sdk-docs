@@ -8,9 +8,6 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
-    <script src="js/lunr.min.js" defer></script>
-    <script src="js/typeahead.jquery.js" defer></script>
-    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Section/Constants" class="dashAnchor"></a>
@@ -18,11 +15,6 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">D1 1.0.0 Docs</a></p>
-        <p class="header-right">
-          <form role="search" action="search.json">
-            <input type="text" placeholder="Search documentation" data-typeahead>
-          </form>
-        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -73,6 +65,27 @@
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@D1ErrorDomain">D1ErrorDomain</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspFeedbackAbort">D1RaspFeedbackAbort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspFeedbackCrash">D1RaspFeedbackCrash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspFeedbackProceed">D1RaspFeedbackProceed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspFeedbackSilence">D1RaspFeedbackSilence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspTypeDebugger">D1RaspTypeDebugger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspTypeHook">D1RaspTypeHook</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@D1RaspTypeJailbreak">D1RaspTypeJailbreak</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -98,6 +111,28 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/D1ErrorCode.html">D1ErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspDetectionCallback">D1RaspDetectionCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@D1SetRaspDetectionCallback">D1SetRaspDetectionCallback</a>
               </li>
             </ul>
           </li>
@@ -151,6 +186,230 @@ the full error details including underlying errors in the report.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1ErrorDomain</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspTypeDebugger"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspTypeDebugger" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspTypeDebugger">D1RaspTypeDebugger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier for Rasp Type Debugger</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a></span> <span class="n">D1RaspTypeDebugger</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspTypeDebugger</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspTypeJailbreak"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspTypeJailbreak" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspTypeJailbreak">D1RaspTypeJailbreak</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier for Rasp Type Jailbreak</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a></span> <span class="n">D1RaspTypeJailbreak</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspTypeJailbreak</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspTypeHook"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspTypeHook" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspTypeHook">D1RaspTypeHook</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identifier for Rasp Type Hook</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a></span> <span class="n">D1RaspTypeHook</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspTypeHook</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspFeedbackSilence"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspFeedbackSilence" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspFeedbackSilence">D1RaspFeedbackSilence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When this is set, this will proceed and silence the invocation of the callback for that specific RASP type for the remainder of the application runtime.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span> <span class="n">D1RaspFeedbackSilence</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspFeedbackSilence</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspFeedbackProceed"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspFeedbackProceed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspFeedbackProceed">D1RaspFeedbackProceed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When this is set, the app will continue to proceed as per normal</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span> <span class="n">D1RaspFeedbackProceed</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspFeedbackProceed</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspFeedbackAbort"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspFeedbackAbort" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspFeedbackAbort">D1RaspFeedbackAbort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When this is set, the app will abort the current operation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span> <span class="n">D1RaspFeedbackAbort</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspFeedbackAbort</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@D1RaspFeedbackCrash"></a>
+                    <a name="//apple_ref/objc/Constant/D1RaspFeedbackCrash" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@D1RaspFeedbackCrash">D1RaspFeedbackCrash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When this is set, the app will crash using the internally provided crash mechanism.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span> <span class="n">D1RaspFeedbackCrash</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">D1RaspFeedbackCrash</span><span class="p">:</span> <span class="kt"><a href="Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a></span></code></pre>
 
                         </div>
                       </div>

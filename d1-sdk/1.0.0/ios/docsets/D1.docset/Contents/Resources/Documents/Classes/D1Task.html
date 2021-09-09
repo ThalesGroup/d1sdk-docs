@@ -8,9 +8,6 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
-    <script src="../js/lunr.min.js" defer></script>
-    <script src="../js/typeahead.jquery.js" defer></script>
-    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/D1Task" class="dashAnchor"></a>
@@ -18,11 +15,6 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">D1 1.0.0 Docs</a></p>
-        <p class="header-right">
-          <form role="search" action="../search.json">
-            <input type="text" placeholder="Search documentation" data-typeahead>
-          </form>
-        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -73,6 +65,27 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@D1ErrorDomain">D1ErrorDomain</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackAbort">D1RaspFeedbackAbort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackCrash">D1RaspFeedbackCrash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackProceed">D1RaspFeedbackProceed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspFeedbackSilence">D1RaspFeedbackSilence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspTypeDebugger">D1RaspTypeDebugger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspTypeHook">D1RaspTypeHook</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@D1RaspTypeJailbreak">D1RaspTypeJailbreak</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -98,6 +111,28 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/D1ErrorCode.html">D1ErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspDetectionCallback">D1RaspDetectionCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspFeedback">D1RaspFeedback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:D1Rasp.h@T@D1RaspType">D1RaspType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@D1SetRaspDetectionCallback">D1SetRaspDetectionCallback</a>
               </li>
             </ul>
           </li>
@@ -196,6 +231,38 @@ launched or the earliest possible time.
                       <div>
                         <h4>Return Value</h4>
                         <p>Dictionary with SDK name as key and SDK version as value, e.g. {&ldquo;NuDetect&rdquo;: &ldquo;2.1.0&rdquo;}</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)D1Task(im)setAuthorizationToken:"></a>
+                    <a name="//apple_ref/objc/Method/-setAuthorizationToken:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)setAuthorizationToken:">-setAuthorizationToken:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Temporary function to set authorization from D1Demo - this should be removed when the A2 is integrated</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAuthorizationToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">authorization</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setAuthorizationToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">authorization</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -453,6 +520,11 @@ It is not mandatory to initialize all features in a single call.</p>
                       <div class="abstract">
                         <p>Retrieve consumer information.
 This is the entry point for Card Operation as it will provide <i>cardID</i> for further operation.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This method requires D1Task to be configured first by calling <code>[D1Task configureWithParams:completion:]</code>. Otherwise, NSInvalidArgumentException exception will be thrown
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -791,9 +863,9 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)addDigitalCardToOEMFromController:cardID:completion:"></a>
-                    <a name="//apple_ref/objc/Method/-addDigitalCardToOEMFromController:cardID:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)addDigitalCardToOEMFromController:cardID:completion:">-addDigitalCardToOEMFromController:<wbr>cardID:<wbr>completion:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)addDigitalCardToOEMWithCardID:fromController:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-addDigitalCardToOEMWithCardID:fromController:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)addDigitalCardToOEMWithCardID:fromController:completion:">-addDigitalCardToOEMWithCardID:<wbr>fromController:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -808,16 +880,15 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-    <span class="nf">addDigitalCardToOEMFromController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
-                               <span class="nf">cardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addDigitalCardToOEMWithCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
+                       <span class="nf">fromController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
                            <span class="nf">completion</span><span class="p">:</span>
                                <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addDigitalCardToOEM</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addDigitalCardToOEM</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -858,9 +929,9 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)digitalCardListFromCardID:completion:"></a>
-                    <a name="//apple_ref/objc/Method/-digitalCardListFromCardID:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)digitalCardListFromCardID:completion:">-digitalCardListFromCardID:<wbr>completion:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)digitalCardListWithCardID:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-digitalCardListWithCardID:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)digitalCardListWithCardID:completion:">-digitalCardListWithCardID:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -869,13 +940,18 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Retrieve digital card list for a given cardID.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method requires D1Task to be configured first by calling <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)configureWithParams:completion:">-[D1Task configureWithParams:completion:]</a></code> with <code><a href="../Classes/D1ConfigParams.html#/c:objc(cs)D1ConfigParams(cm)cardConfig">+[D1ConfigParams cardConfig]</a></code>. Otherwise, NSInvalidArgumentException will be thrown.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">digitalCardListFromCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">digitalCardListWithCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
                        <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span>
                                       <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/D1DigitalCard.html">D1DigitalCard</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span>
                                       <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
@@ -924,9 +1000,9 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)D1Task(im)updateDigitalCardForCardID:requestorID:action:completion:"></a>
-                    <a name="//apple_ref/objc/Method/-updateDigitalCardForCardID:requestorID:action:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)D1Task(im)updateDigitalCardForCardID:requestorID:action:completion:">-updateDigitalCardForCardID:<wbr>requestorID:<wbr>action:<wbr>completion:<wbr></a>
+                    <a name="/c:objc(cs)D1Task(im)updateDigitalCardForCardID:digitalCard:action:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-updateDigitalCardForCardID:digitalCard:action:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)D1Task(im)updateDigitalCardForCardID:digitalCard:action:completion:">-updateDigitalCardForCardID:<wbr>digitalCard:<wbr>action:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -949,15 +1025,15 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateDigitalCardForCardID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cardID</span>
-                       <span class="nf">requestorID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">requestorID</span>
+                       <span class="nf">digitalCard</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/D1DigitalCard.html">D1DigitalCard</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">digitalCard</span>
                             <span class="nf">action</span><span class="p">:(</span><span class="n"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">)</span><span class="nv">action</span>
-                        <span class="nf">completion</span><span class="p">:</span>
-                            <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+                        <span class="nf">completion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                       <span class="n">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">requestorID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">digitalCard</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DigitalCard.html">D1DigitalCard</a></span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/D1CardAction.html">D1CardAction</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -973,19 +1049,19 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Digital Card id received from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)digitalCardListFromCardID:completion:">-[D1Task digitalCardListFromCardID:completion:]</a></code> API</p>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/c:objc(cs)D1Task(im)consumerDetailsWithCompletion:">-[D1Task consumerDetailsWithCompletion:]</a></code> APIs</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>requestorID</em>
+                                <em>digitalCard</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>digital card requestor id received from the bank</p>
+                                  <p>digital card details</p>
                                 </div>
                               </td>
                             </tr>
@@ -1009,7 +1085,7 @@ The following <code><a href="../Enums/D1CardAction.html">D1CardAction</a></code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the operation status. Otherwise, it returns error details.</p>
                                 </div>
                               </td>
                             </tr>
