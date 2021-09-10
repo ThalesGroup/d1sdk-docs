@@ -109,10 +109,16 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public final class <span class="typeNameLabel">VirtualCard</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">The Virtual Card details for D1 Core
- For security reason, VirtualCard use byte[] as variables type which can be wiped (refer to wipe function).
- Please use following example to covert the variable from byte[] to String if need:
- String pan = new String(virtualCard.getPan(), StandardCharsets.UTF_8);</div>
+<div class="block">The Virtual Card details for D1 Core.
+ <p>
+ For security reason, VirtualCard use <code>byte[]</code> as variables type which can be wiped (refer <a href="../../../../../com/thalesgroup/gemalto/d1/core/VirtualCard.html#wipe--"><code>wipe()</code></a>).
+ <p>
+ Please use following example to covert the variable from <code>byte[]</code> to String if need:
+ <code>String pan = new String(virtualCard.getPan(), StandardCharsets.UTF_8);</code></div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>1.0.0</dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -177,7 +183,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/VirtualCard.html#wipe--">wipe</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/VirtualCard.html#wipe--">wipe</a></span>()</code>
+<div class="block">Wipe the sensitive data of the object</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -276,6 +284,7 @@ public&nbsp;byte[]&nbsp;getCardHolderName()</pre>
 <li class="blockList">
 <h4>wipe</h4>
 <pre>public&nbsp;void&nbsp;wipe()</pre>
+<div class="block">Wipe the sensitive data of the object</div>
 </li>
 </ul>
 </li>
