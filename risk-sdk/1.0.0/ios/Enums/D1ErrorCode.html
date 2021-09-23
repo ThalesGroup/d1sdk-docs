@@ -66,7 +66,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">D1ErrorCode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">D1ErrorCode</span> <span class="p">{}</span></code></pre>
 
                 </div>
               </div>
@@ -215,6 +215,102 @@ certificate pinning.
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorNotLoggedIn"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorNotLoggedIn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorNotLoggedIn">D1ErrorNotLoggedIn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user is not logged in. </p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Login before performing subsequent requests.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorNotLoggedIn</span> <span class="o">=</span> <span class="mi">10005</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorNotAuthorized"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorNotAuthorized" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorNotAuthorized">D1ErrorNotAuthorized</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user is not authorized to perform this operation.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Retry the operation again.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorNotAuthorized</span> <span class="o">=</span> <span class="mi">10006</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorDeviceEnvironmentUnsafe"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorDeviceEnvironmentUnsafe" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorDeviceEnvironmentUnsafe">D1ErrorDeviceEnvironmentUnsafe</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device environment is potentially unsafe.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Ensure that the device environment is safe.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorDeviceEnvironmentUnsafe</span> <span class="o">=</span> <span class="mi">10007</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@E@D1ErrorCode@D1ErrorCore"></a>
                     <a name="//apple_ref/objc/Case/D1ErrorCore" class="dashAnchor"></a>
                     <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCore">D1ErrorCore</a>
@@ -278,6 +374,80 @@ Ensure risk credentials are correct and the device has internet connection.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">D1ErrorRisk</span> <span class="o">=</span> <span class="mi">30001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorCard"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorCard" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCard">D1ErrorCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Errors encountered whilst executing card operations.</p>
+
+<p><b>Category - Card API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Integrator should check the underlying errors for more details.
+Ensure card configurations are correct and the device has internet connection.</p>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p><code>D1TaskComponents.d1DigitalCardURLString</code>, <code>D1TaskComponents.issuerID</code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorCard</span> <span class="o">=</span> <span class="mi">40001</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@D1ErrorCode@D1ErrorCardNotSupported"></a>
+                    <a name="//apple_ref/objc/Case/D1ErrorCardNotSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@D1ErrorCode@D1ErrorCardNotSupported">D1ErrorCardNotSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device does not support making payment. It could be because of variety of reasons,
+e.g. hardware functionality, parental control restriction.</p>
+
+<p><b>Category - Card API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Integrator should display information to user on why it is not supported.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">D1ErrorCardNotSupported</span> <span class="o">=</span> <span class="mi">40002</span></code></pre>
 
                         </div>
                       </div>
