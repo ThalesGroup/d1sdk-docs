@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Enumerations  Reference</title>
+    <title>Structures  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Section/Enumerations" class="dashAnchor"></a>
-    <a title="Enumerations  Reference"></a>
+    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
+    <a title="Structures  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> 1.0.0 Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" />
-        Enumerations  Reference
+        Structures  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -146,8 +146,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Enumerations</h1>
-            <p>The following enumerations are available globally.</p>
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
 
           </section>
           <section class="section task-group-section">
@@ -156,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D120CardAssetContentTypeO"></a>
-                    <a name="//apple_ref/swift/Enum/CardAssetContentType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D120CardAssetContentTypeO">CardAssetContentType</a>
+                    <a name="/s:2D19CardAssetV"></a>
+                    <a name="//apple_ref/swift/Struct/CardAsset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D19CardAssetV">CardAsset</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,20 +166,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The asset content type of the card metadata.</p>
+                        <p>The object containing resources, for example image used to display Card Art.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
 
 </div>
 
-                        <a href="Enums/CardAssetContentType.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CardAsset.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardAssetContentType</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CardAsset</span></code></pre>
 
                         </div>
                       </div>
@@ -189,9 +189,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D114CardFormFactorO"></a>
-                    <a name="//apple_ref/swift/Enum/CardFormFactor" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D114CardFormFactorO">CardFormFactor</a>
+                    <a name="/s:2D116CardAssetContentV"></a>
+                    <a name="//apple_ref/swift/Struct/CardAssetContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D116CardAssetContentV">CardAssetContent</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -199,20 +199,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Form factor of the card.</p>
+                        <p>The object containing the content of the asset.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
 
 </div>
 
-                        <a href="Enums/CardFormFactor.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CardAssetContent.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardFormFactor</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CardAssetContent</span></code></pre>
 
                         </div>
                       </div>
@@ -222,9 +222,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardSchemeO"></a>
-                    <a name="//apple_ref/swift/Enum/CardScheme" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardSchemeO">CardScheme</a>
+                    <a name="/s:2D112CardMetadataV"></a>
+                    <a name="//apple_ref/swift/Struct/CardMetadata" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D112CardMetadataV">CardMetadata</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -232,21 +232,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Supported schemes.
-Currently, either Visa or Mastercard are supported.</p>
+                        <p>The card Metadata information containing basic information of the Card.
+It is used to display last 4 PAN digit and Card Art.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
 
 </div>
 
-                        <a href="Enums/CardScheme.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CardMetadata.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardScheme</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CardMetadata</span></code></pre>
 
                         </div>
                       </div>
@@ -256,9 +256,9 @@ Currently, either Visa or Mastercard are supported.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D19CardStateO"></a>
-                    <a name="//apple_ref/swift/Enum/CardState" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D19CardStateO">CardState</a>
+                    <a name="/s:2D112ConfigParamsV"></a>
+                    <a name="//apple_ref/swift/Struct/ConfigParams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D112ConfigParamsV">ConfigParams</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -266,20 +266,20 @@ Currently, either Visa or Mastercard are supported.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Card state.</p>
+                        <p>The configuration parameters for D1 SDK initialization.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
 
 </div>
 
-                        <a href="Enums/CardState.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/ConfigParams.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardState</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConfigParams</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -289,9 +289,9 @@ Currently, either Visa or Mastercard are supported.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D112CardMimeTypeO"></a>
-                    <a name="//apple_ref/swift/Enum/CardMimeType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D112CardMimeTypeO">CardMimeType</a>
+                    <a name="/s:2D115ConsumerDetailsV"></a>
+                    <a name="//apple_ref/swift/Struct/ConsumerDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D115ConsumerDetailsV">ConsumerDetails</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -299,20 +299,20 @@ Currently, either Visa or Mastercard are supported.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Enumeration type for supported MimeType.</p>
+                        <p>The card information of the consumer containing account ID and list of Card IDs.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
 
 </div>
 
-                        <a href="Enums/CardMimeType.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/ConsumerDetails.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardMimeType</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerDetails</span></code></pre>
 
                         </div>
                       </div>
@@ -322,9 +322,9 @@ Currently, either Visa or Mastercard are supported.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardActionO"></a>
-                    <a name="//apple_ref/swift/Enum/CardAction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardActionO">CardAction</a>
+                    <a name="/s:2D10A5ErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/D1Error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A5ErrorV">D1Error</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -332,20 +332,97 @@ Currently, either Visa or Mastercard are supported.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Enumeration type for Card Action, used to update card status.</p>
+                        <p>D1 errors.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>When error occurs and support is required, it is recommended to include
+the full error details including underlying errors in the report.</p>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>1.0.0</p>
+
+</div>
+
+                        <a href="Structs/D1Error.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">D1Error</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">D1Error</span><span class="p">:</span> <span class="kt">LocalizedError</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV"></a>
+                    <a name="//apple_ref/swift/Struct/DigitalCard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV">DigitalCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Digital Card full information</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
 
 </div>
 
-                        <a href="Enums/CardAction.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/DigitalCard.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardAction</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DigitalCard</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111VirtualCardV"></a>
+                    <a name="//apple_ref/swift/Struct/VirtualCard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111VirtualCardV">VirtualCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The object encapsulating a Virtual Card
+For security reasons, VirtualCard needs to be wiped after use via the wipe function.</p>
+
+<p>Please use the following example to convert the variable from Data to String if needed:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">panString</span> <span class="o">=</span> <span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">pan</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                        <a href="Structs/VirtualCard.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">VirtualCard</span></code></pre>
 
                         </div>
                       </div>
