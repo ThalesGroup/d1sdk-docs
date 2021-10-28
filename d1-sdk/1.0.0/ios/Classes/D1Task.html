@@ -243,33 +243,6 @@ lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D10A4TaskC21setAuthorizationTokenyySSF"></a>
-                    <a name="//apple_ref/swift/Method/setAuthorizationToken(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC21setAuthorizationTokenyySSF">setAuthorizationToken(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Temporary function to set authorization from D1Demo - this should be removed when the A2 is integrated</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setAuthorizationToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">authorization</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_yAA0A5ErrorVSgctF"></a>
                     <a name="//apple_ref/swift/Method/configure(_:completion:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_yAA0A5ErrorVSgctF">configure(_:<wbr>completion:<wbr>)</a>
@@ -832,9 +805,9 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D10A4TaskC19addDigitalCardToOEM_14viewController10completionySS_So06UIViewI0CyAA0A5ErrorVSgctF"></a>
-                    <a name="//apple_ref/swift/Method/addDigitalCardToOEM(_:viewController:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC19addDigitalCardToOEM_14viewController10completionySS_So06UIViewI0CyAA0A5ErrorVSgctF">addDigitalCardToOEM(_:<wbr>viewController:<wbr>completion:<wbr>)</a>
+                    <a name="/s:2D10A4TaskC19addDigitalCardToOEM_14cardHolderName14viewController10completionySS_SSSo06UIViewL0CyAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/addDigitalCardToOEM(_:cardHolderName:viewController:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19addDigitalCardToOEM_14cardHolderName14viewController10completionySS_SSSo06UIViewL0CyAA0A5ErrorVSgctF">addDigitalCardToOEM(_:<wbr>cardHolderName:<wbr>viewController:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,6 +823,7 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addDigitalCardToOEM</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">cardHolderName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                 <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span>
                                 <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
@@ -868,6 +842,30 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                               <td>
                                 <div>
                                   <p>card identifier from <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC15consumerDetailsyyyAA08ConsumerD0VSg_AA0A5ErrorVSgtcF">D1Task.consumerDetails(_:)</a></code> API</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardHolderName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>card holder name</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>current view controller to present the add card process</p>
                                 </div>
                               </td>
                             </tr>
@@ -1051,7 +1049,7 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
         </section>
         <section id="footer">
           <p>Copyright © 2021 Thales Group. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
