@@ -169,18 +169,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE">ERROR_DEVICE_ENVIRONMENT_UNSAFE</a></span></code>
+<div class="block">The device environment is potentially unsafe.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED">ERROR_NOT_AUTHORIZED</a></span></code>
 <div class="block">The user is not authorized to perform this operation.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN">ERROR_NOT_LOGGED_IN</a></span></code>
 <div class="block">The user is not logged in.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_PERMISSION_DENIED">ERROR_PERMISSION_DENIED</a></span></code>
 <div class="block">The application does not have permission(s) to execute the operation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_RISK">ERROR_RISK</a></span></code>
+<div class="block">Risk assessment failed.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -332,6 +342,17 @@ the order they are declared.</div>
  Retry the operation again.</div>
 </li>
 </ul>
+<a name="ERROR_DEVICE_ENVIRONMENT_UNSAFE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ERROR_DEVICE_ENVIRONMENT_UNSAFE</h4>
+<pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_DEVICE_ENVIRONMENT_UNSAFE</pre>
+<div class="block">The device environment is potentially unsafe. Please ensure that the device environment is safe.
+ Ensure that the device environment is safe.</div>
+</li>
+</ul>
 <a name="ERROR_CORE">
 <!--   -->
 </a>
@@ -343,6 +364,30 @@ the order they are declared.</div>
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.</div>
+</li>
+</ul>
+<a name="ERROR_RISK">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ERROR_RISK</h4>
+<pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_RISK</pre>
+<div class="block">Risk assessment failed.
+
+ <p><b>NOTE:</b><br/>
+ Integrator should check the underlying errors for more details and also ensure that:
+ <ul>
+     <li>Risk credentials are correct.</li>
+     <li>The device has Internet connection.</li>
+ </ul>
+
+ <p><b>Category - Risk API</b></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>D1Task.Builder#setRiskURLString(String)</code>, 
+<code>D1Task.Builder#setRiskClientID(String)</code></dd>
+</dl>
 </li>
 </ul>
 <a name="ERROR_CARD">
