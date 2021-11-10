@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Enumerations  Reference</title>
+    <title>Type Aliases  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Section/Enumerations" class="dashAnchor"></a>
-    <a title="Enumerations  Reference"></a>
+    <a name="//apple_ref/swift/Section/Type Aliases" class="dashAnchor"></a>
+    <a title="Type Aliases  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> 1.0.0 Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" />
-        Enumerations  Reference
+        Type Aliases  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -146,8 +146,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Enumerations</h1>
-            <p>The following enumerations are available globally.</p>
+            <h1>Type Aliases</h1>
+            <p>The following type aliases are available globally.</p>
 
           </section>
           <section class="section task-group-section">
@@ -156,9 +156,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D120CardAssetContentTypeO"></a>
-                    <a name="//apple_ref/swift/Enum/CardAssetContentType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D120CardAssetContentTypeO">CardAssetContentType</a>
+                    <a name="/s:2D10A8RaspTypea"></a>
+                    <a name="//apple_ref/swift/Alias/D1RaspType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A8RaspTypea">D1RaspType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -166,20 +166,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The asset content type of the card metadata.</p>
-<div class="aside aside-since">
-    <p class="aside-title">Since</p>
-    1.0.0
+                        <p>Rasp detection types</p>
 
-</div>
-
-                        <a href="Enums/CardAssetContentType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardAssetContentType</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">D1RaspType</span> <span class="o">=</span> <span class="kt">Int32</span></code></pre>
 
                         </div>
                       </div>
@@ -189,9 +183,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D114CardFormFactorO"></a>
-                    <a name="//apple_ref/swift/Enum/CardFormFactor" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D114CardFormFactorO">CardFormFactor</a>
+                    <a name="/s:2D10A12RaspFeedbacka"></a>
+                    <a name="//apple_ref/swift/Alias/D1RaspFeedback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A12RaspFeedbacka">D1RaspFeedback</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -199,20 +193,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Form factor of the card.</p>
-<div class="aside aside-since">
-    <p class="aside-title">Since</p>
-    1.0.0
+                        <p>RASP feedback options</p>
 
-</div>
-
-                        <a href="Enums/CardFormFactor.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardFormFactor</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">D1RaspFeedback</span> <span class="o">=</span> <span class="kt">Int32</span></code></pre>
 
                         </div>
                       </div>
@@ -222,9 +210,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardSchemeO"></a>
-                    <a name="//apple_ref/swift/Enum/CardScheme" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardSchemeO">CardScheme</a>
+                    <a name="/s:2D10A21RaspDetectionCallbacka"></a>
+                    <a name="//apple_ref/swift/Alias/D1RaspDetectionCallback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A21RaspDetectionCallbacka">D1RaspDetectionCallback</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -232,122 +220,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Supported schemes.
-Currently, either Visa or Mastercard are supported.</p>
-<div class="aside aside-since">
-    <p class="aside-title">Since</p>
-    1.0.0
+                        <p>Callback to allow app integrator to provide feedback for respective detection types.</p>
 
-</div>
-
-                        <a href="Enums/CardScheme.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardScheme</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">D1RaspDetectionCallback</span> <span class="o">=</span> <span class="kd">@convention(c)</span> <span class="p">(</span><span class="kt"><a href="Typealiases.html#/s:2D10A8RaspTypea">D1RaspType</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="Typealiases.html#/s:2D10A12RaspFeedbacka">D1RaspFeedback</a></span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D19CardStateO"></a>
-                    <a name="//apple_ref/swift/Enum/CardState" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D19CardStateO">CardState</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Card state.</p>
-<div class="aside aside-since">
-    <p class="aside-title">Since</p>
-    1.0.0
-
-</div>
-
-                        <a href="Enums/CardState.html" class="slightly-smaller">See more</a>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>raspType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RASP type detected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardState</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D112CardMimeTypeO"></a>
-                    <a name="//apple_ref/swift/Enum/CardMimeType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D112CardMimeTypeO">CardMimeType</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Enumeration type for supported MimeType.</p>
-<div class="aside aside-since">
-    <p class="aside-title">Since</p>
-    1.0.0
-
-</div>
-
-                        <a href="Enums/CardMimeType.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardMimeType</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D110CardActionO"></a>
-                    <a name="//apple_ref/swift/Enum/CardAction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardActionO">CardAction</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Enumeration type for Card Action, used to update card status.</p>
-<div class="aside aside-since">
-    <p class="aside-title">Since</p>
-    1.0.0
-
-</div>
-
-                        <a href="Enums/CardAction.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardAction</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>one of RASP_FEEBACK values.</p>
                       </div>
                     </section>
                   </div>
