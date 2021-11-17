@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CardAction Enumeration Reference</title>
+    <title>CardDigitizationResult Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/CardAction" class="dashAnchor"></a>
-    <a title="CardAction Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/CardDigitizationResult" class="dashAnchor"></a>
+    <a title="CardDigitizationResult Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> 1.0.0 Docs</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        CardAction Enumeration Reference
+        CardDigitizationResult Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -152,15 +152,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>CardAction</h1>
+            <h1>CardDigitizationResult</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardAction</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CardDigitizationResult</span></code></pre>
 
                 </div>
               </div>
-            <p>Enumeration type for Card Action, used to update card status.</p>
+            <p>The struct containing the card digitization details.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
@@ -174,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardActionO6resumeyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/resume" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardActionO6resumeyA2CmF">resume</a>
+                    <a name="/s:2D122CardDigitizationResultV5stateAA0bC5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D122CardDigitizationResultV5stateAA0bC5StateOvp">state</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,14 +184,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Action to reactivate the given card.</p>
+                        <p>State of card digitization.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">resume</span> <span class="o">=</span> <span class="s">"Resume"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardDigitizationState.html">CardDigitizationState</a></span></code></pre>
 
                         </div>
                       </div>
@@ -201,9 +201,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardActionO7suspendyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/suspend" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardActionO7suspendyA2CmF">suspend</a>
+                    <a name="/s:2D122CardDigitizationResultV11localPKPassSo0F0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localPKPass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D122CardDigitizationResultV11localPKPassSo0F0CSgvp">localPKPass</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -211,14 +211,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Action to suspend the given card.</p>
+                        <p><a href="https://developer.apple.com/documentation/passkit/pkpass">PKPass</a> for the card on local device (phone device).</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">suspend</span> <span class="o">=</span> <span class="s">"Suspend"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">localPKPass</span><span class="p">:</span> <span class="kt">PKPass</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -228,9 +228,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardActionO6deleteyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/delete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardActionO6deleteyA2CmF">delete</a>
+                    <a name="/s:2D122CardDigitizationResultV12remotePKPassSo0F0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/remotePKPass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D122CardDigitizationResultV12remotePKPassSo0F0CSgvp">remotePKPass</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,14 +238,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Action to delete the given card.</p>
+                        <p><a href="https://developer.apple.com/documentation/passkit/pkpass">PKPass</a> for the card on remote device (Apple Watch).</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">delete</span> <span class="o">=</span> <span class="s">"Delete"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">remotePKPass</span><span class="p">:</span> <span class="kt">PKPass</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>

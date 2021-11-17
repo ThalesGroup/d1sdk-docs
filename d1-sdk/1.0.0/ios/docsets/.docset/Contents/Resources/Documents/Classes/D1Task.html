@@ -74,6 +74,9 @@
                 <a href="../Enums/CardAssetContentType.html">CardAssetContentType</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/CardDigitizationState.html">CardDigitizationState</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/CardFormFactor.html">CardFormFactor</a>
               </li>
               <li class="nav-group-task">
@@ -106,6 +109,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/CardDetails.html">CardDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/CardMetadata.html">CardMetadata</a>
@@ -674,9 +680,9 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D10A4TaskC15isCardDigitized_10completionySS_ySb_AA0A5ErrorVSgtctF"></a>
-                    <a name="//apple_ref/swift/Method/isCardDigitized(_:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC15isCardDigitized_10completionySS_ySb_AA0A5ErrorVSgtctF">isCardDigitized(_:<wbr>completion:<wbr>)</a>
+                    <a name="/s:2D10A4TaskC21cardDigitizationState_10completionySS_yAA04CardD6ResultVSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/cardDigitizationState(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC21cardDigitizationState_10completionySS_yAA04CardD6ResultVSg_AA0A5ErrorVSgtctF">cardDigitizationState(_:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -684,15 +690,16 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Check if the card has been digitized or not.
-Use this API to determine if we need to show &lsquo;add card&rsquo; button on the Application.</p>
+                        <p>Check card digitization details.
+Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &lsquo;Activate on your phone&rsquo;, &lsquo;Activate on your watch&rsquo; button on the Application.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isCardDigitized</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cardDigitizationState</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a></span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -720,7 +727,7 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns isDigitized status. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns <code><a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a></code>. Otherwise, it returns error details.</p>
                                 </div>
                               </td>
                             </tr>
@@ -794,6 +801,66 @@ Use this API to determine if we need to show &lsquo;add card&rsquo; button on th
                               <td>
                                 <div>
                                   <p>current view controller to present the add card process</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC19activateDigitalCard_10completionySS_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/activateDigitalCard(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19activateDigitalCard_10completionySS_yAA0A5ErrorVSgctF">activateDigitalCard(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activate digital card that has <code><a href="../Enums/CardDigitizationState.html">CardDigitizationState</a></code> equal to
+<code><a href="../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO15pendingIDVLocalyA2CmF">CardDigitizationState.pendingIDVLocal</a></code> or <code><a href="../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO16pendingIDVRemoteyA2CmF">CardDigitizationState.pendingIDVRemote</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>card identifier from <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC15consumerDetailsyyyAA08ConsumerD0VSg_AA0A5ErrorVSgtcF">D1Task.consumerDetails(_:)</a></code> API</p>
                                 </div>
                               </td>
                             </tr>
