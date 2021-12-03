@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/thalesgroup/gemalto/d1/D1Rasp.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" target="_top">Frames</a></li>
@@ -159,33 +159,33 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CARD_NO_PENDING_IDV">ERROR_CARD_NO_PENDING_IDV</a></span></code>
+<div class="block">No digital card is found with <a href="../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CARD_NOT_SUPPORTED">ERROR_CARD_NOT_SUPPORTED</a></span></code>
 <div class="block">Device does not support making payment.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CORE">ERROR_CORE</a></span></code>
 <div class="block">Generic error of CORE module.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE">ERROR_DEVICE_ENVIRONMENT_UNSAFE</a></span></code>
 <div class="block">The device environment is potentially unsafe.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED">ERROR_NOT_AUTHORIZED</a></span></code>
 <div class="block">The user is not authorized to perform this operation.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN">ERROR_NOT_LOGGED_IN</a></span></code>
 <div class="block">The user is not logged in.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_PERMISSION_DENIED">ERROR_PERMISSION_DENIED</a></span></code>
-<div class="block">The application does not have permission(s) to execute the operation.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -194,11 +194,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_SSL_CERTIFICATE">ERROR_SSL_CERTIFICATE</a></span></code>
-<div class="block">SSL certificate pinning failed.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_TIMED_OUT">ERROR_TIMED_OUT</a></span></code>
 <div class="block">Timeout happened while executing the operation.</div>
 </td>
@@ -288,16 +283,6 @@ the order they are declared.</div>
 <div class="block">User cancelled the operation</div>
 </li>
 </ul>
-<a name="ERROR_PERMISSION_DENIED">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ERROR_PERMISSION_DENIED</h4>
-<pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_PERMISSION_DENIED</pre>
-<div class="block">The application does not have permission(s) to execute the operation.</div>
-</li>
-</ul>
 <a name="ERROR_TIMED_OUT">
 <!--   -->
 </a>
@@ -306,19 +291,6 @@ the order they are declared.</div>
 <h4>ERROR_TIMED_OUT</h4>
 <pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_TIMED_OUT</pre>
 <div class="block">Timeout happened while executing the operation.</div>
-</li>
-</ul>
-<a name="ERROR_SSL_CERTIFICATE">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ERROR_SSL_CERTIFICATE</h4>
-<pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_SSL_CERTIFICATE</pre>
-<div class="block">SSL certificate pinning failed.
-
- <p><b>NOTE:</b><br/>
- Integrator should include the SSL certificate or use the DEBUG version (which does not require certificate pinning).</div>
 </li>
 </ul>
 <a name="ERROR_NOT_LOGGED_IN">
@@ -408,12 +380,26 @@ the order they are declared.</div>
 <a name="ERROR_CARD_NOT_SUPPORTED">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ERROR_CARD_NOT_SUPPORTED</h4>
 <pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NOT_SUPPORTED</pre>
 <div class="block">Device does not support making payment.
  It could be because of variety of reasons, e.g. enabling SAMSUNG PAY on a non-SAMSUNG device.
+
+ <p><b>Category - Card API</b></div>
+</li>
+</ul>
+<a name="ERROR_CARD_NO_PENDING_IDV">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ERROR_CARD_NO_PENDING_IDV</h4>
+<pre>public static final&nbsp;<a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NO_PENDING_IDV</pre>
+<div class="block">No digital card is found with <a href="../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>.
+ <p>
+ Integrator may check the state of the card by calling <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getCardDigitizationState-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.getCardDigitizationState(String, D1Task.Callback)</code></a>.
 
  <p><b>Category - Card API</b></div>
 </li>
@@ -538,7 +524,7 @@ not permitted.)</div>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/thalesgroup/gemalto/d1/D1Exception.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/thalesgroup/gemalto/d1/D1Rasp.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" target="_top">Frames</a></li>

@@ -47,11 +47,11 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardAsset.AssetType.html" title="enum in com.thalesgroup.gemalto.d1.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.core"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../../index.html?com/thalesgroup/gemalto/d1/core/CardHolderDetails.html" target="_top">Frames</a></li>
+<li><a href="../../../../../index.html?com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" target="_top">Frames</a></li>
 <li><a href="CardHolderDetails.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
@@ -90,7 +90,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">com.thalesgroup.gemalto.d1.core</div>
+<div class="subTitle">com.thalesgroup.gemalto.d1.card</div>
 <h2 title="Class CardHolderDetails" class="title">Class CardHolderDetails</h2>
 </div>
 <div class="contentContainer">
@@ -98,7 +98,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>com.thalesgroup.gemalto.d1.core.CardHolderDetails</li>
+<li>com.thalesgroup.gemalto.d1.card.CardHolderDetails</li>
 </ul>
 </li>
 </ul>
@@ -109,7 +109,14 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">CardHolderDetails</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">The card holder details</div>
+<div class="block">CardHolderDetails class represents UserAddress data required for the Google Pay.
+ <ul>
+      <li>The address should be provided in order to skip manual address entry.</li>
+      <li>The issuer application should provide the entire address and phone number on file.</li>
+      <li>Missing or invalid address information may result in the user being prompted to complete or correct the address.</li>
+      <li>The address should be the correct address of the user to the best of the issuer's knowledge.</li>
+      <li>Using a fake or intentionally incorrect addresses is not permitted by the terms of service.</li>
+ </ul></div>
 </li>
 </ul>
 </div>
@@ -128,7 +135,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#CardHolderDetails-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">CardHolderDetails</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#CardHolderDetails-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">CardHolderDetails</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;address1,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;address2,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;countryCode,
@@ -156,49 +163,49 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getAddress1--">getAddress1</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getAddress1--">getAddress1</a></span>()</code>
 <div class="block">Retrieve the card holder address 1</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getAddress2--">getAddress2</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getAddress2--">getAddress2</a></span>()</code>
 <div class="block">Retrieve the card holder address 2</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getAdministrativeArea--">getAdministrativeArea</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getAdministrativeArea--">getAdministrativeArea</a></span>()</code>
 <div class="block">Retrieve the card holder administrative area</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getCountryCode--">getCountryCode</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getCountryCode--">getCountryCode</a></span>()</code>
 <div class="block">Retrieve the card holder country code</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getLocality--">getLocality</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getLocality--">getLocality</a></span>()</code>
 <div class="block">Retrieve the card holder locality</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getName--">getName</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getName--">getName</a></span>()</code>
 <div class="block">Retrieve the card holder name</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getPhoneNumber--">getPhoneNumber</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getPhoneNumber--">getPhoneNumber</a></span>()</code>
 <div class="block">Retrieve the card holder phone number</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardHolderDetails.html#getPostalCode--">getPostalCode</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getPostalCode--">getPostalCode</a></span>()</code>
 <div class="block">Retrieve the card holder post code</div>
 </td>
 </tr>
@@ -242,14 +249,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Construct a card holder detail object</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - The card holder name</dd>
-<dd><code>address1</code> - The card holder address 1</dd>
-<dd><code>address2</code> - The card holder address 2</dd>
-<dd><code>countryCode</code> - The country code</dd>
-<dd><code>locality</code> - The name of city or town</dd>
-<dd><code>administrativeArea</code> - The administrative area name</dd>
-<dd><code>phoneNumber</code> - The card holder phone number</dd>
-<dd><code>postalCode</code> - The card holder's post code</dd>
+<dd><code>name</code> - Mandatory field. The name of the person at this address. For MasterCard, the maximum length for the name is 27 characters.</dd>
+<dd><code>address1</code> - Optional field. The first line of the address of the card holder</dd>
+<dd><code>address2</code> - Optional field. The second line of the address of the card holder</dd>
+<dd><code>countryCode</code> - Optional field. The country code, if provided it shall be in 2-letter ISO-3166 format.</dd>
+<dd><code>locality</code> - Optional field. The city or town</dd>
+<dd><code>administrativeArea</code> - Optional field. The state, province</dd>
+<dd><code>phoneNumber</code> - Optional field. The phone number associated with the card holder</dd>
+<dd><code>postalCode</code> - Optional field. The postal code or ZIP code</dd>
 </dl>
 </li>
 </ul>
@@ -401,11 +408,11 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardAsset.AssetType.html" title="enum in com.thalesgroup.gemalto.d1.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../com/thalesgroup/gemalto/d1/core/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.core"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../com/thalesgroup/gemalto/d1/card/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
-<li><a href="../../../../../index.html?com/thalesgroup/gemalto/d1/core/CardHolderDetails.html" target="_top">Frames</a></li>
+<li><a href="../../../../../index.html?com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" target="_top">Frames</a></li>
 <li><a href="CardHolderDetails.html" target="_top">No&nbsp;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
