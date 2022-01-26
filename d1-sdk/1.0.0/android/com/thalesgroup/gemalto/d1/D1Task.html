@@ -297,7 +297,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getSDKVersions</h4>
-<pre><a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>@NonNull
 public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSDKVersions()</pre>
 <div class="block">Returns SDK version(s) in the D1 SDK.</div>
 <dl>
@@ -312,9 +312,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>configure</h4>
-<pre>public&nbsp;void&nbsp;configure(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;configure(@NonNull
                       <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback,
-                      <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                      @NonNull
                       <a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a>...&nbsp;configParams)</pre>
 <div class="block">D1 Task configurations. It is the entry point for SDK initialization.
  <p>
@@ -333,9 +333,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>login</h4>
-<pre>public&nbsp;void&nbsp;login(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;login(@NonNull
                   byte[]&nbsp;issuerToken,
-                  <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                  @NonNull
                   <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block">Login to the D1 services using a provided token.</div>
 <dl>
@@ -351,7 +351,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>logout</h4>
-<pre>public&nbsp;void&nbsp;logout(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;logout(@NonNull
                    <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block">Logout to the D1 services</div>
 <dl>
@@ -366,9 +366,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>getCardMetadata</h4>
-<pre>public&nbsp;void&nbsp;getCardMetadata(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;getCardMetadata(@NonNull
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                            <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                            @NonNull
                             <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.card">CardMetadata</a>&gt;&nbsp;callback)</pre>
 <div class="block">Retrieve basic card metadata.
  Use this API to retrieve last 4 PAN digit value & Card Art.</div>
@@ -385,9 +385,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>getCardDetails</h4>
-<pre>public&nbsp;void&nbsp;getCardDetails(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;getCardDetails(@NonNull
                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                           <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                           @NonNull
                            <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardDetails</a>&gt;&nbsp;callback)</pre>
 <div class="block">Retrieve detail information of the card, including full PAN value.
  These values can be used for online transaction.</div>
@@ -404,13 +404,13 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>updateCard</h4>
-<pre>public&nbsp;void&nbsp;updateCard(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;updateCard(@NonNull
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                       <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                       @NonNull
                        <a href="../../../../com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
-                       <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation">@Nullable</a>
+                       @Nullable
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reason,
-                       <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                       @NonNull
                        <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block">Update the Virtual Card state.
  <p>
@@ -438,12 +438,12 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>getCardDigitizationState</h4>
-<pre>public&nbsp;void&nbsp;getCardDigitizationState(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;getCardDigitizationState(@NonNull
                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                                     <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                                     @NonNull
                                      <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a>&gt;&nbsp;callback)</pre>
 <div class="block">Check if the card has been digitized or not.
- Use this API to determine if we need to show <b>Add to Wallet</b> button on the Application.</div>
+ Use this API to determine if we need to show <b>Add card</b> button on the Application.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
@@ -457,11 +457,11 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>addDigitalCardToOEM</h4>
-<pre>public&nbsp;void&nbsp;addDigitalCardToOEM(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;addDigitalCardToOEM(@NonNull
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                                <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                                @NonNull
                                 <a href="../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a>&nbsp;cardHolderDetails,
-                                <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                                @NonNull
                                 <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block">Add Digital Card for a given <code>cardID</code> for OEM Type (Google Pay or Samsung Pay).
  OEM Type is set on <a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html#buildConfigCard-android.app.Activity-com.thalesgroup.gemalto.d1.card.OEMPayType-java.lang.String-"><code>ConfigParams.buildConfigCard(android.app.Activity, OEMPayType, String)</code></a>
@@ -486,9 +486,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>activateDigitalCard</h4>
-<pre>public&nbsp;void&nbsp;activateDigitalCard(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;activateDigitalCard(@NonNull
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                                <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                                @NonNull
                                 <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block"><b>Google Pay only.</b>
  <p>
@@ -508,9 +508,9 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>getDigitalCardList</h4>
-<pre>public&nbsp;void&nbsp;getDigitalCardList(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;getDigitalCardList(@NonNull
                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                               <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                               @NonNull
                                <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&gt;&gt;&nbsp;callback)</pre>
 <div class="block">Retrieve Digital Card list for a given <code>cardID</code>.</div>
 <dl>
@@ -526,13 +526,13 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>updateDigitalCard</h4>
-<pre>public&nbsp;void&nbsp;updateDigitalCard(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;updateDigitalCard(@NonNull
                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                              <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                              @NonNull
                               <a href="../../../../com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&nbsp;digitalCard,
-                              <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                              @NonNull
                               <a href="../../../../com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
-                              <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+                              @NonNull
                               <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;callback)</pre>
 <div class="block">Update Digital Card status for a given Digital card ID.</div>
 <dl>
@@ -552,7 +552,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <h4>handleCardResult</h4>
 <pre>public&nbsp;void&nbsp;handleCardResult(int&nbsp;requestCode,
                              int&nbsp;resultCode,
-                             <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation">@Nullable</a>
+                             @Nullable
                              <a href="https://developer.android.com/reference/android/content/Intent.html?is-external=true" title="class or interface in android.content">Intent</a>&nbsp;data)</pre>
 <div class="block">Handle data that Wallet has returned for card operation.</div>
 <dl>
@@ -569,7 +569,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <ul class="blockList">
 <li class="blockList">
 <h4>registerCardDataChangedListener</h4>
-<pre>public&nbsp;void&nbsp;registerCardDataChangedListener(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
+<pre>public&nbsp;void&nbsp;registerCardDataChangedListener(@NonNull
                                             <a href="../../../../com/thalesgroup/gemalto/d1/card/CardDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.card">CardDataChangedListener</a>&nbsp;listener)</pre>
 <div class="block"><b>Google Pay only.</b>
  <p>
