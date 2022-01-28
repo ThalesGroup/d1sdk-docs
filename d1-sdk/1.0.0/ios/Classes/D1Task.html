@@ -551,9 +551,9 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                        <span class="nv">cardAction</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardAction.html">CardAction</a></span><span class="p">,</span>
-                        <span class="nv">reason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
-                        <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                       <span class="nv">cardAction</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardAction.html">CardAction</a></span><span class="p">,</span>
+                       <span class="nv">reason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                       <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -684,9 +684,9 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D10A4TaskC19addDigitalCardToOEM_14cardHolderName14viewController10completionySS_SSSo06UIViewL0CyAA0A5ErrorVSgctF"></a>
-                    <a name="//apple_ref/swift/Method/addDigitalCardToOEM(_:cardHolderName:viewController:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC19addDigitalCardToOEM_14cardHolderName14viewController10completionySS_SSSo06UIViewL0CyAA0A5ErrorVSgctF">addDigitalCardToOEM(_:<wbr>cardHolderName:<wbr>viewController:<wbr>completion:<wbr>)</a>
+                    <a name="/s:2D10A4TaskC19addDigitalCardToOEM_14viewController10completionySS_So06UIViewI0CyAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/addDigitalCardToOEM(_:viewController:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19addDigitalCardToOEM_14viewController10completionySS_So06UIViewI0CyAA0A5ErrorVSgctF">addDigitalCardToOEM(_:<wbr>viewController:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -708,7 +708,6 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addDigitalCardToOEM</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                                <span class="nv">cardHolderName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                 <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span>
                                 <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
@@ -727,18 +726,6 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                               <td>
                                 <div>
                                   <p>card identifier from <code>D1Task.consumerDetails(_:)</code> API</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>cardHolderName</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>card holder name</p>
                                 </div>
                               </td>
                             </tr>
