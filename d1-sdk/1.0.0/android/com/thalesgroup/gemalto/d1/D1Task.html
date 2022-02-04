@@ -171,8 +171,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#addDigitalCardToOEM-java.lang.String-com.thalesgroup.gemalto.d1.card.CardHolderDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-">addDigitalCardToOEM</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                   <a href="../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a>&nbsp;cardHolderDetails,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#addDigitalCardToOEM-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">addDigitalCardToOEM</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                    <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</code>
 <div class="block">Add Digital Card for a given <code>cardID</code> for OEM Type (Google Pay or Samsung Pay).</div>
 </td>
@@ -451,7 +450,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 </dl>
 </li>
 </ul>
-<a name="addDigitalCardToOEM-java.lang.String-com.thalesgroup.gemalto.d1.card.CardHolderDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-">
+<a name="addDigitalCardToOEM-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -459,8 +458,6 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <h4>addDigitalCardToOEM</h4>
 <pre>public&nbsp;void&nbsp;addDigitalCardToOEM(@NonNull
                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                                @NonNull
-                                <a href="../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a>&nbsp;cardHolderDetails,
                                 @NonNull
                                 <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block">Add Digital Card for a given <code>cardID</code> for OEM Type (Google Pay or Samsung Pay).
@@ -471,12 +468,10 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
-<dd><code>cardHolderDetails</code> - The card holder full information <a href="../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card"><code>CardHolderDetails</code></a></dd>
 <dd><code>callback</code> - The callback for the result</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html#buildConfigCard-android.app.Activity-com.thalesgroup.gemalto.d1.card.OEMPayType-java.lang.String-"><code>ConfigParams.buildConfigCard(android.app.Activity, OEMPayType, String)</code></a>, 
-<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#handleCardResult-int-int-android.content.Intent-"><code>handleCardResult(int, int, Intent)</code></a>, 
-<a href="../../../../com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card"><code>CardHolderDetails</code></a></dd>
+<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#handleCardResult-int-int-android.content.Intent-"><code>handleCardResult(int, int, Intent)</code></a></dd>
 </dl>
 </li>
 </ul>

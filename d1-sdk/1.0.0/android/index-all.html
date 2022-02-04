@@ -76,7 +76,7 @@
 <dd>
 <div class="block"><b>Google Pay only.</b></div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#addDigitalCardToOEM-java.lang.String-com.thalesgroup.gemalto.d1.card.CardHolderDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-">addDigitalCardToOEM(String, CardHolderDetails, D1Task.Callback&lt;Void&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#addDigitalCardToOEM-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">addDigitalCardToOEM(String, D1Task.Callback&lt;Void&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
 <div class="block">Add Digital Card for a given <code>cardID</code> for OEM Type (Google Pay or Samsung Pay).</div>
 </dd>
@@ -149,14 +149,6 @@
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">CardDigitizationState</span></a> - Enum in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
 <div class="block">Indicate the card state</div>
-</dd>
-<dt><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">CardHolderDetails</span></a> - Class in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
-<dd>
-<div class="block">CardHolderDetails class represents UserAddress data required for the Google Pay.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#CardHolderDetails-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">CardHolderDetails(String, String, String, String, String, String, String, String)</a></span> - Constructor for class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Construct a card holder detail object</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">CardMetadata</span></a> - Class in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
@@ -282,18 +274,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/ConfigParams.html#getActivity--">getActivity()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getAddress1--">getAddress1()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder address 1</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getAddress2--">getAddress2()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder address 2</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getAdministrativeArea--">getAdministrativeArea()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder administrative area</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardMetadata.html#getAssetList--">getAssetList()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.card">CardMetadata</a></dt>
 <dd>
 <div class="block">Get card asset containing resources, for example image.</div>
@@ -331,10 +311,6 @@
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardAsset.html#getContents--">getContents()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAsset.html" title="class in com.thalesgroup.gemalto.d1.card">CardAsset</a></dt>
 <dd>
 <div class="block">Get the list of asset content resources.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getCountryCode--">getCountryCode()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder country code</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardDetails.html#getCvv--">getCvv()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardDetails</a></dt>
 <dd>
@@ -388,10 +364,6 @@
 <dd>
 <div class="block">Get last 4 digits of the PAN</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getLocality--">getLocality()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder locality</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#getMessage--">getMessage()</a></span> - Method in enum com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
 <div class="block">Retrieve the underlying error and current error description.</div>
@@ -400,23 +372,11 @@
 <dd>
 <div class="block">Get the mime type of this resource, whether it is PNG, SVG, or PDF.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getName--">getName()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder name</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/ConfigParams.html#getOemPayType--">getOemPayType()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardDetails.html#getPan--">getPan()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardDetails</a></dt>
 <dd>
 <div class="block">Get full pan number of the card</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getPhoneNumber--">getPhoneNumber()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder phone number</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html#getPostalCode--">getPostalCode()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardHolderDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardHolderDetails</a></dt>
-<dd>
-<div class="block">Retrieve the card holder post code</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#getRecoverySuggestion--">getRecoverySuggestion()</a></span> - Method in enum com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
