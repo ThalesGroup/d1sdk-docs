@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CardScheme Enumeration Reference</title>
+    <title>TokenRequestor Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/CardScheme" class="dashAnchor"></a>
-    <a title="CardScheme Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/TokenRequestor" class="dashAnchor"></a>
+    <a title="TokenRequestor Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">D1SDK</a></p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">D1 Reference</a>
         <img id="carat" src="../img/carat.png" />
-        CardScheme Enumeration Reference
+        TokenRequestor Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -155,16 +155,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>CardScheme</h1>
+            <h1>TokenRequestor</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CardScheme</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TokenRequestor</span></code></pre>
 
                 </div>
               </div>
-            <p>Supported schemes.
-Currently, either Visa or Mastercard are supported.</p>
+            <p>The Token Requestor information</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.0.0
@@ -178,9 +177,9 @@ Currently, either Visa or Mastercard are supported.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardSchemeO4visayA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/visa" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardSchemeO4visayA2CmF">visa</a>
+                    <a name="/s:2D114TokenRequestorV2idSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D114TokenRequestorV2idSSSgvp">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -188,14 +187,14 @@ Currently, either Visa or Mastercard are supported.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>VISA scheme.</p>
+                        <p>TokenRequestor ID</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">visa</span> <span class="o">=</span> <span class="s">"VISA"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -205,9 +204,9 @@ Currently, either Visa or Mastercard are supported.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D110CardSchemeO10mastercardyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/mastercard" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D110CardSchemeO10mastercardyA2CmF">mastercard</a>
+                    <a name="/s:2D114TokenRequestorV4nameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D114TokenRequestorV4nameSSSgvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -215,14 +214,68 @@ Currently, either Visa or Mastercard are supported.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>MASTERCARD scheme.</p>
+                        <p>TokenRequestor name</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">mastercard</span> <span class="o">=</span> <span class="s">"MASTERCARD"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D114TokenRequestorV5assetSayAA16CardAssetContentVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/asset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D114TokenRequestorV5assetSayAA16CardAssetContentVGSgvp">asset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>TokenRequestor logo</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">asset</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/CardAssetContent.html">CardAssetContent</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D114TokenRequestorV19provisioningMethodsSayAA18ProvisioningMethodVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/provisioningMethods" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D114TokenRequestorV19provisioningMethodsSayAA18ProvisioningMethodVGSgvp">provisioningMethods</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provisioning methods supported by the current TokenRequestor</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">provisioningMethods</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ProvisioningMethod.html">ProvisioningMethod</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>

@@ -128,6 +128,12 @@
               <li class="nav-group-task">
                 <a href="../Structs/DigitalCard.html">DigitalCard</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProvisioningMethod.html">ProvisioningMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TokenRequestor.html">TokenRequestor</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -972,6 +978,70 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                               <td>
                                 <div>
                                   <p>The callback invoked when the operation is completed. When it succeeds, it returns the operation status. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC18tokenRequestorList_10completionySS_ySayAA05TokenD0VGSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/tokenRequestorList(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC18tokenRequestorList_10completionySS_ySayAA05TokenD0VGSg_AA0A5ErrorVSgtctF">tokenRequestorList(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve eligible token requestor  list for a given cardID.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method requires D1Task to be configured first by calling <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF">D1Task.configure(_:completion:)</a></code> with <code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV04cardB0ACyFZ">ConfigParams.cardConfig()</a></code>. Otherwise, NSInvalidArgumentException will be thrown.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tokenRequestorList</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Structs/TokenRequestor.html">TokenRequestor</a></span><span class="p">]?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>card identifier from <code>D1Task.consumerDetails(_:)</code> API</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the Token Requestor list. Otherwise, it returns error details.</p>
                                 </div>
                               </td>
                             </tr>
