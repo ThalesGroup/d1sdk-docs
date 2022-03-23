@@ -1,7 +1,3 @@
-// Jazzy - https://github.com/realm/jazzy
-// Copyright Realm Inc.
-// SPDX-License-Identifier: MIT
-
 window.jazzy = {'docset': false}
 if (typeof window.dash != 'undefined') {
   document.documentElement.className += ' dash'
@@ -27,7 +23,7 @@ function openCurrentItemIfClosed() {
   if (window.jazzy.docset) {
     return;
   }
-  var $link = $(`a[name="${location.hash.substring(1)}"]`).nextAll('.token');
+  var $link = $(`.token[href="${location.hash}"]`);
   $content = itemLinkToContent($link);
   if ($content.is(':hidden')) {
     toggleItem($link, $content);
@@ -61,14 +57,3 @@ $("a:not('.token')").on('click', function() {
     openCurrentItemIfClosed();
   }
 });
-
-// KaTeX rendering
-if ("katex" in window) {
-  $($('.math').each( (_, element) => {
-    katex.render(element.textContent, element, {
-      displayMode: $(element).hasClass('m-block'),
-      throwOnError: false,
-      trust: true
-    });
-  }))
-}
