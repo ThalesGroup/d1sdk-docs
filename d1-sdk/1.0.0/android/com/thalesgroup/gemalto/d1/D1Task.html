@@ -147,6 +147,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Generic callback to return result of an asynchronous call.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.ConfigCallback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="type parameter in D1Task.ConfigCallback">T</a>&gt;</span></code>
+<div class="block">Configuration callback to return result of an asynchronous call.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -178,7 +184,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#configure-com.thalesgroup.gemalto.d1.D1Task.Callback-com.thalesgroup.gemalto.d1.ConfigParams...-">configure</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#configure-com.thalesgroup.gemalto.d1.D1Task.ConfigCallback-com.thalesgroup.gemalto.d1.ConfigParams...-">configure</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.ConfigCallback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback,
          <a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a>...&nbsp;configParams)</code>
 <div class="block">D1 Task configurations.</div>
 </td>
@@ -305,14 +311,14 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 </dl>
 </li>
 </ul>
-<a name="configure-com.thalesgroup.gemalto.d1.D1Task.Callback-com.thalesgroup.gemalto.d1.ConfigParams...-">
+<a name="configure-com.thalesgroup.gemalto.d1.D1Task.ConfigCallback-com.thalesgroup.gemalto.d1.ConfigParams...-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>configure</h4>
 <pre>public&nbsp;void&nbsp;configure(@NonNull
-                      <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback,
+                      <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.ConfigCallback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback,
                       @NonNull
                       <a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a>...&nbsp;configParams)</pre>
 <div class="block">D1 Task configurations. It is the entry point for SDK initialization.
@@ -373,7 +379,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
  Use this API to retrieve last 4 PAN digit value & Card Art.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result</dd>
 </dl>
 </li>
@@ -392,7 +398,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
  These values can be used for online transaction.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result</dd>
 </dl>
 </li>
@@ -420,7 +426,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
  </ul></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>cardAction</code> - The card action to be performed, possible actions:
                    <ul>
                       <li><a href="../../../../com/thalesgroup/gemalto/d1/card/CardAction.html#RESUME"><code>CardAction.RESUME</code></a></li>
@@ -445,7 +451,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
  Use this API to determine if we need to show <b>Add card</b> button on the Application.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result</dd>
 </dl>
 </li>
@@ -467,7 +473,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
  <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#handleCardResult-int-int-android.content.Intent-"><code>handleCardResult(int, int, Intent)</code></a> API</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html#buildConfigCard-android.app.Activity-com.thalesgroup.gemalto.d1.card.OEMPayType-java.lang.String-"><code>ConfigParams.buildConfigCard(android.app.Activity, OEMPayType, String)</code></a>, 
@@ -510,7 +516,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <div class="block">Retrieve Digital Card list for a given <code>cardID</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result</dd>
 </dl>
 </li>
@@ -532,7 +538,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <div class="block">Update Digital Card status for a given Digital card ID.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card ID received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getConsumerDetails-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getConsumerDetails(Callback)</code></a> API</dd>
+<dd><code>cardID</code> - The card identifier</dd>
 <dd><code>digitalCard</code> - The digital card received from <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getDigitalCardList-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>getDigitalCardList(String, Callback)</code></a></dd>
 <dd><code>cardAction</code> - The card action to be performed: active, suspend or delete</dd>
 <dd><code>callback</code> - The callback for the result</dd>
