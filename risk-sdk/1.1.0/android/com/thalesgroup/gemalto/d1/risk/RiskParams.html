@@ -124,16 +124,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 
  <p>
  The SDK use listeners internally to collect the behavioral data. Integrator
- must use the provided <code>addOnFocusChangeListener(View, OnFocusChangeListener)</code>,
- <code>addOnHierarchyChangeListener(ViewGroup, OnHierarchyChangeListener)</code>,
- <code>addOnTouchListener(View, OnTouchListener)</code> to register app listener.
+ must use the provided <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-"><code>addOnFocusChangeListener(View, View.OnFocusChangeListener)</code></a>,
+ <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-"><code>addOnHierarchyChangeListener(ViewGroup, ViewGroup.OnHierarchyChangeListener)</code></a>,
+ <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnTouchListener-android.view.View-android.view.View.OnTouchListener-"><code>addOnTouchListener(View, View.OnTouchListener)</code></a> to register app listener.
  This allows SDK to gather the behavioral data without disrupting the end-user's
  interaction within the application.
 
  <p><b>NOTE:</b><br/>
- Any calls to <code>removeOnFocusChangeListener(View, OnFocusChangeListener)</code>,
- <code>removeOnHierarchyChangeListener(ViewGroup, OnHierarchyChangeListener)</code>,
- <code>removeOnTouchListener(View, OnTouchListener)</code> need to be followed by
+ Any calls to <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-"><code>removeOnFocusChangeListener(View, View.OnFocusChangeListener)</code></a>,
+ <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-"><code>removeOnHierarchyChangeListener(ViewGroup, ViewGroup.OnHierarchyChangeListener)</code></a>,
+ <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnTouchListener-android.view.View-android.view.View.OnTouchListener-"><code>removeOnTouchListener(View, View.OnTouchListener)</code></a> need to be followed by
  calling <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#pauseAnalyze--"><code>D1Task.pauseAnalyze()</code></a> and
  <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#startAnalyze-com.thalesgroup.gemalto.d1.risk.RiskParams-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.startAnalyze(RiskParams, D1Task.Callback)</code></a>.
  This allows SDK to remove the listeners internally.</div>
