@@ -123,19 +123,26 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
  <p><b>Category - Risk API</b>
 
  <p>
- The SDK use listeners internally to collect the behavioral data. Integrator
- must use the provided <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-"><code>addOnFocusChangeListener(View, View.OnFocusChangeListener)</code></a>,
- <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-"><code>addOnHierarchyChangeListener(ViewGroup, ViewGroup.OnHierarchyChangeListener)</code></a>,
- <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnTouchListener-android.view.View-android.view.View.OnTouchListener-"><code>addOnTouchListener(View, View.OnTouchListener)</code></a> to register app listener.
+ The SDK use listeners internally to collect the behavioral data. Integrator must use the provided:
+ <ul>
+     <li><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-"><code>addOnFocusChangeListener(View, View.OnFocusChangeListener)</code></a></li>
+     <li><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-"><code>addOnHierarchyChangeListener(ViewGroup, ViewGroup.OnHierarchyChangeListener)</code></a></li>
+     <li><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#addOnTouchListener-android.view.View-android.view.View.OnTouchListener-"><code>addOnTouchListener(View, View.OnTouchListener)</code></a></li>
+ </ul>
+ to register app listener.
  This allows SDK to gather the behavioral data without disrupting the end-user's
  interaction within the application.
 
  <p><b>NOTE:</b><br/>
- Any calls to <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-"><code>removeOnFocusChangeListener(View, View.OnFocusChangeListener)</code></a>,
- <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-"><code>removeOnHierarchyChangeListener(ViewGroup, ViewGroup.OnHierarchyChangeListener)</code></a>,
- <a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnTouchListener-android.view.View-android.view.View.OnTouchListener-"><code>removeOnTouchListener(View, View.OnTouchListener)</code></a> need to be followed by
+ Any call to
+ <ul>
+     <li><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnFocusChangeListener-android.view.View-"><code>removeOnFocusChangeListener(View)</code></a></li>
+     <li><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnHierarchyChangeListener-android.view.ViewGroup-"><code>removeOnHierarchyChangeListener(ViewGroup)</code></a></li>
+     <li><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnTouchListener-android.view.View-"><code>removeOnTouchListener(View)</code></a></li>
+ </ul>
+ need to be followed by
  calling <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#pauseAnalyze--"><code>D1Task.pauseAnalyze()</code></a> and
- <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#startAnalyze-com.thalesgroup.gemalto.d1.risk.RiskParams-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.startAnalyze(RiskParams, D1Task.Callback)</code></a>.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#startAnalyze-com.thalesgroup.gemalto.d1.risk.RiskParams-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.startAnalyze(RiskParams, com.thalesgroup.gemalto.d1.D1Task.Callback)</code></a>.
  This allows SDK to remove the listeners internally.</div>
 </li>
 </ul>
@@ -235,22 +242,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-">removeOnFocusChangeListener</a></span>(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view,
-                           <a href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html?is-external=true" title="class or interface in android.view">View.OnFocusChangeListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnFocusChangeListener-android.view.View-">removeOnFocusChangeListener</a></span>(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</code>
 <div class="block">Remove the listener for the focus event</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-">removeOnHierarchyChangeListener</a></span>(<a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view">ViewGroup</a>&nbsp;viewGroup,
-                               <a href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html?is-external=true" title="class or interface in android.view">ViewGroup.OnHierarchyChangeListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnHierarchyChangeListener-android.view.ViewGroup-">removeOnHierarchyChangeListener</a></span>(<a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view">ViewGroup</a>&nbsp;viewGroup)</code>
 <div class="block">Remove the listener for the hierarchy change event</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnTouchListener-android.view.View-android.view.View.OnTouchListener-">removeOnTouchListener</a></span>(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view,
-                     <a href="https://developer.android.com/reference/android/view/View.OnTouchListener.html?is-external=true" title="class or interface in android.view">View.OnTouchListener</a>&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/thalesgroup/gemalto/d1/risk/RiskParams.html#removeOnTouchListener-android.view.View-">removeOnTouchListener</a></span>(<a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</code>
 <div class="block">Remove the listener for the touch event</div>
 </td>
 </tr>
@@ -373,6 +377,9 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
                                      <a href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html?is-external=true" title="class or interface in android.view">View.OnFocusChangeListener</a>&nbsp;listener)</pre>
 <div class="block">Add a listener for the focus event</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - The view to monitor the focus event</dd>
+<dd><code>listener</code> - The listener to handle the focus changed event</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 </dl>
@@ -390,6 +397,9 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
                                          <a href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html?is-external=true" title="class or interface in android.view">ViewGroup.OnHierarchyChangeListener</a>&nbsp;listener)</pre>
 <div class="block">Add a listener for the hierarchy change event</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>viewGroup</code> - The view group to monitor the hierarchy</dd>
+<dd><code>listener</code> - The listener to handle the hierarchy changed event</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 </dl>
@@ -407,57 +417,60 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
                                <a href="https://developer.android.com/reference/android/view/View.OnTouchListener.html?is-external=true" title="class or interface in android.view">View.OnTouchListener</a>&nbsp;listener)</pre>
 <div class="block">Add a listener for the touch event</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - The view to monitor the touch event</dd>
+<dd><code>listener</code> - The listener to handle the touch event</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 </dl>
 </li>
 </ul>
-<a name="removeOnFocusChangeListener-android.view.View-android.view.View.OnFocusChangeListener-">
+<a name="removeOnFocusChangeListener-android.view.View-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeOnFocusChangeListener</h4>
 <pre>public&nbsp;void&nbsp;removeOnFocusChangeListener(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                        <a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view,
-                                        <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                        <a href="https://developer.android.com/reference/android/view/View.OnFocusChangeListener.html?is-external=true" title="class or interface in android.view">View.OnFocusChangeListener</a>&nbsp;listener)</pre>
+                                        <a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</pre>
 <div class="block">Remove the listener for the focus event</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - The view that monitoring the focus event</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 </dl>
 </li>
 </ul>
-<a name="removeOnHierarchyChangeListener-android.view.ViewGroup-android.view.ViewGroup.OnHierarchyChangeListener-">
+<a name="removeOnHierarchyChangeListener-android.view.ViewGroup-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeOnHierarchyChangeListener</h4>
 <pre>public&nbsp;void&nbsp;removeOnHierarchyChangeListener(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                            <a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view">ViewGroup</a>&nbsp;viewGroup,
-                                            <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                            <a href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html?is-external=true" title="class or interface in android.view">ViewGroup.OnHierarchyChangeListener</a>&nbsp;listener)</pre>
+                                            <a href="https://developer.android.com/reference/android/view/ViewGroup.html?is-external=true" title="class or interface in android.view">ViewGroup</a>&nbsp;viewGroup)</pre>
 <div class="block">Remove the listener for the hierarchy change event</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>viewGroup</code> - The view group that is monitoring the hierarchy changed event</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 </dl>
 </li>
 </ul>
-<a name="removeOnTouchListener-android.view.View-android.view.View.OnTouchListener-">
+<a name="removeOnTouchListener-android.view.View-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>removeOnTouchListener</h4>
 <pre>public&nbsp;void&nbsp;removeOnTouchListener(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                  <a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view,
-                                  <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation">@NonNull</a>
-                                  <a href="https://developer.android.com/reference/android/view/View.OnTouchListener.html?is-external=true" title="class or interface in android.view">View.OnTouchListener</a>&nbsp;listener)</pre>
+                                  <a href="https://developer.android.com/reference/android/view/View.html?is-external=true" title="class or interface in android.view">View</a>&nbsp;view)</pre>
 <div class="block">Remove the listener for the touch event</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - The view that monitoring the touch event</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.1.0</dd>
 </dl>

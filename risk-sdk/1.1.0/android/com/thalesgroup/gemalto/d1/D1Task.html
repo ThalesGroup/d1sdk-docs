@@ -258,8 +258,11 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <dd><code>T</code> - The object type to do the analyze.</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>params</code> - The risk parameters for analyzing.</dd>
-<dd><code>callback</code> - The start result callback. The callback parameters for both <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onSuccess-T-"><code>D1Task.Callback.onSuccess(Object)</code></a> and
-                 <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onError-com.thalesgroup.gemalto.d1.D1Exception-"><code>D1Task.Callback.onError(D1Exception)</code></a> are @Nullable.</dd>
+<dd><code>callback</code> - The start result callback. The callback parameter for
+                 <ul>
+                      <li><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onSuccess-T-"><code>D1Task.Callback.onSuccess(Object)</code></a> is @Nullable.</li>
+                      <li><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onError-com.thalesgroup.gemalto.d1.D1Exception-"><code>D1Task.Callback.onError(D1Exception)</code></a> is @NonNull.</li>
+                 </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - Exception when the param type is not in the supported list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -293,7 +296,13 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
  Once having the payload, integrator should send it to their backend, to be used in risk assessment call to D1 backend.
 
  <p><b>NOTE:</b><br/>
- The callback result is running on the main thread.
+ <ul>
+     <li>If no error, the returned payload <code>byte[]</code> from the <code>callback</code> is already in JSON format.
+ <p>
+     Integrator can convert it into a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> with <code>new String(payload, java.nio.charset.StandardCharsets.UTF_8)</code>
+     </li>
+     <li>The callback result is running on the main thread.</li>
+ </ul>
 
  <p><b>NOTE:</b><br/>
  Possible error:<br/>
@@ -305,9 +314,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - Callback to retrieve the risk payload or error. The callback parameters for both <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onSuccess-T-"><code>D1Task.Callback.onSuccess(Object)</code></a> and
-                 <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onError-com.thalesgroup.gemalto.d1.D1Exception-"><code>D1Task.Callback.onError(D1Exception)</code></a> are @Nullable.
-                 If success, the returned payload <code>byte[]</code> is already in JSON format.
-                 Integrator can convert it to a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> as <code>new String(payload, java.nio.charset.StandardCharsets.UTF_8)}</code></dd>
+                 <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html#onError-com.thalesgroup.gemalto.d1.D1Exception-"><code>D1Task.Callback.onError(D1Exception)</code></a> are @NonNull.</dd>
 </dl>
 </li>
 </ul>
