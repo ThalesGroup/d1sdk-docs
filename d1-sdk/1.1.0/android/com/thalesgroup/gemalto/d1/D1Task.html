@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -192,22 +192,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#addDigitalCardToScheme-java.lang.String-com.thalesgroup.gemalto.d1.card.TokenRequestor-java.lang.String-boolean-com.thalesgroup.gemalto.d1.D1Task.Callback-">addDigitalCardToScheme</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                      <a href="../../../../com/thalesgroup/gemalto/d1/card/TokenRequestor.html" title="class in com.thalesgroup.gemalto.d1.card">TokenRequestor</a>&nbsp;tokenRequestor,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;appURL,
-                      boolean&nbsp;tcsAccepted,
-                      <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;callback)</code>
-<div class="block">Add Digital Card to scheme for a given <code>cardID</code></div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#configure-com.thalesgroup.gemalto.d1.D1Task.ConfigCallback-com.thalesgroup.gemalto.d1.ConfigParams...-">configure</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.ConfigCallback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback,
          <a href="../../../../com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a>...&nbsp;configParams)</code>
 <div class="block">D1 Task configurations.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#displayPhysicalCardPIN-java.lang.String-com.thalesgroup.gemalto.d1.CardPINUI-com.thalesgroup.gemalto.d1.D1Task.Callback-">displayPhysicalCardPIN</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                       <a href="../../../../com/thalesgroup/gemalto/d1/CardPINUI.html" title="class in com.thalesgroup.gemalto.d1">CardPINUI</a>&nbsp;cardPINUI,
@@ -215,62 +205,55 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Display the PIN for a Physical Card.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getCardActivationMethod-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getCardActivationMethod</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                        <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardActivationMethod.html" title="enum in com.thalesgroup.gemalto.d1.card">CardActivationMethod</a>&gt;&nbsp;callback)</code>
 <div class="block">Retrieve the activation method for a Physical Card.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getCardDetails-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getCardDetails</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
               <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardDetails.html" title="class in com.thalesgroup.gemalto.d1.card">CardDetails</a>&gt;&nbsp;callback)</code>
 <div class="block">Retrieve detail information of the card, including full PAN value.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getCardDigitizationState-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getCardDigitizationState</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                         <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a>&gt;&nbsp;callback)</code>
 <div class="block">Check if the card has been digitized or not.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getCardMetadata-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getCardMetadata</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/CardMetadata.html" title="class in com.thalesgroup.gemalto.d1.card">CardMetadata</a>&gt;&nbsp;callback)</code>
 <div class="block">Retrieve basic card metadata.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getDigitalCardList-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getDigitalCardList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                   <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&gt;&gt;&nbsp;callback)</code>
 <div class="block">Retrieve Digital Card list for a given <code>cardID</code>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getPhysicalCardPIN-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getPhysicalCardPIN</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                   <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;byte[]&gt;&nbsp;callback)</code>
 <div class="block">Retrieve the PIN for a Physical Card.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getSDKVersions--">getSDKVersions</a></span>()</code>
 <div class="block">Returns SDK version(s) in the D1 SDK.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#getTokenRequestorList-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">getTokenRequestorList</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                     <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/TokenRequestor.html" title="class in com.thalesgroup.gemalto.d1.card">TokenRequestor</a>&gt;&gt;&nbsp;callback)</code>
-<div class="block">Retrieve eligible token requestor list for a given <code>cardID</code>.</div>
-</td>
-</tr>
-<tr id="i14" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#handleCardResult-int-int-android.content.Intent-">handleCardResult</a></span>(int&nbsp;requestCode,
                 int&nbsp;resultCode,
@@ -278,32 +261,32 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Handle data that Wallet has returned for card operation.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-">login</a></span>(byte[]&nbsp;issuerToken,
      <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</code>
 <div class="block">Login to the D1 services using a provided token.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#logout-com.thalesgroup.gemalto.d1.D1Task.Callback-">logout</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</code>
 <div class="block">Logout to the D1 services</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#registerCardDataChangedListener-com.thalesgroup.gemalto.d1.card.CardDataChangedListener-">registerCardDataChangedListener</a></span>(<a href="../../../../com/thalesgroup/gemalto/d1/card/CardDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.card">CardDataChangedListener</a>&nbsp;listener)</code>
 <div class="block"><b>Google Pay only.</b></div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#unRegisterCardDataChangedListener--">unRegisterCardDataChangedListener</a></span>()</code>
 <div class="block"><b>Google Pay only.</b></div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#updateCard-java.lang.String-com.thalesgroup.gemalto.d1.card.CardAction-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">updateCard</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
           <a href="../../../../com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
@@ -312,7 +295,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="block">Update the Virtual Card state.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/D1Task.html#updateDigitalCard-java.lang.String-com.thalesgroup.gemalto.d1.card.DigitalCard-com.thalesgroup.gemalto.d1.card.CardAction-com.thalesgroup.gemalto.d1.D1Task.Callback-">updateDigitalCard</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                  <a href="../../../../com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&nbsp;digitalCard,
@@ -741,7 +724,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <a name="unRegisterCardDataChangedListener--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>unRegisterCardDataChangedListener</h4>
 <pre>public&nbsp;void&nbsp;unRegisterCardDataChangedListener()</pre>
@@ -751,52 +734,6 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/thalesgroup/gemalto/d1/card/CardDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>CardDataChangedListener</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="getTokenRequestorList-java.lang.String-com.thalesgroup.gemalto.d1.D1Task.Callback-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getTokenRequestorList</h4>
-<pre>public&nbsp;void&nbsp;getTokenRequestorList(@NonNull
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                                  @NonNull
-                                  <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../com/thalesgroup/gemalto/d1/card/TokenRequestor.html" title="class in com.thalesgroup.gemalto.d1.card">TokenRequestor</a>&gt;&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve eligible token requestor list for a given <code>cardID</code>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
-<dd><code>callback</code> - The callback for the result</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>ConfigParams#buildConfigCard(android.app.Activity, OEMPayType.NONE, String)</code></dd>
-</dl>
-</li>
-</ul>
-<a name="addDigitalCardToScheme-java.lang.String-com.thalesgroup.gemalto.d1.card.TokenRequestor-java.lang.String-boolean-com.thalesgroup.gemalto.d1.D1Task.Callback-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>addDigitalCardToScheme</h4>
-<pre>public&nbsp;void&nbsp;addDigitalCardToScheme(@NonNull
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
-                                   @NonNull
-                                   <a href="../../../../com/thalesgroup/gemalto/d1/card/TokenRequestor.html" title="class in com.thalesgroup.gemalto.d1.card">TokenRequestor</a>&nbsp;tokenRequestor,
-                                   @NonNull
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;appURL,
-                                   boolean&nbsp;tcsAccepted,
-                                   @NonNull
-                                   <a href="../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;callback)</pre>
-<div class="block">Add Digital Card to scheme for a given <code>cardID</code></div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
-<dd><code>tokenRequestor</code> - The token requestor that user has selected</dd>
-<dd><code>appURL</code> - The issuer app’s custom URL that the token requestor calls back upon completion of digitization flow to return the user to where they started their journey.</dd>
-<dd><code>tcsAccepted</code> - The terms and conditions accepted by user</dd>
-<dd><code>callback</code> - The callback for the result</dd>
 </dl>
 </li>
 </ul>

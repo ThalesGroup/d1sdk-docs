@@ -14,7 +14,7 @@
     <a title="D1Task Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">D1</a></p>
+        <p><a href="../index.html">D1SDK</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -324,78 +324,6 @@ It is not mandatory to initialize all features in a single call.</p>
                               <td>
                                 <div>
                                   <p>The callback invoked when the login process is completed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D10A4TaskC9authorize_8audience10completionySS_SSSgy10Foundation4DataVSgz_AA0A5ErrorVSgtctF"></a>
-                    <a name="//apple_ref/swift/Method/authorize(_:audience:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC9authorize_8audience10completionySS_SSSgy10Foundation4DataVSgz_AA0A5ErrorVSgtctF">authorize(_:<wbr>audience:<wbr>completion:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Request authorization for an operation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">authorize</span><span class="p">(</span><span class="n">_</span> <span class="nv">scope</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                      <span class="nv">audience</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
-                      <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="k">inout</span> <span class="kt">Data</span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>scope</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A scope to be authorized.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>audience</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The audience which intends to be authorized.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The callback invoked when the authorization process is completed. An authorizationToken is returned to be used to authorize subsequent operations.</p>
                                 </div>
                               </td>
                             </tr>
@@ -740,7 +668,7 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Display Physical Card Pin.</p>
+                        <p>Display Physical Card PIN.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
     1.1.0
@@ -918,12 +846,12 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                             <tr>
                               <td>
                                 <code>
-                                <em>cardPINUI</em>
+                                <em>entryUI</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The ui to display secure text entry</p>
+                                  <p>The UI to display secure text entry. If activationMethod is <code>CardActivationMethodNothing</code>, construct <code><a href="../Structs/EntryUI.html">EntryUI</a></code> with a nil <code><a href="../Classes.html#/c:@M@D1@objc(cs)D1SecureTextField">D1SecureTextField</a></code></p>
                                 </div>
                               </td>
                             </tr>
@@ -960,6 +888,12 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                       <div class="abstract">
                         <p>Check card digitization details.
 Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &lsquo;Activate on your phone&rsquo;, &lsquo;Activate on your watch&rsquo; button on the Application.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use instances of this class only on a single thread.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1019,6 +953,12 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Add digital card to OEM wallet for a given cardID for Apple Pay</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use instances of this class only on a single thread.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -1056,6 +996,72 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                               <td>
                                 <div>
                                   <p>current view controller to present the add card process</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC19activateDigitalCard_10completionySS_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/activateDigitalCard(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19activateDigitalCard_10completionySS_yAA0A5ErrorVSgctF">activateDigitalCard(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activate digital card that has <code><a href="../Enums/CardDigitizationState.html">CardDigitizationState</a></code> equal to
+<code><a href="../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO15pendingIDVLocalyA2CmF">CardDigitizationState.pendingIDVLocal</a></code> or <code><a href="../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO16pendingIDVRemoteyA2CmF">CardDigitizationState.pendingIDVRemote</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use instances of this class only on a single thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>card identifier</p>
                                 </div>
                               </td>
                             </tr>
@@ -1187,7 +1193,7 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                               </td>
                               <td>
                                 <div>
-                                  <p>card identifier</p>
+                                  <p>card identifiers</p>
                                 </div>
                               </td>
                             </tr>
@@ -1224,175 +1230,6 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                               <td>
                                 <div>
                                   <p>The callback invoked when the operation is completed. When it succeeds, it returns the operation status. Otherwise, it returns error details.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D10A4TaskC18tokenRequestorList_10completionySS_ySayAA05TokenD0VGSg_AA0A5ErrorVSgtctF"></a>
-                    <a name="//apple_ref/swift/Method/tokenRequestorList(_:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC18tokenRequestorList_10completionySS_ySayAA05TokenD0VGSg_AA0A5ErrorVSgtctF">tokenRequestorList(_:<wbr>completion:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Retrieve eligible token requestor  list for a given cardID.</p>
-<div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    <p>This method requires D1Task to be configured first by calling <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF">D1Task.configure(_:completion:)</a></code> with <code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV04cardB0ACyFZ">ConfigParams.cardConfig()</a></code>. Otherwise, NSInvalidArgumentException will be thrown.</p>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tokenRequestorList</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                               <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Structs/TokenRequestor.html">TokenRequestor</a></span><span class="p">]?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>cardID</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>card identifier from <code>D1Task.consumerDetails(_:)</code> API</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the Token Requestor list. Otherwise, it returns error details.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D10A4TaskC22addDigitalCardToScheme_14tokenRequestor6appURL26termsAndConditionsAccepted10completionySS_AA05TokenI0VSSSbySSSg_AA0A5ErrorVSgtctF"></a>
-                    <a name="//apple_ref/swift/Method/addDigitalCardToScheme(_:tokenRequestor:appURL:termsAndConditionsAccepted:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D10A4TaskC22addDigitalCardToScheme_14tokenRequestor6appURL26termsAndConditionsAccepted10completionySS_AA05TokenI0VSSSbySSSg_AA0A5ErrorVSgtctF">addDigitalCardToScheme(_:<wbr>tokenRequestor:<wbr>appURL:<wbr>termsAndConditionsAccepted:<wbr>completion:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Add digital card to scheme for a given cardID</p>
-<div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    <p>This method requires D1Task to be configured first by calling <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF">D1Task.configure(_:completion:)</a></code> with <code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV04cardB0ACyFZ">ConfigParams.cardConfig()</a></code>. Otherwise, NSInvalidArgumentException will be thrown.</p>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addDigitalCardToScheme</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                                   <span class="nv">tokenRequestor</span><span class="p">:</span> <span class="kt"><a href="../Structs/TokenRequestor.html">TokenRequestor</a></span><span class="p">,</span>
-                                   <span class="nv">appURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                                   <span class="nv">termsAndConditionsAccepted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-                                   <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>cardID</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>card identifier</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>tokenRequestor</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>the target token requestor that user has selected.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>appURL</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Your app’s custom URL scheme that the Token Requestor calls back upon completion of tokenization flow to return the user to where they started their journey.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>termsAndConditionsAccepted</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Terms and conditions accepted by user. Only applicable for Visa card scheme.
-Value set by the issuer to indicate to the token requestor whether or not the customer already accepted the issuer terms and conditions up-front. Required for Secure Remote Commerce.
-If true, the token requestor can suppress displaying terms and conditions to the customer and just submit the terms and conditions GUID to Visa as though the customer has already accepted the terms and conditions.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns push provisioning URL String. Otherwise, it returns error details. The push provisioning URL String is used to open and pass the information the Token Requestor App.</p>
                                 </div>
                               </td>
                             </tr>
