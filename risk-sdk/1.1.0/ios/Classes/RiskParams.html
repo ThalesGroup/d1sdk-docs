@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RiskParams Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RiskParams" class="dashAnchor"></a>
+    <a title="RiskParams Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">RiskSDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">D1 Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RiskParams Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task/Components.html">– Components</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RiskParams.html">RiskParams</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error.html">D1Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error/Code.html">– Code</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RiskParams</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RiskParams</span></code></pre>
+
+                </div>
+              </div>
+            <p>An object that encapsulates all parameters required for risk assessment.</p>
+
+<p><b>Category - Risk API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Note:</p>
+
+<ul>
+<li>For UIKit application, integrator is recommended to use <code>init(view:placementName:placementPage:)</code>
+to initialize the parameter.</li>
+<li>For SwiftUI application, integrator is recommended to use <code>init()</code>
+or <code>init(placementName:placementPage:)</code> to initialize the parameter.
+Then, <code>registerSingleView(_:)</code> is used to register individual UI component.</li>
+</ul>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>1.0.0</p>
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC4viewSo6UIViewCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/view" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC4viewSo6UIViewCSgvp">view</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current view getting the events.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC13placementNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/placementName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC13placementNameSSSgvp">placementName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The placement name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">placementName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC13placementPageSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/placementPage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC13placementPageSiSgvp">placementPage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The placement page number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">placementPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC4view13placementName0E4PageACSo6UIViewCSg_SSSgSiSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(view:placementName:placementPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC4view13placementName0E4PageACSo6UIViewCSg_SSSgSiSgtcfc">init(view:<wbr>placementName:<wbr>placementPage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs a <code>RiskParams</code> object from the required inputs.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>If provided value of the argument is not supported by backend,
+backend might return error during risk assessment call.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?,</span>
+            <span class="nv">placementName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+            <span class="nv">placementPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current view getting the events. On most cases, this is
+<a href="https://developer.apple.com/documentation/uikit/uiviewcontroller">UIViewController</a>.
+<a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621460-view">view</a>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placementName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The placement name to identify the flow associated with the current page.
+Supported values (so far) are:</p>
+
+<ul>
+<li>&ldquo;CreateAccountMobile&rdquo;, for user registration page</li>
+<li>&ldquo;LoginMobile&rdquo;, for login page</li>
+<li>&ldquo;TransferFundsMobile&rdquo;, for transfer funds page</li>
+<li>&ldquo;GenericMobile&rdquo;, for generic page</li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placementPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number within the current flow.
+For single page flow, the value should be 1.
+For flow that spans multiple page, the value is the page number (1,2,3,&hellip;).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs a <code>RiskParams</code> object to be used for SwiftUI page.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This initializer should be used for SwiftUI page. Integrator
+must set <code><a href="../Classes/RiskParams.html#/s:2D110RiskParamsC13placementNameSSSgvp">placementName</a></code> and <code><a href="../Classes/RiskParams.html#/s:2D110RiskParamsC13placementPageSiSgvp">placementPage</a></code>
+before passing the instance into <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC12startAnalyze_10completionyAA10RiskParamsC_yAA0A5ErrorVSgctF">D1Task.startAnalyze(_:completion:)</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC13placementName0D4PageACSSSg_SiSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(placementName:placementPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC13placementName0D4PageACSSSg_SiSgtcfc">init(placementName:<wbr>placementPage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs a <code>RiskParams</code> object to be used for SwiftUI page.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This initializer should be used for SwiftUI page.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">placementName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                        <span class="nv">placementPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placementName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The placement name to identify the flow associated with the current page.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placementPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page number within the current flow.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC18registerSingleViewyySo6UIViewCF"></a>
+                    <a name="//apple_ref/swift/Method/registerSingleView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC18registerSingleViewyySo6UIViewCF">registerSingleView(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To register listener to <a href="https://developer.apple.com/documentation/uikit/uiview">UIView</a> used in SwiftUI page.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>The listener is used for profiling user activity. SwiftUI components, e.g.
+<a href="https://developer.apple.com/documentation/swiftui/textfield">TextField</a> and
+<a href="https://developer.apple.com/documentation/swiftui/button">Button</a>, do not allow
+listener registration directly. For this reason, these components must be
+replaced with their UIKit equivalent, e.g.
+<a href="https://developer.apple.com/documentation/uikit/uitextfield">UITextField</a> and
+<a href="https://developer.apple.com/documentation/uikit/uibutton">UIButton</a>.
+<a href="https://developer.apple.com/documentation/swiftui/uiviewrepresentable">UIViewRepresentable</a>
+pattern is used to allow access to the UIKit component.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerSingleView</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <a href="https://developer.apple.com/documentation/uikit/uiview">UIView</a>
+used in SwiftUI page.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC20unregisterSingleViewyySo6UIViewCF"></a>
+                    <a name="//apple_ref/swift/Method/unregisterSingleView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC20unregisterSingleViewyySo6UIViewCF">unregisterSingleView(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To unregister listener to <a href="https://developer.apple.com/documentation/uikit/uiview">UIView</a> used in SwiftUI page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unregisterSingleView</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <a href="https://developer.apple.com/documentation/uikit/uiview">UIView</a>
+used in SwiftUI page.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

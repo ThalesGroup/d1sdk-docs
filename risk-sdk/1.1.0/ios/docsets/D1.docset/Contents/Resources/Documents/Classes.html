@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">RiskSDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">D1 Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/D1Task/Components.html">– Components</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/RiskParams.html">RiskParams</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/D1Error.html">D1Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/D1Error/Code.html">– Code</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/end%20of%20internal%20usage"></a>
+                <a name="//apple_ref/swift/Section/end of internal usage" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/end%20of%20internal%20usage"></a>
+                  <h3 class="section-name"><span>end of internal usage</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC"></a>
+                    <a name="//apple_ref/swift/Class/D1Task" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC">D1Task</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Main class for D1 SDK use cases.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>It is recommended to initialize <code>D1Task</code> as soon as the application is
+launched or the earliest possible time.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Risk API contains session ID internally. The session ID is used by backend
+to identify the user&rsquo;s activity. The lifecycle of session ID is linked with <code>D1Task</code>
+lifecycle, i.e. one <code>D1Task</code> instance use same session ID for all the use cases.</p>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>1.0.0</p>
+
+</div>
+
+                        <a href="Classes/D1Task.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1Task</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D110RiskParamsC"></a>
+                    <a name="//apple_ref/swift/Class/RiskParams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D110RiskParamsC">RiskParams</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An object that encapsulates all parameters required for risk assessment.</p>
+
+<p><b>Category - Risk API</b></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Note:</p>
+
+<ul>
+<li>For UIKit application, integrator is recommended to use <code>init(view:placementName:placementPage:)</code>
+to initialize the parameter.</li>
+<li>For SwiftUI application, integrator is recommended to use <code>init()</code>
+or <code>init(placementName:placementPage:)</code> to initialize the parameter.
+Then, <code>registerSingleView(_:)</code> is used to register individual UI component.</li>
+</ul>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>1.0.0</p>
+
+</div>
+
+                        <a href="Classes/RiskParams.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RiskParams</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
