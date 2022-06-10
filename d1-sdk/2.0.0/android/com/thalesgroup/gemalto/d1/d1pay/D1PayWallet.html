@@ -201,7 +201,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
          boolean&nbsp;isForced,
          <a href="../../../../../com/thalesgroup/gemalto/d1/d1pay/DeviceAuthenticationCallback.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">DeviceAuthenticationCallback</a>&nbsp;authCallback,
          <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;completionCallback)</code>
-<div class="block">Replenish the given card identifier</div>
+<div class="block">Replenish the given card identifier
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -236,7 +237,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                  <a href="../../../../../com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&nbsp;d1PayDigitalCard,
                  <a href="../../../../../com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
                  <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;callback)</code>
-<div class="block">Update D1 Pay digital card status for a <code>cardID</code></div>
+<div class="block">Update D1 Pay digital card status for a <code>cardID</code>
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is required before invoking this API.</div>
 </td>
 </tr>
 </table>
@@ -332,6 +334,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                            <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
 <div class="block">Add Digital Card for a given <code>cardID</code> for D1 Pay.
  If it is the first card, it will be automatically set as Default Card for Payment
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is required before invoking this API.
  <p>
  Integrator must register listener on <a href="../../../../../com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#registerD1PayDataChangedListener-com.thalesgroup.gemalto.d1.d1pay.D1PayDataChangedListener-"><code>registerD1PayDataChangedListener(D1PayDataChangedListener)</code></a>
  to receive notification when the operation is completed.</div>
@@ -354,7 +357,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                                      @NonNull
                                      <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../../com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a>&gt;&nbsp;callback)</pre>
-<div class="block">Get digital card state for a given <code>cardID</code> for D1 Pay.</div>
+<div class="block">Get digital card state for a given <code>cardID</code> for D1 Pay.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
@@ -399,7 +403,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                       <a href="../../../../../com/thalesgroup/gemalto/d1/d1pay/DeviceAuthenticationCallback.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">DeviceAuthenticationCallback</a>&nbsp;authCallback,
                       @NonNull
                       <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;completionCallback)</pre>
-<div class="block">Replenish the given card identifier</div>
+<div class="block">Replenish the given card identifier
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier.</dd>
@@ -421,7 +426,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                            @NonNull
                            <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../../../../../com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve D1 Pay digital card for a given <code>cardID</code>.</div>
+<div class="block">Retrieve D1 Pay digital card for a given <code>cardID</code>.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
@@ -438,7 +444,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>getDigitalCardList</h4>
 <pre>public&nbsp;void&nbsp;getDigitalCardList(@NonNull
                                <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&gt;&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve D1 Pay digital card list.</div>
+<div class="block">Retrieve D1 Pay digital card list.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for result, containing map of <code>cardID</code> and <code>D1PayDigitalCard</code>.
@@ -454,7 +461,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>getDefaultPaymentDigitalCard</h4>
 <pre>public&nbsp;void&nbsp;getDefaultPaymentDigitalCard(@NonNull
                                          <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve the card identifier <code>cardID</code> of default D1 Pay digital card.</div>
+<div class="block">Retrieve the card identifier <code>cardID</code> of default D1 Pay digital card.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for result, containing <code>cardID</code> if any or null if no default card.</dd>
@@ -471,7 +479,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cardID,
                                          @NonNull
                                          <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Set the DigitalizedCard as the default payment card.</div>
+<div class="block">Set the DigitalizedCard as the default payment card.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
@@ -488,7 +497,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>unsetDefaultPaymentDigitalCard</h4>
 <pre>public&nbsp;void&nbsp;unsetDefaultPaymentDigitalCard(@NonNull
                                            <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html?is-external=true" title="class or interface in java.lang">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Remove the current default D1 Pay digital card.</div>
+<div class="block">Remove the current default D1 Pay digital card.
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for result.
@@ -510,7 +520,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                               <a href="../../../../../com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
                               @NonNull
                               <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;&nbsp;callback)</pre>
-<div class="block">Update D1 Pay digital card status for a <code>cardID</code></div>
+<div class="block">Update D1 Pay digital card status for a <code>cardID</code>
+ <a href="../../../../../com/thalesgroup/gemalto/d1/D1Task.html#login-byte:A-com.thalesgroup.gemalto.d1.D1Task.Callback-"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
