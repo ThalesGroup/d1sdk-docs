@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CardDetailsUI Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/CardDetailsUI" class="dashAnchor"></a>
+    <a title="CardDetailsUI Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">D1SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">D1 Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        CardDetailsUI Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@D1@objc(cs)D1PINDisplayTextField">D1PINDisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@D1@objc(cs)D1SecureTextField">D1SecureTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task/Components.html">– Components</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CardAction.html">CardAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardActivationMethod.html">CardActivationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAssetContentType.html">CardAssetContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardDigitizationState.html">CardDigitizationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardMimeType.html">CardMimeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardScheme.html">CardScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardState.html">CardState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CardAsset.html">CardAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardAssetContent.html">CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetails.html">CardDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetailsUI.html">CardDetailsUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardMetadata.html">CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardPINUI.html">CardPINUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams.html">ConfigParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error.html">D1Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DigitalCard.html">DigitalCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntryUI.html">EntryUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProvisioningMethod.html">ProvisioningMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TokenRequestor.html">TokenRequestor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CardDetailsUI</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CardDetailsUI</span></code></pre>
+
+                </div>
+              </div>
+            <p>A type to represent the UI component required to display the card details securely.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV12panTextField010expiryDatefG003cvvfG0014cardHolderNamefG0AcA0a7DisplayfG0CSg_A3Jtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(panTextField:expiryDateTextField:cvvTextField:cardHolderNameTextField:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV12panTextField010expiryDatefG003cvvfG0014cardHolderNamefG0AcA0a7DisplayfG0CSg_A3Jtcfc">init(panTextField:<wbr>expiryDateTextField:<wbr>cvvTextField:<wbr>cardHolderNameTextField:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer to construct a CardDetailsUI.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n"><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV12panTextFieldAA0a7DisplayfG0CSgvp">panTextField</a></span> <span class="nv">pan</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?,</span>
+            <span class="n"><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV19expiryDateTextFieldAA0a7DisplaygH0CSgvp">expiryDateTextField</a></span> <span class="nv">expiryDate</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?,</span>
+            <span class="n"><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV12cvvTextFieldAA0a7DisplayfG0CSgvp">cvvTextField</a></span> <span class="nv">cvv</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?,</span>
+            <span class="n"><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV23cardHolderNameTextFieldAA0a7DisplayhI0CSgvp">cardHolderNameTextField</a></span> <span class="nv">cardHolderName</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>panTextField</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text field to display the PAN securely.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>expiryDateTextField</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text field to display the expiry date securely.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cvvTextField</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text field to display the CVV securely.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardHolderNameTextField</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text field to display the card holder name securely.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIVACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIVACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer to construct a CardDetailsUI.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV12panTextFieldAA0a7DisplayfG0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/panTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV12panTextFieldAA0a7DisplayfG0CSgvp">panTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The text field to display the PAN of card details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">panTextField</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV19expiryDateTextFieldAA0a7DisplaygH0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/expiryDateTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV19expiryDateTextFieldAA0a7DisplaygH0CSgvp">expiryDateTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The text field to display the expiry date of card details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">expiryDateTextField</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV12cvvTextFieldAA0a7DisplayfG0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cvvTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV12cvvTextFieldAA0a7DisplayfG0CSgvp">cvvTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The text field to display the CVV of card details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cvvTextField</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV23cardHolderNameTextFieldAA0a7DisplayhI0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cardHolderNameTextField" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV23cardHolderNameTextFieldAA0a7DisplayhI0CSgvp">cardHolderNameTextField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The text field to display the card holder name of card details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cardHolderNameTextField</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV21panSeparatorCharacterSSvp"></a>
+                    <a name="//apple_ref/swift/Property/panSeparatorCharacter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV21panSeparatorCharacterSSvp">panSeparatorCharacter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To set separator character for PAN every 4 characters, e.g.
+when the separator character is &lsquo; &rsquo;, PAN is displayed 1234 5678 1234 5678.
+By default, it is set to &lsquo; &rsquo;.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">panSeparatorCharacter</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV16panMaskCharacterSSvp"></a>
+                    <a name="//apple_ref/swift/Property/panMaskCharacter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV16panMaskCharacterSSvp">panMaskCharacter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To set mask character for PAN. It is used in <code><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV04maskbC0yyF">maskCardDetails()</a></code>. By default, it is set to &lsquo;*&rsquo;.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">panMaskCharacter</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV16expiryDateFormatSSvp"></a>
+                    <a name="//apple_ref/swift/Property/expiryDateFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV16expiryDateFormatSSvp">expiryDateFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To set date format used in expiry date. By default, it is set to &ldquo;MM/yy&rdquo;.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">expiryDateFormat</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV04showbC010completionyyAA0A5ErrorVSgc_tF"></a>
+                    <a name="//apple_ref/swift/Method/showCardDetails(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV04showbC010completionyyAA0A5ErrorVSgc_tF">showCardDetails(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To show card details securely.</p>
+
+<p>When <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC18displayCardDetails_04cardE2UI10completionySS_AA0deG0VyAA0A5ErrorVSgctF">D1Task.displayCardDetails(_:cardDetailsUI:completion:)</a></code> is called,
+it is showing the card details; thus there is no need to call this API.</p>
+
+<p>This API should only be called after successful <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC18displayCardDetails_04cardE2UI10completionySS_AA0deG0VyAA0A5ErrorVSgctF">D1Task.displayCardDetails(_:cardDetailsUI:completion:)</a></code>.
+It is convenient method to show the card details again after <code><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV04maskbC0yyF">maskCardDetails()</a></code> is called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">showCardDetails</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV04maskbC0yyF"></a>
+                    <a name="//apple_ref/swift/Method/maskCardDetails()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV04maskbC0yyF">maskCardDetails()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To mask card details.</p>
+
+<p>This API update the UI so that only last 4 digit and expiry date is visible.
+CVV and card holder name is removed.</p>
+
+<p>To show the card details, call <code><a href="../Structs/CardDetailsUI.html#/s:2D113CardDetailsUIV04showbC010completionyyAA0A5ErrorVSgc_tF">showCardDetails(completion:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">maskCardDetails</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D113CardDetailsUIV4wipeyyF"></a>
+                    <a name="//apple_ref/swift/Method/wipe()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D113CardDetailsUIV4wipeyyF">wipe()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Wipe the content of the displayed card details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">wipe</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 Thales Group. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
