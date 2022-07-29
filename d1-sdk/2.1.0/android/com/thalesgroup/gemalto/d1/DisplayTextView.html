@@ -236,7 +236,7 @@ extends com.thalesgroup.gemalto.d1.core.module.ui.D1CDisplayTextView</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/thalesgroup/gemalto/d1/DisplayTextView.html#insecureCopyToClipboard--">insecureCopyToClipboard</a></span>()</code>
-<div class="block">Copy the text securely to the clipboard</div>
+<div class="block">To copy the text into the system clipboard.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -345,7 +345,15 @@ extends com.thalesgroup.gemalto.d1.core.module.ui.D1CDisplayTextView</pre>
 <li class="blockList">
 <h4>insecureCopyToClipboard</h4>
 <pre>public&nbsp;void&nbsp;insecureCopyToClipboard()</pre>
-<div class="block">Copy the text securely to the clipboard</div>
+<div class="block">To copy the text into the system clipboard.
+ <p>
+     <font color="ORANGE">
+         <b>Warning:</b>
+     </font>
+     <p>
+         The clipboard is accessible system wide. Thus, the sensitive data copied (e.g. PAN, CVV) will be accessible to other apps. That's why we recommend not to use it on CVV nor expiration date.
+     </p>
+ </p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>insecureCopyToClipboard</code>&nbsp;in class&nbsp;<code>com.thalesgroup.gemalto.d1.core.module.ui.D1CDisplayTextView</code></dd>
