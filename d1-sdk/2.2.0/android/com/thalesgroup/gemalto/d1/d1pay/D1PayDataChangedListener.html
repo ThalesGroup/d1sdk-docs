@@ -123,11 +123,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public interface <span class="typeNameLabel">D1PayDataChangedListener</span></pre>
-<div class="block"><b>D1Pay only.</b>
+<div class="block"><b>For D1 Pay only.</b>
  <p>
- Listener for state changes on D1Pay Digital Card
+ Listener for state changes on D1 Pay digital card.
  <p>
- For more detail, refer to <a href="D1PayWallet.html#registerD1PayDataChangedListener(com.thalesgroup.gemalto.d1.d1pay.D1PayDataChangedListener)"><code>D1PayWallet.registerD1PayDataChangedListener(D1PayDataChangedListener)</code></a></div>
+ For more details, refer to <a href="D1PayWallet.html#registerD1PayDataChangedListener(com.thalesgroup.gemalto.d1.d1pay.D1PayDataChangedListener)"><code>D1PayWallet.registerD1PayDataChangedListener(D1PayDataChangedListener)</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="D1PayWallet.html#unRegisterD1PayDataChangedListener()"><code>D1PayWallet.unRegisterD1PayDataChangedListener()</code></a></dd>
@@ -157,7 +157,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDataChanged(java.lang.String,com.thalesgroup.gemalto.d1.card.State)">onDataChanged</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardId,
              <a href="../card/State.html" title="enum in com.thalesgroup.gemalto.d1.card">State</a>&nbsp;state)</code></th>
 <td class="colLast">
-<div class="block">It is triggered when a state changes on the D1Pay Digital Card</div>
+<div class="block">This is triggered when there is a state change on the D1 Pay digital card.</div>
 </td>
 </tr>
 </table>
@@ -187,12 +187,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardId,
                    <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                    <a href="../card/State.html" title="enum in com.thalesgroup.gemalto.d1.card">State</a>&nbsp;state)</pre>
-<div class="block">It is triggered when a state changes on the D1Pay Digital Card</div>
+<div class="block">This is triggered when there is a state change on the D1 Pay digital card.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardId</code> - D1 CardID on the data changes.
-               In certain cases, it can be null, e.g. first digitization on Visa card</dd>
-<dd><code>state</code> - new D1Pay Digital card state</dd>
+<dd><code>cardId</code> - D1 CardID contains the changes made on D1 Pay.
+               The data may be null in certain cases, for example, first digitization on the Visa card.</dd>
+<dd><code>state</code> - The new D1 Pay digital card state.</dd>
 </dl>
 </li>
 </ul>

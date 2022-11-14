@@ -457,7 +457,16 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for the result.
-                     When it succeeds, the returned argument of the <a href="D1Task.ConfigCallback.html#onSuccess(T)"><code>D1Task.ConfigCallback.onSuccess(Object)</code></a> is always null.</dd>
+                     When it succeeds, the returned argument of the <a href="D1Task.ConfigCallback.html#onSuccess(T)"><code>D1Task.ConfigCallback.onSuccess(Object)</code></a> is always null.
+                     <br/>Possible errors:<br/>
+                     <ul>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_NOT_SUPPORTED</code></a></li>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_D1PAY_UNRECOVERABLE"><code>D1Exception.ErrorCode.ERROR_D1PAY_UNRECOVERABLE</code></a></li>
+                     </ul></dd>
 <dd><code>configParams</code> - The configurations</dd>
 </dl>
 </li>
@@ -477,7 +486,12 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>issuerToken</code> - Issuer token received from the bank IDP</dd>
 <dd><code>callback</code> - The callback for the result.
-                    When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                    When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                     <br/>Possible errors:<br/>
+                     <ul>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                         <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     </ul></dd>
 </dl>
 </li>
 </ul>
@@ -493,7 +507,13 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -513,7 +533,14 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -533,7 +560,14 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -558,7 +592,14 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>cardDetailsUI</code> - The UI to display card details.</dd>
-<dd><code>callback</code> - The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</dd>
+<dd><code>callback</code> - The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.1.0</dd>
 </dl>
@@ -580,7 +621,14 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
                  When it succeeds, it returns the PIN (<a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a>).
-                 Otherwise, it returns the error details.</dd>
+                 Otherwise, it returns the error details.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - when one of the parameters is <code>null</code> or empty.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -607,7 +655,14 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dd><code>cardPINUI</code> - The ui to display card PIN</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
                   When it succeeds, it returns no error and the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a>'s argument is always null.
-                  Otherwise, it returns the error details.</dd>
+                  Otherwise, it returns the error details.
+                  <br/>Possible errors:<br/>
+                  <ul>
+                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                      <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                      <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                  </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - when one of the parameters is <code>null</code> or empty.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -631,7 +686,14 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
                  When it succeeds, it returns the <a href="card/CardActivationMethod.html" title="enum in com.thalesgroup.gemalto.d1.card"><code>CardActivationMethod</code></a>.
-                 Otherwise, it returns the error details.</dd>
+                 Otherwise, it returns the error details.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - when one of the parameters is <code>null</code> or empty.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -658,7 +720,15 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dd><code>entryUI</code> - The UI to display secure text entry. If activationMethod is <a href="card/CardActivationMethod.html#NOTHING"><code>CardActivationMethod.NOTHING</code></a>, construct <a href="EntryUI.html" title="class in com.thalesgroup.gemalto.d1"><code>EntryUI</code></a> with a null `SecureEditText`</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
                  When it succeeds, it returns no error.
-                 Otherwise, it returns the error details.</dd>
+                 Otherwise, it returns the error details.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NO_CARD_ACTIVATION_METHOD"><code>D1Exception.ErrorCode.ERROR_NO_CARD_ACTIVATION_METHOD</code></a></li>
+                 </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - when one of the parameters is <code>null</code> or empty.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -682,7 +752,16 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_NOT_SUPPORTED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -705,7 +784,16 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_NOT_SUPPORTED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                 </ul></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="ConfigParams.html#buildConfigCard(android.app.Activity,com.thalesgroup.gemalto.d1.card.OEMPayType,java.lang.String)"><code>ConfigParams.buildConfigCard(android.app.Activity, OEMPayType, String)</code></a>, 
 <a href="#handleCardResult(int,int,android.content.Intent)"><code>handleCardResult(int, int, Intent)</code></a></dd>
@@ -731,7 +819,16 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card ID</dd>
 <dd><code>callback</code> - The callback for result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CARD_NO_PENDING_IDV"><code>D1Exception.ErrorCode.ERROR_CARD_NO_PENDING_IDV</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -750,7 +847,15 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -775,7 +880,15 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dd><code>digitalCard</code> - The digital card received from <a href="#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getDigitalCardList(String, Callback)</code></a></dd>
 <dd><code>cardAction</code> - The card action to be performed: active, suspend or delete</dd>
 <dd><code>callback</code> - The callback for the result.
-                    When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                    When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                    <br/>Possible errors:<br/>
+                    <ul>
+                        <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                        <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                        <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                        <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                        <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                    </ul></dd>
 </dl>
 </li>
 </ul>
@@ -854,7 +967,15 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                 </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - when one of the parameter is null or empty</dd>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - when core module has not been configured</dd>
@@ -886,7 +1007,15 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dd><code>appURL</code> - The issuer app's custom URL that the token requestor calls back upon completion of digitization flow to return the user to where they started their journey</dd>
 <dd><code>tcsAccepted</code> - The terms and conditions accepted by user</dd>
 <dd><code>callback</code> - The callback for the result.
-                       When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                       When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                       <br/>Possible errors:<br/>
+                       <ul>
+                           <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                           <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                           <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                           <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                           <li><a href="D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                       </ul></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalArgumentException</a></code> - when one of the parameter is null or empty</dd>
 <dd><code><a href="https://developer.android.com/reference/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang" class="externalLink">IllegalStateException</a></code> - when core module has not been configured</dd>
@@ -909,7 +1038,11 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>token</code> - The latest push notification token</dd>
-<dd><code>callback</code> - The callback for the result</dd>
+<dd><code>callback</code> - The callback for the result
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                 </ul></dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.0.0</dd>
 </dl>
@@ -929,7 +1062,12 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>data</code> - The pushed data</dd>
-<dd><code>callback</code> - The callback for the result</dd>
+<dd><code>callback</code> - The callback for the result. If the String is not null, the message data refers to cardId required for replenishment
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.0.0</dd>
 </dl>

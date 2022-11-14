@@ -153,7 +153,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">addDigitalCard</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
               <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Add Digital Card for a given <code>cardID</code> for D1 Pay.</div>
+<div class="block">Adds a digital card for a given <code>cardID</code> for D1 Pay.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -161,14 +161,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">getCardDigitizationState</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                         <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Get digital card state for a given <code>cardID</code> for D1 Pay.</div>
+<div class="block">Gets the digital card state of a given <code>cardID</code> for D1 Pay.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultPaymentDigitalCard(com.thalesgroup.gemalto.d1.D1Task.Callback)">getDefaultPaymentDigitalCard</a></span>&#8203;(<a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Retrieve the card identifier <code>cardID</code> of default D1 Pay digital card.</div>
+<div class="block">Retrieves the card identifier <code>cardID</code> of default D1 Pay digital card.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -176,26 +176,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">getDigitalCard</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
               <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Retrieve D1 Pay digital card for a given <code>cardID</code>.</div>
+<div class="block">Retrieves D1 Pay digital card for a given <code>cardID</code>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDigitalCardList(com.thalesgroup.gemalto.d1.D1Task.Callback)">getDigitalCardList</a></span>&#8203;(<a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&gt;&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Retrieve D1 Pay digital card list.</div>
+<div class="block">Retrieves D1 Pay digital card list.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerD1PayDataChangedListener(com.thalesgroup.gemalto.d1.d1pay.D1PayDataChangedListener)">registerD1PayDataChangedListener</a></span>&#8203;(<a href="D1PayDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDataChangedListener</a>&nbsp;listener)</code></th>
 <td class="colLast">
-<div class="block">Register to receive notification on following events:
+<div class="block">Registers to receive notification for the following events:
  
-     Digitization is completed, by having state is Active
-     D1Pay Digital Card state is updated
-     Virtual/Physical Card is renewed
- </div>
+     Digitization is completed.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -205,7 +202,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
          <a href="DeviceAuthenticationCallback.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">DeviceAuthenticationCallback</a>&nbsp;authCallback,
          <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;completionCallback)</code></th>
 <td class="colLast">
-<div class="block">Replenish the given card identifier</div>
+<div class="block">To replenish the given card identifier.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -213,22 +210,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#replenishODA(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">replenishODA</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
             <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block"><b>VISA only.</b></div>
+<div class="block"><b>For Visa only.</b></div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reset(android.content.Context)">reset</a></span>&#8203;(<a href="https://developer.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content" class="externalLink">Context</a>&nbsp;context)</code></th>
 <td class="colLast">
-<div class="block">When the Mobile Payment Application - MPA receives an unrecoverable error <a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_UNRECOVERABLE"><code>D1Exception.ErrorCode.ERROR_D1PAY_UNRECOVERABLE</code></a>
- it is suggested to call this API to reset all of the internal local data and retry the operation again.</div>
+<div class="block">It is recommended to call this API when the Mobile Payment Application (MPA) receives an unrecoverable error <a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_UNRECOVERABLE"><code>D1Exception.ErrorCode.ERROR_D1PAY_UNRECOVERABLE</code></a>,
+ in order to reset all the internal local data, and retry the operation.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setContactlessTransactionAllowed(boolean)">setContactlessTransactionAllowed</a></span>&#8203;(boolean&nbsp;allowTransaction)</code></th>
 <td class="colLast">
-<div class="block">This API is used to allow/disallow Contactless Payment.</div>
+<div class="block">This API is used to enable contactless payment.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -236,7 +233,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultPaymentDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">setDefaultPaymentDigitalCard</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                             <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Set the DigitalizedCard as the default payment card.</div>
+<div class="block">Sets the DigitalizedCard as the default payment card.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -250,7 +247,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unRegisterD1PayDataChangedListener()">unRegisterD1PayDataChangedListener</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Unregister the D1Pay data changed listener</div>
+<div class="block">Unregisters D1PayDataChangedListener that has been registered previously</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -295,19 +292,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>registerD1PayDataChangedListener</h4>
 <pre class="methodSignature">void&nbsp;registerD1PayDataChangedListener&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                                       <a href="D1PayDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDataChangedListener</a>&nbsp;listener)</pre>
-<div class="block">Register to receive notification on following events:
+<div class="block">Registers to receive notification for the following events:
  <ul>
-     <li>Digitization is completed, by having state is Active</li>
-     <li>D1Pay Digital Card state is updated</li>
-     <li>Virtual/Physical Card is renewed</li>
+     <li>Digitization is completed. It is in the Active state.</li>
+     <li>D1Pay Digital Card state is updated.</li>
+     <li>Virtual/Physical Card is renewed.</li>
  </ul>
  <p>
  Note: <b><i>Only foreground applications will be notified</i></b>.
- <p>Therefore, application should update the token status not only when receiving this callback
- but also when the application launches or returns to the foreground.</div>
+ <p>Therefore, the application should update the token status not only when receiving this callback
+ but also when it launches or returns to the foreground.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>listener</code> - The callback</dd>
+<dd><code>listener</code> - The callback to receive the notification from SDK.</dd>
 </dl>
 </li>
 </ul>
@@ -318,7 +315,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>unRegisterD1PayDataChangedListener</h4>
 <pre class="methodSignature">void&nbsp;unRegisterD1PayDataChangedListener()</pre>
-<div class="block">Unregister the D1Pay data changed listener</div>
+<div class="block">Unregisters D1PayDataChangedListener that has been registered previously</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="D1PayDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.d1pay"><code>D1PayDataChangedListener</code></a></dd>
@@ -335,8 +332,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                     <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                     <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                     <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Add Digital Card for a given <code>cardID</code> for D1 Pay.
- If it is the first card, it will be automatically set as Default Card for Payment.
+<div class="block">Adds a digital card for a given <code>cardID</code> for D1 Pay.
+ If this is the first card, it will be automatically set as the default card for payment.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is required before invoking this API.
  </p>
@@ -345,10 +342,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  to receive notification when the operation is completed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
+<dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>callback</code> - The callback for the <b>intermediate</b> result.
-                 As it requires Push Notification, final status will be given on <a href="D1PayDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.d1pay"><code>D1PayDataChangedListener</code></a>.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 As this API requires a push notification, the final status will be given on <a href="D1PayDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.d1pay"><code>D1PayDataChangedListener</code></a>.
+                 The returned argument of <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_NO_PUSH_TOKEN"><code>D1Exception.ErrorCode.ERROR_D1PAY_NO_PUSH_TOKEN</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_DIGITIZATION_COMPLETED"><code>D1Exception.ErrorCode.ERROR_D1PAY_DIGITIZATION_COMPLETED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_DELETION_IN_PROGRESS"><code>D1Exception.ErrorCode.ERROR_D1PAY_DELETION_IN_PROGRESS</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -362,15 +370,22 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                               <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                               <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                               <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="../card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a>&gt;&nbsp;callback)</pre>
-<div class="block">Get digital card state for a given <code>cardID</code> for D1 Pay.
+<div class="block">Gets the digital card state of a given <code>cardID</code> for D1 Pay.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.
  </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
+<dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>callback</code> - The callback for the <a href="../card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card"><code>CardDigitizationState</code></a> state.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                 The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is non-null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_NOT_SUPPORTED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_DELETION_IN_PROGRESS"><code>D1Exception.ErrorCode.ERROR_D1PAY_DELETION_IN_PROGRESS</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -383,15 +398,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">static&nbsp;void&nbsp;reset&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                   <a href="https://developer.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content" class="externalLink">Context</a>&nbsp;context)
            throws <a href="../D1Exception.html" title="class in com.thalesgroup.gemalto.d1">D1Exception</a></pre>
-<div class="block">When the Mobile Payment Application - MPA receives an unrecoverable error <a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_UNRECOVERABLE"><code>D1Exception.ErrorCode.ERROR_D1PAY_UNRECOVERABLE</code></a>
- it is suggested to call this API to reset all of the internal local data and retry the operation again.</div>
+<div class="block">It is recommended to call this API when the Mobile Payment Application (MPA) receives an unrecoverable error <a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_UNRECOVERABLE"><code>D1Exception.ErrorCode.ERROR_D1PAY_UNRECOVERABLE</code></a>,
+ in order to reset all the internal local data, and retry the operation.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>context</code> - The application context</dd>
+<dd><code>context</code> - The application context.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../D1Exception.html" title="class in com.thalesgroup.gemalto.d1">D1Exception</a></code> - If error happens while resetting the local storage.
-                                                The application should stop calling D1 Pay API
-                                                and ask for technical support with detail log.</dd>
+<dd><code><a href="../D1Exception.html" title="class in com.thalesgroup.gemalto.d1">D1Exception</a></code> - If the error occurs while resetting the local storage,
+                                                it is recommended that the application to stop calling the D1 Pay API 
+                                                and ask for technical support with the detailed log.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY_UNRECOVERABLE"><code>D1Exception.ErrorCode.ERROR_D1PAY_UNRECOVERABLE</code></a></dd>
 </dl>
@@ -410,7 +425,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                <a href="DeviceAuthenticationCallback.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">DeviceAuthenticationCallback</a>&nbsp;authCallback,
                <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;completionCallback)</pre>
-<div class="block">Replenish the given card identifier
+<div class="block">To replenish the given card identifier.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.
  </p></div>
@@ -421,7 +436,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>authCallback</code> - The callback for device CVM (if needed).
                            <b>For VISA only!</b></dd>
 <dd><code>completionCallback</code> - The callback for the replenishment result.
-                           When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                           The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is null when the process is successful.
+                           <br/>Possible errors:<br/>
+                           <ul>
+                               <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+                               <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                               <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                           </ul></dd>
 </dl>
 </li>
 </ul>
@@ -435,16 +456,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                   <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                   <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                   <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block"><b>VISA only.</b>
+<div class="block"><b>For Visa only.</b>
  <p>
- Request Offline Data Authentication (ODA) replenishment for the given card.
+ Requests Offline Data Authentication (ODA) replenishment for the given card.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>callback</code> - The callback for the replenishment result.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_NOT_SUPPORTED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.2.0</dd>
 </dl>
@@ -460,15 +488,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                     <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                     <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                     <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve D1 Pay digital card for a given <code>cardID</code>.
+<div class="block">Retrieves D1 Pay digital card for a given <code>cardID</code>.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.
  </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
-<dd><code>callback</code> - The callback for result.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+<dd><code>cardID</code> - The card identifier.</dd>
+<dd><code>callback</code> - The callback for the result.
+                 The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is non-null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -480,14 +514,19 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>getDigitalCardList</h4>
 <pre class="methodSignature">void&nbsp;getDigitalCardList&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                         <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a>&gt;&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve D1 Pay digital card list.
+<div class="block">Retrieves D1 Pay digital card list.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.
  </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - The callback for result, containing map of <code>cardID</code> and <code>D1PayDigitalCard</code>.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+<dd><code>callback</code> - The callback for the result which contains the map of <code>cardID</code> and <code>D1PayDigitalCard</code>.
+                 The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is non-null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -499,13 +538,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h4>getDefaultPaymentDigitalCard</h4>
 <pre class="methodSignature">void&nbsp;getDefaultPaymentDigitalCard&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                                   <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve the card identifier <code>cardID</code> of default D1 Pay digital card.
+<div class="block">Retrieves the card identifier <code>cardID</code> of default D1 Pay digital card.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.
  </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - The callback for result, containing <code>cardID</code> if any or null if no default card.</dd>
+<dd><code>callback</code> - The callback for the result containing <code>cardID</code> if default card has been set previously, or null if it has not been set.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -519,7 +563,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                                   <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                                   <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                                   <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Set the DigitalizedCard as the default payment card.
+<div class="block">Sets the DigitalizedCard as the default payment card.
  <p>
  <a href="../D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], D1Task.Callback)</code></a> is not required before invoking this API.
  </p></div>
@@ -527,7 +571,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for result.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -546,7 +596,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for result.
-                 When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.</dd>
+                 The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is null when the process is successful.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_D1PAY"><code>D1Exception.ErrorCode.ERROR_D1PAY</code></a></li>
+                 </ul></dd>
 </dl>
 </li>
 </ul>
@@ -570,13 +624,21 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
+<dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>d1PayDigitalCard</code> - The digital card received from <a href="#getDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getDigitalCard(String, D1Task.Callback)</code></a>
-                         or <a href="#getDigitalCardList(com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getDigitalCardList(D1Task.Callback)</code></a></dd>
-<dd><code>cardAction</code> - The card action to be performed: active, suspend or delete</dd>
-<dd><code>callback</code> - The callback when the command is sent successfully to the server.
+                         or <a href="#getDigitalCardList(com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getDigitalCardList(D1Task.Callback)</code></a>.</dd>
+<dd><code>cardAction</code> - The card action to be performed: active, suspend or delete.</dd>
+<dd><code>callback</code> - The callback is returned when the command is sent successfully to the server.
                          The final status update is sent through push notification on <a href="D1PayDataChangedListener.html" title="interface in com.thalesgroup.gemalto.d1.d1pay"><code>D1PayDataChangedListener</code></a>.
-                         When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.</dd>
+                         The returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is non-null when the process is successful.
+                         <br/>Possible errors:<br/>
+                         <ul>
+                             <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                             <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                             <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                             <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                             <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                         </ul></dd>
 </dl>
 </li>
 </ul>
@@ -595,12 +657,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  </p>
 
  <p>
- The API allows manual trigger of payment, for example, when the user manually selects a card.
+ This API allows payment to be manually triggered when the end user selects a card manually.
  </p>
 
  <p>
- Set the listener by calling <a href="D1PayConfigParams.html#setManualModeContactlessTransactionListener(com.thalesgroup.gemalto.d1.d1pay.ContactlessTransactionListener)"><code>D1PayConfigParams.setManualModeContactlessTransactionListener(ContactlessTransactionListener)</code></a>
- to listen to transaction events:
+ Sets the listener by calling <a href="D1PayConfigParams.html#setManualModeContactlessTransactionListener(com.thalesgroup.gemalto.d1.d1pay.ContactlessTransactionListener)"><code>D1PayConfigParams.setManualModeContactlessTransactionListener(ContactlessTransactionListener)</code></a>
+ to listen to the transaction events:
  <ul>
      <li><a href="ContactlessTransactionListener.html#onAuthenticationRequired(com.thalesgroup.gemalto.d1.d1pay.VerificationMethod)"><code>ContactlessTransactionListener.onAuthenticationRequired(VerificationMethod)</code></a></li>
      <li><a href="ContactlessTransactionListener.html#onReadyToTap()"><code>ContactlessTransactionListener.onReadyToTap()</code></a></li>
@@ -611,7 +673,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
  </p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
+<dd><code>cardID</code> - The card identifier.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2.2.0</dd>
 </dl>
@@ -624,13 +686,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>setContactlessTransactionAllowed</h4>
 <pre class="methodSignature">void&nbsp;setContactlessTransactionAllowed&#8203;(boolean&nbsp;allowTransaction)</pre>
-<div class="block">This API is used to allow/disallow Contactless Payment.
+<div class="block">This API is used to enable contactless payment.
  <p>
- By default, Contactless Payment is always allowed, either when the Application is on Foreground
- or when the Service is on Background. By using this API, Application can block contactless
- payment for any transaction, unless explicitly requested by End User.
- Hence, for every transaction request, Application need
- to enable payment and once it is completed or cancelled, Application need to disable it again.</div>
+ Contactless payment is enabled by default whenever the application runs in the foreground 
+ or when the service runs in the background. By using this API, the application can block contactless
+ payment for any transaction, unless explicitly requested by the end user.
+ Hence, the application needs to enable payment for every transaction request 
+ and disable it once the transaction has been completed or cancelled.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>allowTransaction</code> - set to <code>false</code> to forbid contactless payment.</dd>

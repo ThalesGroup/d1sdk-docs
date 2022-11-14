@@ -174,57 +174,45 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_CANCELLED">ERROR_CANCELLED</a></span></code></th>
-<td class="colLast">
-<div class="block">User cancelled the operation</div>
-</td>
-</tr>
-<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_CARD">ERROR_CARD</a></span></code></th>
 <td class="colLast">
 <div class="block">Errors encountered whilst executing card operations.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_CARD_NO_PENDING_IDV">ERROR_CARD_NO_PENDING_IDV</a></span></code></th>
 <td class="colLast">
-<div class="block">No digital card is found with <a href="card/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>.</div>
+<div class="block">No pending activation digital card.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_CARD_NOT_FOUND">ERROR_CARD_NOT_FOUND</a></span></code></th>
 <td class="colLast">
 <div class="block">The provided cardID is not found.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_CORE">ERROR_CORE</a></span></code></th>
 <td class="colLast">
-<div class="block">Generic error of CORE module.</div>
+<div class="block">Error encountered whilst executing core operations.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_D1PAY">ERROR_D1PAY</a></span></code></th>
 <td class="colLast">
 <div class="block">Errors encountered whilst executing D1 Pay operations.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_D1PAY_DELETION_IN_PROGRESS">ERROR_D1PAY_DELETION_IN_PROGRESS</a></span></code></th>
 <td class="colLast">
 <div class="block">D1Pay Token Deletion is in progress.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_D1PAY_DIGITIZATION_COMPLETED">ERROR_D1PAY_DIGITIZATION_COMPLETED</a></span></code></th>
 <td class="colLast">
 <div class="block">Digitization has been completed for the cardID.</div>
-</td>
-</tr>
-<tr class="altColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_D1PAY_DIGITIZATION_IN_PROGRESS">ERROR_D1PAY_DIGITIZATION_IN_PROGRESS</a></span></code></th>
-<td class="colLast">
-<div class="block">Digitization is in progress.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -247,7 +235,9 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 </tr>
 <tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_NO_CARD_ACTIVATION_METHOD">ERROR_NO_CARD_ACTIVATION_METHOD</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">There was no card activation method found for this card.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_NOT_AUTHORIZED">ERROR_NOT_AUTHORIZED</a></span></code></th>
@@ -271,12 +261,6 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_RISK">ERROR_RISK</a></span></code></th>
 <td class="colLast">
 <div class="block">Risk assessment failed.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_TIMED_OUT">ERROR_TIMED_OUT</a></span></code></th>
-<td class="colLast">
-<div class="block">Timeout happened while executing the operation.</div>
 </td>
 </tr>
 </table>
@@ -364,26 +348,6 @@ the order they are declared.</div>
 <!--   -->
 </a>
 <h3>Enum Constant Detail</h3>
-<a id="ERROR_CANCELLED">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ERROR_CANCELLED</h4>
-<pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CANCELLED</pre>
-<div class="block">User cancelled the operation</div>
-</li>
-</ul>
-<a id="ERROR_TIMED_OUT">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ERROR_TIMED_OUT</h4>
-<pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_TIMED_OUT</pre>
-<div class="block">Timeout happened while executing the operation.</div>
-</li>
-</ul>
 <a id="ERROR_NOT_LOGGED_IN">
 <!--   -->
 </a>
@@ -391,7 +355,10 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_NOT_LOGGED_IN</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NOT_LOGGED_IN</pre>
-<div class="block">The user is not logged in or the login validity has expired. Please login before performing subsequent requests.</div>
+<div class="block">The user is not logged in or the login validity has expired. Please login before performing subsequent requests.
+
+ <p><b>NOTE:</b><br/>
+ Proceed to login the user before performing subsequent requests. If you were already logged in, you would need to login again.</div>
 </li>
 </ul>
 <a id="ERROR_NOT_AUTHORIZED">
@@ -401,7 +368,9 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_NOT_AUTHORIZED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NOT_AUTHORIZED</pre>
-<div class="block">The user is not authorized to perform this operation.
+<div class="block">The user is not authorized to perform this operation. Verify that the correct parameters are being requested.
+
+ <p><b>NOTE:</b><br/>
  Retry the operation again.</div>
 </li>
 </ul>
@@ -413,6 +382,8 @@ the order they are declared.</div>
 <h4>ERROR_DEVICE_ENVIRONMENT_UNSAFE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_DEVICE_ENVIRONMENT_UNSAFE</pre>
 <div class="block">The device environment is potentially unsafe. Please ensure that the device environment is safe.
+
+ <p><b>NOTE:</b><br/>
  Ensure that the device environment is safe.</div>
 </li>
 </ul>
@@ -423,9 +394,11 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_NOT_SUPPORTED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NOT_SUPPORTED</pre>
-<div class="block">The feature is not supported.
- <p>
- It could be because of variety of reasons, e.g. calling a VISA specific feature on a MasterCard</div>
+<div class="block">The feature is not supported. 
+ It could be because of variety of reasons, e.g. calling a VISA specific feature on a MasterCard, GooglePay not available.
+ 
+ <p><b>NOTE:</b><br/>
+ Integrator should display information to user on why it is not supported.</div>
 </li>
 </ul>
 <a id="ERROR_CARD_NOT_FOUND">
@@ -435,7 +408,10 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_CARD_NOT_FOUND</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NOT_FOUND</pre>
-<div class="block">The provided cardID is not found.</div>
+<div class="block">The provided cardID is not found.
+
+ <p><b>NOTE:</b><br/>
+ Integrator should ensure the cardID is correct.</div>
 </li>
 </ul>
 <a id="ERROR_CORE">
@@ -445,10 +421,10 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_CORE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CORE</pre>
-<div class="block">Generic error of CORE module.
+<div class="block">Error encountered whilst executing core operations. It is caused by storage (unlikely) or network failure.
 
  <p><b>NOTE:</b><br/>
- Integrator should check the underlying errors for more details.</div>
+ Integrator should check the underlying errors for more details. Ensure that the device has internet connection.</div>
 </li>
 </ul>
 <a id="ERROR_NO_CARD_ACTIVATION_METHOD">
@@ -458,6 +434,10 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_NO_CARD_ACTIVATION_METHOD</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NO_CARD_ACTIVATION_METHOD</pre>
+<div class="block">There was no card activation method found for this card.
+
+ <p><b>NOTE:</b><br/>
+ Integrator should first retrieve the activation method for this card.</div>
 </li>
 </ul>
 <a id="ERROR_RISK">
@@ -506,8 +486,9 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_CARD_NO_PENDING_IDV</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NO_PENDING_IDV</pre>
-<div class="block">No digital card is found with <a href="card/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>.
- <p>
+<div class="block">No pending activation digital card. No digital card is found with <a href="card/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>.
+
+ <p><b>NOTE:</b><br/>
  Integrator may check the state of the card by calling <a href="D1Task.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.getCardDigitizationState(String, D1Task.Callback)</code></a>.
 
  <p><b>Category - Card API</b></div>
@@ -524,7 +505,7 @@ the order they are declared.</div>
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
- Ensure d1pay configurations are correct and the device has internet connection.
+ Ensure D1 Pay configurations are correct and the device has internet connection.
 
  <p><b>Category - D1PAY API</b></div>
 </li>
@@ -539,7 +520,7 @@ the order they are declared.</div>
 <div class="block">Unrecoverable error happened while executing D1 Pay operation.
 
  <p><b>NOTE:</b><br/>
- Integrator is suggested to call <a href="d1pay/D1PayWallet.html#reset(android.content.Context)"><code>D1PayWallet.reset(Context)</code></a> to clear all D1Pay internal data.
+ Integrator should call <a href="d1pay/D1PayWallet.html#reset(android.content.Context)"><code>D1PayWallet.reset(Context)</code></a> to clear all D1Pay internal data.
 
  <p><b>Category - D1PAY API</b></div>
 <dl>
@@ -558,25 +539,7 @@ the order they are declared.</div>
 <div class="block">Push Token is not set yet. Push token is mandatory for D1Pay Digitization.
 
  <p><b>NOTE:</b><br/>
- Integrator is suggested to call <a href="D1Task.html#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.updatePushToken(String, D1Task.Callback)</code></a> before Digitization.
-
- <p><b>Category - D1PAY API</b></div>
-</li>
-</ul>
-<a id="ERROR_D1PAY_DIGITIZATION_IN_PROGRESS">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ERROR_D1PAY_DIGITIZATION_IN_PROGRESS</h4>
-<pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_DIGITIZATION_IN_PROGRESS</pre>
-<div class="block">Digitization is in progress. We cannot allow multiple digitization at the same time.
- End user must wait for 5 minutes to start another digitization
-
- <p><b>NOTE:</b><br/>
- Integrator is suggested to ask End User to simply wait for 5 minutes.
- <p>
- 5 minutes value is configurable on <a href="d1pay/D1PayConfigParams.html#setPollingEndTimeForDigitization(int)"><code>D1PayConfigParams.setPollingEndTimeForDigitization(int)</code></a>.
+ Integrator should call <a href="D1Task.html#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.updatePushToken(String, D1Task.Callback)</code></a> before Digitization.
 
  <p><b>Category - D1PAY API</b></div>
 </li>
@@ -591,7 +554,7 @@ the order they are declared.</div>
 <div class="block">Digitization has been completed for the cardID.
 
  <p><b>NOTE:</b><br/>
- Integrator is suggested to call <a href="d1pay/D1PayWallet.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCardDigitizationState(String, D1Task.Callback)</code></a>
+ Integrator should call <a href="d1pay/D1PayWallet.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCardDigitizationState(String, D1Task.Callback)</code></a>
  to check Digital Card State.
 
  <p><b>Category - D1PAY API</b></div>
@@ -610,7 +573,7 @@ the order they are declared.</div>
  End User kill the Application or Application Crash.
 
  <p><b>NOTE:</b><br/>
- Integrator is suggested to wait for Push Notification on <a href="d1pay/D1PayDataChangedListener.html#onDataChanged(java.lang.String,com.thalesgroup.gemalto.d1.card.State)"><code>D1PayDataChangedListener.onDataChanged(String, State)</code></a> for
+ Integrator should wait for Push Notification on <a href="d1pay/D1PayDataChangedListener.html#onDataChanged(java.lang.String,com.thalesgroup.gemalto.d1.card.State)"><code>D1PayDataChangedListener.onDataChanged(String, State)</code></a> for
  <a href="card/State.html#DELETED"><code>State.DELETED</code></a> before Digitization again.
 
  <p><b>Category - D1PAY API</b></div>
