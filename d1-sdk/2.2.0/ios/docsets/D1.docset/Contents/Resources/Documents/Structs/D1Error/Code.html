@@ -196,10 +196,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The user is not logged in or the login validity has expired.</p>
+                        <p>The user is not logged in or the login validity has expired.
+Please login before performing subsequent requests.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
-    Login before performing subsequent requests.
+    Proceed to login the user before performing subsequent requests.
+If you were already logged in, you would need to login again.
 
 </div>
 
@@ -228,7 +230,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The user is not authorized to perform this operation.</p>
+                        <p>The user is not authorized to perform this operation.
+Verify that the correct parameters are being requested.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Retry the operation again.
@@ -260,7 +263,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The device environment is potentially unsafe.</p>
+                        <p>The device environment is potentially unsafe.
+Please ensure that the device environment is safe.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Ensure that the device environment is safe.
@@ -292,7 +296,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Error encountered whilst executing core operations.</p>
+                        <p>Error encountered whilst executing core operations.
+It is caused by storage (unlikely) or network failure.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Integrator should check the underlying errors for more details.
@@ -428,7 +433,10 @@ Ensure risk credentials are correct and the device has internet connection.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Errors encountered whilst executing card operations.</p>
+                        <p>Errors encountered whilst executing card operations.
+For underlying error with domain <code>PKPassKitErrorDomain</code>, please
+refer to <a href="https://developer.apple.com/documentation/passkit/pkpasskiterrordomain">Apple documentation</a>
+for more details.</p>
 
 <p><b>Category - Card API</b></p>
 <div class="aside aside-note">
@@ -467,8 +475,8 @@ Ensure card configurations are correct and the device has internet connection.</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Device does not support making payment. It could be because of variety of reasons,
-e.g. hardware functionality, parental control restriction.</p>
+                        <p>The feature is not supported.
+It could be because of variety of reasons, e.g. hardware functionality, parental control restriction.</p>
 
 <p><b>Category - Card API</b></p>
 <div class="aside aside-note">
@@ -502,13 +510,14 @@ e.g. hardware functionality, parental control restriction.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>No digital card found that requires activation. No digital card is found with <code><a href="../../Enums/CardDigitizationState.html">CardDigitizationState</a></code>
+                        <p>No pending activation digital card. No digital card is found with <code><a href="../../Enums/CardDigitizationState.html">CardDigitizationState</a></code>
 equal to <code><a href="../../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO15pendingIDVLocalyA2CmF">CardDigitizationState.pendingIDVLocal</a></code> or <code><a href="../../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO16pendingIDVRemoteyA2CmF">CardDigitizationState.pendingIDVRemote</a></code>.</p>
 
 <p><b>Category - Card API</b></p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
-    Integrator may check the state by calling <code><a href="../../Classes/D1Task.html#/s:2D10A4TaskC21cardDigitizationState_10completionySS_yAA04CardD6ResultVSg_AA0A5ErrorVSgtctF">D1Task.cardDigitizationState(_:completion:)</a></code>.
+    Integrator may check the state of the card by calling
+<code><a href="../../Classes/D1Task.html#/s:2D10A4TaskC21cardDigitizationState_10completionySS_yAA04CardD6ResultVSg_AA0A5ErrorVSgtctF">D1Task.cardDigitizationState(_:completion:)</a></code>.
 
 </div>
 
@@ -537,10 +546,11 @@ equal to <code><a href="../../Enums/CardDigitizationState.html#/s:2D121CardDigit
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The required component is not configured</p>
+                        <p>The required component is not configured.</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Integrator should check the underlying errors for more details.
+Ensure the required component has been configured.
 
 </div>
 
@@ -573,6 +583,7 @@ equal to <code><a href="../../Enums/CardDigitizationState.html#/s:2D121CardDigit
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Integrator should check the underlying errors for more details.
+Ensure the params passed in the correct format.
 
 </div>
 

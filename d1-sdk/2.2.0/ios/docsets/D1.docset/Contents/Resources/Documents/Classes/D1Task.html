@@ -272,7 +272,15 @@ It is not mandatory to initialize all features in a single call.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the configuration is completed. When it succeeds, it return no error. Otherwise, it returns the list of errors.</p>
+                                  <p>The callback invoked when the configuration is completed. When it succeeds, it return no error. Otherwise, it returns the list of errors.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16cardNotSupportedyA2EmF">D1Error.Code.cardNotSupported</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -331,7 +339,14 @@ It is not mandatory to initialize all features in a single call.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the login process is completed.</p>
+                                  <p>The callback invoked when the login process is completed.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -377,7 +392,15 @@ It is not mandatory to initialize all features in a single call.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the logout process is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the logout process is completed. When it succeeds, it returns no error. Otherwise, it returns error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -437,7 +460,16 @@ Use this API to retrieve last 4 PAN digit value &amp; Card Art.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns card metadata. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns card metadata. Otherwise, it returns error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -498,7 +530,17 @@ The values can be used for online transaction.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns card details info. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns card details info. Otherwise, it returns error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -579,7 +621,17 @@ Integrator has full control of UI appearance and layout.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -644,7 +696,17 @@ Use this API to retrieve the PIN attached to a Physical Card.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the PIN. Otherwise, it returns the error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the PIN. Otherwise, it returns the error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -722,7 +784,17 @@ Use this API to retrieve the PIN attached to a Physical Card in a secure manner.
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the no error. Otherwise, it returns the error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the no error. Otherwise, it returns the error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -787,7 +859,16 @@ This API identifies the activation method to be used for activating a physical c
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the <code><a href="../Enums/CardActivationMethod.html">CardActivationMethod</a></code>. Otherwise, it returns the error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the <code><a href="../Enums/CardActivationMethod.html">CardActivationMethod</a></code>. Otherwise, it returns the error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -865,7 +946,19 @@ Use this API to activate a physical card for usage.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the no error. Otherwise, it returns the error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the no error. Otherwise, it returns the error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO22noCardActivationMethodyA2EmF">D1Error.Code.noCardActivationMethod</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO19uiComponentNotFoundyA2EmF">D1Error.Code.uiComponentNotFound</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -931,7 +1024,17 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns <code><a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a></code>. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns <code><a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a></code>. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -1009,7 +1112,18 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO9cancelledyA2EmF">D1Error.Code.cancelled</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -1075,7 +1189,18 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16cardNoPendingIDVyA2EmF">D1Error.Code.cardNoPendingIDV</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -1139,7 +1264,17 @@ Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &ls
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the digital card list. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the digital card list. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -1231,7 +1366,17 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the operation status. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the operation status. Otherwise, it returns error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
@@ -1295,7 +1440,17 @@ The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the Token Requestor list. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the Token Requestor list. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -1400,7 +1555,18 @@ If true, the token requestor can suppress displaying terms and conditions to the
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns push provisioning URL String. Otherwise, it returns error details. The push provisioning URL String is used to open and pass the information the Token Requestor App.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns push provisioning URL String. Otherwise, it returns error details. The push provisioning URL String is used to open and pass the information the Token Requestor App.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>

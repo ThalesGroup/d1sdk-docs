@@ -502,7 +502,15 @@ It is convenient method to show the card details again after <code><a href="../S
                               </td>
                               <td>
                                 <div>
-                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.</p>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+</ul></p>
                                 </div>
                               </td>
                             </tr>
