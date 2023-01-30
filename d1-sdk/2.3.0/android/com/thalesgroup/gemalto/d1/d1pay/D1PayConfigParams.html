@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":42,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -213,7 +213,7 @@ extends <a href="../D1Params.html" title="class in com.thalesgroup.gemalto.d1">D
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -283,27 +283,36 @@ extends <a href="../D1Params.html" title="class in com.thalesgroup.gemalto.d1">D
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNotification(android.app.Notification)">setNotification</a></span>&#8203;(<a href="https://developer.android.com/reference/android/app/Notification.html?is-external=true" title="class or interface in android.app" class="externalLink">Notification</a>&nbsp;notification)</code></th>
+<td class="colLast">
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">this API can be removed.</div>
+</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOnlinePinPriority(boolean)">setOnlinePinPriority</a></span>&#8203;(boolean&nbsp;priority)</code></th>
 <td class="colLast">
 <div class="block"><b>For Visa only</b>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPollingEndTimeForDigitization(int)">setPollingEndTimeForDigitization</a></span>&#8203;(int&nbsp;pollingEndTime)</code></th>
 <td class="colLast">
 <div class="block">Sets the polling end time which is used when there is an issue on push notifications.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPollingIntervalForDigitization(int)">setPollingIntervalForDigitization</a></span>&#8203;(int&nbsp;pollingInterval)</code></th>
 <td class="colLast">
 <div class="block">Sets the polling interval.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setReplenishAuthenticationUIStrings(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">setReplenishAuthenticationUIStrings</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;title,
                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;subtitle,
@@ -313,14 +322,14 @@ extends <a href="../D1Params.html" title="class in com.thalesgroup.gemalto.d1">D
 <div class="block"><b>For Visa only</b>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSingleTransactionAmountLimitForLVT(long)">setSingleTransactionAmountLimitForLVT</a></span>&#8203;(long&nbsp;singleLVTAmount)</code></th>
 <td class="colLast">
 <div class="block">Sets the single transaction amount limit for Low Value Transaction (LVT).</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTransitExperienceAllowed(boolean)">setTransitExperienceAllowed</a></span>&#8203;(boolean&nbsp;allowed)</code></th>
 <td class="colLast">
@@ -608,6 +617,25 @@ public static&nbsp;<a href="D1PayConfigParams.html" title="class in com.thalesgr
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>pollingEndTime</code> - The time when the polling ends (in seconds).</dd>
+</dl>
+</li>
+</ul>
+<a id="setNotification(android.app.Notification)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setNotification</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setNotification&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                            <a href="https://developer.android.com/reference/android/app/Notification.html?is-external=true" title="class or interface in android.app" class="externalLink">Notification</a>&nbsp;notification)</pre>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">this API can be removed. D1Pay does not depend on notification anymore since v2.3.0</div>
+</div>
+<div class="block">Sets the notification in order to start foreground service required by the SDK.
+ <p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>notification</code> - The notification to be shown.</dd>
 </dl>
 </li>
 </ul>

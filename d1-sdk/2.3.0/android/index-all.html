@@ -442,7 +442,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#DIGITIZATION_IN_PROGRESS">DIGITIZATION_IN_PROGRESS</a></span> - com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a></dt>
 <dd>
-<div class="block">Card digitization in progress.</div>
+<div class="block"><b>D1 Pay only.</b>
+ Card digitization in progress.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#DIGITIZED">DIGITIZED</a></span> - com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a></dt>
 <dd>
@@ -1297,15 +1298,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">PNG image type for image resource.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#processNotification(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processNotification(Map&lt;String, String&gt;, D1Task.Callback&lt;Map&lt;PushResponseKey, String&gt;&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
+<dd>
+<div class="block">Process the pushed data received from notification server</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#processPushMessage(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processPushMessage(Map&lt;String, String&gt;, D1Task.Callback&lt;String&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Please use new API: {<a href="com/thalesgroup/gemalto/d1/D1Task.html#processPushMessageAll(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.processPushMessageAll(Map, Callback)</code></a>}</div>
+<div class="deprecationComment">Please use new API: {<a href="com/thalesgroup/gemalto/d1/D1Task.html#processNotification(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.processNotification(Map, Callback)</code></a>}</div>
 </div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#processPushMessageAll(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processPushMessageAll(Map&lt;String, String&gt;, D1Task.Callback&lt;Map&lt;PushResponseKey, String&gt;&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
-<dd>
-<div class="block">Process the pushed data received from notification server</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/ProvisioningMethod.html" title="class in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">ProvisioningMethod</span></a> - Class in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
@@ -1465,6 +1466,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html#setMaxCumulativeAmountForLVT(long)">setMaxCumulativeAmountForLVT(long)</a></span> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayConfigParams</a></dt>
 <dd>
 <div class="block">Sets the maximum cumulative amount allowed for Low Value Transaction (LVT).</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html#setNotification(android.app.Notification)">setNotification(Notification)</a></span> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayConfigParams</a></dt>
+<dd>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">this API can be removed. D1Pay does not depend on notification anymore since v2.3.0</div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html#setOnlinePinPriority(boolean)">setOnlinePinPriority(boolean)</a></span> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayConfigParams</a></dt>
 <dd>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":42,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":42,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -357,20 +357,20 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processPushMessage(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processPushMessage</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;data,
-                  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;callback)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processNotification(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processNotification</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;data,
+                   <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Please use new API: {<a href="#processPushMessageAll(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>processPushMessageAll(Map, Callback)</code></a>}</div>
-</div>
+<div class="block">Process the pushed data received from notification server</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processPushMessageAll(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processPushMessageAll</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;data,
-                     <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;callback)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processPushMessage(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">processPushMessage</a></span>&#8203;(<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;data,
+                  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Process the pushed data received from notification server</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Please use new API: {<a href="#processNotification(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>processNotification(Map, Callback)</code></a>}</div>
+</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
@@ -1070,7 +1070,7 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
                                <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                                <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;callback)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Please use new API: {<a href="#processPushMessageAll(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>processPushMessageAll(Map, Callback)</code></a>}</div>
+<div class="deprecationComment">Please use new API: {<a href="#processNotification(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>processNotification(Map, Callback)</code></a>}</div>
 </div>
 <div class="block">Process the pushed data received from notification server</div>
 <dl>
@@ -1088,16 +1088,16 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 </dl>
 </li>
 </ul>
-<a id="processPushMessageAll(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">
+<a id="processNotification(java.util.Map,com.thalesgroup.gemalto.d1.D1Task.Callback)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>processPushMessageAll</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;processPushMessageAll&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                  <a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;data,
-                                  <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;callback)</pre>
+<h4>processNotification</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;processNotification&#8203;(<a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                                <a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;data,
+                                <a href="https://developer.android.com/reference/kotlin/androidx/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                                <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&gt;&nbsp;callback)</pre>
 <div class="block">Process the pushed data received from notification server</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
