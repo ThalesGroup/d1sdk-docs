@@ -151,6 +151,43 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
  </p>
  <p>
  <code>tokenRequestor</code> - Token requester information
+ </p>
+
+ <p></p>
+ Token class is also returned from getToken TPC api <a href="../provisioning/PushProvisioning.html#getToken(com.thalesgroup.tpcsdk.model.GetTokenInput,com.thalesgroup.tpcsdk.manager.listener.TPCSDKListener)"><code>PushProvisioning.getToken(GetTokenInput, TPCSDKListener)</code></a>
+
+ <p>
+ <code>id</code> - Unique identifier of the token allocated by the TSP Scheme
+ </p>
+ <p>
+ <code>state</code> - State of the token.
+ <br/>Google Pay states
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#GOOGLE_PAY_TOKEN_STATE_UNTOKENIZED"><code>CardDigitizationStatus.GOOGLE_PAY_TOKEN_STATE_UNTOKENIZED</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#GOOGLE_PAY_TOKEN_STATE_PENDING"><code>CardDigitizationStatus.GOOGLE_PAY_TOKEN_STATE_PENDING</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#GOOGLE_PAY_TOKEN_STATE_NEEDS_IDENTITY_VERIFICATION"><code>CardDigitizationStatus.GOOGLE_PAY_TOKEN_STATE_NEEDS_IDENTITY_VERIFICATION</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#GOOGLE_PAY_TOKEN_STATE_SUSPENDED"><code>CardDigitizationStatus.GOOGLE_PAY_TOKEN_STATE_SUSPENDED</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#GOOGLE_PAY_TOKEN_STATE_ACTIVE"><code>CardDigitizationStatus.GOOGLE_PAY_TOKEN_STATE_ACTIVE</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#GOOGLE_PAY_TOKEN_STATE_FELICA_PENDING_PROVISIONING"><code>CardDigitizationStatus.GOOGLE_PAY_TOKEN_STATE_FELICA_PENDING_PROVISIONING</code></a>
+ <br/>Samsung Pay states
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_ACTIVE"><code>CardDigitizationStatus.SAMSUNG_PAY_ACTIVE</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_DISPOSED"><code>CardDigitizationStatus.SAMSUNG_PAY_DISPOSED</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_EXPIRED"><code>CardDigitizationStatus.SAMSUNG_PAY_EXPIRED</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_PENDING_ENROLLED"><code>CardDigitizationStatus.SAMSUNG_PAY_PENDING_ENROLLED</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_PENDING_PROVISION"><code>CardDigitizationStatus.SAMSUNG_PAY_PENDING_PROVISION</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_SUSPENDED"><code>CardDigitizationStatus.SAMSUNG_PAY_SUSPENDED</code></a>
+ <br/>&nbsp;&nbsp;<a href="../provisioning/CardDigitizationStatus.html#SAMSUNG_PAY_PENDING_ACTIVATION"><code>CardDigitizationStatus.SAMSUNG_PAY_PENDING_ACTIVATION</code></a>
+ </p>
+ <p>
+ <code>suffix</code> - Last 4 digits of the token
+ </p>
+ <p>
+ <code>expiryDate</code> - null
+ </p>
+ <p>
+ <code>device</code> - null
+ </p>
+ <p>
+ <code>tokenRequestor</code> - null
  </p></div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
