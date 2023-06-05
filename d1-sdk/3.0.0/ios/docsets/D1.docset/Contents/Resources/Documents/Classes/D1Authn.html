@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D1Authn Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/D1Authn" class="dashAnchor"></a>
+    <a title="D1Authn Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">D1SDK-3DS</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">D1 Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        D1Authn Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/D1Authn.html">D1Authn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@D1@objc(cs)D1PINDisplayTextField">D1PINDisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1SecureTextField.html">D1SecureTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task/Components.html">– Components</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthnType.html">AuthnType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAction.html">CardAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardActivationMethod.html">CardActivationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAssetContentType.html">CardAssetContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardDigitizationState.html">CardDigitizationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardMimeType.html">CardMimeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardScheme.html">CardScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardState.html">CardState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PhysicalCardSetPINMode.html">PhysicalCardSetPINMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthnDelegate.html">AuthnDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CardAsset.html">CardAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardAssetContent.html">CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetails.html">CardDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetailsUI.html">CardDetailsUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardMetadata.html">CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardPINUI.html">CardPINUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams.html">ConfigParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error.html">D1Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DigitalCard.html">DigitalCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntryUI.html">EntryUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProvisioningMethod.html">ProvisioningMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushResponse.html">PushResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushResponse/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TokenRequestor.html">TokenRequestor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>D1Authn</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1Authn</span></code></pre>
+
+                </div>
+              </div>
+            <p>Entry point to access the Authn features.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A5AuthnC08enrolledB4TypeAA0bD0OSgyF"></a>
+                    <a name="//apple_ref/swift/Method/enrolledAuthnType()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A5AuthnC08enrolledB4TypeAA0bD0OSgyF">enrolledAuthnType()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get enrolled authn type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enrolledAuthnType</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/AuthnType.html">AuthnType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A5AuthnC06enrollB11Credentials_10completionyAA0B4TypeOSg_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/enrollAuthnCredentials(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A5AuthnC06enrollB11Credentials_10completionyAA0B4TypeOSg_yAA0A5ErrorVSgctF">enrollAuthnCredentials(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enroll the user&rsquo;s device for authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enrollAuthnCredentials</span><span class="p">(</span><span class="n">_</span> <span class="nv">preferredAuthnType</span><span class="p">:</span> <span class="kt"><a href="../Enums/AuthnType.html">AuthnType</a></span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>preferredAuthnType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>preferred authn type</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the enroll authn credential process is completed.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO5authnyA2EmF">D1Error.Code.authn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16authnNotEnrolledyA2EmF">D1Error.Code.authnNotEnrolled</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A5AuthnC05fetchB7RequestyyyAA0A5ErrorVSgcF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAuthnRequest(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A5AuthnC05fetchB7RequestyyyAA0A5ErrorVSgcF">fetchAuthnRequest(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch a pending authentication request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchAuthnRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the fetch authn request process is completed.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO5authnyA2EmF">D1Error.Code.authn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16authnNotEnrolledyA2EmF">D1Error.Code.authnNotEnrolled</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO17authnAccessDeniedyA2EmF">D1Error.Code.authnAccessDenied</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO20authnNoPendingEventsyA2EmF">D1Error.Code.authnNoPendingEvents</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2023 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
