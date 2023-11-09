@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/TPCError.swift",
+      "line": 34,
+      "symbol": "TPCError.requestId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK"
+}
