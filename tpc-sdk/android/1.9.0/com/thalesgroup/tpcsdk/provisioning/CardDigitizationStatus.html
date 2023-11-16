@@ -197,27 +197,37 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_ACTIVE">SAMSUNG_PAY_ACTIVE</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is fully registered on Samsung Pay and current state is "active".</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_DISPOSED">SAMSUNG_PAY_DISPOSED</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is deleted from Samsung Pay.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_EXPIRED">SAMSUNG_PAY_EXPIRED</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is registered on Samsung Pay, but its current status is "expired".</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_NOT_DIGITIZED">SAMSUNG_PAY_NOT_DIGITIZED</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is not yet digitized.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_PENDING_ACTIVATION">SAMSUNG_PAY_PENDING_ACTIVATION</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is registered on Samsung Pay but not activated yet.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
@@ -227,12 +237,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_PENDING_PROVISION">SAMSUNG_PAY_PENDING_PROVISION</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is not fully registered on Samsung Pay and current state is "pending provision".</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SAMSUNG_PAY_SUSPENDED">SAMSUNG_PAY_SUSPENDED</a></span></code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Card is registered on Samsung Pay and current state is "suspended".</div>
+</td>
 </tr>
 </table>
 </li>
@@ -453,6 +467,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_PENDING_PROVISION</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_PENDING_PROVISION</pre>
+<div class="block">Card is not fully registered on Samsung Pay and current state is "pending provision".</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_PENDING_PROVISION">Constant Field Values</a></dd>
@@ -466,6 +481,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_PENDING_ACTIVATION</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_PENDING_ACTIVATION</pre>
+<div class="block">Card is registered on Samsung Pay but not activated yet.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_PENDING_ACTIVATION">Constant Field Values</a></dd>
@@ -479,6 +495,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_ACTIVE</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_ACTIVE</pre>
+<div class="block">Card is fully registered on Samsung Pay and current state is "active".</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_ACTIVE">Constant Field Values</a></dd>
@@ -492,6 +509,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_SUSPENDED</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_SUSPENDED</pre>
+<div class="block">Card is registered on Samsung Pay and current state is "suspended".</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_SUSPENDED">Constant Field Values</a></dd>
@@ -505,6 +523,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_DISPOSED</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_DISPOSED</pre>
+<div class="block">Card is deleted from Samsung Pay.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_DISPOSED">Constant Field Values</a></dd>
@@ -518,6 +537,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_EXPIRED</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_EXPIRED</pre>
+<div class="block">Card is registered on Samsung Pay, but its current status is "expired".</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_EXPIRED">Constant Field Values</a></dd>
@@ -531,6 +551,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>SAMSUNG_PAY_NOT_DIGITIZED</h4>
 <pre>static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> SAMSUNG_PAY_NOT_DIGITIZED</pre>
+<div class="block">Card is not yet digitized. Call <a href="PushProvisioning.html#addCard(com.thalesgroup.tpcsdk.model.CardInfo,com.thalesgroup.tpcsdk.manager.listener.TPCSDKListener)"><code>PushProvisioning.addCard(CardInfo, TPCSDKListener)</code></a> method to digitized the card.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.tpcsdk.provisioning.CardDigitizationStatus.SAMSUNG_PAY_NOT_DIGITIZED">Constant Field Values</a></dd>
