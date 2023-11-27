@@ -581,8 +581,7 @@ the order they are declared.</div>
 <h4>ERROR_CANCELLED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CANCELLED</pre>
 <div class="block">The operation has been cancelled.
-
- <p><b>NOTE:</b><br/></div>
+ <a href="#getCode()"><code>getCode()</code></a> value: 10001.</div>
 </li>
 </ul>
 <a id="ERROR_NOT_LOGGED_IN">
@@ -593,6 +592,7 @@ the order they are declared.</div>
 <h4>ERROR_NOT_LOGGED_IN</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NOT_LOGGED_IN</pre>
 <div class="block">The user is not logged in or the login validity has expired. Please login before performing subsequent requests.
+ <a href="#getCode()"><code>getCode()</code></a> value: 10005.
 
  <p><b>NOTE:</b><br/>
  Proceed to <a href="D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.login(byte[], com.thalesgroup.gemalto.d1.D1Task.Callback)</code></a> before performing subsequent requests. If you were previously logged in, you will need to login again.</div>
@@ -606,6 +606,7 @@ the order they are declared.</div>
 <h4>ERROR_NOT_AUTHORIZED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NOT_AUTHORIZED</pre>
 <div class="block">This operation is not authorized. Verify the parameters requested are correct.
+ <a href="#getCode()"><code>getCode()</code></a> value: 10006.
 
  <p><b>NOTE:</b><br/>
  Retry the operation again.</div>
@@ -619,6 +620,7 @@ the order they are declared.</div>
 <h4>ERROR_DEVICE_ENVIRONMENT_UNSAFE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_DEVICE_ENVIRONMENT_UNSAFE</pre>
 <div class="block">The device environment is potentially unsafe, please ensure that the device environment is safe.
+ <a href="#getCode()"><code>getCode()</code></a> value: 10007.
 
  <p><b>NOTE:</b><br/>
  Ensure that the device environment is safe.</div>
@@ -636,6 +638,7 @@ the order they are declared.</div>
 </div>
 <div class="block">This feature is not supported.
  This may be due to several reasons such as calling a Visa-specific feature on a Mastercard, or Google Pay is not available.
+ <a href="#getCode()"><code>getCode()</code></a> value: 10008.
 
  <p><b>NOTE:</b><br/>
  Integrator should display information to user on why it is not supported.</div>
@@ -649,6 +652,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_NOT_FOUND</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NOT_FOUND</pre>
 <div class="block">The provided cardID is not found.
+ <a href="#getCode()"><code>getCode()</code></a> value: 10009.
 
  <p><b>NOTE:</b><br/>
  Integrator should ensure that the cardID is correct.</div>
@@ -663,6 +667,7 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NOT_ACTIVE</pre>
 <div class="block">The consumer/card is not in the active state.
  Please ensure that the card/consumer is in the active state.
+ <a href="#getCode()"><code>getCode()</code></a> value: 10010.
 
  <p><b>NOTE:</b><br/>
  Integrator should ensure that the card/consumer is in the active state.</div>
@@ -676,6 +681,7 @@ the order they are declared.</div>
 <h4>ERROR_CORE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CORE</pre>
 <div class="block">An error occurred whilst executing core operations. It is caused by a storage (unlikely) or a network failure.
+ <a href="#getCode()"><code>getCode()</code></a> value: 20001.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details. Ensure that the device is connected to the internet.</div>
@@ -689,6 +695,7 @@ the order they are declared.</div>
 <h4>ERROR_NO_CARD_ACTIVATION_METHOD</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_NO_CARD_ACTIVATION_METHOD</pre>
 <div class="block">There was no card activation method found for this card.
+ <a href="#getCode()"><code>getCode()</code></a> value: 20002.
 
  <p><b>NOTE:</b><br/>
  Integrator should first retrieve the activation method for this card.</div>
@@ -702,6 +709,7 @@ the order they are declared.</div>
 <h4>ERROR_UI_COMPONENT_NOT_FOUND</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_UI_COMPONENT_NOT_FOUND</pre>
 <div class="block">The required UI component is not found.
+ <a href="#getCode()"><code>getCode()</code></a> value: 20003.
 
  <p><b>NOTE:</b><br/>
  Integrator should provide the necessary UI component.</div>
@@ -715,6 +723,7 @@ the order they are declared.</div>
 <h4>ERROR_PIN_MISMATCH</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_PIN_MISMATCH</pre>
 <div class="block">There was a mismatch with the PIN inputs.
+ <a href="#getCode()"><code>getCode()</code></a> value: 20004.
 
  <p><b>NOTE:</b><br/>
  Integrator should ensure that the provided PINs are identical.</div>
@@ -728,6 +737,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_NOT_MANAGED_BY_D1</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NOT_MANAGED_BY_D1</pre>
 <div class="block">The consumer/card is not issued by D1.
+ <a href="#getCode()"><code>getCode()</code></a> value: 20005.
 
  <p><b>NOTE:</b><br/>
  The API only supports the consumerID on which the cards are issued by D1. Integrator should ensure the consumerID and cardID is issued by D1.</div>
@@ -745,6 +755,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_OPERATION_NOT_ALLOWED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_OPERATION_NOT_ALLOWED</pre>
 <div class="block">Operation (resume/suspend/replace) is not allowed on the card which is issued by D1. It could be due to the card state and reason.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40011.
 
  <p><b>NOTE:</b><br/>
  Integrator should display information to user that the card operation is not allowed because the current card state and reason.
@@ -764,6 +775,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_OPERATION_INVALID_REASON</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_OPERATION_INVALID_REASON</pre>
 <div class="block">Operation replace is not allowed on the card which is issued by D1. It could be due to the card state and reason.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40012.
 
  <p><b>NOTE:</b><br/>
  Please ensure that the reason provided is valid for the given operation. Please refer <code>Reason.getReplaceReasons()</code> for valid reasons.
@@ -783,6 +795,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_SETTINGS_OPERATION_NOT_ALLOWED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_SETTINGS_OPERATION_NOT_ALLOWED</pre>
 <div class="block">Operation updateCardLimit/updateCardControls settings is not allowed on the card which is issued by D1. Update is performed on null property from <code>getCardSettings</code> API.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40013.
 
  <p><b>NOTE:</b><br/>
  Please do not set value on null property obtained from <code>getCardSettings</code>. The null property indicate that the field is not supported/configured on backend.
@@ -802,6 +815,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_SETTINGS_INVALID_FORMAT</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_SETTINGS_INVALID_FORMAT</pre>
 <div class="block">Operation updateCardLimit/updateCardControls settings encounter error because the value is not following allowed format for the card which is issued by D1.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40014.
 
  <p><b>NOTE:</b><br/>
  Please ensure that all properties included in the card settings object follows allowed format. Please refer ISO 3166-1 alpha-2 format for allowed country list and  ISO 4217 alpha code format for allowed currency list.</div>
@@ -815,6 +829,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_SETTINGS_INVALID_VALUE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_SETTINGS_INVALID_VALUE</pre>
 <div class="block">Operation updateCardLimit/updateCardControls settings encounter error because the input format is correct however value is incorrect for the card which is issued by D1.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40015.
 
  <p><b>NOTE:</b><br/>
  Please ensure that all mandatory properties included in the card settings object having correct values.</div>
@@ -850,6 +865,7 @@ the order they are declared.</div>
 <h4>ERROR_RISK</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_RISK</pre>
 <div class="block">Risk assessment failed.
+ <a href="#getCode()"><code>getCode()</code></a> value: 30001.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details and also ensure that:
@@ -874,6 +890,8 @@ the order they are declared.</div>
 <h4>ERROR_CARD</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD</pre>
 <div class="block">Errors occurred whilst executing card operations.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40001.
+
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
  Ensure card configurations are correct and the device is connected to the internet.
@@ -889,6 +907,7 @@ the order they are declared.</div>
 <h4>ERROR_CARD_NO_PENDING_IDV</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_CARD_NO_PENDING_IDV</pre>
 <div class="block">No pending activation digital card. No digital card is found with <a href="card/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40003.
 
  <p><b>NOTE:</b><br/>
  Integrator may check the state of the card by calling <a href="D1Task.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.getCardDigitizationState(String, D1Task.Callback)</code></a>.
@@ -904,6 +923,7 @@ the order they are declared.</div>
 <h4>ERROR_SPAY_SETUP_NOT_COMPLETED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_SPAY_SETUP_NOT_COMPLETED</pre>
 <div class="block">Samsung Pay Setup has not been completed.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40004.
 
  <p><b>NOTE:</b><br/>
  Call <a href="card/D1PushWallet.html#activateSamsungPay()"><code>D1PushWallet.activateSamsungPay()</code></a>. End user need to sign-in into Samsung Pay app.
@@ -919,6 +939,7 @@ the order they are declared.</div>
 <h4>ERROR_SPAY_NEED_TO_UPDATE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_SPAY_NEED_TO_UPDATE</pre>
 <div class="block">Samsung Pay App requires update.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40005.
 
  <p><b>NOTE:</b><br/>
  Samsung Pay Setup has not been completed.
@@ -935,6 +956,7 @@ the order they are declared.</div>
 <h4>ERROR_SPAY_APP_NOT_FOUND</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_SPAY_APP_NOT_FOUND</pre>
 <div class="block">Samsung Pay App is not found on device.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40006.
 
  <p><b>NOTE:</b><br/>
  Ask End user to install Samsung Pay app.
@@ -951,6 +973,7 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_GPAY_NOT_SUPPORTED</pre>
 <div class="block">The feature is not supported.
  It could be because of Google Pay not available.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40007.
 
  <p><b>NOTE:</b><br/>
  Integrator should display information to the user.</div>
@@ -965,6 +988,7 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_SPAY_NOT_SUPPORTED</pre>
 <div class="block">The feature is not supported.
  It could be because of Samsung Pay not available or Device model is not Samsung.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40008.
 
  <p><b>NOTE:</b><br/>
  Integrator should display information to the user.</div>
@@ -978,6 +1002,7 @@ the order they are declared.</div>
 <h4>ERROR_GPAY</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_GPAY</pre>
 <div class="block">Errors encountered whilst executing Google Pay operations.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40009.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -994,6 +1019,7 @@ the order they are declared.</div>
 <h4>ERROR_SPAY</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_SPAY</pre>
 <div class="block">Errors encountered whilst executing Samsung Pay operations.
+ <a href="#getCode()"><code>getCode()</code></a> value: 40010.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1010,6 +1036,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY</pre>
 <div class="block">Errors occurred whilst executing D1 Pay operations.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50001.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1026,6 +1053,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_UNRECOVERABLE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_UNRECOVERABLE</pre>
 <div class="block">Unrecoverable error happened while executing D1 Pay operation.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50002.
 
  <p><b>NOTE:</b><br/>
  Integrator should call <a href="d1pay/D1PayWallet.html#reset(android.content.Context)"><code>D1PayWallet.reset(Context)</code></a> to clear all D1 Pay internal data.
@@ -1045,6 +1073,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_NO_PUSH_TOKEN</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_NO_PUSH_TOKEN</pre>
 <div class="block">Push Token is not set yet. Push token is mandatory for D1 Pay digitization.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50003.
 
  <p><b>NOTE:</b><br/>
  Integrator should call <a href="D1Task.html#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.updatePushToken(String, D1Task.Callback)</code></a> before digitization.
@@ -1060,6 +1089,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_DIGITIZATION_COMPLETED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_DIGITIZATION_COMPLETED</pre>
 <div class="block">Digitization has been completed for the cardID.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50005.
 
  <p><b>NOTE:</b><br/>
  Integrator should call <a href="d1pay/D1PayWallet.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCardDigitizationState(String, D1Task.Callback)</code></a>
@@ -1076,6 +1106,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_DELETION_IN_PROGRESS</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_DELETION_IN_PROGRESS</pre>
 <div class="block">D1 Pay Token Deletion is in progress.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50006.
  <p>
  This may happen rarely if digitization stopped in the middle for any reason, for example,
  End User may terminate the application or the application has crashed.
@@ -1095,6 +1126,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_MOBILE_GATEWAY</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_MOBILE_GATEWAY</pre>
 <div class="block">Error encountered in D1 Pay card mobile gateway operation.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50007.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1110,6 +1142,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_PROVISIONING_SERVICE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_PROVISIONING_SERVICE</pre>
 <div class="block">Error encountered in D1 Pay provisioning operation.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50008.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1125,6 +1158,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_PAYMENT_SERVICE</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_PAYMENT_SERVICE</pre>
 <div class="block">Error encountered in D1Pay payment operation.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50009.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1140,6 +1174,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_VISA_REPLENISHMENT_AUTHENTICATION</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_VISA_REPLENISHMENT_AUTHENTICATION</pre>
 <div class="block">Error encountered when D1Pay check whether VISA replenishment requires authentication.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50010.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1155,6 +1190,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_VISA_REPLENISHMENT_PREPARATION</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_VISA_REPLENISHMENT_PREPARATION</pre>
 <div class="block">An error occurred when D1 Pay prepares a Visa replenishment.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50011.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1170,6 +1206,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_CARD_SUSPENDED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_CARD_SUSPENDED</pre>
 <div class="block">D1 Pay card has been suspended before or during payment activation process.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50012.
 
  <p><b>NOTE:</b><br/>
  Integrator should notify user that the card has been suspended by the card issuer. Contact the card issuer for more information.
@@ -1185,6 +1222,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_CARD_NOT_EXISTING</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_CARD_NOT_EXISTING</pre>
 <div class="block">D1 Pay card has been deleted before or during payment activation process.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50013.
 
  <p><b>NOTE:</b><br/>
  Integrator should notify user that the card has been deleted by the card issuer. Contact the card issuer for more information.
@@ -1200,6 +1238,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_POS_COMM_DISCONNECTED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_POS_COMM_DISCONNECTED</pre>
 <div class="block">Error encountered when connection of the mobile device with POS terminal is lost while there is an APDU exchange.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50014.
 
  <p><b>NOTE:</b><br/>
  Integrator should notify user to try again.
@@ -1216,6 +1255,7 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_OUT_OF_PAYMENT_KEYS</pre>
 <div class="block">An error occurred when D1 Pay card does not have any payment keys left.
  This may happen when the handset is not connected to the internet for a long time.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50015.
 
  <p><b>NOTE:</b><br/>
  Integrator should notify user that the user need to ensure an internet connection is available. When it is available, the card should be replenished.
@@ -1231,6 +1271,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_NO_DEFAULT_CARD</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_NO_DEFAULT_CARD</pre>
 <div class="block">No D1 Pay card is set as default card.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50016.
 
  <p><b>NOTE:</b><br/>
  Integrator should display a message and a list of available cards to the user.
@@ -1246,6 +1287,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_BIOFP_CONDITION_NOT_SATISFIED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_BIOFP_CONDITION_NOT_SATISFIED</pre>
 <div class="block">An error occurred when there is no biometric identifier enrolled on device or the device screen lock type is changed to swipe.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50017.
 
  <p><b>NOTE:</b><br/>
  Integrator should display the message to the user.
@@ -1261,6 +1303,7 @@ the order they are declared.</div>
 <h4>ERROR_D1PAY_CPS_UPGRADE_OR_INIT_IN_PROGRESS</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_CPS_UPGRADE_OR_INIT_IN_PROGRESS</pre>
 <div class="block">An error occurred when the D1 Pay provisioning upgrade or initialization operation is ongoing.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50018.
 
  <p><b>NOTE:</b><br/>
  Integrator should inform the user to try it again after 30 seconds.
@@ -1278,6 +1321,7 @@ the order they are declared.</div>
 <div class="block">The feature is not supported.
  It could be because of D1 Pay not available.
  Either Biometric or Screen Lock should be enabled.
+ <a href="#getCode()"><code>getCode()</code></a> value: 50019.
 
  <p><b>NOTE:</b><br/>
  Integrator should display information to the user.</div>
@@ -1291,6 +1335,7 @@ the order they are declared.</div>
 <h4>ERROR_INVALID_ARGUMENT</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_INVALID_ARGUMENT</pre>
 <div class="block">Errors encountered whilst executing initialization.
+ <a href="#getCode()"><code>getCode()</code></a> value: 60002.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1310,6 +1355,7 @@ the order they are declared.</div>
 <h4>ERROR_AUTHN</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_AUTHN</pre>
 <div class="block">Authn operations failed.
+ <a href="#getCode()"><code>getCode()</code></a> value: 70001.
 
  <p><b>NOTE:</b><br/>
  Integrator should check the underlying errors for more details.
@@ -1325,6 +1371,7 @@ the order they are declared.</div>
 <h4>ERROR_AUTHN_NOT_ENROLLED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_AUTHN_NOT_ENROLLED</pre>
 <div class="block">Authn User is not enrolled.
+ <a href="#getCode()"><code>getCode()</code></a> value: 70002.
 
  <p><b>NOTE:</b><br/>
  Integrator should first do authn enroll.
@@ -1340,6 +1387,7 @@ the order they are declared.</div>
 <h4>ERROR_AUTHN_ACCESS_DENIED</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_AUTHN_ACCESS_DENIED</pre>
 <div class="block">Authn Access denied.
+ <a href="#getCode()"><code>getCode()</code></a> value: 70003.
 
  <p><b>NOTE:</b><br/>
  Integrator should check whether user authenticate with wrong credential(fingerprint, face etc.)
@@ -1355,6 +1403,7 @@ the order they are declared.</div>
 <h4>ERROR_AUTHN_USER_LOCKOUT</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_AUTHN_USER_LOCKOUT</pre>
 <div class="block">Authn User Locked Out.
+ <a href="#getCode()"><code>getCode()</code></a> value: 70004.
 
  <p><b>NOTE:</b><br/>
  Integrator should ask user to wait as user authenticate with wrong credential(fingerprint, face etc.) too many times
@@ -1370,6 +1419,7 @@ the order they are declared.</div>
 <h4>ERROR_AUTHN_INVALID_ENROLLMENT_TOKEN</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_AUTHN_INVALID_ENROLLMENT_TOKEN</pre>
 <div class="block">Authn Invalid Enrollment Token.
+ <a href="#getCode()"><code>getCode()</code></a> value: 70005.
 
  <p><b>NOTE:</b><br/>
  Integrator should ask user to try again to enroll to get a fresh enrollment token
