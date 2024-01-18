@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/Click2PayUserDetails.swift",
+      "line": 13,
+      "symbol": "Click2PayUserDetails.firstName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/Click2PayUserDetails.swift",
+      "line": 15,
+      "symbol": "Click2PayUserDetails.lastName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/Click2PayUserDetails.swift",
+      "line": 17,
+      "symbol": "Click2PayUserDetails.locale",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/Click2PayUserDetails.swift",
+      "line": 19,
+      "symbol": "Click2PayUserDetails.phoneNumberCountryCode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/Click2PayUserDetails.swift",
+      "line": 21,
+      "symbol": "Click2PayUserDetails.phoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK/TPCSDK/Models/Click2PayUserDetails.swift",
+      "line": 23,
+      "symbol": "Click2PayUserDetails.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/jenkins-tpc/workspace/TPCSDK_iOS_default/ios/TPCSDK"
+}
