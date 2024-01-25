@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public interface <span class="typeNameLabel">D1PushToECommerce</span></pre>
-<div class="block">Main interface of the push provision to eCommerce.</div>
+<div class="block">Main interface of the push provisioning to eCommerce.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>3.3.0</dd>
@@ -157,7 +157,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                  <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tncURL,
                  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Push Digital Card to MasterCard Click to Pay TokenRequestor.</div>
+<div class="block">Push Digital Card to Mastercard Click to Pay TokenRequestor.</div>
 </td>
 </tr>
 </table>
@@ -193,18 +193,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;tncURL,
                        <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                        <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Push Digital Card to MasterCard Click to Pay TokenRequestor. When it succeeds, tokenization has been completed. Integrator may call
+<div class="block">Push Digital Card to Mastercard Click to Pay TokenRequestor. When it is successful, the tokenization process is completed. Integrator may call
  <a href="../D1Task.html#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1Task.getDigitalCardList(String, D1Task.Callback)</code></a> to confirm.
- Before calling this Click to Pay API, integrator should display default value of consumerInfo, collect end user inputs of consumerInfo,
- show privacy and T&C contents, and make sure end user accept the contents.</div>
+ Before calling this Click to Pay API, integrator should display the default value of consumerInfo, collect the end user inputs of consumerInfo,
+ show privacy and T&C contents, and ensure that the end user accepts the contents.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
-<dd><code>consumerInfo</code> - <a href="ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> Consumer info object initialized with user inputs for first name, last name, language, phone number, country code and email.</dd>
-<dd><code>privacyURL</code> - URL container for Consumer's privacy consent status.</dd>
-<dd><code>tncURL</code> - URL container for Consumer's Terms and Conditions consent status.</dd>
+<dd><code>consumerInfo</code> - <a href="ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> The consumer info object is initialized initialized with user inputs for first name, last name, language, phone number, country code and email.</dd>
+<dd><code>privacyURL</code> - The URL container for consumer's privacy consent status.</dd>
+<dd><code>tncURL</code> - The URL container for consumer's Terms and Conditions status.</dd>
 <dd><code>callback</code> - The callback for the result.
-                     When it succeeds, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                     When it is successful, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                      <br/>Possible errors:<br/>
                      <ul>
                        <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
