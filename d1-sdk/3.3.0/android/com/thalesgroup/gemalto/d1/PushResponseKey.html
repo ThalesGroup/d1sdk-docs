@@ -180,12 +180,6 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 </td>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#MESSAGE_ID">MESSAGE_ID</a></span></code></th>
-<td class="colLast">
-<div class="block">The message identifier of the push message.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#MESSAGE_TYPE">MESSAGE_TYPE</a></span></code></th>
 <td class="colLast">
 <div class="block">This key is used to specify the message type.</div>
@@ -225,26 +219,19 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_MESSAGE_NOTIFICATION">TYPE_MESSAGE_NOTIFICATION</a></span></code></th>
-<td class="colLast">
-<div class="block">The message received is related to activities in card issued by D1.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_REPLENISHMENT">TYPE_REPLENISHMENT</a></span></code></th>
 <td class="colLast">
 <div class="block">A message is received to notify that a replenishment is required.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_TRANSACTION_NOTIFICATION">TYPE_TRANSACTION_NOTIFICATION</a></span></code></th>
 <td class="colLast">
 <div class="block">A message is received to notify that a new transaction has been performed recently.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_UNKNOWN">TYPE_UNKNOWN</a></span></code></th>
 <td class="colLast">
@@ -347,26 +334,12 @@ the order they are declared.</div>
 <a id="LAST_CALL_TIMESTAMP">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>LAST_CALL_TIMESTAMP</h4>
 <pre>public static final&nbsp;<a href="PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a> LAST_CALL_TIMESTAMP</pre>
 <div class="block">Last call timestamp value which is only available if the MESSAGE_TYPE is <a href="#TYPE_TRANSACTION_NOTIFICATION"><code>TYPE_TRANSACTION_NOTIFICATION</code></a>
  You can use this value when requesting a transaction history.</div>
-</li>
-</ul>
-<a id="MESSAGE_ID">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>MESSAGE_ID</h4>
-<pre>public static final&nbsp;<a href="PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a> MESSAGE_ID</pre>
-<div class="block">The message identifier of the push message.</div>
-<dl>
-<dt><span class="simpleTagLabel">Since:</span></dt>
-<dd>3.1.0</dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -445,7 +418,7 @@ the order they are declared.</div>
 <a id="TYPE_AUTHN">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>TYPE_AUTHN</h4>
 <pre>public static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_AUTHN</pre>
@@ -453,22 +426,6 @@ the order they are declared.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#com.thalesgroup.gemalto.d1.PushResponseKey.TYPE_AUTHN">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a id="TYPE_MESSAGE_NOTIFICATION">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>TYPE_MESSAGE_NOTIFICATION</h4>
-<pre>public static final&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> TYPE_MESSAGE_NOTIFICATION</pre>
-<div class="block">The message received is related to activities in card issued by D1.</div>
-<dl>
-<dt><span class="simpleTagLabel">Since:</span></dt>
-<dd>3.1.0</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../constant-values.html#com.thalesgroup.gemalto.d1.PushResponseKey.TYPE_MESSAGE_NOTIFICATION">Constant Field Values</a></dd>
 </dl>
 </li>
 </ul>
