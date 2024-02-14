@@ -635,7 +635,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <pre class="methodSignature">public&nbsp;void&nbsp;updateSamsungPay()</pre>
 <div class="block">An utility function to bring a user to update their Samsung Pay app.
 
- If the <a href="../manager/TPCManager.html#config(com.thalesgroup.tpcsdk.model.Config,com.thalesgroup.tpcsdk.manager.listener.TPCSDKListener)"><code>TPCManager.config(Config, TPCSDKListener)</code></a> status is <a href="../manager/exception/TPCSDKExceptionType.html#TPC_SPAY_APP_NEED_TO_UPDATE"><code>TPCSDKExceptionType.TPC_SPAY_APP_NEED_TO_UPDATE</code></a>,
+ If the <a href="#addCard(com.thalesgroup.tpcsdk.model.CardInfo,com.thalesgroup.tpcsdk.manager.listener.TPCSDKListener)"><code>addCard(CardInfo, TPCSDKListener)</code></a> status is <a href="../manager/exception/TPCSDKExceptionType.html#TPC_SPAY_APP_NEED_TO_UPDATE"><code>TPCSDKExceptionType.TPC_SPAY_APP_NEED_TO_UPDATE</code></a>,
  application can call this API to launch Samsung Pay update page.</div>
 </li>
 </ul>
@@ -649,7 +649,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <div class="block">An utility function to bring the Samsung Pay app to a state in which cards can be added.
  Samsung Pay might be either in stub only state or Samsung Account is not signed in state.
 
- If the <a href="../manager/TPCManager.html#config(com.thalesgroup.tpcsdk.model.Config,com.thalesgroup.tpcsdk.manager.listener.TPCSDKListener)"><code>TPCManager.config(Config, TPCSDKListener)</code></a> status is <a href="../manager/exception/TPCSDKExceptionType.html#TPC_SPAY_APP_SETUP_NOT_COMPLETED"><code>TPCSDKExceptionType.TPC_SPAY_APP_SETUP_NOT_COMPLETED</code></a>,
+ If the <a href="#addCard(com.thalesgroup.tpcsdk.model.CardInfo,com.thalesgroup.tpcsdk.manager.listener.TPCSDKListener)"><code>addCard(CardInfo, TPCSDKListener)</code></a> status is <a href="../manager/exception/TPCSDKExceptionType.html#TPC_SPAY_APP_SETUP_NOT_COMPLETED"><code>TPCSDKExceptionType.TPC_SPAY_APP_SETUP_NOT_COMPLETED</code></a>,
  application can call this API to launch Samsung Pay and user can sign in to the app.</div>
 </li>
 </ul>
