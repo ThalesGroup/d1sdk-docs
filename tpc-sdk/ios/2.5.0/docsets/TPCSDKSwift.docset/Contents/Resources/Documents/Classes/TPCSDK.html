@@ -1,0 +1,2735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TPCSDK Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/TPCSDK" class="dashAnchor"></a>
+    <a title="TPCSDK Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TPCSDKSwift 2.5.0 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TPCSDKSwift Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TPCSDK Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CardAsset.html">CardAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardDigitizationResult.html">CardDigitizationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardList.html">CardList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Click2PayUserDetails.html">Click2PayUserDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Device.html">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FundingCard.html">FundingCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenerateAddPaymentPassRequestInput.html">GenerateAddPaymentPassRequestInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GetTokenInput.html">GetTokenInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PendingActivationPass.html">PendingActivationPass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushMethod.html">PushMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TPCSDK.html">TPCSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Token.html">Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokenRequestor.html">TokenRequestor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokenRequestorAsset.html">TokenRequestorAsset</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CardAssetSize.html">CardAssetSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardScheme.html">CardScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IsCardDigitizedResult.html">IsCardDigitizedResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SdkVariant.html">SdkVariant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TPCError.html">TPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TokenState.html">TokenState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/RestClient">RestClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TPCSDKProvisionDelegate.html">TPCSDKProvisionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TPCSDK</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">TPCSDK</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SdkProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>TPCSDK for iOS</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/TPCSDK%20Properties"></a>
+                <a name="//apple_ref/swift/Section/TPCSDK Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/TPCSDK%20Properties"></a>
+                  <h3 class="section-name"><span>TPCSDK Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cpy)tpcsdkVersion"></a>
+                    <a name="//apple_ref/swift/Variable/tpcsdkVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cpy)tpcsdkVersion">tpcsdkVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the version of the TPCSDK</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">tpcsdkVersion</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/TPCSDK%20Configuration"></a>
+                <a name="//apple_ref/swift/Section/TPCSDK Configuration" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/TPCSDK%20Configuration"></a>
+                  <h3 class="section-name"><span>TPCSDK Configuration</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)reset"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)reset">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset SDK</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)configureWithVariant:issuerId:error:"></a>
+                    <a name="//apple_ref/swift/Method/configure(variant:issuerId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)configureWithVariant:issuerId:error:">configure(variant:<wbr>issuerId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configure SDK with <code><a href="../Enums/SdkVariant.html">SdkVariant</a></code>  and Issuer ID.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Using <code><a href="../Enums/SdkVariant.html">SdkVariant</a></code> and Issuer ID</p>
+
+</div><ul>
+<li><p>Possible errors:</p></li>
+<li><p><code>TPCError.invalidArgument</code></p></li>
+<li><p><code>TPCError.notSupported</code> </p></li>
+</ul>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
+   <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+    <span class="c1">// Override point for customization after application launch.</span>
+
+    <span class="k">let</span> <span class="nv">tpcVariant</span> <span class="o">=</span> <span class="kt">SdkVariant</span><span class="o">.</span><span class="kt">PROD</span>
+    <span class="k">let</span> <span class="nv">tpcIssuerId</span> <span class="o">=</span> <span class="s">"TPC_ISSUER"</span>
+    <span class="k">try</span><span class="p">?</span> <span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">variant</span><span class="p">:</span> <span class="n">tpcVariant</span><span class="p">,</span> <span class="nv">issuerId</span><span class="p">:</span> <span class="n">tpcIssuerId</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="kc">true</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="o">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">application</span><span class="p">:(</span><span class="kt">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="n">application</span> <span class="nv">didFinishLaunchingWithOptions</span><span class="p">:(</span><span class="kt">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">launchOptions</span> <span class="p">{</span>
+    <span class="c1">// Override point for [customization after application launch.</span>
+
+    <span class="kt">SdkVariant</span> <span class="n">tpcVariant</span> <span class="o">=</span> <span class="kt">SdkVariantPROD</span><span class="p">;</span>
+    <span class="kt">NSString</span> <span class="o">*</span> <span class="n">tpcIssuerId</span> <span class="o">=</span> <span class="s">@"TPC_ISSUER"</span><span class="p">;</span>
+    <span class="kt">NSError</span> <span class="o">*</span> <span class="n">error</span><span class="p">;</span>
+    <span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">configureWithVariant</span><span class="p">:</span><span class="n">tpcVariant</span> <span class="nv">issuerId</span><span class="p">:</span><span class="n">tpcIssuerId</span> <span class="nv">error</span><span class="p">:</span><span class="o">&amp;</span><span class="n">error</span><span class="p">];</span>
+
+    <span class="k">return</span> <span class="kt">YES</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="nv">variant</span><span class="p">:</span> <span class="kt"><a href="../Enums/SdkVariant.html">SdkVariant</a></span><span class="p">,</span>
+                             <span class="nv">issuerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>variant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Use SdkVariant.PPROD for Pre-Production server and SdkVariant.PROD for Production server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>issuerId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Issuer ID is provided to you during onboarding process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)configureWithUrl:issuerId:error:"></a>
+                    <a name="//apple_ref/swift/Method/configure(url:issuerId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)configureWithUrl:issuerId:error:">configure(url:<wbr>issuerId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configure SDK with Server URL and Issuer ID.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Using Server URL and Issuer ID</p>
+
+</div><ul>
+<li><p>Possible errors:</p></li>
+<li><p><code>TPCError.invalidArgument</code></p></li>
+<li><p><code>TPCError.notSupported</code> </p></li>
+</ul>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span>
+   <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+    <span class="c1">// Override point for customization after application launch.</span>
+
+    <span class="k">let</span> <span class="nv">tpcServerUrl</span> <span class="o">=</span> <span class="s">"https://hapi.dbp.thalescloud.io/mg/tpc"</span>
+    <span class="k">let</span> <span class="nv">tpcIssuerId</span>  <span class="o">=</span> <span class="s">"TPC_ISSUER"</span>
+    <span class="k">try</span><span class="p">?</span> <span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">tpcServerUrl</span><span class="p">,</span> <span class="nv">issuerId</span><span class="p">:</span> <span class="n">tpcIssuerId</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="kc">true</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="o">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">application</span><span class="p">:(</span><span class="kt">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="n">application</span> <span class="nv">didFinishLaunchingWithOptions</span><span class="p">:(</span><span class="kt">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">launchOptions</span> <span class="p">{</span>
+    <span class="c1">// Override point for [customization after application launch.</span>
+
+    <span class="kt">NSString</span> <span class="o">*</span> <span class="n">tpcServerUrl</span> <span class="o">=</span> <span class="s">@"https://hapi.dbp.thalescloud.io/mg/tpc"</span><span class="p">;</span>
+    <span class="kt">NSString</span> <span class="o">*</span> <span class="n">tpcIssuerId</span> <span class="o">=</span> <span class="s">@"TPC_ISSUER"</span><span class="p">;</span>
+    <span class="kt">NSError</span> <span class="o">*</span> <span class="n">error</span><span class="p">;</span>
+    <span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">configureWithUrl</span><span class="p">:</span><span class="n">tpcServerUrl</span> <span class="nv">issuerId</span><span class="p">:</span><span class="n">tpcIssuerId</span> <span class="nv">error</span><span class="p">:</span><span class="o">&amp;</span><span class="n">error</span><span class="p">];</span>
+
+    <span class="k">return</span> <span class="kt">YES</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">issuerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Provide server URL without trailing slash (example: <a href="https://hapi.dbp.thalescloud.io">https://hapi.dbp.thalescloud.io</a>).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>issuerId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Issuer ID is provided to you during onboarding process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Push%20Provisioning"></a>
+                <a name="//apple_ref/swift/Section/Push Provisioning" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Push%20Provisioning"></a>
+                  <h3 class="section-name"><span>Push Provisioning</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getCardDigitizationResultWithCard:primaryAccountIdentifier:primaryAccountNumberSuffix:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getCardDigitizationResult(card:primaryAccountIdentifier:primaryAccountNumberSuffix:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getCardDigitizationResultWithCard:primaryAccountIdentifier:primaryAccountNumberSuffix:completion:">getCardDigitizationResult(card:<wbr>primaryAccountIdentifier:<wbr>primaryAccountNumberSuffix:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get card digitization status for local and remote device.</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><p><code>TPCError.serverError</code></p></li>
+</ul><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>For AMEX and DISCOVER, it is mandatory to provide <code>scheme</code> and <code>primaryAccountNumberSuffix</code>.</p>
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getCardDigitizationResult</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="n">digitizeDetails</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getCardDigitizationResultWithCard</span><span class="p">:</span><span class="n">card</span>
+                 <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="kt">NULL</span>
+                               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">primaryAccountIdentifier</span><span class="p">,</span>
+                                           <span class="kt">CardDigitizationResult</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">digitizeDetails</span><span class="p">,</span>
+                                           <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="p">}];</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Primary Account Identifier
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getCardDigitizationResult</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="n">digitizeDetails</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getCardDigitizationResultWithCard</span><span class="p">:</span><span class="n">card</span>
+                 <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="kt">NULL</span>
+                               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">primaryAccountIdentifier</span><span class="p">,</span>
+                                           <span class="kt">CardDigitizationResult</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">digitizeDetails</span><span class="p">,</span>
+                                           <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="p">}];</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Using Primary Account Identifier
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getCardDigitizationResult</span><span class="p">(</span><span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="n">cardIdentifier</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="n">digitizeDetails</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getCardDigitizationResultWithCard</span><span class="p">:</span><span class="kt">NULL</span>
+                 <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="n">cardIdentifier</span>
+                               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">primaryAccountIdentifier</span><span class="p">,</span>
+                                           <span class="kt">CardDigitizationResult</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">digitizeResult</span><span class="p">,</span>
+                                           <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getCardDigitizationResult</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                             <span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                             <span class="nv">primaryAccountNumberSuffix</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                             <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">digitizeDetails</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardDigitizationResult.html">CardDigitizationResult</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload, or <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Primary Account Identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Primary Account Identifier of the payment card</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountNumberSuffix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The last four or five digits of the card&rsquo;s number. This field is only used for AMEX/DISCOVER schemes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns digitizeDetails - See <code><a href="../Classes/CardDigitizationResult.html">CardDigitizationResult</a></code> and possible primaryAccountIdentifier. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getTokenWithInput:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getToken(input:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getTokenWithInput:completion:">getToken(input:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get token for local and remote device.</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><p><code>TPCError.deviceEnvironmentUnsafe</code></p></li>
+</ul><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>2.1.0</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Using <code><a href="../Classes/GetTokenInput.html">GetTokenInput</a></code> object initialized with last 4 digits of PAN or serial number provided by Apple Pay.</p>
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getToken</span><span class="p">(</span><span class="nv">input</span><span class="p">:</span> <span class="n">tokenInput</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">localPass</span><span class="p">,</span> <span class="n">remotePass</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getTokenWithInput</span><span class="p">:</span><span class="n">tokenInput</span>
+               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">PKPass</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">localPass</span><span class="p">,</span>
+                           <span class="kt">PKPass</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">remotePass</span><span class="p">,</span>
+                           <span class="kt">NSError</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getToken</span><span class="p">(</span><span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Classes/GetTokenInput.html">GetTokenInput</a></span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">localPass</span><span class="p">:</span> <span class="kt">PKPass</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">remotePass</span><span class="p">:</span> <span class="kt">PKPass</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/GetTokenInput.html">GetTokenInput</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns a local and remote <code>PKPass</code>. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)isCardDigitizedWithCard:primaryAccountIdentifier:primaryAccountNumberSuffix:completion:"></a>
+                    <a name="//apple_ref/swift/Method/isCardDigitized(card:primaryAccountIdentifier:primaryAccountNumberSuffix:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)isCardDigitizedWithCard:primaryAccountIdentifier:primaryAccountNumberSuffix:completion:">isCardDigitized(card:<wbr>primaryAccountIdentifier:<wbr>primaryAccountNumberSuffix:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This API is deprecated as it does not provide information about pending activation and Apple Watch status. Please use getCardDigitizationResult API instead.
+
+</div>
+
+<p>Check card digitization status with <code><a href="../Classes/FundingCard.html">FundingCard</a></code> or Primary Account Identifier.</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul><div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Display Add to Apple Wallet button if digitizeResult is <code><a href="../Enums/IsCardDigitizedResult.html#/c:@M@TPCSDKSwift@E@IsCardDigitizedResult@IsCardDigitizedResultCardNotDigitized">IsCardDigitizedResult.CardNotDigitized</a></code>.</p>
+
+</div><div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code>TPCSDK.getCardDigitizationResult(card:completion:)</code> for details of card digitization result on current device or an attached device.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>For AMEX and DISCOVER, it is mandatory to provide <code>scheme</code> and <code>primaryAccountNumberSuffix</code>.</p>
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">isCardDigitized</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">(</span><span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="n">digitizeResult</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+        <span class="k">switch</span> <span class="n">digitizeResult</span> <span class="p">{</span>
+           <span class="k">case</span> <span class="o">.</span><span class="kt">CardNotDigitized</span><span class="p">:</span>
+               <span class="c1">// TODO: Display Add to Apple Wallet button</span>
+               <span class="k">break</span>
+        <span class="k">default</span><span class="p">:</span> <span class="k">break</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">isCardDigitizedWithCard</span><span class="p">:</span><span class="n">card</span>
+       <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="kt">NULL</span>
+                     <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="kd">enum</span> <span class="kt">IsCardDigitizedResult</span> <span class="n">digitizeResult</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span><span class="p">(</span><span class="n">digitizeResult</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="kt">IsCardDigitizedResultCardNotDigitized</span><span class="p">:</span>
+           <span class="c1">// TODO: Display Add to Apple Wallet button</span>
+           <span class="k">break</span><span class="p">;</span>
+
+        <span class="k">default</span><span class="p">:</span> <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}];</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Primary Account Identifier
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">isCardDigitized</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="n">digitizeResult</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+
+        <span class="k">switch</span> <span class="n">digitizeResult</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="o">.</span><span class="kt">CardNotDigitized</span><span class="p">:</span>
+            <span class="c1">// TODO: Display Add to Apple Wallet button</span>
+            <span class="k">break</span>
+        <span class="k">default</span><span class="p">:</span> <span class="k">break</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">isCardDigitizedWithCard</span><span class="p">:</span><span class="n">card</span>
+       <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="kt">NULL</span>
+                     <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="kd">enum</span> <span class="kt">IsCardDigitizedResult</span> <span class="n">digitizeResult</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span><span class="p">(</span><span class="n">digitizeResult</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="kt">IsCardDigitizedResultCardNotDigitized</span><span class="p">:</span>
+           <span class="c1">// TODO: Display Add to Apple Wallet button</span>
+        <span class="k">break</span><span class="p">;</span>
+
+        <span class="k">default</span><span class="p">:</span> <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}];</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Using Primary Account Identifier
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">isCardDigitized</span><span class="p">(</span><span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="n">cardIdentifier</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">digitizeResult</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+
+    <span class="k">switch</span> <span class="n">digitizeResult</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="o">.</span><span class="kt">CardNotDigitized</span><span class="p">:</span>
+           <span class="c1">// TODO: Display Add to Apple Wallet button</span>
+        <span class="k">break</span>
+
+        <span class="k">default</span><span class="p">:</span>
+           <span class="c1">// TODO: Hide Add to Apple Wallet button</span>
+        <span class="k">break</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">isCardDigitizedWithCard</span><span class="p">:</span><span class="kt">NULL</span>
+       <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="n">cardIdentifier</span>
+                     <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">primaryAccountIdentifier</span><span class="p">,</span> <span class="kd">enum</span> <span class="kt">IsCardDigitizedResult</span> <span class="n">digitizeResult</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span><span class="p">(</span><span class="n">digitizeResult</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="kt">IsCardDigitizedResultCardNotDigitized</span><span class="p">:</span>
+        <span class="c1">// TODO: Display Add to Apple Wallet button</span>
+        <span class="k">break</span><span class="p">;</span>
+
+        <span class="k">default</span><span class="p">:</span>
+        <span class="c1">// TODO: Hide Add to Apple Wallet button</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"This API is deprecated as it does not provide information about pending activation and Apple Watch status. Please use getCardDigitizationResult API instead."</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">isCardDigitized</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                   <span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                   <span class="nv">primaryAccountNumberSuffix</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                   <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">digitizeResult</span><span class="p">:</span> <span class="kt"><a href="../Enums/IsCardDigitizedResult.html">IsCardDigitizedResult</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload, or <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Primary Account Identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Primary Account Identifier of the payment card</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountNumberSuffix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The last four or five digits of the card&rsquo;s number. This field is only used for AMEX/DISCOVER schemes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns digitizeResult - See <code><a href="../Enums/IsCardDigitizedResult.html">IsCardDigitizedResult</a></code> and possible primaryAccountIdentifier. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:provisionDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/provision(fromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:provisionDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:scheme:encryptedPayload:authorizationCode:provisionDelegate:">provision(fromController:<wbr>primaryAccountSuffix:<wbr>cardholderName:<wbr>scheme:<wbr>encryptedPayload:<wbr>authorizationCode:<wbr>provisionDelegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays an interface that lets users add cards to Apple Pay from within your app.</p>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">provision</span><span class="p">(</span><span class="nv">fromController</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span>
+           <span class="nv">primaryAccountSuffix</span><span class="p">:</span> <span class="s">"1234"</span><span class="p">,</span>
+                 <span class="nv">cardholderName</span><span class="p">:</span> <span class="s">"John Doe"</span><span class="p">,</span>
+                         <span class="nv">scheme</span><span class="p">:</span> <span class="kt">CardScheme</span><span class="o">.</span><span class="kt">Mastercard</span><span class="p">,</span>
+               <span class="nv">encryptedPayload</span><span class="p">:</span> <span class="s">"PKCS7 encrypted PAN"</span><span class="p">,</span>
+              <span class="nv">authorizationCode</span><span class="p">:</span> <span class="s">"code"</span><span class="p">,</span>
+              <span class="nv">provisionDelegate</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">provisionFromController</span><span class="p">:</span><span class="k">self</span>
+           <span class="nv">primaryAccountSuffix</span><span class="p">:</span><span class="s">@"1234"</span>
+                 <span class="nv">cardholderName</span><span class="p">:</span><span class="s">@"John Doe"</span>
+                         <span class="nv">scheme</span><span class="p">:</span><span class="kt">CardSchemeMastercard</span>
+               <span class="nv">encryptedPayload</span><span class="p">:</span><span class="s">@"PKCS7 encrypted PAN"</span>
+              <span class="nv">authorizationCode</span><span class="p">:</span><span class="s">@"code"</span>
+              <span class="nv">provisionDelegate</span><span class="p">:</span><span class="k">self</span><span class="p">];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">provision</span><span class="p">(</span><span class="n">fromController</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span>
+                             <span class="nv">primaryAccountSuffix</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">cardholderName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                             <span class="nv">scheme</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardScheme.html">CardScheme</a></span><span class="p">,</span>
+                             <span class="nv">encryptedPayload</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">provisionDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TPCSDKProvisionDelegate.html">TPCSDKProvisionDelegate</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The calling UIViewController</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountSuffix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Funding PAN suffix to be displayed is defined within the <code>primaryAccountSuffix</code> key.  This value should be 4 digits and will have dots prepended to indicate that it is a suffix.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardholderName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the person as shown on the card</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Enums/CardScheme.html">CardScheme</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encryptedPayload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card information encrypted in PKCS7</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provisionDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Protocols/TPCSDKProvisionDelegate.html">TPCSDKProvisionDelegate</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:provisionDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/provision(fromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:provisionDelegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)provisionFromController:primaryAccountSuffix:cardholderName:schemeString:encryptedPayload:authorizationCode:productId:primaryAccountIdentifier:provisionDelegate:">provision(fromController:<wbr>primaryAccountSuffix:<wbr>cardholderName:<wbr>schemeString:<wbr>encryptedPayload:<wbr>authorizationCode:<wbr>productId:<wbr>primaryAccountIdentifier:<wbr>provisionDelegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays an interface that lets users add cards to Apple Pay from within your app.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>In case of Amex or Discover scheme, the SDK can not retrieve <code>primaryAccountIdentifier</code> from the server. 
+You need to use the <code>getCardDigitizationResult</code> API to obtain a <code><a href="../Classes/CardDigitizationResult.html">CardDigitizationResult</a></code> object. 
+If either the <code>localPKPass</code> or <code>remotePKPass</code> properties of the <code><a href="../Classes/CardDigitizationResult.html">CardDigitizationResult</a></code> object are not nil, 
+then access the <code>primaryAccountIdentifier</code> property of the <a href="https://developer.apple.com/documentation/passkit/pksecureelementpass"><code>PKSecureElementPass</code></a> object.
+Pass the retrieved <code>primaryAccountIdentifier</code> to the provision API. </p>
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">provision</span><span class="p">(</span><span class="nv">fromController</span><span class="p">:</span> <span class="k">self</span><span class="p">,</span>
+           <span class="nv">primaryAccountSuffix</span><span class="p">:</span> <span class="s">"1234"</span><span class="p">,</span>
+                 <span class="nv">cardholderName</span><span class="p">:</span> <span class="s">"John Doe"</span><span class="p">,</span>
+                   <span class="nv">schemeString</span><span class="p">:</span> <span class="s">"MASTERCARD"</span><span class="p">,</span>
+               <span class="nv">encryptedPayload</span><span class="p">:</span> <span class="s">"PKCS7 encrypted PAN"</span><span class="p">,</span>
+              <span class="nv">authorizationCode</span><span class="p">:</span> <span class="s">"code"</span><span class="p">,</span>
+                      <span class="nv">productId</span><span class="p">:</span> <span class="s">"productId"</span><span class="p">,</span>
+       <span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="s">"primaryAccountIdentifier"</span><span class="p">,</span>
+              <span class="nv">provisionDelegate</span><span class="p">:</span> <span class="k">self</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">provisionFromController</span><span class="p">:</span><span class="k">self</span>
+           <span class="nv">primaryAccountSuffix</span><span class="p">:</span><span class="s">@"1234"</span>
+               <span class="nv">cardholderName</span><span class="p">:</span><span class="s">@"John Doe"</span>
+                 <span class="nv">schemeString</span><span class="p">:</span><span class="s">@"MASTERCARD"</span>
+             <span class="nv">encryptedPayload</span><span class="p">:</span><span class="s">@"PKCS7 encrypted PAN"</span>
+            <span class="nv">authorizationCode</span><span class="p">:</span><span class="s">@"code"</span>
+                    <span class="nv">productId</span><span class="p">:</span><span class="s">@"productId"</span>
+     <span class="nv">primaryAccountIdentifier</span><span class="p">:</span><span class="s">@"primaryAccountIdentifier"</span>                     
+            <span class="nv">provisionDelegate</span><span class="p">:</span><span class="k">self</span><span class="p">];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">provision</span><span class="p">(</span><span class="n">fromController</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span>
+                             <span class="nv">primaryAccountSuffix</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">cardholderName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                             <span class="nv">schemeString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">encryptedPayload</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                             <span class="nv">productId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                             <span class="nv">primaryAccountIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                             <span class="nv">provisionDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TPCSDKProvisionDelegate.html">TPCSDKProvisionDelegate</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The calling UIViewController</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountSuffix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Funding PAN suffix to be displayed is defined within the <code>primaryAccountSuffix</code> key.  This value should be 4 digits and will have dots prepended to indicate that it is a suffix.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardholderName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the person as shown on the card</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>schemeString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card&rsquo;s scheme. Could be <code>VISA</code>, <code>MASTERCARD</code> or others. NOTE: It has to be UPPERCASE string</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encryptedPayload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card information encrypted in PKCS7</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>productId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique identifier of the card product. This data can be retrieved from Bank&rsquo;s Card Management System. It is only applicable for domestic schemes. Maximum length is 32 characters.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryAccountIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An FPANID for the card. If this parameter is not provided, the SDK will automatically retrieve it from the server for non-Amex/non-Discover schemes. For Amex/Discover schemes, please refer to the <code>Note</code> section for additional instructions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provisionDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Protocols/TPCSDKProvisionDelegate.html">TPCSDKProvisionDelegate</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Wallet%20Extension"></a>
+                <a name="//apple_ref/swift/Section/Wallet Extension" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Wallet%20Extension"></a>
+                  <h3 class="section-name"><span>Wallet Extension</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)generateAddPaymentPassRequestForInput:completion:"></a>
+                    <a name="//apple_ref/swift/Method/generateAddPaymentPassRequestForInput(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)generateAddPaymentPassRequestForInput:completion:">generateAddPaymentPassRequestForInput(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate <code>PKAddPaymentPassRequest</code> for provisioning in Wallet Extension flow
+(callback <a href="https://developer.apple.com/documentation/passkit/pkissuerprovisioningextensionhandler/3571365-generateaddpaymentpassrequestfor">generateAddPaymentPassRequestForPassEntryWithIdentifier</a>).</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>Since 2.3.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">generateAddPaymentPassRequestForInput</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Classes/GenerateAddPaymentPassRequestInput.html">GenerateAddPaymentPassRequestInput</a></span><span class="p">,</span>
+        <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">addPaymentPassRequest</span><span class="p">:</span> <span class="kt">PKAddPaymentPassRequest</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The input parameters required to generate <code>PKAddPaymentPassRequest</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns <code>PKAddPaymentPassRequest</code>. Otherwise, it returns error details.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.internalInconsistency</code></li>
+<li><code>TPCError.deviceEnvironmentUnsafe</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/In-App%20Activation"></a>
+                <a name="//apple_ref/swift/Section/In-App Activation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/In-App%20Activation"></a>
+                  <h3 class="section-name"><span>In-App Activation</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getPendingActivationPassWithCard:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getPendingActivationPass(card:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getPendingActivationPassWithCard:completion:">getPendingActivationPass(card:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    This API is deprecated. Please use getToken API with serialNumber instead.
+
+</div>
+
+<p>Get pending activation payment pass from local and remote device</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><p><code>TPCError.serverError</code></p></li>
+</ul><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload</p>
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getPendingActivationPass</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">pendingActivationPass</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getPendingActivationPassWithCard</span><span class="p">:</span><span class="n">card</span>
+                              <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">PendingActivationPass</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">pendingActivationPass</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"This API is deprecated. Please use getToken API with serialNumber instead."</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPendingActivationPass</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">,</span>
+                                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">pendingActivationPass</span><span class="p">:</span> <span class="kt"><a href="../Classes/PendingActivationPass.html">PendingActivationPass</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/FundingCard.html">FundingCard</a></code>. Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload.<br></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns pendingActivationPass - See <code><a href="../Classes/PendingActivationPass.html">PendingActivationPass</a></code>. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)activatePassWithPass:card:authorizationCode:nonce:completion:"></a>
+                    <a name="//apple_ref/swift/Method/activatePass(pass:card:authorizationCode:nonce:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)activatePassWithPass:card:authorizationCode:nonce:completion:">activatePass(pass:<wbr>card:<wbr>authorizationCode:<wbr>nonce:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activate payment pass</p>
+
+<ul>
+<li>Possible errors: This method returns two possible types of errors: TPCError, which is returned from the SDK, and Error, which is returned directly from Apple&rsquo;s PKPassLibrary.activate.</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+<li><p><code>Error</code> Returns directly from <code>PKPassLibrary.activate</code></p></li>
+</ul><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Use PKPass from <code>TPCSDK.getPendingActivationPass</code> and <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload. Authorization code and nonce must be provided.</p>
+
+</div>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">activatePass</span><span class="p">(</span><span class="nv">pass</span><span class="p">:</span> <span class="n">localPass</span><span class="p">,</span>
+                    <span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">,</span>
+       <span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">authorizationCode</span><span class="p">,</span>
+                   <span class="nv">nonce</span><span class="p">:</span> <span class="n">nonce</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">success</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">activatePassWithPass</span><span class="p">:</span><span class="n">pass</span>
+                        <span class="nv">card</span><span class="p">:</span><span class="n">card</span>
+           <span class="nv">authorizationCode</span><span class="p">:</span><span class="n">code</span>
+                       <span class="nv">nonce</span><span class="p">:</span><span class="n">nonce</span>
+                  <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span> <span class="n">success</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">activatePass</span><span class="p">(</span><span class="nv">pass</span><span class="p">:</span> <span class="kt">PKPass</span><span class="p">,</span>
+                                <span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">,</span>
+                                <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">nonce</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code>PassKit.PKPass</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/FundingCard.html">FundingCard</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nonce</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Nonce</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, the success value is<code>true</code>. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Token%20Management"></a>
+                <a name="//apple_ref/swift/Section/Token Management" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Token%20Management"></a>
+                  <h3 class="section-name"><span>Token Management</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getPaymentPassesWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/getPaymentPasses(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getPaymentPassesWithCompletion:">getPaymentPasses(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Payment Passes from PKPassLibrary</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPaymentPasses</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">paymentPasses</span><span class="p">:</span> <span class="p">[</span><span class="kt">PKPass</span><span class="p">]?,</span>
+                                                     <span class="n">_</span> <span class="nv">remotePaymentPasses</span><span class="p">:</span> <span class="p">[</span><span class="kt">PKPaymentPass</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getTokensWithCard:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getTokens(card:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getTokensWithCard:completion:">getTokens(card:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the list of tokens for the given card</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Each <code><a href="../Classes/Token.html">Token</a></code> provides the method <code><a href="../Classes/Token.html#/c:@M@TPCSDKSwift@objc(cs)Token(py)isOnCurrentDevice">Token.isOnCurrentDevice</a></code> to identify the tokens is on current device (only for Apple Pay).</p>
+
+</div><ul>
+<li><p>Possible errors:</p></li>
+<li><p><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></p></li>
+<li><p><code>TPCError.invalidArgument</code></p></li>
+<li><p><code>TPCError.invalidFormat</code></p></li>
+<li><p><code>TPCError.serverError</code></p></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getTokens</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">tokenList</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getTokensWithCard</span><span class="p">:</span><span class="n">card</span>
+               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSArray</span><span class="o">&lt;</span><span class="kt">Token</span> <span class="o">*&gt;</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">tokenList</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getTokens</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">,</span>
+                             <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">tokenList</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Token.html">Token</a></span><span class="p">]?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/FundingCard.html">FundingCard</a></code>. Using <code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns Token list. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getTokenRequestorAssetWithAssetId:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getTokenRequestorAsset(assetId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getTokenRequestorAssetWithAssetId:completion:">getTokenRequestorAsset(assetId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get asset for the given token requestor asset ID</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getTokenRequestorAsset</span><span class="p">(</span><span class="nv">assetId</span><span class="p">:</span> <span class="n">tokenRequestorId</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">tokenRequestorAsset</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getTokenRequestorAssetWithAssetId</span><span class="p">:</span><span class="n">id</span>
+                               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSArray</span><span class="o">&lt;</span><span class="kt">TokenRequestorAsset</span> <span class="o">*&gt;</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">tokenRequestorAsset</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getTokenRequestorAsset</span><span class="p">(</span><span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                          <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">tokenRequestorAsset</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/TokenRequestorAsset.html">TokenRequestorAsset</a></span><span class="p">]?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>assetId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code>Token.TokenRequestor.id</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns Token Requestor asset. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)updateTokenStateWithTokenId:tokenRequestorId:scheme:authorizationCode:action:completion:"></a>
+                    <a name="//apple_ref/swift/Method/updateTokenState(tokenId:tokenRequestorId:scheme:authorizationCode:action:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)updateTokenStateWithTokenId:tokenRequestorId:scheme:authorizationCode:action:completion:">updateTokenState(tokenId:<wbr>tokenRequestorId:<wbr>scheme:<wbr>authorizationCode:<wbr>action:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update token state</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">updateTokenState</span><span class="p">(</span><span class="nv">tokenId</span><span class="p">:</span> <span class="n">tokenId</span><span class="p">,</span>
+               <span class="nv">tokenRequestorId</span><span class="p">:</span> <span class="n">tokenRequestorId</span><span class="p">,</span>
+                         <span class="nv">scheme</span><span class="p">:</span> <span class="n">scheme</span>
+              <span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">authorizationCode</span><span class="p">,</span>
+                         <span class="nv">action</span><span class="p">:</span> <span class="o">.</span><span class="kt">Suspend</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">(</span><span class="n">success</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">updateTokenStateWithTokenId</span><span class="p">:</span><span class="n">tokenId</span>
+                   <span class="nv">tokenRequestorId</span><span class="p">:</span><span class="n">tokenRequestorId</span>
+                             <span class="nv">scheme</span><span class="p">:</span><span class="n">scheme</span>
+                  <span class="nv">authorizationCode</span><span class="p">:</span><span class="n">code</span>
+                             <span class="nv">action</span><span class="p">:</span><span class="n">state</span>
+                         <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span> <span class="n">success</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateTokenState</span><span class="p">(</span><span class="nv">tokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">tokenRequestorId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">scheme</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardScheme.html">CardScheme</a></span><span class="p">,</span>
+                                    <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/TokenState.html">TokenState</a></span><span class="p">,</span>
+                                    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/Token.html#/c:@M@TPCSDKSwift@objc(cs)Token(py)id">Token.id</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tokenRequestorId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique identifier of the token requestor allocated by the TSP Scheme. It shall be provided for VISA scheme.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scheme</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Enums/CardScheme.html">CardScheme</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code provided by issuer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Enums/TokenState.html">TokenState</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, the success value is<code>true</code>. Otherwise, it returns error details and the success value is<code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)updateTokenStateWithTokenId:tokenRequestorId:schemeString:authorizationCode:action:completion:"></a>
+                    <a name="//apple_ref/swift/Method/updateTokenState(tokenId:tokenRequestorId:schemeString:authorizationCode:action:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)updateTokenStateWithTokenId:tokenRequestorId:schemeString:authorizationCode:action:completion:">updateTokenState(tokenId:<wbr>tokenRequestorId:<wbr>schemeString:<wbr>authorizationCode:<wbr>action:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update token state</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">updateTokenState</span><span class="p">(</span><span class="nv">tokenId</span><span class="p">:</span> <span class="n">tokenId</span><span class="p">,</span>
+               <span class="nv">tokenRequestorId</span><span class="p">:</span> <span class="n">tokenRequestorId</span><span class="p">,</span>
+                   <span class="nv">schemeString</span><span class="p">:</span> <span class="n">scheme</span>
+              <span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">authorizationCode</span><span class="p">,</span>
+                         <span class="nv">action</span><span class="p">:</span> <span class="o">.</span><span class="kt">Suspend</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">success</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">updateTokenStateWithTokenId</span><span class="p">:</span><span class="n">tokenId</span>
+                   <span class="nv">tokenRequestorId</span><span class="p">:</span><span class="n">tokenRequestorId</span>
+                       <span class="nv">schemeString</span><span class="p">:</span><span class="n">scheme</span>
+                  <span class="nv">authorizationCode</span><span class="p">:</span><span class="n">code</span>
+                             <span class="nv">action</span><span class="p">:</span><span class="n">state</span>
+                         <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">BOOL</span> <span class="n">success</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateTokenState</span><span class="p">(</span><span class="nv">tokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">tokenRequestorId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">schemeString</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/TokenState.html">TokenState</a></span><span class="p">,</span>
+                                    <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/Token.html#/c:@M@TPCSDKSwift@objc(cs)Token(py)id">Token.id</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tokenRequestorId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique identifier of the token requestor allocated by the TSP Scheme. It shall be provided for VISA scheme.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>schemeString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card&rsquo;s scheme. Could be <code>VISA</code>, <code>MASTERCARD</code> or others.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code provided by issuer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Enums/TokenState.html">TokenState</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, the success value is<code>true</code>. Otherwise, it returns error details and the success value is<code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Issuer%20Linkage"></a>
+                <a name="//apple_ref/swift/Section/Issuer Linkage" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Issuer%20Linkage"></a>
+                  <h3 class="section-name"><span>Issuer Linkage</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getCardsWithUserId:authorizationCode:kyc:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getCards(userId:authorizationCode:kyc:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getCardsWithUserId:authorizationCode:kyc:completion:">getCards(userId:<wbr>authorizationCode:<wbr>kyc:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get cards</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getCards</span><span class="p">(</span><span class="nv">userId</span><span class="p">:</span> <span class="n">userId</span><span class="p">,</span>
+     <span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">authorizationCode</span><span class="p">,</span>
+                   <span class="nv">kyc</span><span class="p">:</span> <span class="n">kyc</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">cards</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getCardsWithUserId</span><span class="p">:</span><span class="n">userId</span>
+         <span class="nv">authorizationCode</span><span class="p">:</span><span class="n">code</span>
+                       <span class="nv">kyc</span><span class="p">:</span><span class="n">kyc</span>
+                <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSArray</span><span class="o">&lt;</span><span class="kt">CardList</span> <span class="o">*&gt;</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">cardList</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getCards</span><span class="p">(</span><span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">kyc</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">cards</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/CardList.html">CardList</a></span><span class="p">]?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>kyc</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>KYC</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the card list - See <code><a href="../Classes/CardList.html">CardList</a></code>. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getCardAssetWithCardId:kyc:size:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getCardAsset(cardId:kyc:size:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getCardAssetWithCardId:kyc:size:completion:">getCardAsset(cardId:<wbr>kyc:<wbr>size:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get asset for the given card</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getCardAsset</span><span class="p">(</span><span class="nv">cardId</span><span class="p">:</span> <span class="n">cardId</span><span class="p">,</span>
+                       <span class="nv">kyc</span><span class="p">:</span> <span class="n">kyc</span><span class="p">,</span>
+                      <span class="nv">size</span><span class="p">:</span> <span class="o">.</span><span class="kt">S</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">cardAsset</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getCardAssetWithCardId</span><span class="p">:</span><span class="n">cardId</span>
+                           <span class="nv">kyc</span><span class="p">:</span><span class="n">kyc</span>
+                          <span class="nv">size</span><span class="p">:</span><span class="n">size</span>
+                    <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">CardAsset</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">cardAsset</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getCardAsset</span><span class="p">(</span><span class="nv">cardId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">kyc</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">size</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardAssetSize.html">CardAssetSize</a></span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">cardAsset</span><span class="p">:</span> <span class="kt"><a href="../Classes/CardAsset.html">CardAsset</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>kyc</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>KYC</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Enums/CardAssetSize.html">CardAssetSize</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardAsset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Classes/CardAsset.html">CardAsset</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the card asset - See <code><a href="../Classes/CardAsset.html">CardAsset</a></code>. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getPayloadWithAuthorizationCode:cardId:kyc:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getPayload(authorizationCode:cardId:kyc:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getPayloadWithAuthorizationCode:cardId:kyc:completion:">getPayload(authorizationCode:<wbr>cardId:<wbr>kyc:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request encrypted payload for a given funding card</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getPayload</span><span class="p">(</span><span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">code</span><span class="p">,</span>
+                             <span class="nv">cardId</span><span class="p">:</span> <span class="n">cardId</span><span class="p">,</span>
+                                <span class="nv">kyc</span><span class="p">:</span> <span class="n">kyc</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="n">payload</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getPayloadWithAuthorizationCode</span><span class="p">:</span><span class="n">code</span>
+                                 <span class="nv">cardId</span><span class="p">:</span><span class="n">cardId</span>
+                                    <span class="nv">kyc</span><span class="p">:</span><span class="n">kyc</span>
+                             <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">encryptedPayload</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPayload</span><span class="p">(</span><span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">cardId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">kyc</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">payload</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>kyc</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>KYC</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>payload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card information encrypted in PKCS7</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the payload - the Card information encrypted in PKCS7. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Scheme%20Push%20Provisioning"></a>
+                <a name="//apple_ref/swift/Section/Scheme Push Provisioning" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Scheme%20Push%20Provisioning"></a>
+                  <h3 class="section-name"><span>Scheme Push Provisioning</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getEligibleTokenRequestorWithCard:publicKeyIdentifier:completion:"></a>
+                    <a name="//apple_ref/swift/Method/getEligibleTokenRequestor(card:publicKeyIdentifier:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)getEligibleTokenRequestorWithCard:publicKeyIdentifier:completion:">getEligibleTokenRequestor(card:<wbr>publicKeyIdentifier:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request encrypted payload for a given funding card</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">getEligibleTokenRequestor</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">,</span>
+                  <span class="nv">publicKeyIdentifier</span><span class="p">:</span> <span class="n">publicKeyId</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">(</span><span class="kt">TokenRequestorList</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">getEligibleTokenRequestorWithCard</span><span class="p">:</span><span class="n">card</span>
+                      <span class="nv">publicKeyIdentifier</span><span class="p">:</span><span class="n">publicKeyId</span>
+                               <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSArray</span><span class="o">&lt;</span><span class="kt">TokenRequestor</span> <span class="o">*&gt;</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">tokenRequestorList</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getEligibleTokenRequestor</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">,</span>
+                                             <span class="nv">publicKeyIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                             <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">tokenRequestorList</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/TokenRequestor.html">TokenRequestor</a></span><span class="p">]?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKeyIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Identifier of the key used to encrypt payload<br></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the list of tokenRequestors - See <code><a href="../Classes/TokenRequestor.html">TokenRequestor</a></code>. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)schemePushProvisionWithCard:publicKeyIdentifier:authorizationCode:termsAndConditionsAccepted:callbackUrl:callbackType:pushHandler:completion:"></a>
+                    <a name="//apple_ref/swift/Method/schemePushProvision(card:publicKeyIdentifier:authorizationCode:termsAndConditionsAccepted:callbackUrl:callbackType:pushHandler:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)schemePushProvisionWithCard:publicKeyIdentifier:authorizationCode:termsAndConditionsAccepted:callbackUrl:callbackType:pushHandler:completion:">schemePushProvision(card:<wbr>publicKeyIdentifier:<wbr>authorizationCode:<wbr>termsAndConditionsAccepted:<wbr>callbackUrl:<wbr>callbackType:<wbr>pushHandler:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initiate push provision to scheme</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">schemePushProvision</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">,</span>
+            <span class="nv">publicKeyIdentifier</span><span class="p">:</span> <span class="n">publicKeyId</span><span class="p">,</span>
+              <span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">code</span><span class="p">,</span>
+     <span class="nv">termsAndConditionsAccepted</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="nv">callbackUrl</span><span class="p">:</span> <span class="n">callbackUrl</span><span class="p">,</span>
+                   <span class="nv">callbackType</span><span class="p">:</span> <span class="n">callbackType</span><span class="p">,</span>
+                    <span class="nv">pushHandler</span><span class="p">:</span> <span class="n">pushHandler</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">(</span><span class="n">pushUrl</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">schemePushProvisionWithCard</span><span class="p">:</span><span class="n">card</span>
+                <span class="nv">publicKeyIdentifier</span><span class="p">:</span><span class="n">publicKeyId</span>
+                  <span class="nv">authorizationCode</span><span class="p">:</span><span class="n">code</span>
+         <span class="nv">termsAndConditionsAccepted</span><span class="p">:</span><span class="kt">TRUE</span>
+                        <span class="nv">callbackUrl</span><span class="p">:</span><span class="n">callbackUrl</span>
+                       <span class="nv">callbackType</span><span class="p">:</span><span class="n">callbackType</span>
+                        <span class="nv">pushHandler</span><span class="p">:</span><span class="n">pushHandler</span>
+                         <span class="nv">completion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="kt">NSString</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">pushUrl</span><span class="p">,</span> <span class="kt">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}];</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">schemePushProvision</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="kt"><a href="../Classes/FundingCard.html">FundingCard</a></span><span class="p">,</span>
+                                       <span class="nv">publicKeyIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                       <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                       <span class="nv">termsAndConditionsAccepted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                                       <span class="nv">callbackUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                       <span class="nv">callbackType</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                       <span class="nv">pushHandler</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                       <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">pushUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>card</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/FundingCard.html">FundingCard</a></code> object initialized with Card&rsquo;s Scheme and Encrypted Payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKeyIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Identifier of the key used to encrypt payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>termsAndConditionsAccepted</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Terms and conditions accepted by user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callbackUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL used by the token requestor to pass control back to issuer application</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callbackType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ANDROID, IOS, or WEB</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pushHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Token requestor push handler</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns the pushUrl - a token requestor URL used for redirection. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Click%20to%20Pay"></a>
+                <a name="//apple_ref/swift/Section/Click to Pay" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Click%20to%20Pay"></a>
+                  <h3 class="section-name"><span>Click to Pay</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)addCardToClick2PayMCWithUserDetails:encryptedPayload:authorizationCode:publicKeyIdentifier:privacyURL:tncURL:completion:"></a>
+                    <a name="//apple_ref/swift/Method/addCardToClick2PayMC(userDetails:encryptedPayload:authorizationCode:publicKeyIdentifier:privacyURL:tncURL:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)TPCSDK(cm)addCardToClick2PayMCWithUserDetails:encryptedPayload:authorizationCode:publicKeyIdentifier:privacyURL:tncURL:completion:">addCardToClick2PayMC(userDetails:<wbr>encryptedPayload:<wbr>authorizationCode:<wbr>publicKeyIdentifier:<wbr>privacyURL:<wbr>tncURL:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This Api helps to add Mastercard to click to pay token requestor</p>
+
+<ul>
+<li>Possible errors:</li>
+<li><code><a href="../Enums/TPCError.html#/s:11TPCSDKSwift8TPCErrorO13notConfiguredyA2CmF">TPCError.notConfigured</a></code></li>
+<li><code>TPCError.invalidArgument</code></li>
+<li><code>TPCError.invalidFormat</code></li>
+<li><code>TPCError.deviceEnvironmentUnsafe</code></li>
+<li><code>TPCError.serverError</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">addCardToClick2PayMC</span><span class="p">(</span><span class="nv">userDetails</span><span class="p">:</span> <span class="n">userDetails</span><span class="p">,</span>
+                       <span class="nv">encryptedPayload</span><span class="p">:</span> <span class="n">encryptedPayload</span><span class="p">,</span>
+                      <span class="nv">authorizationCode</span><span class="p">:</span> <span class="n">code</span><span class="p">,</span>
+                    <span class="nv">publicKeyIdentifier</span><span class="p">:</span> <span class="n">publicKeyId</span><span class="p">,</span>
+                             <span class="nv">privacyURL</span><span class="p">:</span> <span class="n">privacyURL</span><span class="p">,</span>
+                                 <span class="nv">tncURL</span><span class="p">:</span> <span class="n">tncURL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="k">in</span>
+<span class="p">}</span>
+</code></pre>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.4.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">addCardToClick2PayMC</span><span class="p">(</span><span class="nv">userDetails</span><span class="p">:</span> <span class="kt"><a href="../Classes/Click2PayUserDetails.html">Click2PayUserDetails</a></span><span class="p">,</span>
+                                        <span class="nv">encryptedPayload</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">authorizationCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">publicKeyIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">privacyURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">tncURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userDetails</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/Click2PayUserDetails.html">Click2PayUserDetails</a></code> object initialized with user inputs for first name, last name, locale, phone number, country code and email.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encryptedPayload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>This parameter is the hexadecimal string representation of an encrypted payload for MasterCard click to pay, including fpan and exp.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authorizationCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Authorization code provided by issuer</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>publicKeyIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Identifier of the key used to encrypt payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>privacyURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL container for Consumer&rsquo;s privacy consent status</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tncURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL container for Consumer&rsquo;s Terms and Conditions consent status</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns nil for error. Otherwise, it returns error details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2024. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

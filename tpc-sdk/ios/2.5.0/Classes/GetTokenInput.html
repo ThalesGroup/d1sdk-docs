@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GetTokenInput Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GetTokenInput" class="dashAnchor"></a>
+    <a title="GetTokenInput Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TPCSDKSwift 2.5.0 Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TPCSDKSwift Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        GetTokenInput Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CardAsset.html">CardAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardDigitizationResult.html">CardDigitizationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardList.html">CardList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Click2PayUserDetails.html">Click2PayUserDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Device.html">Device</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FundingCard.html">FundingCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenerateAddPaymentPassRequestInput.html">GenerateAddPaymentPassRequestInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GetTokenInput.html">GetTokenInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PendingActivationPass.html">PendingActivationPass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushMethod.html">PushMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TPCSDK.html">TPCSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Token.html">Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokenRequestor.html">TokenRequestor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TokenRequestorAsset.html">TokenRequestorAsset</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CardAssetSize.html">CardAssetSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardScheme.html">CardScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IsCardDigitizedResult.html">IsCardDigitizedResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SdkVariant.html">SdkVariant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TPCError.html">TPCError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TokenState.html">TokenState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/RestClient">RestClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TPCSDKProvisionDelegate.html">TPCSDKProvisionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GetTokenInput</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">GetTokenInput</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Bank application to initialize this object with last4 digits of PAN or serial number provided by Apple Pay.</p>
+<pre class="highlight swift"><code><span class="c1">// Initialize object with last4 digits of PAN.</span>
+<span class="k">let</span> <span class="nv">last4</span>          <span class="o">=</span> <span class="s">"Last 4 Digits of PAN"</span>
+<span class="k">let</span> <span class="nv">tokenInput</span>     <span class="o">=</span> <span class="kt">GetTokenInput</span><span class="p">(</span><span class="nv">last4</span><span class="p">:</span> <span class="n">last4</span><span class="p">)</span>
+
+<span class="c1">// Initialize object with serial number provided by Apple Pay.</span>
+<span class="k">let</span> <span class="nv">serialNumber</span>   <span class="o">=</span> <span class="s">"Serial number provided by Apple Pay"</span>
+<span class="k">let</span> <span class="nv">tokenInput</span>     <span class="o">=</span> <span class="kt">GetTokenInput</span><span class="p">(</span><span class="nv">serialNumber</span><span class="p">:</span> <span class="n">serialNumber</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(py)last4"></a>
+                    <a name="//apple_ref/swift/Property/last4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(py)last4">last4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last 4 digits of PAN</p>
+
+<p>Note: Last 4 digits of PAN setter is deprecated since V2.3.0.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">last4</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(py)serialNumber"></a>
+                    <a name="//apple_ref/swift/Property/serialNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(py)serialNumber">serialNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Serial number provided by Apple Pay.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.3.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">serialNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(im)initWithLast4:"></a>
+                    <a name="//apple_ref/swift/Method/init(last4:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(im)initWithLast4:">init(last4:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize <code>GetTokenInput</code> with last4 digits of PAN.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">tokenInput</span> <span class="o">=</span> <span class="kt">GetTokenInput</span><span class="p">(</span><span class="nv">last4</span><span class="p">:</span> <span class="n">last4</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">last4</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>last4</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Last 4 digits of PAN</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(im)initWithSerialNumber:"></a>
+                    <a name="//apple_ref/swift/Method/init(serialNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@TPCSDKSwift@objc(cs)GetTokenInput(im)initWithSerialNumber:">init(serialNumber:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize <code>GetTokenInput</code> with serial number.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">tokenInput</span> <span class="o">=</span> <span class="kt">GetTokenInput</span><span class="p">(</span><span class="nv">serialNumber</span><span class="p">:</span> <span class="n">serialNumber</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2.3.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serialNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serialNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Serial number</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2024. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
