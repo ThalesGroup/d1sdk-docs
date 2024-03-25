@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DigitalCard Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/DigitalCard" class="dashAnchor"></a>
+    <a title="DigitalCard Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">D1SDK-3DS</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">D1 Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        DigitalCard Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ChangePINOptions.html">ChangePINOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Authn.html">D1Authn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1IssuerProvisioningExtensionHandler.html">D1IssuerProvisioningExtensionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@D1@objc(cs)D1PINDisplayTextField">D1PINDisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1PushToECommerce.html">D1PushToECommerce</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@D1@objc(cs)D1SecureTextField">D1SecureTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task/Components.html">– Components</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PINEntryUI.html">PINEntryUI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthnType.html">AuthnType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAction.html">CardAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardActivationMethod.html">CardActivationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAssetContentType.html">CardAssetContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardDigitizationState.html">CardDigitizationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardMimeType.html">CardMimeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardScheme.html">CardScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardState.html">CardState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PINEvent.html">PINEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthnDelegate.html">AuthnDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/D1IssuerProvisioningExtensionAuthorizationProviding.html">D1IssuerProvisioningExtensionAuthorizationProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PINEntryUIDelegate.html">PINEntryUIDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CardAsset.html">CardAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardAssetContent.html">CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetails.html">CardDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetailsUI.html">CardDetailsUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardMetadata.html">CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardPINUI.html">CardPINUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams.html">ConfigParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams/CardParams.html">– CardParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerInfo.html">ConsumerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error.html">D1Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DigitalCard.html">DigitalCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntryUI.html">EntryUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProvisioningMethod.html">ProvisioningMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushResponse.html">PushResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushResponse/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TokenRequestor.html">TokenRequestor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DigitalCard</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DigitalCard</span></code></pre>
+
+                </div>
+              </div>
+            <p>The full information of the digital card.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV6cardIDSSvp"></a>
+                    <a name="//apple_ref/swift/Property/cardID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV6cardIDSSvp">cardID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The unique digital card id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV5stateAA0C5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV5stateAA0C5StateOvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The digital card status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardState.html">CardState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV6schemeAA0C6SchemeOvp"></a>
+                    <a name="//apple_ref/swift/Property/scheme" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV6schemeAA0C6SchemeOvp">scheme</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The digital card scheme.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">scheme</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardScheme.html">CardScheme</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV5last4SSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/last4" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV5last4SSSgvp">last4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last 4 digits of the digital card.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">last4</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV10expiryDateSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/expiryDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV10expiryDateSSSgvp">expiryDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The expiry date of the digital card.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">expiryDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV8deviceIDSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/deviceID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV8deviceIDSSSgvp">deviceID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">deviceID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV10deviceNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/deviceName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV10deviceNameSSSgvp">deviceName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">deviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV10deviceTypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/deviceType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV10deviceTypeSSSgvp">deviceType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">deviceType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV8walletIDSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/walletID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV8walletIDSSSgvp">walletID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Please use new API <code><a href="../Structs/DigitalCard.html#/s:2D111DigitalCardV16tokenRequestorIDSSSgvp">tokenRequestorID</a></code>.
+
+</div>
+
+<p>The digital card wallet identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Please use new API `tokenRequestorID`.")</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">walletID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV16tokenRequestorIDSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tokenRequestorID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV16tokenRequestorIDSSSgvp">tokenRequestorID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The digital card&rsquo;s token requestor identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tokenRequestorID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV10walletNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/walletName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV10walletNameSSSgvp">walletName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Please use new API <code><a href="../Structs/DigitalCard.html#/s:2D111DigitalCardV18tokenRequestorNameSSSgvp">tokenRequestorName</a></code>.
+
+</div>
+
+<p>The digital card wallet name.
+ It is only supported for MasterCard.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Please use new API `tokenRequestorName`.")</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">walletName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV18tokenRequestorNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tokenRequestorName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV18tokenRequestorNameSSSgvp">tokenRequestorName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The digital card&rsquo;s token requestor name.
+It is only supported for MasterCard.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tokenRequestorName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV11walletAssetSayAA0cE7ContentVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/walletAsset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV11walletAssetSayAA0cE7ContentVGSgvp">walletAsset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Due to scheme limitation, it is not possible to have real time the token requestor name and logo.
+It is advised that the issuer application identifies the top 5-10 token requestor identifiers and hardcode a merchant/wallet facing name and logo.
+
+</div>
+
+<p>The digital card wallet asset.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Due to scheme limitation, it is not possible to have real time the token requestor name and logo. It is advised that the issuer application identifies the top 5-10 token requestor identifiers and hardcode a merchant/wallet facing name and logo.")</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">walletAsset</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/CardAssetContent.html">CardAssetContent</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D111DigitalCardV17isOnCurrentDeviceSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isOnCurrentDevice" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D111DigitalCardV17isOnCurrentDeviceSbvp">isOnCurrentDevice</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Identify if the digital card is on the current device.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.4.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isOnCurrentDevice</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2024 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
