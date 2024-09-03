@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.thalesgroup.gemalto.d1"},{"l":"com.thalesgroup.gemalto.d1.authn"},{"l":"com.thalesgroup.gemalto.d1.card"},{"l":"com.thalesgroup.gemalto.d1.card.cardservice"},{"l":"com.thalesgroup.gemalto.d1.d1pay"},{"l":"com.thalesgroup.gemalto.d1.messaging"}]
