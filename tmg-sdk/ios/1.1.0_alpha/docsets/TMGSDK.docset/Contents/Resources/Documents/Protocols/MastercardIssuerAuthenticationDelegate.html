@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MastercardIssuerAuthenticationDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/MastercardIssuerAuthenticationDelegate" class="dashAnchor"></a>
+    <a title="MastercardIssuerAuthenticationDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TMGSDK 1.0.1 Docs</a> (88% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TMGSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        MastercardIssuerAuthenticationDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms_of_use.html">Terms_of_use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceAuthenticatorChecker.html">DeviceAuthenticatorChecker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IdvMethod.html">IdvMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OtpActivationStatus.html">OtpActivationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClient.html">TMGClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration.html">TMGClientConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration/Builder.html">– Builder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BindingState.html">BindingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IdvType.html">IdvType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MastercardIdvType.html">MastercardIdvType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TMGError.html">TMGError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DeviceAuthenticationDelegate.html">DeviceAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MastercardIssuerAuthenticationDelegate.html">MastercardIssuerAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MastercardIssuerAuthenticationSession.html">MastercardIssuerAuthenticationSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MastercardTAFHelper.html">MastercardTAFHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PendingBindingSession.html">PendingBindingSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VisaCTFHelper.html">VisaCTFHelper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/MastercardIdvMethod.html">MastercardIdvMethod</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MastercardIssuerAuthenticationDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MastercardIssuerAuthenticationDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>This delegate is used to inform the <code><a href="../Protocols/MastercardTAFHelper.html#/s:6TMGSDK19MastercardTAFHelperP27triggerIssuerAuthentication7tokenId011correlationH018issuerAuthDelegateySS_SSAA0befL0_ptF">triggerIssuerAuthentication(tokenId:correlationId:issuerAuthDelegate:)</a></code> about the process result.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 1.1.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP16onSuccessBindingyyF"></a>
+                    <a name="//apple_ref/swift/Method/onSuccessBinding()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP16onSuccessBindingyyF">onSuccessBinding()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate method for an app to indicate if the token binding to device is successful.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onSuccessBinding</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP7onErroryys0G0_pF"></a>
+                    <a name="//apple_ref/swift/Method/onError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP7onErroryys0G0_pF">onError(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate method for an app to indicate if the token binding to device is failed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Returned error code and message
+
+<ul>
+<li>Possible errors:
+
+<ul>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO16invalidIdvMethodyA2CmF">invalidIdvMethod</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19invalidConfigParamsyA2CmF">invalidConfigParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF">invalidRequiredParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO17invalidOTPMessageyA2CmF">invalidOTPMessage</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO26serverErrorIdvNotAvailableyA2CmF">serverErrorIdvNotAvailable</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO11serverErroryACSi_SSSgtcACmF">serverError(httpStatusCode:additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO017serverErrorCryptoD0yA2CmF">serverErrorCryptoError</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO28serverErrorInvalidTokenStateyA2CmF">serverErrorInvalidTokenState</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO26serverErrorIdvNotAvailableyA2CmF">serverErrorIdvNotAvailable</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorNoSessionFoundyA2CmF">serverErrorNoSessionFound</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19serverErrorWrongOTPyA2CmF">serverErrorWrongOTP</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverErrorExpiredOTPyA2CmF">serverErrorExpiredOTP</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO29serverErrorRetryLimitExceededyA2CmF">serverErrorRetryLimitExceeded</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorTooManyRequestyA2CmF">serverErrorTooManyRequest</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverIsNotAccessibleyA2CmF">serverIsNotAccessible</a></code></li>
+</ul></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP02oncD8Required7sessionyAA0bcD7Session_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/onIssuerAuthenticationRequired(session:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP02oncD8Required7sessionyAA0bcD7Session_p_tF">onIssuerAuthenticationRequired(session:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the end user to start the ID&amp;V flow.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onIssuerAuthenticationRequired</span><span class="p">(</span><span class="nv">session</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MastercardIssuerAuthenticationSession.html">MastercardIssuerAuthenticationSession</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP02oncD5Ready7sessionyAA0bcD7Session_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/onIssuerAuthenticationReady(session:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP02oncD5Ready7sessionyAA0bcD7Session_p_tF">onIssuerAuthenticationReady(session:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the end user that the ID&amp;V flow is successful.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onIssuerAuthenticationReady</span><span class="p">(</span><span class="nv">session</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MastercardIssuerAuthenticationSession.html">MastercardIssuerAuthenticationSession</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP02oncD5Error7session5erroryAA0bcD7Session_pSg_s0G0_ptF"></a>
+                    <a name="//apple_ref/swift/Method/onIssuerAuthenticationError(session:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK38MastercardIssuerAuthenticationDelegateP02oncD5Error7session5erroryAA0bcD7Session_pSg_s0G0_ptF">onIssuerAuthenticationError(session:<wbr>error:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate method for an app to indicate that the activation fails.
+The binding session is kept opened and it is possible to retry.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onIssuerAuthenticationError</span><span class="p">(</span><span class="nv">session</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MastercardIssuerAuthenticationSession.html">MastercardIssuerAuthenticationSession</a></span><span class="p">?,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>session</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object to be used for activation. This is returned when it is possible to retry the activation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Returns the error code and message.
+
+<ul>
+<li>Possible errors:
+
+<ul>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO11serverErroryACSi_SSSgtcACmF">serverError(httpStatusCode:additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO017serverErrorCryptoD0yA2CmF">serverErrorCryptoError</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO28serverErrorInvalidTokenStateyA2CmF">serverErrorInvalidTokenState</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO26serverErrorIdvNotAvailableyA2CmF">serverErrorIdvNotAvailable</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorNoSessionFoundyA2CmF">serverErrorNoSessionFound</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19serverErrorWrongOTPyA2CmF">serverErrorWrongOTP</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverErrorExpiredOTPyA2CmF">serverErrorExpiredOTP</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO29serverErrorRetryLimitExceededyA2CmF">serverErrorRetryLimitExceeded</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorTooManyRequestyA2CmF">serverErrorTooManyRequest</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverIsNotAccessibleyA2CmF">serverIsNotAccessible</a></code></li>
+</ul></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Internal/MastercardTAFHelperImpl.swift",
+      "line": 8,
+      "symbol": "MastercardTAFHelperImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Internal/Utils/TMGHelper.swift",
+      "line": 711,
+      "symbol": "Data.toString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Internal/VisaCTFHelperImpl.swift",
+      "line": 9,
+      "symbol": "VisaCTFHelperImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 41,
+      "symbol": "IdvType.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 221,
+      "symbol": "TMGError.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 321,
+      "symbol": "BindingState.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 375,
+      "symbol": "IdvMethod.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 495,
+      "symbol": "MastercardIdvMethod.init(type:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/TMGClient.swift",
+      "line": 16,
+      "symbol": "TMGClient.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 26,
+      "symbol": "TMGClientConfiguration.Builder.serverUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 27,
+      "symbol": "TMGClientConfiguration.Builder.serverCertificate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 28,
+      "symbol": "TMGClientConfiguration.Builder.serverKeyId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 29,
+      "symbol": "TMGClientConfiguration.Builder.certificatePins",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/t0299501/Working/Thales/src/tmg/ios/TMGSDK"
+}
