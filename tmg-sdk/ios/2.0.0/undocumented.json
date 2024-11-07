@@ -1,0 +1,187 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Internal/Utils/TMGHelper.swift",
+      "line": 524,
+      "symbol": "Data.toString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Internal/VisaCTFHelperImpl.swift",
+      "line": 9,
+      "symbol": "VisaCTFHelperImpl",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 41,
+      "symbol": "IdvType.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 221,
+      "symbol": "TMGError.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 321,
+      "symbol": "BindingState.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Model/TMGModels.swift",
+      "line": 375,
+      "symbol": "IdvMethod.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/TMGClient.swift",
+      "line": 16,
+      "symbol": "TMGClient.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 26,
+      "symbol": "TMGClientConfiguration.Builder.serverUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 27,
+      "symbol": "TMGClientConfiguration.Builder.serverCertificate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 28,
+      "symbol": "TMGClientConfiguration.Builder.serverKeyId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/TMGClientConfiguration.swift",
+      "line": 29,
+      "symbol": "TMGClientConfiguration.Builder.certificatePins",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/BatchedCollection.swift",
+      "line": 19,
+      "symbol": "BatchedCollectionIndex",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/Blowfish.swift",
+      "line": 495,
+      "symbol": "Blowfish",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/ChaCha20.swift",
+      "line": 245,
+      "symbol": "ChaCha20",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/ChaCha20.swift",
+      "line": 337,
+      "symbol": "ChaCha20",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/MD5.swift",
+      "line": 124,
+      "symbol": "MD5",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/Rabbit.swift",
+      "line": 192,
+      "symbol": "Rabbit",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/SHA1.swift",
+      "line": 106,
+      "symbol": "SHA1",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/SHA2.swift",
+      "line": 282,
+      "symbol": "SHA2",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/CryptoSwift/Sources/SHA3.swift",
+      "line": 251,
+      "symbol": "SHA3",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/JOSESwift/Sources/AESCBCEncryption.swift",
+      "line": 106,
+      "symbol": "AESCBCEncryption",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/JOSESwift/Sources/AESCBCEncryption.swift",
+      "line": 115,
+      "symbol": "AESCBCEncryption",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/JOSESwift/Sources/AESGCmEncryption.swift",
+      "line": 100,
+      "symbol": "AESGCMEncryption",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/JOSESwift/Sources/AESGCmEncryption.swift",
+      "line": 109,
+      "symbol": "AESGCMEncryption",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/JOSESwift/Sources/RSAKeyEncryptionMode.swift",
+      "line": 64,
+      "symbol": "RSAKeyEncryption.EncryptionMode",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK-Dependencies/JOSESwift/Sources/RSAKeyEncryptionMode.swift",
+      "line": 73,
+      "symbol": "RSAKeyEncryption.DecryptionMode",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/gitlabci/builds/iFVipdnXS/0/bps/dme/project/tmgsdk/ios/TMGSDK"
+}

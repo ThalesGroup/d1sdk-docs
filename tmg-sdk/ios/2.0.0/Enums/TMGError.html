@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TMGError Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/TMGError" class="dashAnchor"></a>
+    <a title="TMGError Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TMGSDK 2.0.0 Docs</a> (80% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TMGSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TMGError Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms_of_use.html">Terms_of_use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceAuthenticatorChecker.html">DeviceAuthenticatorChecker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IdvMethod.html">IdvMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OtpActivationStatus.html">OtpActivationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClient.html">TMGClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration.html">TMGClientConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration/Builder.html">– Builder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BindingState.html">BindingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IdvType.html">IdvType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TMGError.html">TMGError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DeviceAuthenticationDelegate.html">DeviceAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PendingBindingSession.html">PendingBindingSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VisaCTFHelper.html">VisaCTFHelper</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TMGError</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TMGError</span> <span class="p">:</span> <span class="kt">LocalizedError</span></code></pre>
+
+                </div>
+              </div>
+            <p>Error object that returned when there&rsquo;s something wrong in the process.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 1.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO13tokenNotBoundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tokenNotBound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO13tokenNotBoundyA2CmF">tokenNotBound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided token is not bounded with the device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tokenNotBound</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO12tokenUnboundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tokenUnbound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO12tokenUnboundyA2CmF">tokenUnbound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided token is in unbound state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tokenUnbound</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO12tokenPendingyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tokenPending" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO12tokenPendingyA2CmF">tokenPending</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided token is in pending state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tokenPending</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO13tokenDeclinedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tokenDeclined" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO13tokenDeclinedyA2CmF">tokenDeclined</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided token is in declined state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tokenDeclined</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO11tokenActiveyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/tokenActive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO11tokenActiveyA2CmF">tokenActive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided token is in active state.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tokenActive</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO19invalidConfigParamsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidConfigParams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO19invalidConfigParamsyA2CmF">invalidConfigParams</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when some of the <code><a href="../Classes/TMGClientConfiguration.html">TMGClientConfiguration</a></code> parameter is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidConfigParams</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidRequiredParams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF">invalidRequiredParams</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when some of the mandatory parameters on this API is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidRequiredParams</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO16invalidIdvMethodyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidIdvMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO16invalidIdvMethodyA2CmF">invalidIdvMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided IDV method is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidIdvMethod</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO17invalidOTPMessageyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidOTPMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO17invalidOTPMessageyA2CmF">invalidOTPMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the provided OTP is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidOTPMessage</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO28issuerAuthenticationRequiredyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/issuerAuthenticationRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO28issuerAuthenticationRequiredyA2CmF">issuerAuthenticationRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the issuer authentication is required. Use <code><a href="../Protocols/PendingBindingSession.html#/s:6TMGSDK21PendingBindingSessionP15submitIdvMethod03idvG010completionyAA0fG0C_yAA19OtpActivationStatusCSg_s5Error_pSgtcSgtF">PendingBindingSession.submitIdvMethod(...)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">issuerAuthenticationRequired</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO21biometricNotSupportedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/biometricNotSupported" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO21biometricNotSupportedyA2CmF">biometricNotSupported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the biometric is not enrolled on the device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">biometricNotSupported</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO21authenticationFailureyACSS_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/authenticationFailure(reason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO21authenticationFailureyACSS_tcACmF">authenticationFailure(reason:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the user authentication is failing. Check the reason message for the error.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">authenticationFailure</span><span class="p">(</span><span class="nv">reason</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/internalError(additionalMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when there&rsquo;s an internal error. Check additional message for the error.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">internalError</span><span class="p">(</span><span class="nv">additionalMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/deviceEnvironmentUnsafe(code:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the device environment is potentially unsafe. Check the obfuscated error code for the error.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">deviceEnvironmentUnsafe</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO21serverIsNotAccessibleyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverIsNotAccessible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO21serverIsNotAccessibleyA2CmF">serverIsNotAccessible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the server is not accesible due to network connection issue.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverIsNotAccessible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO15serverRetryableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverRetryable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO15serverRetryableyA2CmF">serverRetryable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the server is unable to handle the current request due to a temporary overloading or maintenance of the server.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverRetryable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO11serverErroryACSi_SSSgtcACmF"></a>
+                    <a name="//apple_ref/swift/Element/serverError(httpStatusCode:additionalMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO11serverErroryACSi_SSSgtcACmF">serverError(httpStatusCode:<wbr>additionalMessage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when there&rsquo;s a server error. Check the HTTP status code for the error and the additional message; if any.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">serverError</span><span class="p">(</span><span class="nv">httpStatusCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">additionalMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO25serverErrorTooManyRequestyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorTooManyRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO25serverErrorTooManyRequestyA2CmF">serverErrorTooManyRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when there are too many requests on the server. Please try it again later.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorTooManyRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO017serverErrorCryptoD0yA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorCryptoError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO017serverErrorCryptoD0yA2CmF">serverErrorCryptoError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when there&rsquo;s an error when performing crypto operation on the server.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorCryptoError</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO28serverErrorInvalidTokenStateyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorInvalidTokenState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO28serverErrorInvalidTokenStateyA2CmF">serverErrorInvalidTokenState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the token state is invalid.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorInvalidTokenState</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO26serverErrorIdvNotAvailableyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorIdvNotAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO26serverErrorIdvNotAvailableyA2CmF">serverErrorIdvNotAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the end user selects an IDV method that is not available.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorIdvNotAvailable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO25serverErrorNoSessionFoundyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorNoSessionFound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO25serverErrorNoSessionFoundyA2CmF">serverErrorNoSessionFound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the session cannot be found.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorNoSessionFound</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO19serverErrorWrongOTPyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorWrongOTP" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO19serverErrorWrongOTPyA2CmF">serverErrorWrongOTP</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the end user key in the wrong otp.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorWrongOTP</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO21serverErrorExpiredOTPyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorExpiredOTP" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO21serverErrorExpiredOTPyA2CmF">serverErrorExpiredOTP</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the end user enters an expired OTP.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorExpiredOTP</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO29serverErrorRetryLimitExceededyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/serverErrorRetryLimitExceeded" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO29serverErrorRetryLimitExceededyA2CmF">serverErrorRetryLimitExceeded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned when the end user exceeds the number of retries allowed.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">serverErrorRetryLimitExceeded</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK8TMGErrorO16errorDescriptionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK8TMGErrorO16errorDescriptionSSSgvp">errorDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returned the error description.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0.1
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2022 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
