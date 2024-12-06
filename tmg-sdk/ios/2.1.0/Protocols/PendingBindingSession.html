@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PendingBindingSession Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/PendingBindingSession" class="dashAnchor"></a>
+    <a title="PendingBindingSession Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TMGSDK 2.1.0 Documentation</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TMGSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        PendingBindingSession Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms_of_use.html">Terms_of_use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceAuthenticatorChecker.html">DeviceAuthenticatorChecker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IdvMethod.html">IdvMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OtpActivationStatus.html">OtpActivationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClient.html">TMGClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration.html">TMGClientConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration/Builder.html">– Builder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BindingState.html">BindingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IdvType.html">IdvType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TMGError.html">TMGError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DeviceAuthenticationDelegate.html">DeviceAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PendingBindingSession.html">PendingBindingSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VisaCTFHelper.html">VisaCTFHelper</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PendingBindingSession</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PendingBindingSession</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>PendingBindingSession</code> is used to get <code>vProvisionedTokenId</code> session details with pending activation.
+ This object is retrieved when the token on the server is in <code><a href="../Enums/BindingState.html#/s:6TMGSDK12BindingStateO17pendingActivationyA2CmF">BindingState.pendingActivation</a></code> state</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 1.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK21PendingBindingSessionP10idvMethods10completionyySayAA9IdvMethodCGSg_s5Error_pSgtcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/idvMethods(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK21PendingBindingSessionP10idvMethods10completionyySayAA9IdvMethodCGSg_s5Error_pSgtcSg_tF">idvMethods(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the list of <code><a href="../Classes/IdvMethod.html">IdvMethod</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">idvMethods</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">idvMethods</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/IdvMethod.html">IdvMethod</a></span><span class="p">]?,</span>
+                                    <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>idvMethods</code>: Gets the list of Idv Method that are available</li>
+<li><code>error</code>: when there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK21PendingBindingSessionP15submitIdvMethod03idvG010completionyAA0fG0C_yAA19OtpActivationStatusCSg_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/submitIdvMethod(idvMethod:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK21PendingBindingSessionP15submitIdvMethod03idvG010completionyAA0fG0C_yAA19OtpActivationStatusCSg_s5Error_pSgtcSgtF">submitIdvMethod(idvMethod:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activate Binding with or without <code>OTP</code>.
+If <code>OTP</code> is provided, the <code>TMGSDK</code> will call the server to validate it.
+However if the <code>OTP</code> is not provided, the <code>TMGSDK</code> does not call the server and activate the binding locally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">submitIdvMethod</span><span class="p">(</span><span class="nv">idvMethod</span><span class="p">:</span> <span class="kt"><a href="../Classes/IdvMethod.html">IdvMethod</a></span><span class="p">,</span>
+                           <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">otpActivationStatus</span><span class="p">:</span> <span class="kt"><a href="../Classes/OtpActivationStatus.html">OtpActivationStatus</a></span><span class="p">?,</span>
+                                         <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idvMethod</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Of type <code><a href="../Classes/IdvMethod.html">IdvMethod</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>otpActivationStatus</code>: otp activation status. Will only be returned when <code><a href="../Classes/IdvMethod.html">IdvMethod</a></code> type is <code><a href="../Enums/IdvType.html#/s:6TMGSDK7IdvTypeO8appToAppyA2CmF">IdvType.appToApp</a></code>, <code><a href="../Enums/IdvType.html#/s:6TMGSDK7IdvTypeO15customerServiceyA2CmF">IdvType.customerService</a></code>,  or <code><a href="../Enums/IdvType.html#/s:6TMGSDK7IdvTypeO12outboundCallyA2CmF">IdvType.outboundCall</a></code></li>
+<li><code>error</code>: when there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK21PendingBindingSessionP08activateC03otp10completionySSSg_ys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/activateBinding(otp:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK21PendingBindingSessionP08activateC03otp10completionySSSg_ys5Error_pSgcSgtF">activateBinding(otp:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activate Binding with or without <code>OTP</code>. If <code>OTP</code> is provided, the <code>TMGSDK</code> will call the server to validate it.
+However if the <code>OTP</code> is not provided, the <code>TMGSDK</code> doesn’t call the server and activate the binding locally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">activateBinding</span><span class="p">(</span><span class="nv">otp</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                           <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>otp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>could be <code>nil</code> if using not suitable <code><a href="../Classes/IdvMethod.html">IdvMethod</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>error</code>: if any, otherwise the operation is success.</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK21PendingBindingSessionP27previouslySelectedIdvMethod10completionyyAA0gH0CSg_s5Error_pSgtcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/previouslySelectedIdvMethod(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK21PendingBindingSessionP27previouslySelectedIdvMethod10completionyyAA0gH0CSg_s5Error_pSgtcSg_tF">previouslySelectedIdvMethod(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the previously selected <code><a href="../Classes/IdvMethod.html">IdvMethod</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">previouslySelectedIdvMethod</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">idvMethod</span><span class="p">:</span> <span class="kt"><a href="../Classes/IdvMethod.html">IdvMethod</a></span><span class="p">?,</span>
+                                                     <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>idvMethod</code>: to capture previously selected <code><a href="../Classes/IdvMethod.html">IdvMethod</a></code> to bind the <code>vProvisionedTokenId</code>.</li>
+<li><code>error</code>: if any, otherwise the operation is success.</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2024 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

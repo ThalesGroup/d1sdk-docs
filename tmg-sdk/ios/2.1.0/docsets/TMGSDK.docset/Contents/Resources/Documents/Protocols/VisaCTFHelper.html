@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VisaCTFHelper Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/VisaCTFHelper" class="dashAnchor"></a>
+    <a title="VisaCTFHelper Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TMGSDK 2.1.0 Documentation</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TMGSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        VisaCTFHelper Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms_of_use.html">Terms_of_use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceAuthenticatorChecker.html">DeviceAuthenticatorChecker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IdvMethod.html">IdvMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OtpActivationStatus.html">OtpActivationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClient.html">TMGClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration.html">TMGClientConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration/Builder.html">– Builder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BindingState.html">BindingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IdvType.html">IdvType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TMGError.html">TMGError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DeviceAuthenticationDelegate.html">DeviceAuthenticationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PendingBindingSession.html">PendingBindingSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VisaCTFHelper.html">VisaCTFHelper</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>VisaCTFHelper</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">VisaCTFHelper</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>VisaCTFHelper</code> is used to authenticate and bind <code>vProvisionedTokenId</code> with the device.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 1.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK13VisaCTFHelperP13createBinding19vProvisionedTokenId06deviceH0011correlationH00I22AuthenticationDelegate10completionySS_S2SAA06DevicekL0_pyAA07PendingE7Session_pSg_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/createBinding(vProvisionedTokenId:deviceId:correlationId:deviceAuthenticationDelegate:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK13VisaCTFHelperP13createBinding19vProvisionedTokenId06deviceH0011correlationH00I22AuthenticationDelegate10completionySS_S2SAA06DevicekL0_pyAA07PendingE7Session_pSg_s5Error_pSgtcSgtF">createBinding(vProvisionedTokenId:<wbr>deviceId:<wbr>correlationId:<wbr>deviceAuthenticationDelegate:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bind Visa Token to Device.
+when using this API, the whole binding process will restart from scratch.
+If used on an already bound token, the token will be re-bound again with a potential new end user authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createBinding</span><span class="p">(</span><span class="nv">vProvisionedTokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">deviceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">correlationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">deviceAuthenticationDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DeviceAuthenticationDelegate.html">DeviceAuthenticationDelegate</a></span><span class="p">,</span>
+                         <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">pendingBindingSession</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PendingBindingSession.html">PendingBindingSession</a></span><span class="p">?,</span>
+                                       <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vProvisonedTokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>visa provision token id, this value is retrieved during tokenization process. Mandatory input</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Device Identifier generated by App. Mandatory input</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Session Id generated by App. Mandatory input</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceAuthenticationDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Device authentication delegate. Mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>pendingBindingSession</code> : An object for App to start device authentication and continue with <code>Yellow Flow</code> process if any. This object may need to be hold if the <code>Yellow Flow</code> process will be continued on the other UI screen.</li>
+<li><code>error</code> : When there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK13VisaCTFHelperP23authenticateTransaction19vProvisionedTokenId28deviceAuthenticationDelegate10completionySS_AA06DevicejK0_pySS_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/authenticateTransaction(vProvisionedTokenId:deviceAuthenticationDelegate:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK13VisaCTFHelperP23authenticateTransaction19vProvisionedTokenId28deviceAuthenticationDelegate10completionySS_AA06DevicejK0_pySS_s5Error_pSgtcSgtF">authenticateTransaction(vProvisionedTokenId:<wbr>deviceAuthenticationDelegate:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Authenticate Transaction for <code>vProvisionedTokenId</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">authenticateTransaction</span><span class="p">(</span><span class="nv">vProvisionedTokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">deviceAuthenticationDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DeviceAuthenticationDelegate.html">DeviceAuthenticationDelegate</a></span><span class="p">,</span>
+                                   <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">visaPayload</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                                 <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vProvisionedTokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>visa provision token id. Mandatory input</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceAuthenticationDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Device authentication delegate. Mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>visaPayload</code> : if it is successful otherwise empty <code>String</code> with an <code>Error</code></li>
+<li><code>error</code> : When there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK13VisaCTFHelperP12bindingState19vProvisionedTokenId10completionySS_yAA07BindingE0O_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/bindingState(vProvisionedTokenId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK13VisaCTFHelperP12bindingState19vProvisionedTokenId10completionySS_yAA07BindingE0O_s5Error_pSgtcSgtF">bindingState(vProvisionedTokenId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Token Activation Status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bindingState</span><span class="p">(</span><span class="nv">vProvisionedTokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">bindingState</span><span class="p">:</span> <span class="kt"><a href="../Enums/BindingState.html">BindingState</a></span><span class="p">,</span>
+                                      <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vProvisionedTokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Visa provision token id. Mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code><a href="../Enums/BindingState.html">BindingState</a></code> : If the successful otherwise <code><a href="../Enums/BindingState.html#/s:6TMGSDK12BindingStateO7unboundyA2CmF">BindingState.unbound</a></code> with <code>error</code></li>
+<li><code>error</code> : When there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK13VisaCTFHelperP13removeBinding19vProvisionedTokenId10completionySS_ys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/removeBinding(vProvisionedTokenId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK13VisaCTFHelperP13removeBinding19vProvisionedTokenId10completionySS_ys5Error_pSgcSgtF">removeBinding(vProvisionedTokenId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the <code>vProvisionedTokenId</code> from device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeBinding</span><span class="p">(</span><span class="nv">vProvisionedTokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vProvisionedTokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Visa provision token id. Mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>error</code>: When there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK13VisaCTFHelperP16syncBindingState19vProvisionedTokenId10completionySS_yAA0eF0O_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/syncBindingState(vProvisionedTokenId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK13VisaCTFHelperP16syncBindingState19vProvisionedTokenId10completionySS_yAA0eF0O_s5Error_pSgtcSgtF">syncBindingState(vProvisionedTokenId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Synchronize the binding state between <code>Server</code> and <code>Client</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">syncBindingState</span><span class="p">(</span><span class="nv">vProvisionedTokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">bindingState</span><span class="p">:</span> <span class="kt"><a href="../Enums/BindingState.html">BindingState</a></span><span class="p">,</span>
+                                          <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vProvisionedTokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>visa provision token id.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>bindingState</code>:  if the successful otherwise <code><a href="../Enums/BindingState.html#/s:6TMGSDK12BindingStateO7unboundyA2CmF">BindingState.unbound</a></code> with <code>error</code></li>
+<li><code>error</code>:  When there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK13VisaCTFHelperP13resumeBinding19vProvisionedTokenId10completionySS_yAA07PendingE7Session_pSg_s5Error_pSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/resumeBinding(vProvisionedTokenId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK13VisaCTFHelperP13resumeBinding19vProvisionedTokenId10completionySS_yAA07PendingE7Session_pSg_s5Error_pSgtcSgtF">resumeBinding(vProvisionedTokenId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Token which is Pending Activation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">resumeBinding</span><span class="p">(</span><span class="nv">vProvisionedTokenId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">pendingBindingSession</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PendingBindingSession.html">PendingBindingSession</a></span><span class="p">?,</span>
+                                       <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>vProvisionedTokenId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Visa provision token id.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code>pendingBindingSession</code>:  An object for App to start device authentication and continue with <code>Yellow Flow</code> process if any.
+This object may need to be hold if the <code>Yellow Flow</code> process will be continued on the other UI screen.</li>
+<li><code>error</code>: When there&rsquo;s something wrong in the process otherwise <code>nil</code></li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2024 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
