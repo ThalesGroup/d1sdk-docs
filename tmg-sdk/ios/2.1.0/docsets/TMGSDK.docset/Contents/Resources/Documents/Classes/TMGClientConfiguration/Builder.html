@@ -216,14 +216,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>SHA-256</code> hashes of server root certificate&rsquo;s Subject Public Key Info and base64-encoded, prefixed with either <code>SHA-256</code>. It is a 22 byte <code>Hex</code> String. <strong>Deprecated</strong>.</p>
+                        <p>The <code>SHA-256</code> hashes of server root certificate&rsquo;s Subject Public Key Info and base64-encoded, prefixed with either <code>SHA-256</code>. It is a 22 byte <code>Hex</code> String.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">certificatePins</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "certificatePins value is ignored.")</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">certificatePins</span><span class="p">:</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -243,16 +244,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initializing the tmgUrl, certificate,  key identifier and certificate pins for Builder</p>
+                        <div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Certificate pinning is handled internally within the SDK; therefore, the <code><a href="../../Classes/TMGClientConfiguration/Builder.html#/s:6TMGSDK22TMGClientConfigurationC7BuilderC15certificatePinsSSvp">certificatePins</a></code> parameter is ignored.
 
-<p>@deprecated Please use the new initializer. <code><a href="../../Classes/TMGClientConfiguration/Builder.html#/s:6TMGSDK22TMGClientConfigurationC7BuilderC15certificatePinsSSvp">certificatePins</a></code> value is ignored</p>
+</div>
+
+<p>Initializing the tmgUrl, certificate,  key identifier and certificate pins for Builder</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serverUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serverCertificate</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">serverKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">certificatePins</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Please use the new initializer. certificatePins value is ignored.")</span>
+<span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serverUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serverCertificate</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">serverKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">certificatePins</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -304,7 +310,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p><strong>Deprecated</strong>. The <code>SHA-256</code>  hashes of server root certificate&rsquo;s Subject Public Key Info and base64-encoded, prefixed with either <code>SHA-256</code>. Mandatory input. It is a 22 byte <code>Hex</code> String.</p>
+                                  <p>The <code>SHA-256</code>  hashes of server root certificate&rsquo;s Subject Public Key Info and base64-encoded, prefixed with either <code>SHA-256</code>. Mandatory input. It is a 22 byte <code>Hex</code> String.</p>
                                 </div>
                               </td>
                             </tr>
