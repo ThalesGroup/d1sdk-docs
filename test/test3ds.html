@@ -9,7 +9,7 @@
             // Redirect based on device type
             if (/android/i.test(userAgent)) {
                 // Redirect to Android app
-                window.location = "d1demoapp://com.thalesgroup.gemalto.d1.validation/PushToSchemeResult";
+                window.location = "d1demoapp://com.thalesgroup.gemalto.d1.validation/AuthnResult";
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // Redirect to iOS app
                 window.location = "demoscheme://com.thalesgroup.gemalto.d1.demo";
