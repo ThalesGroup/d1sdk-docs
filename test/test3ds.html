@@ -12,7 +12,7 @@
                 window.location = "d1demoapp://com.thalesgroup.gemalto.d1.validation/AuthnResult";
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // Redirect to iOS app
-                window.location = "demoscheme://com.thalesgroup.gemalto.d1.demo";
+                window.location = "demoscheme://com.thalesgroup.gemalto.d1.demo?AuthnResult=FetchAuthn";
             } else {
                 // Fallback to web version or a download link
                 window.location = "https://www.thalesgroup.com";
