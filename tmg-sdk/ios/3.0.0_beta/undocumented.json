@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Internal/Logging/LogSubsystem.swift",
+      "line": 12,
+      "symbol": "OSLogType.prefix",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Internal/Logging/LogSubsystem.swift",
+      "line": 21,
+      "symbol": "OSLogType.suffix",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/Internal/Storage/AttestationStorage.swift",
+      "line": 17,
+      "symbol": "AttestationStorage",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/tmgsdk/ios/TMGSDK/TMGSDK/MastercardTAFHelper.swift",
+      "line": 173,
+      "symbol": "MastercardTAFHelper.IDVMethod.init(type:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/tmgsdk/ios/TMGSDK"
+}
