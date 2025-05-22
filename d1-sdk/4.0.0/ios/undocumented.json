@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/idpmobile/gitlabci/builds/vhbVEmF6v/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.0.0-20240722-834ac801-iOS/D1/SDK/D1Core/CoreWrapper.swift",
-      "line": 276,
-      "symbol": "CoreWrapper.resumeCard(_:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/idpmobile/gitlabci/builds/vhbVEmF6v/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.0.0-20240722-834ac801-iOS/D1/SDK/D1Core/CoreWrapper.swift",
-      "line": 293,
-      "symbol": "CoreWrapper.replaceCard(_:reason:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/idpmobile/gitlabci/builds/vhbVEmF6v/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.0.0-20240722-834ac801-iOS/D1"
+  "source_directory": "/Users/idpmobile/gitlabci/builds/9Qzo-5Qzj/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.0.2-20250522-4bba288b-iOS/D1"
 }
