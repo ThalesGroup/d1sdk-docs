@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D1Task Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/D1Task" class="dashAnchor"></a>
+    <a title="D1Task Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">D1SDK-3DS</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">D1 Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        D1Task Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms-of-use.html">Terms of use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CardControlSettings.html">CardControlSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardControlSettings/Geography.html">– Geography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardControlSettings/Region.html">– Region</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardControlSettings/Merchant.html">– Merchant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardLimitSettings.html">CardLimitSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardLimitSettings/PurchaseLimit.html">– PurchaseLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardLimitSettings/WithdrawalLimit.html">– WithdrawalLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardLimitSettings/PeriodType.html">– PeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardService.html">CardService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardSettings.html">CardSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTransactionRecord.html">CardTransactionRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTransactionRecord/Merchant.html">– Merchant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTransactionRecord/Amount.html">– Amount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTransactionRecord/TransactionStatus.html">– TransactionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTransactionRecord/TransactionType.html">– TransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardTransactionRecord/InitiatingParty.html">– InitiatingParty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChangePINOptions.html">ChangePINOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Authn.html">D1Authn</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1DisplayTextField.html">D1DisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1IssuerProvisioningExtensionHandler.html">D1IssuerProvisioningExtensionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1PINDisplayTextField.html">D1PINDisplayTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1PushToECommerce.html">D1PushToECommerce</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1SecureTextField.html">D1SecureTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task.html">D1Task</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/D1Task/Components.html">– Components</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MessagingService.html">MessagingService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PINEntryUI.html">PINEntryUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:2D116TransactionQueryC">TransactionQuery</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthnType.html">AuthnType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAction.html">CardAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardActivationMethod.html">CardActivationMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardAssetContentType.html">CardAssetContentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardDigitizationState.html">CardDigitizationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardMimeType.html">CardMimeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardScheme.html">CardScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardState.html">CardState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessageFormat.html">MessageFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessageType.html">MessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OngoingOperation.html">OngoingOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PINEvent.html">PINEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StateReason.html">StateReason</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AuthnDelegate.html">AuthnDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/D1IssuerProvisioningExtensionAuthorizationProviding.html">D1IssuerProvisioningExtensionAuthorizationProviding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PINEntryUIDelegate.html">PINEntryUIDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardAsset.html">CardAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardAssetContent.html">CardAssetContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetails.html">CardDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDetailsUI.html">CardDetailsUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardMetadata.html">CardMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CardPINUI.html">CardPINUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams.html">ConfigParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams/CardParams.html">– CardParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConsumerInfo.html">ConsumerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error.html">D1Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/D1Error/Code.html">– Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DigitalCard.html">DigitalCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EntryUI.html">EntryUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProvisioningMethod.html">ProvisioningMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushResponse.html">PushResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PushResponse/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TokenRequestor.html">TokenRequestor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>D1Task</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1Task</span></code></pre>
+
+                </div>
+              </div>
+            <p>Main class for D1 SDK use cases.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>It is recommended to initialize <code>D1Task</code> as soon as the application is
+launched or the earliest possible time.</p>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>1.0.0</p>
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC10ComponentsV"></a>
+                    <a name="//apple_ref/swift/Struct/Components" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC10ComponentsV">Components</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An object that constructs a <code><a href="../Classes/D1Task.html">D1Task</a></code> from its configurations.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                        <a href="../Classes/D1Task/Components.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Components</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC14getSDKVersionsSDyS2SGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/getSDKVersions()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC14getSDKVersionsSDyS2SGyFZ">getSDKVersions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A function to return the SDK version of <code>D1</code> and its internal dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getSDKVersions</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A list of SDK versions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF"></a>
+                    <a name="//apple_ref/swift/Method/configure(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF">configure(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>D1 Task configurations. It is the entry point for SDK initialization.
+App can only initialize certain features to reduce waiting time.
+It is not mandatory to initialize all features in a single call.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">_</span> <span class="nv">configParams</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ConfigParams.html">ConfigParams</a></span><span class="o">&gt;</span><span class="p">,</span>
+                      <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configParams</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>configurations</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the configuration is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16cardNotSupportedyA2EmF">D1Error.Code.cardNotSupported</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO17invalidAppGroupIDyA2EmF">D1Error.Code.invalidAppGroupID</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO33walletExtensionConsumerIDNotFoundyA2EmF">D1Error.Code.walletExtensionConsumerIDNotFound</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC5login_10completiony10Foundation4DataVz_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/login(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC5login_10completiony10Foundation4DataVz_yAA0A5ErrorVSgctF">login(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Login to the D1 services using the token provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="n">_</span> <span class="nv">issuerToken</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Data</span><span class="p">,</span>
+                  <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>issuerToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Isssuer token used to login to the D1 services.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the login process is completed.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13unrecoverableyA2EmF">D1Error.Code.unrecoverable</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC6logoutyyyAA0A5ErrorVSgcF"></a>
+                    <a name="//apple_ref/swift/Method/logout(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC6logoutyyyAA0A5ErrorVSgcF">logout(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logout from the D1 services.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the logout process is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC13appInstanceIDSSyKFZ"></a>
+                    <a name="//apple_ref/swift/Method/appInstanceID()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC13appInstanceIDSSyKFZ">appInstanceID()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve application instance identifier.
+  Possible errors:
+    - <code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">appInstanceID</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC5resetyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC5resetyyFZ">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reset the SDK.
+Calling this API will delete all the SDK internal data and the end user wll need to initialize and re-enroll to the SDK services.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC12cardMetadata_10completionySS_yAA04CardD0VSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/cardMetadata(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC12cardMetadata_10completionySS_yAA04CardD0VSg_AA0A5ErrorVSgtctF">cardMetadata(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the basic card metadata.
+Use this API to retrieve last 4 PAN digits value and Card Art.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cardMetadata</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CardMetadata.html">CardMetadata</a></span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, the card metadata will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC11cardDetails_10completionySS_yAA04CardD0VSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/cardDetails(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC11cardDetails_10completionySS_yAA04CardD0VSg_AA0A5ErrorVSgtctF">cardDetails(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the CardDetails information.
+Use this API to retrieve Full Card Information, including full PAN value.
+These values can be used for online transaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cardDetails</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CardDetails.html">CardDetails</a></span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, the card details info will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC18displayCardDetails_04cardE2UI10completionySS_AA0deG0VyAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/displayCardDetails(_:cardDetailsUI:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC18displayCardDetails_04cardE2UI10completionySS_AA0deG0VyAA0A5ErrorVSgctF">displayCardDetails(_:<wbr>cardDetailsUI:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays Card Details information securely.</p>
+
+<p>Use this API to display full card information. Through the UI component in
+<code><a href="../Structs/CardDetailsUI.html">CardDetailsUI</a></code>, the API sets the CardDetails information in the UI.
+Integrator has full control of the UI appearance and layout.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>2.1.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">displayCardDetails</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="n">cardDetailsUI</span> <span class="nv">ui</span><span class="p">:</span> <span class="kt"><a href="../Structs/CardDetailsUI.html">CardDetailsUI</a></span><span class="p">,</span>
+                               <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardDetailsUI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UI to display card details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC22displayPhysicalCardPIN_9cardPINUI10completionySS_AA0eH0VyAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/displayPhysicalCardPIN(_:cardPINUI:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC22displayPhysicalCardPIN_9cardPINUI10completionySS_AA0eH0VyAA0A5ErrorVSgctF">displayPhysicalCardPIN(_:<wbr>cardPINUI:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays the PIN of the physical card .
+Use this API to retrieve the PIN attached to a physical card in a secure way.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">displayPhysicalCardPIN</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">cardPINUI</span><span class="p">:</span> <span class="kt"><a href="../Structs/CardPINUI.html">CardPINUI</a></span><span class="p">,</span>
+                                   <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardPINUI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UI to display the PIN of the physical card.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC9changePIN_12textFieldNew0eF7Confirm7options8delegateAA10PINEntryUICSgSS_AA0a10SecureTextF0CAmA16ChangePINOptionsCAA0K10UIDelegate_ptKF"></a>
+                    <a name="//apple_ref/swift/Method/changePIN(_:textFieldNew:textFieldConfirm:options:delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC9changePIN_12textFieldNew0eF7Confirm7options8delegateAA10PINEntryUICSgSS_AA0a10SecureTextF0CAmA16ChangePINOptionsCAA0K10UIDelegate_ptKF">changePIN(_:<wbr>textFieldNew:<wbr>textFieldConfirm:<wbr>options:<wbr>delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the PIN of a physical card.
+Change physical card PIN. This function should be called at the start of UI display.
+SDK manage the UI entry capture securely and return events through PINEntryUIDelegate.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.3.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">changePIN</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                      <span class="nv">textFieldNew</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1SecureTextField.html">D1SecureTextField</a></span><span class="p">,</span>
+                      <span class="nv">textFieldConfirm</span><span class="p">:</span> <span class="kt"><a href="../Classes/D1SecureTextField.html">D1SecureTextField</a></span><span class="p">,</span>
+                      <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/ChangePINOptions.html">ChangePINOptions</a></span><span class="p">,</span>
+                      <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PINEntryUIDelegate.html">PINEntryUIDelegate</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/PINEntryUI.html">PINEntryUI</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>textFieldNew</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new PIN entry field.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>textFieldConfirm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The confirm PIN entry field.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PIN entry option.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>PINEntryUIDelegate, possible events: pinMismatch, pinMatch, firstEntry
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11pinMismatchyA2EmF">D1Error.Code.pinMismatch</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO10pinInvalidyA2EmF">D1Error.Code.pinInvalid</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO12cardNotFoundyA2EmF">D1Error.Code.cardNotFound</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO9notActiveyA2EmF">D1Error.Code.notActive</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/PINEntryUI.html">PINEntryUI</a></code> instance, the UI to trigger wipe or submit functionality.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC20cardActivationMethod_10completionySS_yAA04CarddE0OSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/cardActivationMethod(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC20cardActivationMethod_10completionySS_yAA04CarddE0OSg_AA0A5ErrorVSgtctF">cardActivationMethod(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the activation method for a physical card.
+This API identifies the activation method to be used for activating a physical card.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cardActivationMethod</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/CardActivationMethod.html">CardActivationMethod</a></span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, it returns the <code><a href="../Enums/CardActivationMethod.html">CardActivationMethod</a></code> as result. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC20activatePhysicalCard_7entryUI10completionySS_AA05EntryG0VyAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/activatePhysicalCard(_:entryUI:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC20activatePhysicalCard_7entryUI10completionySS_AA05EntryG0VyAA0A5ErrorVSgctF">activatePhysicalCard(_:<wbr>entryUI:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activates a physical card.
+Use this API to activate a physical card for usage.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activatePhysicalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                 <span class="nv">entryUI</span><span class="p">:</span> <span class="kt"><a href="../Structs/EntryUI.html">EntryUI</a></span><span class="p">,</span>
+                                 <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>entryUI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UI to display secure text entry. If <code>activationMethod</code> is <code>CardActivationMethodNothing</code>, construct <code><a href="../Structs/EntryUI.html">EntryUI</a></code> with the value in <code><a href="../Classes/D1SecureTextField.html">D1SecureTextField</a></code> set to &lsquo;nil&rsquo;.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO22noCardActivationMethodyA2EmF">D1Error.Code.noCardActivationMethod</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO19uiComponentNotFoundyA2EmF">D1Error.Code.uiComponentNotFound</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC19activateDigitalCard04withdE2ID10completionySS_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/activateDigitalCard(withDigitalCardID:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19activateDigitalCard04withdE2ID10completionySS_yAA0A5ErrorVSgctF">activateDigitalCard(withDigitalCardID:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activates a digital card.
+Use this API to activate a digital card for usage.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.2.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activateDigitalCard</span><span class="p">(</span><span class="n">withDigitalCardID</span> <span class="nv">digitalCardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>digitalCardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The digital card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO12cardNotFoundyA2EmF">D1Error.Code.cardNotFound</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC11cardServiceAA04CardD0CyF"></a>
+                    <a name="//apple_ref/swift/Method/cardService()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC11cardServiceAA04CardD0CyF">cardService()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get <code><a href="../Classes/CardService.html">CardService</a></code> instance for the card issued by D1.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cardService</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/CardService.html">CardService</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/CardService.html">CardService</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC15updatePushToken_10completionySS_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/updatePushToken(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC15updatePushToken_10completionySS_yAA0A5ErrorVSgctF">updatePushToken(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update the new push notification token.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updatePushToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>token</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latest push notification token.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. When it succeeds, it returns no error. Otherwise, it returns the error details.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC19processNotification_10completionySDySSypG_ySDyAA12PushResponseV3KeyOSSGSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/processNotification(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19processNotification_10completionySDySSypG_ySDyAA12PushResponseV3KeyOSSGSg_AA0A5ErrorVSgtctF">processNotification(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Process the push notification data received from the notification server.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">processNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">],</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Structs/PushResponse.html">PushResponse</a></span><span class="o">.</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">String</span><span class="p">]?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback invoked when the operation is completed. Returns the push notification content. Check <code><a href="../Structs/PushResponse/Key.html#/s:2D112PushResponseV3KeyO11messageTypeyA2EmF">PushResponse.Key.messageType</a></code> to identify message type.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO5authnyA2EmF">D1Error.Code.authn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16authnNotEnrolledyA2EmF">D1Error.Code.authnNotEnrolled</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO17authnAccessDeniedyA2EmF">D1Error.Code.authnAccessDenied</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC21cardDigitizationState_10completionySS_yAA04CardD6ResultVSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/cardDigitizationState(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC21cardDigitizationState_10completionySS_yAA04CardD6ResultVSg_AA0A5ErrorVSgtctF">cardDigitizationState(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks the card digitization details.
+Use this API to determine if we need to show &lsquo;Add to Apple Pay&rsquo;, &lsquo;Activate on your phone&rsquo;, &lsquo;Activate on your watch&rsquo; button on the application.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use the instances of this class only on a single thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cardDigitizationState</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a></span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, it returns the <code><a href="../Structs/CardDigitizationResult.html">CardDigitizationResult</a></code> method. Otherwise, the error details will be returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC19addDigitalCardToOEM_14viewController10completionySS_So06UIViewI0CyAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/addDigitalCardToOEM(_:viewController:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19addDigitalCardToOEM_14viewController10completionySS_So06UIViewI0CyAA0A5ErrorVSgctF">addDigitalCardToOEM(_:<wbr>viewController:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add digital card to OEM wallet for a given cardID for Apple Pay</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use the instances of this class only on a single thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addDigitalCardToOEM</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current view controller to present the add card process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO9cancelledyA2EmF">D1Error.Code.cancelled</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC19activateDigitalCard_10completionySS_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/activateDigitalCard(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC19activateDigitalCard_10completionySS_yAA0A5ErrorVSgctF">activateDigitalCard(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activates the digital card that has the value of <code><a href="../Enums/CardDigitizationState.html">CardDigitizationState</a></code> equal to
+<code><a href="../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO15pendingIDVLocalyA2CmF">CardDigitizationState.pendingIDVLocal</a></code> or <code><a href="../Enums/CardDigitizationState.html#/s:2D121CardDigitizationStateO16pendingIDVRemoteyA2CmF">CardDigitizationState.pendingIDVRemote</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use the instances of this class only on a single thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">activateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, no error will be returned. Otherwise, the error details will be returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO16cardNoPendingIDVyA2EmF">D1Error.Code.cardNoPendingIDV</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC15digitalCardPass15forSerialNumberSo6PKPassCSgSS_tKF"></a>
+                    <a name="//apple_ref/swift/Method/digitalCardPass(forSerialNumber:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC15digitalCardPass15forSerialNumberSo6PKPassCSgSS_tKF">digitalCardPass(forSerialNumber:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the digital card for serial number provided by ApplePay.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This API contains <a href="https://developer.apple.com/documentation/passkit/pkpasslibrary">PKPassLibrary</a>.
+    It is not thread-safe. Use the instances of this class only on a single thread.</p>
+
+</div><div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+</ul>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>3.2.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">digitalCardPass</span><span class="p">(</span><span class="n">forSerialNumber</span> <span class="nv">serialNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">PKPass</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serialNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The serial number provided by ApplePay.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>PKPass</code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC15digitalCardList_10completionySS_ySayAA07DigitalD0VGSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/digitalCardList(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC15digitalCardList_10completionySS_ySayAA07DigitalD0VGSg_AA0A5ErrorVSgtctF">digitalCardList(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the digital card list for a given cardID.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Each <code><a href="../Structs/DigitalCard.html">DigitalCard</a></code> provides the method <code><a href="../Structs/DigitalCard.html#/s:2D111DigitalCardV17isOnCurrentDeviceSbvp">DigitalCard.isOnCurrentDevice</a></code> to identify if the digital cards are on the device (only for Apple Pay).
+
+</div><div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method requires <code>D1Task</code><code>to be configured first by calling</code>D1Task.configure(_:completion:)<code>with</code>ConfigParams.cardConfig()<code>. Otherwise,</code>NSInvalidArgumentException` will be thrown.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">digitalCardList</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                            <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Structs/DigitalCard.html">DigitalCard</a></span><span class="p">]?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful,  it returns the list of digital cards. Otherwise, the error details will be returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC17updateDigitalCard_07digitalE06action10completionySS_AA0dE0VAA0E6ActionOySb_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/updateDigitalCard(_:digitalCard:action:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC17updateDigitalCard_07digitalE06action10completionySS_AA0dE0VAA0E6ActionOySb_AA0A5ErrorVSgtctF">updateDigitalCard(_:<wbr>digitalCard:<wbr>action:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the digital card status for a given digital cardID.
+The following <code><a href="../Enums/CardAction.html">CardAction</a></code> can be performed:</p>
+
+<ul>
+    <li>Activates the card</li>
+    <li>Suspends the card</li>
+    <li>Deletes the card</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateDigitalCard</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">digitalCard</span><span class="p">:</span> <span class="kt"><a href="../Structs/DigitalCard.html">DigitalCard</a></span><span class="p">,</span>
+                              <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/CardAction.html">CardAction</a></span><span class="p">,</span>
+                              <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>digitalCard</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The digital card details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card action to be performed: active, suspend or delete.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful,  it returns the operation status. Otherwise, the error details will be returned.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC18tokenRequestorList_10completionySS_ySayAA05TokenD0VGSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/tokenRequestorList(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC18tokenRequestorList_10completionySS_ySayAA05TokenD0VGSg_AA0A5ErrorVSgtctF">tokenRequestorList(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the eligible token requestor list for a given cardID.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method requires <code>D1Task</code><code>to be configured first by calling</code>D1Task.configure(_:completion:)<code>with</code>ConfigParams.cardConfig()<code>. Otherwise,</code>NSInvalidArgumentException` will be thrown.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tokenRequestorList</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                               <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt"><a href="../Structs/TokenRequestor.html">TokenRequestor</a></span><span class="p">]?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier from <code>D1Task.consumerDetails(_:)</code> API.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful,  it returns the token requestor list. Otherwise, the error details will be returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC22addDigitalCardToScheme_14tokenRequestor6appURL26termsAndConditionsAccepted10completionySS_AA05TokenI0VSSSbySSSg_AA0A5ErrorVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/addDigitalCardToScheme(_:tokenRequestor:appURL:termsAndConditionsAccepted:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC22addDigitalCardToScheme_14tokenRequestor6appURL26termsAndConditionsAccepted10completionySS_AA05TokenI0VSSSbySSSg_AA0A5ErrorVSgtctF">addDigitalCardToScheme(_:<wbr>tokenRequestor:<wbr>appURL:<wbr>termsAndConditionsAccepted:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a digital card to scheme for a given cardID.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method requires <code>D1Task</code> to be configured first by calling <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF">D1Task.configure(_:completion:)</a></code> with <code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV04cardB0ACyFZ">ConfigParams.cardConfig()</a></code>. Otherwise, <code>NSInvalidArgumentException</code> will be thrown.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addDigitalCardToScheme</span><span class="p">(</span><span class="n">_</span> <span class="nv">cardID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">tokenRequestor</span><span class="p">:</span> <span class="kt"><a href="../Structs/TokenRequestor.html">TokenRequestor</a></span><span class="p">,</span>
+                                   <span class="nv">appURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">termsAndConditionsAccepted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                                   <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">?,</span> <span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The card identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tokenRequestor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target token requestor that the end user has selected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Your app’s custom URL scheme that the token requestor calls back upon the completion of tokenization flow to redirect the end user back to the initial page.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>termsAndConditionsAccepted</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Terms and conditions accepted by the end user. This is only applicable for Visa card scheme.
+The value is set by the issuer to indicate to the token requestor whether the customer has already accepted the issuer&rsquo;s terms and conditions. This is required for Secure Remote Commerce service.
+If the value is <code>true</code>, the token requestor can suppress the display of the terms and conditions to the customer and submit the terms and conditions GUID to Visa as though the customer has already accepted the them.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the operation is completed. When the callback is successful, it returns the push provisioning URL String. Otherwise, the error details will be returned. The push provisioning URL String is used to open and pass the information the Token Requestor app.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4cardyA2EmF">D1Error.Code.card</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO14notInitializedyA2EmF">D1Error.Code.notInitialized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC9secureLogSo06SecureD0_pSgyF"></a>
+                    <a name="//apple_ref/swift/Method/secureLog()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC9secureLogSo06SecureD0_pSgyF">secureLog()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>return an instance of SecureLog object to allow changing log level, getting/deleting log files.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">secureLog</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">SecureLog</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC16messagingServiceAA09MessagingD0CyKF"></a>
+                    <a name="//apple_ref/swift/Method/messagingService()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC16messagingServiceAA09MessagingD0CyKF">messagingService()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve <code><a href="../Classes/MessagingService.html">MessagingService</a></code> instance to perform message and notification
+related API.</p>
+
+<p>Possible errors: <code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code>.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    4.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">messagingService</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/MessagingService.html">MessagingService</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/MessagingService.html">MessagingService</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC17d1PushToECommerceAA0adeF0CyF"></a>
+                    <a name="//apple_ref/swift/Method/d1PushToECommerce()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC17d1PushToECommerceAA0adeF0CyF">d1PushToECommerce()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get <code><a href="../Classes/D1PushToECommerce.html">D1PushToECommerce</a></code> instance to access scheme push provisioning API methods.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.3.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">d1PushToECommerce</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/D1PushToECommerce.html">D1PushToECommerce</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/D1PushToECommerce.html">D1PushToECommerce</a></code> instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A4TaskC7d1AuthnyAA0aD0CSgAA0D8Delegate_pF"></a>
+                    <a name="//apple_ref/swift/Method/d1Authn(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A4TaskC7d1AuthnyAA0aD0CSgAA0D8Delegate_pF">d1Authn(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieve D1Authn object for Authn use cases</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">d1Authn</span><span class="p">(</span><span class="n">_</span> <span class="nv">authnDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AuthnDelegate.html">AuthnDelegate</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/D1Authn.html">D1Authn</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>authnDelegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>delegate for authn use cases</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
