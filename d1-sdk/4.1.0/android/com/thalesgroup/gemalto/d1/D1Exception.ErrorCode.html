@@ -320,7 +320,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 <tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#ERROR_D1PAY_DIGITIZATION_IN_PROGRESS">ERROR_D1PAY_DIGITIZATION_IN_PROGRESS</a></span></code></th>
 <td class="colLast">
-<div class="block">D1 Pay Token Digitization is in progress.</div>
+<div class="block">The digitization of D1 Pay tokens is in progress.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -1212,14 +1212,14 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>ERROR_D1PAY_DIGITIZATION_IN_PROGRESS</h4>
 <pre>public static final&nbsp;<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a> ERROR_D1PAY_DIGITIZATION_IN_PROGRESS</pre>
-<div class="block">D1 Pay Token Digitization is in progress.
+<div class="block">The digitization of D1 Pay tokens is in progress.
  <a href="#getCode()"><code>getCode()</code></a> value: 50022.
  <p>
- D1 Pay does not allow digitizing multiple cards in parallel.
+ D1 Pay does not allow the digitizing of multiple cards at a time.
  You will receive this error if you try to add a card while a digitization is already in progress for this card or another card.
 
  <p><b>NOTE:</b><br/>
- Integrator should call getCardDigitizationState API <a href="d1pay/D1PayWallet.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getCardDigitizationState()</code></a> before performing <a href="d1pay/D1PayWallet.html#addDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>addDigitalCard()</code></a>
+ Integrator should call the getCardDigitizationState API <a href="d1pay/D1PayWallet.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getCardDigitizationState()</code></a> before performing <a href="d1pay/D1PayWallet.html#addDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>addDigitalCard()</code></a>.
 
  <p><b>Category - D1 PAY API</b></div>
 </li>
