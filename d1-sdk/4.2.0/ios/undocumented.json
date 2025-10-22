@@ -1,0 +1,446 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/D1DisplayTextField.swift",
+      "line": 26,
+      "symbol": "D1DisplayTextField.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/D1PINDisplayTextField.swift",
+      "line": 14,
+      "symbol": "D1PINDisplayTextField.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/D1SecureTextField.swift",
+      "line": 14,
+      "symbol": "D1SecureTextField.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/D1Task_PushProvisioning.swift",
+      "line": 84,
+      "symbol": "D1Task.session(_:activationDidCompleteWith:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/D1Task_PushProvisioning.swift",
+      "line": 93,
+      "symbol": "D1Task.sessionDidBecomeInactive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/D1Task_PushProvisioning.swift",
+      "line": 95,
+      "symbol": "D1Task.sessionDidDeactivate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 12,
+      "symbol": "DisplayTextField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 22,
+      "symbol": "DisplayTextField.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 27,
+      "symbol": "DisplayTextField.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 32,
+      "symbol": "DisplayTextField.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 38,
+      "symbol": "DisplayTextField.insecureCopyToClipboard()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 87,
+      "symbol": "DisplayTextField.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 95,
+      "symbol": "DisplayTextField.insertText(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 98,
+      "symbol": "DisplayTextField.isSecureTextEntry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 107,
+      "symbol": "DisplayTextField.canBecomeFirstResponder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 116,
+      "symbol": "DisplayTextField.becomeFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 120,
+      "symbol": "DisplayTextField.autocorrectionType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 129,
+      "symbol": "DisplayTextField.keyboardType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 138,
+      "symbol": "DisplayTextField.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 147,
+      "symbol": "DisplayTextField.inputView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 156,
+      "symbol": "DisplayTextField.inputAccessoryView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/DisplayTextField.swift",
+      "line": 167,
+      "symbol": "DisplayTextField.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 12,
+      "symbol": "PinDisplayTextField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 22,
+      "symbol": "PinDisplayTextField.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 27,
+      "symbol": "PinDisplayTextField.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 32,
+      "symbol": "PinDisplayTextField.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 38,
+      "symbol": "PinDisplayTextField.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 46,
+      "symbol": "PinDisplayTextField.insertText(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 49,
+      "symbol": "PinDisplayTextField.isSecureTextEntry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 58,
+      "symbol": "PinDisplayTextField.canBecomeFirstResponder",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 67,
+      "symbol": "PinDisplayTextField.becomeFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 71,
+      "symbol": "PinDisplayTextField.autocorrectionType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 80,
+      "symbol": "PinDisplayTextField.keyboardType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 89,
+      "symbol": "PinDisplayTextField.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 98,
+      "symbol": "PinDisplayTextField.inputView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 107,
+      "symbol": "PinDisplayTextField.inputAccessoryView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/PinDisplayTextField.swift",
+      "line": 118,
+      "symbol": "PinDisplayTextField.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 11,
+      "symbol": "SecureTextField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 11,
+      "symbol": "SecureTextField",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 36,
+      "symbol": "SecureTextField.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 41,
+      "symbol": "SecureTextField.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 46,
+      "symbol": "SecureTextField.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 149,
+      "symbol": "SecureTextField.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 157,
+      "symbol": "SecureTextField.insertText(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 160,
+      "symbol": "SecureTextField.isSecureTextEntry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 169,
+      "symbol": "SecureTextField.becomeFirstResponder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 176,
+      "symbol": "SecureTextField.autocorrectionType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 185,
+      "symbol": "SecureTextField.keyboardType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 194,
+      "symbol": "SecureTextField.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 208,
+      "symbol": "SecureTextField.inputView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField.swift",
+      "line": 217,
+      "symbol": "SecureTextField.inputAccessoryView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 15,
+      "symbol": "SecureTextField.textField(_:shouldChangeCharactersIn:replacementString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 154,
+      "symbol": "SecureTextField.textFieldShouldBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 163,
+      "symbol": "SecureTextField.textFieldDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 172,
+      "symbol": "SecureTextField.textFieldShouldEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 181,
+      "symbol": "SecureTextField.textFieldDidEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 191,
+      "symbol": "SecureTextField.textFieldDidEndEditing(_:reason:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 201,
+      "symbol": "SecureTextField.textFieldDidChangeSelection(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 210,
+      "symbol": "SecureTextField.textFieldShouldClear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 219,
+      "symbol": "SecureTextField.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 230,
+      "symbol": "SecureTextField.textField(_:editMenuForCharactersIn:suggestedActions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 243,
+      "symbol": "SecureTextField.textField(_:willPresentEditMenuWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1/D1/internal/module/ui/SecureTextField_UITextFieldDelegate.swift",
+      "line": 253,
+      "symbol": "SecureTextField.textField(_:willDismissEditMenuWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/idpmobile/gitlabci/builds/wzX1t-rPJ/0/bps/dme/project/d1sdk/ios/build/D1SDK-3DS-4.1.1-20251022-859c858a-iOS/D1"
+}

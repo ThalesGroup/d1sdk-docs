@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6};
+var data = {"i0":6,"i1":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -185,6 +185,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Enroll the card in Click to Pay.</div>
 </td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#optOutCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">optOutCard</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
+          <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a>&gt;&nbsp;callback)</code></th>
+<td class="colLast">
+<div class="block">Opt-out the card from Click to Pay.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -205,7 +213,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>enrol</h4>
 <pre class="methodSignature">void&nbsp;enrol&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
@@ -227,18 +235,60 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd><code>name</code> - The card holder name as present on the card. It is applicable only to Visa.</dd>
 <dd><code>billingAddress</code> - Billing Address associated to the card enrolled to Click to Pay. Mandatory for Visa.</dd>
 <dd><code>callback</code> - The callback for the result.
-                       When it is successful, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                       When it is successful, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is <a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card"><code>D1ClickToPay.Status</code></a>.
                        <br/>Possible errors:<br/>
                        <ul>
                          <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
                          <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
                          <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
-                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
-                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY</code></a></li>
                          <li><a href="../D1Exception.ErrorCode.html#ERROR_INVALID_ARGUMENT"><code>D1Exception.ErrorCode.ERROR_INVALID_ARGUMENT</code></a></li>
                          <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_ACTIVE"><code>D1Exception.ErrorCode.ERROR_NOT_ACTIVE</code></a></li>
-                        <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_OPERATION_NOT_ALLOWED"><code>D1Exception.ErrorCode.ERROR_CARD_OPERATION_NOT_ALLOWED</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_OPERATION_NOT_ALLOWED"><code>D1Exception.ErrorCode.ERROR_CARD_OPERATION_NOT_ALLOWED</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_FIRST_NAME"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_INVALID_FIRST_NAME</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_LAST_NAME"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_INVALID_LAST_NAME</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_LANGUAGE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_INVALID_LANGUAGE</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER_COUNTRY_CODE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER_COUNTRY_CODE</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_BILLING_ADDRESS_COUNTRY_CODE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_INVALID_BILLING_ADDRESS_COUNTRY_CODE</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_AMBIGUOUS_PROFILE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_SCHEME_AMBIGUOUS_PROFILE</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_RESOURCE_EXISTS"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_SCHEME_RESOURCE_EXISTS</code></a></li>
+                         <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_CARD_INELIGIBLE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_SCHEME_CARD_INELIGIBLE</code></a></li>
                        </ul></dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.2.0</dd>
+</dl>
+</li>
+</ul>
+<a id="optOutCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>optOutCard</h4>
+<pre class="methodSignature">void&nbsp;optOutCard&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
+                <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a>&gt;&nbsp;callback)</pre>
+<div class="block">Opt-out the card from Click to Pay. Once the opt-out is successful, the tokenization process is completed. The enrollment status in the Integrator system will be updated via a push notification.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cardID</code> - The card identifier</dd>
+<dd><code>callback</code> - The callback for the result.
+                 When it is successful, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is <a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card"><code>D1ClickToPay.Status</code></a>.
+                 <br/>Possible errors:<br/>
+                 <ul>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_OPERATION_NOT_ALLOWED"><code>D1Exception.ErrorCode.ERROR_CARD_OPERATION_NOT_ALLOWED</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_AMBIGUOUS_PROFILE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_SCHEME_AMBIGUOUS_PROFILE</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_RESOURCE_EXISTS"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_SCHEME_RESOURCE_EXISTS</code></a></li>
+                   <li><a href="../D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_CARD_INELIGIBLE"><code>D1Exception.ErrorCode.ERROR_CLICKTOPAY_SCHEME_CARD_INELIGIBLE</code></a></li>
+                 </ul></dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>4.2.0</dd>
 </dl>
