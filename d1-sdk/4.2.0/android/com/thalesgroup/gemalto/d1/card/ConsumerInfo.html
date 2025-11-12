@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -166,9 +166,19 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
             <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;email)</code></th>
 <td class="colLast">
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Please use new API: <a href="#newInstanceForClickToPay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>newInstanceForClickToPay(String, String, String, String, String, String, String)</code></a></div>
+<div class="deprecationComment">Please use new API: <a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>ConsumerInfo(String, String, String, String, String, String, String)</code></a></div>
 </div>
 </td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">ConsumerInfo</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;firstName,
+            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;middleName,
+            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;lastName,
+            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language,
+            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumberCountryCode,
+            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumber,
+            <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;email)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -182,7 +192,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -235,17 +245,6 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <div class="block">The country code of the phone number according to International calling code format UIT-T E.164.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static <a href="ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card">ConsumerInfo</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#newInstanceForClickToPay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">newInstanceForClickToPay</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;firstName,
-                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;middleName,
-                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;lastName,
-                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language,
-                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumberCountryCode,
-                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumber,
-                        <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;email)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -270,6 +269,41 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ConsumerInfo</h4>
+<pre>public&nbsp;ConsumerInfo&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;firstName,
+                    <a href="https://developer.android.com/reference/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@Nullable</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;middleName,
+                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;lastName,
+                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language,
+                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumberCountryCode,
+                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumber,
+                    <a href="https://developer.android.com/reference/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@Nullable</a>
+                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;email)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>firstName</code> - Provides the consumer's first name. The maximum length of the first name allowed is 35 characters.</dd>
+<dd><code>middleName</code> - Provides the consumer's middle name. The maximum length of the middle name allowed is 35 characters.</dd>
+<dd><code>lastName</code> - Provides the consumer's last name. The maximum length of the last name allowed is 35 characters.</dd>
+<dd><code>language</code> - The preferred language to be used by the consumer.
+                               Format: A 2-letter language code (ISO 639-1) in lowercase with an underscore (”-”), followed by a 2-letter (ISO 3166–1 alpha-2) country code in uppercase.
+                               For example: en-US</dd>
+<dd><code>phoneNumberCountryCode</code> - International country code of the end user's phoneNumber. Shall start with the '+' sign.
+                               For example: +65</dd>
+<dd><code>email</code> - The consumer’s email address in RFC 5322 format. For example: myemail@mail.com.</dd>
+<dd><code>phoneNumber</code> - National phoneNumber of the end user. Shall not contain the first '0' of the national phoneNumber.</dd>
+</dl>
+</li>
+</ul>
 <a id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
 <!--   -->
 </a>
@@ -289,7 +323,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
                     <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                     <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;email)</pre>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Please use new API: <a href="#newInstanceForClickToPay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>newInstanceForClickToPay(String, String, String, String, String, String, String)</code></a></div>
+<div class="deprecationComment">Please use new API: <a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>ConsumerInfo(String, String, String, String, String, String, String)</code></a></div>
 </div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -324,42 +358,6 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <h4>getMiddleName</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@Nullable</a>
 public&nbsp;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getMiddleName()</pre>
-</li>
-</ul>
-<a id="newInstanceForClickToPay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>newInstanceForClickToPay</h4>
-<pre class="methodSignature">public static&nbsp;<a href="ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card">ConsumerInfo</a>&nbsp;newInstanceForClickToPay&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;firstName,
-                                                    <a href="https://developer.android.com/reference/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@Nullable</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;middleName,
-                                                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;lastName,
-                                                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language,
-                                                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumberCountryCode,
-                                                    <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;phoneNumber,
-                                                    <a href="https://developer.android.com/reference/androidx/annotation/Nullable.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@Nullable</a>
-                                                    <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;email)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>firstName</code> - Provides the consumer's first name. The maximum length of the first name allowed is 35 characters.</dd>
-<dd><code>lastName</code> - Provides the consumer's last name. The maximum length of the last name allowed is 35 characters.</dd>
-<dd><code>language</code> - The preferred language to be used by the consumer.
-                               Format: A 2-letter language code (ISO 639-1) in lowercase with an underscore (”-”), followed by a 2-letter (ISO 3166–1 alpha-2) country code in uppercase.
-                               For example: en-US</dd>
-<dd><code>phoneNumberCountryCode</code> - International country code of the end user's phoneNumber. Shall start with the '+' sign.
-                               For example: +65</dd>
-<dd><code>email</code> - The consumer’s email address in RFC 5322 format. For example: myemail@mail.com.</dd>
-<dd><code>phoneNumber</code> - National phoneNumber of the end user. Shall not contain the first '0' of the national phoneNumber.</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Consumer Info object for mastercard click to pay</dd>
-</dl>
 </li>
 </ul>
 <a id="getFirstName()">

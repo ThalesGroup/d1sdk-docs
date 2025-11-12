@@ -207,13 +207,21 @@ extends <a href="https://developer.android.com/reference/java/lang/Exception.htm
 </td>
 </tr>
 <tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,int,java.lang.String)">D1Exception</a></span>&#8203;(<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a>&nbsp;errorCode,
+           int&nbsp;causeErrorCode,
+           <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;causeErrorMessage)</code></th>
+<td class="colLast">
+<div class="block">Constructs a D1Exception with the error code, the cause's error code and message.</div>
+</td>
+</tr>
+<tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,java.lang.Throwable)">D1Exception</a></span>&#8203;(<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a>&nbsp;errorCode,
            <a href="https://developer.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
 <td class="colLast">
 <div class="block">Constructs a D1Exception with an error code and the cause.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,java.lang.Throwable,int)">D1Exception</a></span>&#8203;(<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a>&nbsp;errorCode,
            <a href="https://developer.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause,
            int&nbsp;causeErrorCode)</code></th>
@@ -221,7 +229,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Exception.htm
 <div class="block">Constructs a D1Exception with the error code, cause and the cause's error code.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,java.lang.Throwable,int,java.lang.String)">D1Exception</a></span>&#8203;(<a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a>&nbsp;errorCode,
            <a href="https://developer.android.com/reference/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause,
            int&nbsp;causeErrorCode,
@@ -343,6 +351,25 @@ extends <a href="https://developer.android.com/reference/java/lang/Exception.htm
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>errorCode</code> - The D1 error code.</dd>
 <dd><code>cause</code> - The cause of the exception.</dd>
+<dd><code>causeErrorCode</code> - The error code of the cause.</dd>
+<dd><code>causeErrorMessage</code> - The error message of the cause.</dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,int,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>D1Exception</h4>
+<pre>public&nbsp;D1Exception&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
+                   <a href="D1Exception.ErrorCode.html" title="enum in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a>&nbsp;errorCode,
+                   int&nbsp;causeErrorCode,
+                   <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;causeErrorMessage)</pre>
+<div class="block">Constructs a D1Exception with the error code, the cause's error code and message.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>errorCode</code> - The D1 error code.</dd>
 <dd><code>causeErrorCode</code> - The error code of the cause.</dd>
 <dd><code>causeErrorMessage</code> - The error message of the cause.</dd>
 </dl>
