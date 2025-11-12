@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TransactionStatus Enumeration Reference</title>
+    <title>IssuerParams Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/TransactionStatus" class="dashAnchor"></a>
-    <a title="TransactionStatus Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/IssuerParams" class="dashAnchor"></a>
+    <a title="IssuerParams Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html">D1SDK-3DS</a></p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../../index.html">D1 Reference</a>
         <img id="carat" src="../../img/carat.png" alt=""/>
-        TransactionStatus Enumeration Reference
+        IssuerParams Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -281,18 +281,21 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>TransactionStatus</h1>
+            <h1>IssuerParams</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TransactionStatus</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IssuerParams</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
-            <p>The status of the transaction.</p>
+            <p>The configuration parameters for mapping cards, issuerIds and consumerIds.
+The <code>cardParams</code> contains the configuration parameters of the card.
+The <code>issuerID</code> is the Issuer Identifier.
+The <code>consumerID</code> is the Consumer Identifier.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
-    4.0.0
+    4.2.0
 
 </div>
 
@@ -303,9 +306,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2D121CardTransactionRecordC0C6StatusO8approvedyA2EmF"></a>
-                    <a name="//apple_ref/swift/Element/approved" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D121CardTransactionRecordC0C6StatusO8approvedyA2EmF">approved</a>
+                    <a name="/s:2D112ConfigParamsV06IssuerC0V04cardC08issuerID08consumerG0AeC04CardC0V_S2Stcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(cardParams:issuerID:consumerID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D112ConfigParamsV06IssuerC0V04cardC08issuerID08consumerG0AeC04CardC0V_S2Stcfc">init(cardParams:<wbr>issuerID:<wbr>consumerID:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -313,95 +316,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Transaction is approved.</p>
+                        <p>Initialize the <code>IssuerParams</code>.</p>
+
+<p>The <code>cardParams</code>: configuration parameters for the card.
+The <code>issuerID</code>: The Issuer Identifier.
+The <code>consumerID</code>: The Consumer Identifier.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">approved</span> <span class="o">=</span> <span class="s">"APPROVED"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D121CardTransactionRecordC0C6StatusO16partialyApprovedyA2EmF"></a>
-                    <a name="//apple_ref/swift/Element/partialyApproved" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D121CardTransactionRecordC0C6StatusO16partialyApprovedyA2EmF">partialyApproved</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Transaction is partially approved.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">partialyApproved</span> <span class="o">=</span> <span class="s">"PARTIALY_APPROVED"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D121CardTransactionRecordC0C6StatusO8declinedyA2EmF"></a>
-                    <a name="//apple_ref/swift/Element/declined" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D121CardTransactionRecordC0C6StatusO8declinedyA2EmF">declined</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Transaction is declined.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">declined</span> <span class="o">=</span> <span class="s">"DECLINED"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:2D121CardTransactionRecordC0C6StatusO8reversedyA2EmF"></a>
-                    <a name="//apple_ref/swift/Element/reversed" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2D121CardTransactionRecordC0C6StatusO8reversedyA2EmF">reversed</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Transaction is reversed.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">reversed</span> <span class="o">=</span> <span class="s">"REVERSED"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">cardParams</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ConfigParams/CardParams.html">CardParams</a></span><span class="p">,</span> <span class="nv">issuerID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">consumerID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

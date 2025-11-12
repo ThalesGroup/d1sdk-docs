@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":9,"i29":10,"i30":10,"i31":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":42,"i15":10,"i16":10,"i17":10,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":9,"i29":10,"i30":10,"i31":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -171,7 +171,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="D1Task.ConfigCallback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.ConfigCallback</a>&lt;<a href="D1Task.ConfigCallback.html" title="type parameter in D1Task.ConfigCallback">T</a>&gt;</span></code></th>
 <td class="colLast">
-<div class="block">Configuration callback to return result of an asynchronous call.</div>
+<div class="block">Configuration callback to return the result of an asynchronous call.</div>
 </td>
 </tr>
 </table>
@@ -186,7 +186,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -284,7 +284,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <td class="colFirst"><code><a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice">CardService</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCardService()">getCardService</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> instance for the card issued by D1.</div>
+<div class="block">Gets the <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> instance for the card issued by D1 where <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> is a new helper class.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -299,9 +299,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <td class="colFirst"><code><a href="card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card">D1ClickToPay</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getD1ClickToPay()">getD1ClickToPay</a></span>()</code></th>
 <td class="colLast">
-<div class="block">getClickToPay to the D1 Click to Pay services
-
- D1ClickToPay is a new Helper class</div>
+<div class="block">getClickToPay to the D1 Click to Pay services.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -315,18 +313,16 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <td class="colFirst"><code><a href="card/D1PushToECommerce.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushToECommerce</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getD1PushToECommerce()">getD1PushToECommerce</a></span>()</code></th>
 <td class="colLast">
-<div class="block">getPushToECommerce to the D1 services
-
- PushToECommerce is a new Helper class for eCommerce push provision</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Please use new API: <a href="#getD1ClickToPay()"><code>getD1ClickToPay()</code></a></div>
+</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getD1PushWallet()">getD1PushWallet</a></span>()</code></th>
 <td class="colLast">
-<div class="block">getPushWallet to the D1 services
-
- PushWallet is a new Helper class</div>
+<div class="block">getPushWallet to the D1 services.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
@@ -334,7 +330,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">getDigitalCardList</a></span>&#8203;(<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                   <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&gt;&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Retrieve Digital Card list for a given <code>cardID</code>.</div>
+<div class="block">Retrieves the digital card list for a given <code>cardID</code>.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -348,7 +344,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <td class="colFirst"><code>static <a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSDKVersions()">getSDKVersions</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Returns the SDK version(s) in the D1 SDK.</div>
+<div class="block">Returns the SDK version(s) in D1 SDK.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
@@ -380,7 +376,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)">login</a></span>&#8203;(byte[]&nbsp;issuerToken,
      <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</code></th>
 <td class="colLast">
-<div class="block">Login to the D1 services using a provided token.</div>
+<div class="block">Logs in to the D1 services using a provided token.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
@@ -430,7 +426,7 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reset(android.content.Context)">reset</a></span>&#8203;(<a href="https://developer.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content" class="externalLink">Context</a>&nbsp;context)</code></th>
 <td class="colLast">
-<div class="block">Reset the SDK.</div>
+<div class="block">Resets the SDK.</div>
 </td>
 </tr>
 <tr id="i29" class="rowColor">
@@ -490,10 +486,10 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <h4>getSDKVersions</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
 public static&nbsp;<a href="https://developer.android.com/reference/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;getSDKVersions()</pre>
-<div class="block">Returns the SDK version(s) in the D1 SDK.</div>
+<div class="block">Returns the SDK version(s) in D1 SDK.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>Dictionary with SDK name as key and SDK version as value, for example, {"D1": "1.0.0"}.</dd>
+<dd>Dictionary with SDK name as the key and SDK version as the value, for example, {"D1": "1.0.0"}.</dd>
 </dl>
 </li>
 </ul>
@@ -505,7 +501,7 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/util/Ma
 <h4>getCardService</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
 public&nbsp;<a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice">CardService</a>&nbsp;getCardService()</pre>
-<div class="block">Gets the <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> instance for the card issued by D1. <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> is a new helper class.</div>
+<div class="block">Gets the <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> instance for the card issued by D1 where <a href="card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> is a new helper class.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>4.0.0</dd>
@@ -541,12 +537,32 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
                             <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;token,
                             <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                             <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Updates the new push token.</div>
+<div class="block">Updates the new push token.
+ 
+ <p>To update the backend with the latest push token, one of the 
+ <a href="#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>login(byte[], D1Task.Callback)</code></a> or 
+ <a href="#login(java.util.List,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>login(List, D1Task.Callback)</code></a> methods must be called before invoking 
+ <a href="#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>updatePushToken(String, D1Task.Callback)</code></a> when the following features are used:</p>
+
+ <ul>
+   <li>Click to Pay</li>
+   <li>Messaging Service</li>
+ </ul>
+
+ <p>For NFC Payment and 3D Secure features, the D1 SDK does not require initialization to call 
+ <a href="#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>updatePushToken(String, D1Task.Callback)</code></a>. It only requires an Android 
+ <a href="https://developer.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content" class="externalLink"><code>Context</code></a>.</p>
+
+ <p>In cases where either the Click to Pay or Messaging Service features are used together with 
+ the NFC Payment or 3D Secure features, one of the 
+ <a href="#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>login(byte[], D1Task.Callback)</code></a> or 
+ <a href="#login(java.util.List,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>login(List, D1Task.Callback)</code></a> methods must be called before invoking 
+ <a href="#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>updatePushToken(String, D1Task.Callback)</code></a>.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>token</code> - The latest push notification token.</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
@@ -572,7 +588,7 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>data</code> - The pushed data</dd>
 <dd><code>callback</code> - The callback for the result.
-                 If <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is returned, check <a href="PushResponseKey.html#MESSAGE_TYPE"><code>PushResponseKey.MESSAGE_TYPE</code></a> to find out the message type.
+                 If <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is returned, check <a href="PushResponseKey.html#MESSAGE_TYPE"><code>PushResponseKey.MESSAGE_TYPE</code></a> to find the message type.
 
                  <br/>Possible errors:<br/>
                  <ul>
@@ -599,8 +615,8 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
 <h4>reset</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;reset&#8203;(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                          <a href="https://developer.android.com/reference/android/content/Context.html?is-external=true" title="class or interface in android.content" class="externalLink">Context</a>&nbsp;context)</pre>
-<div class="block">Reset the SDK.
- Calling this API will delete all the SDK internal data and the end user wll need to initialize and re-enroll to the SDK services.</div>
+<div class="block">Resets the SDK.
+ Calling this API will delete all the SDK internal data and the end user wll need to initialize and re-enrol to the SDK services.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - Application context</dd>
@@ -622,11 +638,11 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
 <div class="block">D1 Task configurations. It is the entry point for SDK initialization.
  <p>
  App can only initialize certain features only to reduce waiting time.
- It is not mandatory to initialize all features in a single call.</div>
+ It is not mandatory to initialise all features in a single call.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for the result.
-                     When it succeeds, the returned argument of the <a href="D1Task.ConfigCallback.html#onSuccess(T)"><code>D1Task.ConfigCallback.onSuccess(Object)</code></a> is always null.
+                     When it is successful, the returned argument of the <a href="D1Task.ConfigCallback.html#onSuccess(T)"><code>D1Task.ConfigCallback.onSuccess(Object)</code></a> is always null.
                      <br/>Possible errors:<br/>
                      <ul>
                          <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
@@ -640,7 +656,7 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
                          <li><a href="D1Exception.ErrorCode.html#ERROR_GPAY"><code>D1Exception.ErrorCode.ERROR_GPAY</code></a></li>
                          <li><a href="D1Exception.ErrorCode.html#ERROR_SPAY"><code>D1Exception.ErrorCode.ERROR_SPAY</code></a></li>
                      </ul></dd>
-<dd><code>configParams</code> - The configurations of feature, e.g. Google Pay, D1 Pay</dd>
+<dd><code>configParams</code> - The configurations of the features. For example, Google Pay, and D1 Pay.</dd>
 </dl>
 </li>
 </ul>
@@ -654,12 +670,12 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
                   byte[]&nbsp;issuerToken,
                   <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                   <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html?is-external=true" title="class or interface in java.lang" class="externalLink">Void</a>&gt;&nbsp;callback)</pre>
-<div class="block">Login to the D1 services using a provided token.</div>
+<div class="block">Logs in to the D1 services using a provided token.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>issuerToken</code> - Issuer token received from the bank IDP.</dd>
 <dd><code>callback</code> - The callback for the result.
-                    When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                    When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                      <br/>Possible errors:<br/>
                      <ul>
                          <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
@@ -688,7 +704,7 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>issuerTokens</code> - Issuer tokens received from the bank IDP.</dd>
 <dd><code>callback</code> - The callback for the result.
-                     When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                     When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                      <br/>Possible errors:<br/>
                      <ul>
                          <li><a href="D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
@@ -719,7 +735,7 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -741,7 +757,7 @@ public&nbsp;<a href="messaging/MessagingService.html" title="interface in com.th
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -792,7 +808,7 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/lang/St
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always a non-null value.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -820,7 +836,7 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/lang/St
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always a non-null value.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -854,7 +870,7 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/lang/St
 <dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>cardDetailsUI</code> - The UI to display card details.</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -886,7 +902,7 @@ public static&nbsp;<a href="https://developer.android.com/reference/java/lang/St
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>cardPINUI</code> - The ui to display card PIN</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
-                  When it succeeds, it returns no error and the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a>'s argument is always null.
+                  When it is successful, it returns no error and the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a>'s argument is always null.
                   Otherwise, it returns the error details.
                   <br/>Possible errors:<br/>
                   <ul>
@@ -950,7 +966,7 @@ public&nbsp;<a href="PINEntryUI.html" title="class in com.thalesgroup.gemalto.d1
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
-                 When it succeeds, it returns the <a href="card/CardActivationMethod.html" title="enum in com.thalesgroup.gemalto.d1.card"><code>CardActivationMethod</code></a> if unknown activation method then it returns null.
+                 When it is successful, it returns the <a href="card/CardActivationMethod.html" title="enum in com.thalesgroup.gemalto.d1.card"><code>CardActivationMethod</code></a> if unknown activation method then it returns null.
                  Otherwise, it returns the error details.
                  <br/>Possible errors:<br/>
                  <ul>
@@ -985,7 +1001,7 @@ public&nbsp;<a href="PINEntryUI.html" title="class in com.thalesgroup.gemalto.d1
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>entryUI</code> - The UI to display secure text entry. If activationMethod is <a href="card/CardActivationMethod.html#NOTHING"><code>CardActivationMethod.NOTHING</code></a>, construct <a href="EntryUI.html" title="class in com.thalesgroup.gemalto.d1"><code>EntryUI</code></a> with a null `SecureEditText`</dd>
 <dd><code>callback</code> - The callback invoked when the operation is completed.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  Otherwise, it returns the error details.
                  <br/>Possible errors:<br/>
                  <ul>
@@ -1026,9 +1042,9 @@ public&nbsp;<a href="PINEntryUI.html" title="class in com.thalesgroup.gemalto.d1
 <h4>getD1PushWallet</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
 public&nbsp;<a href="card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a>&nbsp;getD1PushWallet()</pre>
-<div class="block">getPushWallet to the D1 services
+<div class="block">getPushWallet to the D1 services.
 
- PushWallet is a new Helper class</div>
+ PushWallet is a new helper class.</div>
 </li>
 </ul>
 <a id="getD1PushToECommerce()">
@@ -1039,9 +1055,12 @@ public&nbsp;<a href="card/D1PushWallet.html" title="interface in com.thalesgroup
 <h4>getD1PushToECommerce</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
 public&nbsp;<a href="card/D1PushToECommerce.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushToECommerce</a>&nbsp;getD1PushToECommerce()</pre>
-<div class="block">getPushToECommerce to the D1 services
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Please use new API: <a href="#getD1ClickToPay()"><code>getD1ClickToPay()</code></a></div>
+</div>
+<div class="block">getPushToECommerce to the D1 services.
 
- PushToECommerce is a new Helper class for eCommerce push provision</div>
+ PushToECommerce is a new helper class for e-commerce push provision.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>3.3.0</dd>
@@ -1056,9 +1075,9 @@ public&nbsp;<a href="card/D1PushToECommerce.html" title="interface in com.thales
 <h4>getD1ClickToPay</h4>
 <pre class="methodSignature"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
 public&nbsp;<a href="card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card">D1ClickToPay</a>&nbsp;getD1ClickToPay()</pre>
-<div class="block">getClickToPay to the D1 Click to Pay services
+<div class="block">getClickToPay to the D1 Click to Pay services.
 
- D1ClickToPay is a new Helper class</div>
+ D1ClickToPay is a new helper class.</div>
 </li>
 </ul>
 <a id="getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">
@@ -1071,14 +1090,14 @@ public&nbsp;<a href="card/D1ClickToPay.html" title="interface in com.thalesgroup
                                <a href="https://developer.android.com/reference/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;cardID,
                                <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html?is-external=true" title="class or interface in androidx.annotation" class="externalLink">@NonNull</a>
                                <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&gt;&gt;&nbsp;callback)</pre>
-<div class="block">Retrieve Digital Card list for a given <code>cardID</code>.
+<div class="block">Retrieves the digital card list for a given <code>cardID</code>.
 
- Note: Each `DigitalCard` provides the method <a href="card/DigitalCard.html#isOnCurrentDevice()"><code>DigitalCard.isOnCurrentDevice()</code></a> to identify the digital cards on the current device (only for GooglePay, SamsungPay and D1Pay).</div>
+ Note: Each `DigitalCard` provides the <a href="card/DigitalCard.html#isOnCurrentDevice()"><code>DigitalCard.isOnCurrentDevice()</code></a> method to identify the digital cards on the current device (only for GooglePay, Samsung Pay and D1 Pay).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>cardID</code> - The card identifier</dd>
+<dd><code>cardID</code> - The card identifier.</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always a non-null value.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -1111,7 +1130,7 @@ public&nbsp;<a href="card/D1ClickToPay.html" title="interface in com.thalesgroup
 <dd><code>digitalCard</code> - The digital card received from <a href="#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>getDigitalCardList(String, Callback)</code></a></dd>
 <dd><code>cardAction</code> - The card action to be performed: active, suspend or delete</dd>
 <dd><code>callback</code> - The callback for the result.
-                    When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                    When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always a non-null value.
                     <br/>Possible errors:<br/>
                     <ul>
                         <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -1198,7 +1217,7 @@ public&nbsp;<a href="card/D1ClickToPay.html" title="interface in com.thalesgroup
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>cardID</code> - The card identifier</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                 When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always a non-null value.
                  <br/>Possible errors:<br/>
                  <ul>
                      <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
@@ -1238,7 +1257,7 @@ public&nbsp;<a href="card/D1ClickToPay.html" title="interface in com.thalesgroup
 <dd><code>appURL</code> - The issuer app's custom URL that the token requestor calls back upon completion of digitization flow to return the user to where they started their journey</dd>
 <dd><code>tcsAccepted</code> - The terms and conditions accepted by user</dd>
 <dd><code>callback</code> - The callback for the result.
-                       When it succeeds, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always non-null.
+                       When it is successful, the returned argument of the <a href="D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always a non-null value.
                        <br/>Possible errors:<br/>
                        <ul>
                            <li><a href="D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>

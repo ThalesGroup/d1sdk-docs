@@ -146,8 +146,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public static enum <span class="typeNameLabel">D1ClickToPay.Status</span>
 extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink">Enum</a>&lt;<a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a>&gt;</pre>
-<div class="block">Enum representing the status of the Click to Pay enrollment process.
- Used in the enrollment callback to notify the integrator of the current state.</div>
+<div class="block">Enum representing the status of a Click to Pay operation.
+ Used in the callback to notify the integrator of the current state.</div>
 </li>
 </ul>
 </div>
@@ -170,14 +170,13 @@ extends <a href="https://developer.android.com/reference/java/lang/Enum.html?is-
 <tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#PENDING">PENDING</a></span></code></th>
 <td class="colLast">
-<div class="block">Indicates that the enrollment process is still in progress.</div>
+<div class="block">Indicates that the operation is still in progress.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#SUCCESSFUL">SUCCESSFUL</a></span></code></th>
 <td class="colLast">
-<div class="block">Indicates that the card has been successfully enrolled in Click to Pay
- and the tokenization process is complete.</div>
+<div class="block">Indicates that the operation was successful.</div>
 </td>
 </tr>
 </table>
@@ -286,8 +285,8 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>PENDING</h4>
 <pre>public static final&nbsp;<a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a> PENDING</pre>
-<div class="block">Indicates that the enrollment process is still in progress.
- The final status will be updated via push notification.</div>
+<div class="block">Indicates that the operation is still in progress.
+ The final status will be updated via a push notification.</div>
 </li>
 </ul>
 <a id="SUCCESSFUL">
@@ -297,8 +296,7 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>SUCCESSFUL</h4>
 <pre>public static final&nbsp;<a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a> SUCCESSFUL</pre>
-<div class="block">Indicates that the card has been successfully enrolled in Click to Pay
- and the tokenization process is complete.</div>
+<div class="block">Indicates that the operation was successful.</div>
 </li>
 </ul>
 </li>
@@ -395,7 +393,7 @@ public&nbsp;<a href="https://developer.android.com/reference/java/lang/String.ht
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://developer.android.com/reference/java/lang/Enum.html?is-external=true#toString()" title="class or interface in java.lang" class="externalLink">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://developer.android.com/reference/java/lang/Enum.html?is-external=true" title="class or interface in java.lang" class="externalLink">Enum</a>&lt;<a href="D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the status as a string.</dd>
+<dd>The status as a string.</dd>
 </dl>
 </li>
 </ul>

@@ -477,6 +477,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">CLEARED Status.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/messaging/MessageType.html#CLICKTOPAY_ENROLMENT">CLICKTOPAY_ENROLMENT</a></span> - com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessageType.html" title="enum in com.thalesgroup.gemalto.d1.messaging">MessageType</a></dt>
+<dd>
+<div class="block">Click to Pay Enrollment message.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/messaging/MessageType.html#CLICKTOPAY_OPTOUT_CARD">CLICKTOPAY_OPTOUT_CARD</a></span> - com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessageType.html" title="enum in com.thalesgroup.gemalto.d1.messaging">MessageType</a></dt>
+<dd>
+<div class="block">Click to Pay OptOut message.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/StateReason.html#CLOSED_ACCOUNT">CLOSED_ACCOUNT</a></span> - com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/StateReason.html" title="enum in com.thalesgroup.gemalto.d1.card.cardservice">StateReason</a></dt>
 <dd>
 <div class="block">Account is closed.</div>
@@ -507,7 +515,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/package-summary.html">com.thalesgroup.gemalto.d1.messaging</a> - package com.thalesgroup.gemalto.d1.messaging</dt>
 <dd>
-<div class="block">The main class for message and notification related APIs for the card issued by D1.</div>
+<div class="block">The main class for message and notification related APIs for the card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/ConfigParams.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">ConfigParams</span></a> - Class in <a href="com/thalesgroup/gemalto/d1/package-summary.html">com.thalesgroup.gemalto.d1</a></dt>
 <dd>
@@ -524,9 +532,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">ConsumerInfo(String, String, String, String, String, String)</a></span> - Constructor for class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card">ConsumerInfo</a></dt>
 <dd>
 <div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
-<div class="deprecationComment">Please use new API: <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html#newInstanceForClickToPay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>ConsumerInfo.newInstanceForClickToPay(String, String, String, String, String, String, String)</code></a></div>
+<div class="deprecationComment">Please use new API: <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"><code>ConsumerInfo(String, String, String, String, String, String, String)</code></a></div>
 </div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">ConsumerInfo(String, String, String, String, String, String, String)</a></span> - Constructor for class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card">ConsumerInfo</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/ContactlessTransactionListener.html" title="class in com.thalesgroup.gemalto.d1.d1pay"><span class="typeNameLink">ContactlessTransactionListener</span></a> - Class in <a href="com/thalesgroup/gemalto/d1/d1pay/package-summary.html">com.thalesgroup.gemalto.d1.d1pay</a></dt>
 <dd>
 <div class="block">Provides a callback and a utility helper for a contactless transaction.</div>
@@ -561,11 +571,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">D1ClickToPay</span></a> - Interface in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
-<div class="block">Main interface of the enrol to click to pay.</div>
+<div class="block">Main interface for Click to Pay operations.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">D1ClickToPay.Status</span></a> - Enum in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
-<div class="block">Enum representing the status of the Click to Pay enrollment process.</div>
+<div class="block">Enum representing the status of a Click to Pay operation.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.html" title="class in com.thalesgroup.gemalto.d1"><span class="typeNameLink">D1Exception</span></a> - Exception in <a href="com/thalesgroup/gemalto/d1/package-summary.html">com.thalesgroup.gemalto.d1</a></dt>
 <dd>
@@ -574,6 +584,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Exception.html#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode)">D1Exception(D1Exception.ErrorCode)</a></span> - Constructor for exception com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.html" title="class in com.thalesgroup.gemalto.d1">D1Exception</a></dt>
 <dd>
 <div class="block">Constructs a D1Exception with the specific error code.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Exception.html#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,int,java.lang.String)">D1Exception(D1Exception.ErrorCode, int, String)</a></span> - Constructor for exception com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.html" title="class in com.thalesgroup.gemalto.d1">D1Exception</a></dt>
+<dd>
+<div class="block">Constructs a D1Exception with the error code, the cause's error code and message.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Exception.html#%3Cinit%3E(com.thalesgroup.gemalto.d1.D1Exception.ErrorCode,java.lang.Throwable)">D1Exception(D1Exception.ErrorCode, Throwable)</a></span> - Constructor for exception com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.html" title="class in com.thalesgroup.gemalto.d1">D1Exception</a></dt>
 <dd>
@@ -637,7 +651,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1PushToECommerce.html" title="interface in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">D1PushToECommerce</span></a> - Interface in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
-<div class="block">Main interface of the push provisioning to eCommerce.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Please use new API: <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>D1ClickToPay</code></a></div>
+</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card"><span class="typeNameLink">D1PushWallet</span></a> - Interface in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>&nbsp;</dd>
@@ -653,7 +669,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="interface in com.thalesgroup.gemalto.d1"><span class="typeNameLink">D1Task.ConfigCallback</span></a>&lt;<a href="com/thalesgroup/gemalto/d1/D1Task.ConfigCallback.html" title="type parameter in D1Task.ConfigCallback">T</a>&gt; - Interface in <a href="com/thalesgroup/gemalto/d1/package-summary.html">com.thalesgroup.gemalto.d1</a></dt>
 <dd>
-<div class="block">Configuration callback to return result of an asynchronous call.</div>
+<div class="block">Configuration callback to return the result of an asynchronous call.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/ContactlessTransactionListener.html#deactivate()">deactivate()</a></span> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/ContactlessTransactionListener.html" title="class in com.thalesgroup.gemalto.d1.d1pay">ContactlessTransactionListener</a></dt>
 <dd>
@@ -755,11 +771,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html#enableSecureLog(boolean)">enableSecureLog(boolean)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html" title="class in com.thalesgroup.gemalto.d1">D1Task.Builder</a></dt>
 <dd>
-<div class="block">Enable or disable Secure Logs, enabled by default.</div>
+<div class="block">Allows you to enable or disable the generation of secure logs for D1 SDK; logging is enabled by default.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)">enrol(String, ConsumerInfo, String, BillingAddress, D1Task.Callback&lt;D1ClickToPay.Status&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card">D1ClickToPay</a></dt>
 <dd>
-<div class="block">Enroll the card in Click to Pay.</div>
+<div class="block">Enrols the card to the Click to Pay service.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/authn/D1Authn.html#enrollAuthnCredentials(com.thalesgroup.gemalto.d1.authn.AuthnType,com.thalesgroup.gemalto.d1.D1Task.Callback)">enrollAuthnCredentials(AuthnType, D1Task.Callback&lt;Void&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.authn.<a href="com/thalesgroup/gemalto/d1/authn/D1Authn.html" title="interface in com.thalesgroup.gemalto.d1.authn">D1Authn</a></dt>
 <dd>
@@ -1261,7 +1277,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getCardService()">getCardService()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Gets the <a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> instance for the card issued by D1.</div>
+<div class="block">Gets the <a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> instance for the card issued by D1 where <a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice"><code>CardService</code></a> is a new helper class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html#getCardSettings(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">getCardSettings(String, D1Task.Callback&lt;CardSettings&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice">CardService</a></dt>
 <dd>
@@ -1359,9 +1375,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getD1ClickToPay()">getD1ClickToPay()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">getClickToPay to the D1 Click to Pay services
-
- D1ClickToPay is a new Helper class</div>
+<div class="block">getClickToPay to the D1 Click to Pay services.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getD1PayWallet()">getD1PayWallet()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
@@ -1369,15 +1383,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getD1PushToECommerce()">getD1PushToECommerce()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">getPushToECommerce to the D1 services
-
- PushToECommerce is a new Helper class for eCommerce push provision</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Please use new API: <a href="com/thalesgroup/gemalto/d1/D1Task.html#getD1ClickToPay()"><code>D1Task.getD1ClickToPay()</code></a></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getD1PushWallet()">getD1PushWallet()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">getPushWallet to the D1 services
-
- PushWallet is a new Helper class</div>
+<div class="block">getPushWallet to the D1 services.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardLimitSettings.html#getDailyPurchaseLimit()">getDailyPurchaseLimit()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardLimitSettings.html" title="class in com.thalesgroup.gemalto.d1.card.cardservice">CardLimitSettings</a></dt>
 <dd>
@@ -1443,7 +1455,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">getDigitalCardList(String, D1Task.Callback&lt;List&lt;DigitalCard&gt;&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Retrieve Digital Card list for a given <code>cardID</code>.</div>
+<div class="block">Retrieves the digital card list for a given <code>cardID</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/TransactionRecord.html#getDisplayAmount()">getDisplayAmount()</a></span> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/TransactionRecord.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">TransactionRecord</a></dt>
 <dd>
@@ -1756,7 +1768,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getSDKVersions()">getSDKVersions()</a></span> - Static method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Returns the SDK version(s) in the D1 SDK.</div>
+<div class="block">Returns the SDK version(s) in D1 SDK.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#getSecureLog()">getSecureLog()</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
@@ -2036,7 +2048,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#login(byte%5B%5D,com.thalesgroup.gemalto.d1.D1Task.Callback)">login(byte[], D1Task.Callback&lt;Void&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Login to the D1 services using a provided token.</div>
+<div class="block">Logs in to the D1 services using a provided token.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#login(java.util.List,com.thalesgroup.gemalto.d1.D1Task.Callback)">login(List&lt;byte[]&gt;, D1Task.Callback&lt;Void&gt;)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
@@ -2110,7 +2122,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html" title="interface in com.thalesgroup.gemalto.d1.messaging"><span class="typeNameLink">MessagingService</span></a> - Interface in <a href="com/thalesgroup/gemalto/d1/messaging/package-summary.html">com.thalesgroup.gemalto.d1.messaging</a></dt>
 <dd>
-<div class="block">Main class of the Messaging service for the Card issued by D1.</div>
+<div class="block">Main class of the Messaging service for the Card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.Region.html#MIDDLE_EAST">MIDDLE_EAST</a></span> - com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.Region.html" title="enum in com.thalesgroup.gemalto.d1.card.cardservice">CardControlSettings.Region</a></dt>
 <dd>
@@ -2122,8 +2134,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">N</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html#newInstanceForClickToPay(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">newInstanceForClickToPay(String, String, String, String, String, String, String)</a></span> - Static method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card">ConsumerInfo</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/OngoingOperation.html#NONE">NONE</a></span> - com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/OngoingOperation.html" title="enum in com.thalesgroup.gemalto.d1.card.cardservice">OngoingOperation</a></dt>
 <dd>
 <div class="block">No ongoing operation.</div>
@@ -2278,7 +2288,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#optOutCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">optOutCard(String, D1Task.Callback&lt;D1ClickToPay.Status&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card">D1ClickToPay</a></dt>
 <dd>
-<div class="block">Opt-out the card from Click to Pay.</div>
+<div class="block">Opts out the card from the Click to Pay service.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.TransactionType.html#OTHER">OTHER</a></span> - com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.TransactionType.html" title="enum in com.thalesgroup.gemalto.d1.card.cardservice">CardTransactionRecord.TransactionType</a></dt>
 <dd>
@@ -2314,7 +2324,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.Status.html#PENDING">PENDING</a></span> - com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a></dt>
 <dd>
-<div class="block">Indicates that the enrollment process is still in progress.</div>
+<div class="block">Indicates that the operation is still in progress.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#PENDING_IDV">PENDING_IDV</a></span> - com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a></dt>
 <dd>
@@ -2408,7 +2418,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/D1PushToECommerce.html#pushToClick2PayMC(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">pushToClick2PayMC(String, ConsumerInfo, String, String, D1Task.Callback&lt;Void&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1PushToECommerce.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushToECommerce</a></dt>
 <dd>
-<div class="block">Push Digital Card to Mastercard Click to Pay TokenRequestor.</div>
+<div class="deprecationBlock"><span class="deprecatedLabel">Deprecated.</span>
+<div class="deprecationComment">Please use new API: <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1ClickToPay.enrol(String, ConsumerInfo, String, BillingAddress, D1Task.Callback)</code></a></div>
+</div>
 </dd>
 </dl>
 <a id="I:R">
@@ -2454,7 +2466,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html#registerMessageNotification(com.thalesgroup.gemalto.d1.D1Task.Callback)">registerMessageNotification(D1Task.Callback&lt;Void&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html" title="interface in com.thalesgroup.gemalto.d1.messaging">MessagingService</a></dt>
 <dd>
-<div class="block">To register the notification for card issued by D1.</div>
+<div class="block">To register the notification for card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/OngoingOperation.html#RENEWAL">RENEWAL</a></span> - com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/OngoingOperation.html" title="enum in com.thalesgroup.gemalto.d1.card.cardservice">OngoingOperation</a></dt>
 <dd>
@@ -2483,7 +2495,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.html#reset(android.content.Context)">reset(Context)</a></span> - Static method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Reset the SDK.</div>
+<div class="block">Resets the SDK.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.html#restore()">restore()</a></span> - Method in class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.html" title="class in com.thalesgroup.gemalto.d1.card.cardservice">CardControlSettings</a></dt>
 <dd>
@@ -2579,15 +2591,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html#setD1ServiceRSAExponent(byte%5B%5D)">setD1ServiceRSAExponent(byte[])</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html" title="class in com.thalesgroup.gemalto.d1">D1Task.Builder</a></dt>
 <dd>
-<div class="block">Sets the D1 Service RSA Exponent value.</div>
+<div class="block">Sets the D1 service RSA exponent value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html#setD1ServiceRSAModulus(byte%5B%5D)">setD1ServiceRSAModulus(byte[])</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html" title="class in com.thalesgroup.gemalto.d1">D1Task.Builder</a></dt>
 <dd>
-<div class="block">Sets the D1 Service RSA Modulus value.</div>
+<div class="block">Sets the D1 service RSA Modulus value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html#setD1ServiceURL(java.lang.String)">setD1ServiceURL(String)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html" title="class in com.thalesgroup.gemalto.d1">D1Task.Builder</a></dt>
 <dd>
-<div class="block">Sets the D1 Service Server URL.</div>
+<div class="block">Sets the D1 service server URL.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardLimitSettings.html#setDailyPurchaseLimit(com.thalesgroup.gemalto.d1.card.cardservice.CardLimitSettings.PurchaseLimit)">setDailyPurchaseLimit(CardLimitSettings.PurchaseLimit)</a></span> - Method in class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardLimitSettings.html" title="class in com.thalesgroup.gemalto.d1.card.cardservice">CardLimitSettings</a></dt>
 <dd>
@@ -2607,7 +2619,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html#setDigitalCardURL(java.lang.String)">setDigitalCardURL(String)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html" title="class in com.thalesgroup.gemalto.d1">D1Task.Builder</a></dt>
 <dd>
-<div class="block">Set Server URL for Digital Card management.</div>
+<div class="block">Sets the server URL for Digital Card management.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html#setDomesticCurrencyCode(int)">setDomesticCurrencyCode(int)</a></span> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayConfigParams</a></dt>
 <dd>
@@ -2631,7 +2643,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html#setIssuerID(java.lang.String)">setIssuerID(String)</a></span> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.Builder.html" title="class in com.thalesgroup.gemalto.d1">D1Task.Builder</a></dt>
 <dd>
-<div class="block">Sets the Issuer identifier.</div>
+<div class="block">Sets the issuer identifier.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html#setKeyValidityPeriod(int)">setKeyValidityPeriod(int)</a></span> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayConfigParams</a></dt>
 <dd>
@@ -2832,8 +2844,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.Status.html#SUCCESSFUL">SUCCESSFUL</a></span> - com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.Status.html" title="enum in com.thalesgroup.gemalto.d1.card">D1ClickToPay.Status</a></dt>
 <dd>
-<div class="block">Indicates that the card has been successfully enrolled in Click to Pay
- and the tokenization process is complete.</div>
+<div class="block">Indicates that the operation was successful.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#SUSPEND">SUSPEND</a></span> - com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
@@ -2981,7 +2992,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/PushResponseKey.html#TYPE_MESSAGE_NOTIFICATION">TYPE_MESSAGE_NOTIFICATION</a></span> - Static variable in enum com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a></dt>
 <dd>
-<div class="block">The message received is related to activities in card issued by D1.</div>
+<div class="block">The message received is related to activities in card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>Click to Pay</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/PushResponseKey.html#TYPE_REPLENISHMENT">TYPE_REPLENISHMENT</a></span> - Static variable in enum com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/PushResponseKey.html" title="enum in com.thalesgroup.gemalto.d1">PushResponseKey</a></dt>
 <dd>
@@ -3027,7 +3038,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html#unregisterMessageNotification(com.thalesgroup.gemalto.d1.D1Task.Callback)">unregisterMessageNotification(D1Task.Callback&lt;Void&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html" title="interface in com.thalesgroup.gemalto.d1.messaging">MessagingService</a></dt>
 <dd>
-<div class="block">To unregister notification for card issued by D1.</div>
+<div class="block">To unregister notification for card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#unsetDefaultPaymentDigitalCard(com.thalesgroup.gemalto.d1.D1Task.Callback)">unsetDefaultPaymentDigitalCard(D1Task.Callback&lt;Void&gt;)</a></span> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayWallet</a></dt>
 <dd>
