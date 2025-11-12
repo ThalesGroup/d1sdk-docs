@@ -242,6 +242,9 @@
                 <a href="../Structs/ConfigParams/CardParams.html">– CardParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/ConfigParams/IssuerParams.html">– IssuerParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ConsumerInfo.html">ConsumerInfo</a>
               </li>
               <li class="nav-group-task">
@@ -293,7 +296,7 @@ with D1 SDK functionality to login, through
 
 <p>It is prequisite that Wallet Extension must be configured in application
 by calling <code><a href="../Classes/D1Task.html#/s:2D10A4TaskC9configure_10completionyShyAA12ConfigParamsVG_ySayAA0A5ErrorVGSgctF">D1Task.configure(_:completion:)</a></code> with
-<code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV015walletExtensionB004cardC4List10appGroupIDACSayAC04CardC0VG_SStFZ">ConfigParams.walletExtensionConfig(cardParamsList:appGroupID:)</a></code> and
+<code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV015walletExtensionB004cardC4List10appGroupIDACSayAC04CardC0VG_SStFZ">ConfigParams.walletExtensionConfig(cardParamsList:appGroupID:)</a></code> or <code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV015walletExtensionB006issuerC4List10appGroupIDACSayAC06IssuerC0VG_SStFZ">ConfigParams.walletExtensionConfig(issuerParamsList:appGroupID:)</a></code> and
 <code><a href="../Structs/ConfigParams.html#/s:2D112ConfigParamsV04coreB010consumerIDACSS_tFZ">ConfigParams.coreConfig(consumerID:)</a></code>.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
@@ -364,6 +367,78 @@ Possible errors:
 <li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
 <li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
 <li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13unrecoverableyA2EmF">D1Error.Code.unrecoverable</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A49IssuerProvisioningExtensionAuthorizationProvidingPAAE5login_10completionySay10Foundation4DataVGz_yAA0A5ErrorVSgctF"></a>
+                    <a name="//apple_ref/swift/Method/login(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A49IssuerProvisioningExtensionAuthorizationProvidingPAAE5login_10completionySay10Foundation4DataVGz_yAA0A5ErrorVSgctF">login(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Log in to the D1 Apple Pay Wallet Extension services using the token provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="n">_</span> <span class="nv">issuerTokens</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Data</span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/D1Error.html">D1Error</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>issuerTokens</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The issuer tokens used to log in to the D1 services.
+Each issuer token should be unique for every <code>issuerId</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The callback is invoked when the login process is completed.
+Possible errors:
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO33walletExtensionAppGroupIDNotFoundyA2EmF">D1Error.Code.walletExtensionAppGroupIDNotFound</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO4coreyA2EmF">D1Error.Code.core</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13unrecoverableyA2EmF">D1Error.Code.unrecoverable</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
 </ul></p>
                                 </div>
                               </td>
@@ -380,7 +455,7 @@ Possible errors:
         </section>
         <section id="footer">
           <p>Copyright © 2025 THALES. All rights reserved.</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
