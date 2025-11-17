@@ -134,19 +134,10 @@
                 <a href="Classes/D1Task/Components.html">– Components</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/DisplayTextField.html">DisplayTextField</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/MessagingService.html">MessagingService</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/PINEntryUI.html">PINEntryUI</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PinDisplayTextField.html">PinDisplayTextField</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SecureTextField.html">SecureTextField</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes.html#/s:2D116TransactionQueryC">TransactionQuery</a>
@@ -240,6 +231,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ConfigParams/CardParams.html">– CardParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ConfigParams/IssuerParams.html">– IssuerParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ConsumerInfo.html">ConsumerInfo</a>
@@ -509,7 +503,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CardTransactionRecord</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CardTransactionRecord</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
 
                         </div>
                       </div>
@@ -577,7 +571,7 @@ This class is inherited from <a href="https://developer.apple.com/documentation/
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1DisplayTextField</span> <span class="p">:</span> <span class="kt"><a href="Classes/DisplayTextField.html">DisplayTextField</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1DisplayTextField</span> <span class="p">:</span> <span class="kt">UITextField</span></code></pre>
 
                         </div>
                       </div>
@@ -657,7 +651,7 @@ This class is inherited from <a href="https://developer.apple.com/documentation/
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1PINDisplayTextField</span> <span class="p">:</span> <span class="kt"><a href="Classes/PinDisplayTextField.html">PinDisplayTextField</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1PINDisplayTextField</span> <span class="p">:</span> <span class="kt">UITextField</span></code></pre>
 
                         </div>
                       </div>
@@ -732,7 +726,7 @@ This class is inherited from <a href="https://developer.apple.com/documentation/
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1SecureTextField</span> <span class="p">:</span> <span class="kt"><a href="Classes/SecureTextField.html">SecureTextField</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1SecureTextField</span> <span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span> <span class="kt">UITextFieldDelegate</span></code></pre>
 
                         </div>
                       </div>
@@ -804,7 +798,7 @@ launched or the earliest possible time.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The main class for message and notification related APIs for the card issued by D1.
+                        <p>The main class for message and notification related APIs for the card issued by D1 and <code><a href="Classes/D1ClickToPay.html">D1ClickToPay</a></code>.
 Obtains the instance of the class through <code><a href="Classes/D1Task.html#/s:2D10A4TaskC16messagingServiceAA09MessagingD0CyKF">D1Task.messagingService()</a></code>.</p>
 <div class="aside aside-since">
     <p class="aside-title">Since</p>
@@ -921,93 +915,6 @@ Obtains the instance of the class through <code><a href="Classes/D1Task.html#/s:
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TransactionQuery</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@D1@objc(cs)DisplayTextField"></a>
-                    <a name="//apple_ref/swift/Class/DisplayTextField" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@D1@objc(cs)DisplayTextField">DisplayTextField</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Classes/DisplayTextField.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">DisplayTextField</span> <span class="p">:</span> <span class="kt">UITextField</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@D1@objc(cs)PinDisplayTextField"></a>
-                    <a name="//apple_ref/swift/Class/PinDisplayTextField" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@D1@objc(cs)PinDisplayTextField">PinDisplayTextField</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Classes/PinDisplayTextField.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">PinDisplayTextField</span> <span class="p">:</span> <span class="kt">UITextField</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@D1@objc(cs)SecureTextField"></a>
-                    <a name="//apple_ref/swift/Class/SecureTextField" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@D1@objc(cs)SecureTextField">SecureTextField</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Classes/SecureTextField.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">SecureTextField</span> <span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span> <span class="kt">UITextFieldDelegate</span></code></pre>
 
                         </div>
                       </div>

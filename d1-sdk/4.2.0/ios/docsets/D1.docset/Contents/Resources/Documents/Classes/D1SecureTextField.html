@@ -134,19 +134,10 @@
                 <a href="../Classes/D1Task/Components.html">– Components</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/DisplayTextField.html">DisplayTextField</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/MessagingService.html">MessagingService</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/PINEntryUI.html">PINEntryUI</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PinDisplayTextField.html">PinDisplayTextField</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SecureTextField.html">SecureTextField</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes.html#/s:2D116TransactionQueryC">TransactionQuery</a>
@@ -242,6 +233,9 @@
                 <a href="../Structs/ConfigParams/CardParams.html">– CardParams</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/ConfigParams/IssuerParams.html">– IssuerParams</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ConsumerInfo.html">ConsumerInfo</a>
               </li>
               <li class="nav-group-task">
@@ -283,7 +277,7 @@
                 <div class="language">
                   
                   <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1SecureTextField</span> <span class="p">:</span> <span class="kt"><a href="../Classes/SecureTextField.html">SecureTextField</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">D1SecureTextField</span> <span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span> <span class="kt">UITextFieldDelegate</span></code></pre>
 
                 </div>
               </div>
@@ -298,6 +292,15 @@ This class is inherited from <a href="https://developer.apple.com/documentation/
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
               <ul>
                 <li class="item">
                   <div>
@@ -321,6 +324,699 @@ This class is inherited from <a href="https://developer.apple.com/documentation/
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(im)awakeFromNib"></a>
+                    <a name="//apple_ref/swift/Method/awakeFromNib()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(im)awakeFromNib">awakeFromNib()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">awakeFromNib</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuration"></a>
+                <a name="//apple_ref/swift/Section/Configuration" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><span>Configuration</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:2D10A15SecureTextFieldC4wipeyyF"></a>
+                    <a name="//apple_ref/swift/Method/wipe()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2D10A15SecureTextFieldC4wipeyyF">wipe()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">wipe</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Overridden Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Overridden%20Properties"></a>
+                  <h3 class="section-name"><span>Overridden Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)text"></a>
+                    <a name="//apple_ref/swift/Property/text" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)text">text</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(im)insertText:"></a>
+                    <a name="//apple_ref/swift/Method/insertText(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(im)insertText:">insertText(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">insertText</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)secureTextEntry"></a>
+                    <a name="//apple_ref/swift/Property/isSecureTextEntry" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)secureTextEntry">isSecureTextEntry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">isSecureTextEntry</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(im)becomeFirstResponder"></a>
+                    <a name="//apple_ref/swift/Method/becomeFirstResponder()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(im)becomeFirstResponder">becomeFirstResponder()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">becomeFirstResponder</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)autocorrectionType"></a>
+                    <a name="//apple_ref/swift/Property/autocorrectionType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)autocorrectionType">autocorrectionType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">autocorrectionType</span><span class="p">:</span> <span class="kt">UITextAutocorrectionType</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)keyboardType"></a>
+                    <a name="//apple_ref/swift/Property/keyboardType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)keyboardType">keyboardType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">keyboardType</span><span class="p">:</span> <span class="kt">UIKeyboardType</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)delegate"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">UITextFieldDelegate</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)inputView"></a>
+                    <a name="//apple_ref/swift/Property/inputView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)inputView">inputView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">inputView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@D1@objc(cs)D1SecureTextField(py)inputAccessoryView"></a>
+                    <a name="//apple_ref/swift/Property/inputAccessoryView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@D1@objc(cs)D1SecureTextField(py)inputAccessoryView">inputAccessoryView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">inputAccessoryView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UITextFieldDelegate"></a>
+                <a name="//apple_ref/swift/Section/UITextFieldDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UITextFieldDelegate"></a>
+                  <h3 class="section-name"><span>UITextFieldDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:shouldChangeCharactersInRange:replacementString:"></a>
+                    <a name="//apple_ref/swift/Method/textField(_:shouldChangeCharactersIn:replacementString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:shouldChangeCharactersInRange:replacementString:">textField(_:<wbr>shouldChangeCharactersIn:<wbr>replacementString:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textField</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span>
+    <span class="n">shouldChangeCharactersIn</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span>
+    <span class="n">replacementString</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldBeginEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldShouldBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldBeginEditing:">textFieldShouldBeginEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldShouldBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidBeginEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldDidBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidBeginEditing:">textFieldDidBeginEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldDidBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldEndEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldShouldEndEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldEndEditing:">textFieldShouldEndEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldShouldEndEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidEndEditing:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldDidEndEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidEndEditing:">textFieldDidEndEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldDidEndEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidEndEditing:reason:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldDidEndEditing(_:reason:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidEndEditing:reason:">textFieldDidEndEditing(_:<wbr>reason:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldDidEndEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt">UITextField</span><span class="o">.</span><span class="kt">DidEndEditingReason</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidChangeSelection:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldDidChangeSelection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldDidChangeSelection:">textFieldDidChangeSelection(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldDidChangeSelection</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldClear:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldShouldClear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldClear:">textFieldShouldClear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldShouldClear</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldReturn:"></a>
+                    <a name="//apple_ref/swift/Method/textFieldShouldReturn(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textFieldShouldReturn:">textFieldShouldReturn(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textFieldShouldReturn</span><span class="p">(</span><span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:editMenuForCharactersInRange:suggestedActions:"></a>
+                    <a name="//apple_ref/swift/Method/textField(_:editMenuForCharactersIn:suggestedActions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:editMenuForCharactersInRange:suggestedActions:">textField(_:<wbr>editMenuForCharactersIn:<wbr>suggestedActions:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textField</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span>
+    <span class="n">editMenuForCharactersIn</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span>
+    <span class="nv">suggestedActions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIMenuElement</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UIMenu</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:willPresentEditMenuWithAnimator:"></a>
+                    <a name="//apple_ref/swift/Method/textField(_:willPresentEditMenuWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:willPresentEditMenuWithAnimator:">textField(_:<wbr>willPresentEditMenuWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textField</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span>
+    <span class="n">willPresentEditMenuWith</span> <span class="nv">animator</span><span class="p">:</span> <span class="n">any</span> <span class="kt">UIEditMenuInteractionAnimating</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:willDismissEditMenuWithAnimator:"></a>
+                    <a name="//apple_ref/swift/Method/textField(_:willDismissEditMenuWith:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@D1@objc(cs)D1SecureTextField(im)textField:willDismissEditMenuWithAnimator:">textField(_:<wbr>willDismissEditMenuWith:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">textField</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span><span class="p">,</span>
+    <span class="n">willDismissEditMenuWith</span> <span class="nv">animator</span><span class="p">:</span> <span class="n">any</span> <span class="kt">UIEditMenuInteractionAnimating</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

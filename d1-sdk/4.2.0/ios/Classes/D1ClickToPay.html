@@ -134,19 +134,10 @@
                 <a href="../Classes/D1Task/Components.html">– Components</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/DisplayTextField.html">DisplayTextField</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/MessagingService.html">MessagingService</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/PINEntryUI.html">PINEntryUI</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/PinDisplayTextField.html">PinDisplayTextField</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/SecureTextField.html">SecureTextField</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes.html#/s:2D116TransactionQueryC">TransactionQuery</a>
@@ -240,6 +231,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ConfigParams/CardParams.html">– CardParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ConfigParams/IssuerParams.html">– IssuerParams</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ConsumerInfo.html">ConsumerInfo</a>
@@ -430,7 +424,28 @@ first name, middle name, last name, language, phone number, country code, and em
                               <td>
                                 <div>
                                   <p>The callback for the result. When the operation is successful, <code><a href="../Classes/D1ClickToPay/Status.html">Status</a></code>
-(Click to Pay status) is returned; otherwise, <code><a href="../Structs/D1Error.html">D1Error</a></code> is returned.</p>
+(Click to Pay status) is returned; otherwise, <code><a href="../Structs/D1Error.html">D1Error</a></code> is returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO10clickToPayyA2EmF">D1Error.Code.clickToPay</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO15invalidArgumentyA2EmF">D1Error.Code.invalidArgument</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO9notActiveyA2EmF">D1Error.Code.notActive</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO12cardNotFoundyA2EmF">D1Error.Code.cardNotFound</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23cardOperationNotAllowedyA2EmF">D1Error.Code.cardOperationNotAllowed</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO26clickToPayInvalidFirstNameyA2EmF">D1Error.Code.clickToPayInvalidFirstName</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO25clickToPayInvalidLastNameyA2EmF">D1Error.Code.clickToPayInvalidLastName</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO25clickToPayInvalidLanguageyA2EmF">D1Error.Code.clickToPayInvalidLanguage</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO035clickToPayInvalidPhoneNumberCountryC0yA2EmF">D1Error.Code.clickToPayInvalidPhoneNumberCountryCode</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO28clickToPayInvalidPhoneNumberyA2EmF">D1Error.Code.clickToPayInvalidPhoneNumber</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO024clickToPayInvalidCountryC0yA2EmF">D1Error.Code.clickToPayInvalidCountryCode</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO32clickToPaySchemeAmbiguousProfileyA2EmF">D1Error.Code.clickToPaySchemeAmbiguousProfile</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO30clickToPaySchemeResourceExistsyA2EmF">D1Error.Code.clickToPaySchemeResourceExists</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO30clickToPaySchemeCardIneligibleyA2EmF">D1Error.Code.clickToPaySchemeCardIneligible</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
@@ -497,7 +512,19 @@ The enrollment status in the integrator system will be updated via a push notifi
                               <td>
                                 <div>
                                   <p>The callback for the result. When the operation is successful, <code><a href="../Classes/D1ClickToPay/Status.html">Status</a></code>
-(Click to Pay status) is returned; otherwise, <code><a href="../Structs/D1Error.html">D1Error</a></code> is returned.</p>
+(Click to Pay status) is returned; otherwise, <code><a href="../Structs/D1Error.html">D1Error</a></code> is returned.
+Possible errors:</p>
+
+<ul>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO11notLoggedInyA2EmF">D1Error.Code.notLoggedIn</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO13notAuthorizedyA2EmF">D1Error.Code.notAuthorized</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23deviceEnvironmentUnsafeyA2EmF">D1Error.Code.deviceEnvironmentUnsafe</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO10clickToPayyA2EmF">D1Error.Code.clickToPay</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO23cardOperationNotAllowedyA2EmF">D1Error.Code.cardOperationNotAllowed</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO32clickToPaySchemeAmbiguousProfileyA2EmF">D1Error.Code.clickToPaySchemeAmbiguousProfile</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO30clickToPaySchemeResourceExistsyA2EmF">D1Error.Code.clickToPaySchemeResourceExists</a></code></li>
+<li><code><a href="../Structs/D1Error/Code.html#/s:2D10A5ErrorV4CodeO30clickToPaySchemeCardIneligibleyA2EmF">D1Error.Code.clickToPaySchemeCardIneligible</a></code></li>
+</ul>
                                 </div>
                               </td>
                             </tr>
