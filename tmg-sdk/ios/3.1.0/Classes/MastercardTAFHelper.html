@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MastercardTAFHelper Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MastercardTAFHelper" class="dashAnchor"></a>
+    <a title="MastercardTAFHelper Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Ecom Token Platform SDK 3.1.0 Documentation</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TMGSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        MastercardTAFHelper Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../terms_of_use.html">Terms_of_use</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DeviceAuthentication.html">DeviceAuthentication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MastercardTAFHelper.html">MastercardTAFHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MastercardTAFHelper/IDVType.html">– IDVType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MastercardTAFHelper/IDVMethod.html">– IDVMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MastercardTAFHelper/IDVSession.html">– IDVSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MastercardTAFHelper/BindingState.html">– BindingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MastercardTAFHelper/TransactionContext.html">– TransactionContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClient.html">TMGClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TMGClientConfiguration.html">TMGClientConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VisaCTFHelper.html">VisaCTFHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VisaCTFHelper/IDVMethod.html">– IDVMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VisaCTFHelper/BindingState.html">– BindingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VisaCTFHelper/OTPActivationStatus.html">– OTPActivationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VisaCTFHelper/IDVType.html">– IDVType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/VisaCTFHelper/IDVSession.html">– IDVSession</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TMGError.html">TMGError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MastercardTAFHelper</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MastercardTAFHelper</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>MastercardTAFHelper</code> class is used to bind the Mastercard provisioned token ID to the device and authenticate transactions.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 3.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 3.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC13createBinding10forTokenID011correlationH017idvSessionHandler020deviceAuthenticationL0010completionL0ySS_SSyAC10IDVSessionCcyAA06DeviceN0CcyAKSg_AA8TMGErrorOSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/createBinding(forTokenID:correlationID:idvSessionHandler:deviceAuthenticationHandler:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC13createBinding10forTokenID011correlationH017idvSessionHandler020deviceAuthenticationL0010completionL0ySS_SSyAC10IDVSessionCcyAA06DeviceN0CcyAKSg_AA8TMGErrorOSgtctF">createBinding(forTokenID:<wbr>correlationID:<wbr>idvSessionHandler:<wbr>deviceAuthenticationHandler:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This API binds the Mastercard token to the device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createBinding</span><span class="p">(</span><span class="n">forTokenID</span> <span class="nv">tokenID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">correlationID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">idvSessionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/MastercardTAFHelper/IDVSession.html">IDVSession</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                          <span class="nv">deviceAuthenticationHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/DeviceAuthentication.html">DeviceAuthentication</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                          <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/MastercardTAFHelper/IDVSession.html">IDVSession</a></span><span class="p">?,</span> <span class="kt"><a href="../Enums/TMGError.html">TMGError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forTokenID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Mastercard token ID. This is a mandatory input that is retrieved during the tokenization process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlationID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A mandatory input session ID that is generated by the app.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idvSessionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler for app to take action for Token Binding process. A <code><a href="../Classes/MastercardTAFHelper/IDVSession.html">IDVSession</a></code> will be returned as a parametter. This is a mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceAuthenticationHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler for app to take action for device authentication where a  <code><a href="../Classes/DeviceAuthentication.html">DeviceAuthentication</a></code> parameter is returned. This is a mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler to notify to app that Token Binding is success or failed with error. This is a mandatory input.
+
+<ul>
+<li>On success: A <code>nil</code> value for both <code><a href="../Enums/TMGError.html">TMGError</a></code> and <code><a href="../Classes/MastercardTAFHelper/IDVSession.html">IDVSession</a></code> will be returned.</li>
+<li>On app action required: An optional <code><a href="../Classes/MastercardTAFHelper/IDVSession.html">IDVSession</a></code> and a <code><a href="../Enums/TMGError.html">TMGError</a></code> will be returned.</li>
+<li>On failure: A <code><a href="../Enums/TMGError.html">TMGError</a></code> indicating the error encountered.
+
+<ul>
+<li>Possible errors:
+
+<ul>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO16invalidIdvMethodyA2CmF">invalidIdvMethod</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19invalidConfigParamsyA2CmF">invalidConfigParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF">invalidRequiredParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO17invalidOTPMessageyA2CmF">invalidOTPMessage</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO26serverErrorIdvNotAvailableyA2CmF">serverErrorIdvNotAvailable</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO28authenticationKeyInvalidatedyA2CmF">authenticationKeyInvalidated</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO11serverErroryACSi_SSSgtcACmF">serverError(httpStatusCode:additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO017serverErrorCryptoD0yA2CmF">serverErrorCryptoError</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO28serverErrorInvalidTokenStateyA2CmF">serverErrorInvalidTokenState</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorNoSessionFoundyA2CmF">serverErrorNoSessionFound</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19serverErrorWrongOTPyA2CmF">serverErrorWrongOTP</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverErrorExpiredOTPyA2CmF">serverErrorExpiredOTP</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO29serverErrorRetryLimitExceededyA2CmF">serverErrorRetryLimitExceeded</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorTooManyRequestyA2CmF">serverErrorTooManyRequest</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverIsNotAccessibleyA2CmF">serverIsNotAccessible</a></code></li>
+</ul></li>
+</ul></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC12bindingState10forTokenIDAC07BindingE0OSS_tKF"></a>
+                    <a name="//apple_ref/swift/Method/bindingState(forTokenID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC12bindingState10forTokenIDAC07BindingE0OSS_tKF">bindingState(forTokenID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the binding status.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <ul>
+<li><code><a href="../Enums/TMGError.html">TMGError</a></code>: When an error occurs during the get binding status process.
+
+<ul>
+<li>Possible errors:
+
+<ul>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19invalidConfigParamsyA2CmF">invalidConfigParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF">invalidRequiredParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:)</a></code></li>
+</ul></li>
+</ul></li>
+</ul>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">bindingState</span><span class="p">(</span><span class="n">forTokenID</span> <span class="nv">tokenID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/MastercardTAFHelper/BindingState.html">BindingState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forTokenID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Mastercard provisioned token ID for which the binding state is queried. This is a mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li><code><a href="../Classes/MastercardTAFHelper/BindingState.html">BindingState</a></code>: If the binding is performed successfully, <code><a href="../Classes/MastercardTAFHelper/BindingState.html#/s:6TMGSDK19MastercardTAFHelperC12BindingStateO5boundyA2EmF">BindingState.bound</a></code> is returned, otherwise <code><a href="../Classes/MastercardTAFHelper/BindingState.html#/s:6TMGSDK19MastercardTAFHelperC12BindingStateO7unboundyA2EmF">BindingState.unbound</a></code> is returned.</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC23authenticateTransaction10forTokenID7context27deviceAuthenticationHandler010completionL0ySS_AC0E7ContextVyAA06DeviceK0CcySSSg_AA8TMGErrorOSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/authenticateTransaction(forTokenID:context:deviceAuthenticationHandler:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC23authenticateTransaction10forTokenID7context27deviceAuthenticationHandler010completionL0ySS_AC0E7ContextVyAA06DeviceK0CcySSSg_AA8TMGErrorOSgtctF">authenticateTransaction(forTokenID:<wbr>context:<wbr>deviceAuthenticationHandler:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Authenticates the transaction for <code>tokenID</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">authenticateTransaction</span><span class="p">(</span><span class="n">forTokenID</span> <span class="nv">tokenID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                    <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Classes/MastercardTAFHelper/TransactionContext.html">TransactionContext</a></span><span class="p">,</span>
+                                    <span class="nv">deviceAuthenticationHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Classes/DeviceAuthentication.html">DeviceAuthentication</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">,</span>
+                                    <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">String</span><span class="p">?,</span> <span class="kt"><a href="../Enums/TMGError.html">TMGError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forTokenID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Mastercard token ID. This is a mandatory input that is retrieved during the tokenization process.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The context of the transaction, containing critical details about the transaction such as merchant information, amount, and currency. This parameter cannot be null.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceAuthenticationHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler for app to take action for device authentication where a <code><a href="../Classes/DeviceAuthentication.html">DeviceAuthentication</a></code> parameter is returned. This is a mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler to notify the app on whether the transaction is authenticated successfully. This is a mandatory input.
+
+<ul>
+<li>Possible errors:
+
+<ul>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF">invalidRequiredParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO28authenticationKeyInvalidatedyA2CmF">authenticationKeyInvalidated</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:)</a></code></li>
+</ul></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC13removeBinding10forTokenID011correlationH017completionHandlerySS_SSyAA8TMGErrorOSgctF"></a>
+                    <a name="//apple_ref/swift/Method/removeBinding(forTokenID:correlationID:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC13removeBinding10forTokenID011correlationH017completionHandlerySS_SSyAA8TMGErrorOSgctF">removeBinding(forTokenID:<wbr>correlationID:<wbr>completionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the specified Mastercard token ID from the device.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    <p>Version 3.1.0</p>
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    <p>Since 3.1.0</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeBinding</span><span class="p">(</span><span class="n">forTokenID</span> <span class="nv">tokenID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">correlationID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/TMGError.html">TMGError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forTokenID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Mastercard token ID which is a mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlationID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The session ID generated by the app which is a mandatory input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion handler that provides the result of the removal process.
+
+<ul>
+<li>On success: Returns a <code>nil</code> value.</li>
+<li>On failure: Returns a <code><a href="../Enums/TMGError.html">TMGError</a></code> indicating the error encountered.
+
+<ul>
+<li>Possible errors:
+
+<ul>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO23deviceEnvironmentUnsafeyACSi_tcACmF">deviceEnvironmentUnsafe(code:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO19invalidConfigParamsyA2CmF">invalidConfigParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21invalidRequiredParamsyA2CmF">invalidRequiredParams</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13tokenNotBoundyA2CmF">tokenNotBound</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO13internalErroryACSS_tcACmF">internalError(additionalMessage:)</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO25serverErrorTooManyRequestyA2CmF">serverErrorTooManyRequest</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO21serverIsNotAccessibleyA2CmF">serverIsNotAccessible</a></code></li>
+<li><code><a href="../Enums/TMGError.html#/s:6TMGSDK8TMGErrorO11serverErroryACSi_SSSgtcACmF">serverError(httpStatusCode:additionalMessage:)</a></code></li>
+</ul></li>
+</ul></li>
+</ul></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC7IDVTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/IDVType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC7IDVTypeO">IDVType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The list of Identity and Verification method types in <code>IDVType</code>.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 3.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 3.0
+
+</div>
+
+                        <a href="../Classes/MastercardTAFHelper/IDVType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">IDVType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC9IDVMethodV"></a>
+                    <a name="//apple_ref/swift/Struct/IDVMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC9IDVMethodV">IDVMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>IDVMethod</code> defines the Mastercard IDV methods that are available to the end user.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 3.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 3.0
+
+</div>
+
+                        <a href="../Classes/MastercardTAFHelper/IDVMethod.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IDVMethod</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC10IDVSessionC"></a>
+                    <a name="//apple_ref/swift/Class/IDVSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC10IDVSessionC">IDVSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>IDVSession</code> is used to get the available <code><a href="../Classes/MastercardTAFHelper/IDVMethod.html">IDVMethod</a></code>, submit the user&rsquo;s selection and then validate the OTP to complete IDV flow.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 3.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 3.0
+
+</div>
+
+                        <a href="../Classes/MastercardTAFHelper/IDVSession.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">IDVSession</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC12BindingStateO"></a>
+                    <a name="//apple_ref/swift/Enum/BindingState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC12BindingStateO">BindingState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>BindingState</code> enum defines the current state of the <code>tokenId</code>.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 3.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 3.0
+
+</div>
+
+                        <a href="../Classes/MastercardTAFHelper/BindingState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BindingState</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6TMGSDK19MastercardTAFHelperC18TransactionContextV"></a>
+                    <a name="//apple_ref/swift/Struct/TransactionContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6TMGSDK19MastercardTAFHelperC18TransactionContextV">TransactionContext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>TransactionContext</code> defines the context of a transaction, encompassing details such as the merchant name, transaction amount, and currency code.</p>
+<div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    Version 3.0
+
+</div><div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 3.0
+
+</div>
+
+                        <a href="../Classes/MastercardTAFHelper/TransactionContext.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransactionContext</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2025 THALES. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
