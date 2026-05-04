@@ -100,7 +100,7 @@ loadScripts(document, 'script');</script>
  <a href="BillingAddress.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">BillingAddress</a>&nbsp;billingAddress,
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="Status.html" title="enum class in com.thalesgroup.gemalto.d1.clicktopay">Status</a>&gt;&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Enrols the card to the Click to Pay service.</div>
+<div class="block">Enrolls the card to the Click to Pay service.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getProfiles(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">getProfiles</a><wbr>(<a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="ProfileResult.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">ProfileResult</a>&gt;&nbsp;callback)</code></div>
@@ -160,7 +160,7 @@ loadScripts(document, 'script');</script>
  <a href="BillingAddress.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">BillingAddress</a>&nbsp;billingAddress,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="Status.html" title="enum class in com.thalesgroup.gemalto.d1.clicktopay">Status</a>&gt;&nbsp;callback)</span></div>
-<div class="block">Enrols the card to the Click to Pay service. The enrolment status in the issuer application will be updated via a push notification.
+<div class="block">Enrolls the card to the Click to Pay service. The enrollment status in the issuer application will be updated via a push notification.
  Before calling this Click to Pay API, the integrator should display the default value of `consumerInfo` and `billingAddress` to collect the inputs of `consumerInfo` given by the end user.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -202,7 +202,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="Status.html" title="enum class in com.thalesgroup.gemalto.d1.clicktopay">Status</a>&gt;&nbsp;callback)</span></div>
-<div class="block">Opts the card out of the Click to Pay service. The enrolment status in the issuer application will be updated via a push notification.</div>
+<div class="block">Opts the card out of the Click to Pay service. The enrollment status in the issuer application will be updated via a push notification.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>cardID</code> - The card identifier.</dd>
@@ -301,7 +301,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Updates the consumer information in the Click to Pay service. The integrator will be notified of the final update status via a push notification.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>consumerInfo</code> - <a href="ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> The `consumerInfo` object is initialised using the first name,middle name, last name, language, phone number, country code and email entered by the end user.</dd>
+<dd><code>consumerInfo</code> - <a href="ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> The `consumerInfo` object is initialized using the first name,middle name, last name, language, phone number, country code and email entered by the end user.</dd>
 <dd><code>billingAddress</code> - The billing address that is associated to the cards enroled in the Click to Pay service. This is mandatory for Visa.</dd>
 <dd><code>callback</code> - The callback for the result.
                        When it is successful, the returned argument of the <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is <a href="Status.html" title="enum class in com.thalesgroup.gemalto.d1.clicktopay"><code>Status</code></a>.
@@ -332,7 +332,7 @@ loadScripts(document, 'script');</script>
 <h3>optOutConsumer</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">optOutConsumer</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="Status.html" title="enum class in com.thalesgroup.gemalto.d1.clicktopay">Status</a>&gt;&nbsp;callback)</span></div>
-<div class="block">Opts the consumer out of the Click to Pay service. The enrolment status in the issuer application will be updated via a push notification.</div>
+<div class="block">Opts the consumer out of the Click to Pay service. The enrollment status in the issuer application will be updated via a push notification.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>callback</code> - The callback for the result.

@@ -5,4 +5,5 @@ com.thalesgroup.gemalto.d1.card.cardservice
 com.thalesgroup.gemalto.d1.clicktopay
 com.thalesgroup.gemalto.d1.d1pay
 com.thalesgroup.gemalto.d1.digitalcard
+com.thalesgroup.gemalto.d1.log
 com.thalesgroup.gemalto.d1.messaging

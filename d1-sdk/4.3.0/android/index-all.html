@@ -91,6 +91,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Add Digital Card to scheme for a given <code>cardID</code></div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#ALL" class="member-name-link">ALL</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/Scheme.html#AMEX" class="member-name-link">AMEX</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/Scheme.html" title="enum class in com.thalesgroup.gemalto.d1.card">Scheme</a></dt>
 <dd>
 <div class="block">Amex scheme.</div>
@@ -101,7 +103,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#approveBinding(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.BindReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">approveBinding(String, String, BindReason, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
 <dd>
-<div class="block">Approves device binding for a digital card.</div>
+<div class="block">Approves the device binding for a digital card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#approveCardholderVerification(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.VerificationReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">approveCardholderVerification(String, VerificationReason, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
 <dd>
@@ -529,10 +531,16 @@ loadScripts(document, 'script');</script>
 <div class="block">With D1 Pay, eligible cards (virtual or physical card previously registered) can be digitized and used to perform contactless payment via NFC using the mobile banking application.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a> - package com.thalesgroup.gemalto.d1.digitalcard</dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Service interface for digital card operations related to cardholder verification and device binding.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/package-summary.html">com.thalesgroup.gemalto.d1.log</a> - package com.thalesgroup.gemalto.d1.log</dt>
+<dd>
+<div class="block">Main class of the Log service.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/package-summary.html">com.thalesgroup.gemalto.d1.messaging</a> - package com.thalesgroup.gemalto.d1.messaging</dt>
 <dd>
-<div class="block">The main class for message and notification related APIs for the card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">The main class for message and notification related APIs for the card issued by D1 and <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/ConfigParams.html" class="type-name-link" title="class in com.thalesgroup.gemalto.d1">ConfigParams</a> - Class in <a href="com/thalesgroup/gemalto/d1/package-summary.html">com.thalesgroup.gemalto.d1</a></dt>
 <dd>
@@ -680,7 +688,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1PushToECommerce.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.d1.card">D1PushToECommerce</a> - Interface in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Please use new API: <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>D1ClickToPay</code></a></div>
+<div class="deprecation-comment">Please use new API: <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPayService</code></a></div>
 </div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a> - Interface in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
@@ -716,6 +724,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Debit adjustment transaction.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#DEBUG" class="member-name-link">DEBUG</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.TransactionStatus.html#DECLINED" class="member-name-link">DECLINED</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.TransactionStatus.html" title="enum class in com.thalesgroup.gemalto.d1.card.cardservice">CardTransactionRecord.TransactionStatus</a></dt>
 <dd>
 <div class="block">Transaction is declined.</div>
@@ -735,6 +745,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/card/State.html#DELETED" class="member-name-link">DELETED</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/State.html" title="enum class in com.thalesgroup.gemalto.d1.card">State</a></dt>
 <dd>
 <div class="block">Card is deleted.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.html#deleteFiles()" class="member-name-link">deleteFiles()</a> - Method in interface com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.html" title="interface in com.thalesgroup.gemalto.d1.log">LogService</a></dt>
+<dd>
+<div class="block">Delete secure logs files from the D1 services.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/VerificationMethod.html#DEVICE_KEYGUARD" class="member-name-link">DEVICE_KEYGUARD</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/VerificationMethod.html" title="enum class in com.thalesgroup.gemalto.d1.d1pay">VerificationMethod</a></dt>
 <dd>
@@ -782,8 +796,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a> - Interface in <a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a></dt>
 <dd>
-<div class="block">Service interface for digital card operations related to cardholder verification and device
- binding.</div>
+<div class="block">Service interface for digital card operations related to cardholder verification and device binding.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#DIGITIZATION_IN_PROGRESS" class="member-name-link">DIGITIZATION_IN_PROGRESS</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a></dt>
 <dd>
@@ -845,7 +858,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">enrol(String, ConsumerInfo, String, BillingAddress, D1Task.Callback&lt;Status&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay">ClickToPayService</a></dt>
 <dd>
-<div class="block">Enrols the card to the Click to Pay service.</div>
+<div class="block">Enrolls the card to the Click to Pay service.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/authn/D1Authn.html#enrollAuthnCredentials(com.thalesgroup.gemalto.d1.authn.AuthnType,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">enrollAuthnCredentials(AuthnType, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.authn.<a href="com/thalesgroup/gemalto/d1/authn/D1Authn.html" title="interface in com.thalesgroup.gemalto.d1.authn">D1Authn</a></dt>
 <dd>
@@ -859,6 +872,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Constructor for entry UI</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#ERROR" class="member-name-link">ERROR</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_AUTHN" class="member-name-link">ERROR_AUTHN</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
 <div class="block">Authn operations failed.</div>
@@ -901,7 +916,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CARD_NOT_MANAGED_BY_D1" class="member-name-link">ERROR_CARD_NOT_MANAGED_BY_D1</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">The consumer/card is not issued by the current issuer.</div>
+<div class="block">The consumerID/card is not issued by the current issuer.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CARD_OPERATION_INVALID_REASON" class="member-name-link">ERROR_CARD_OPERATION_INVALID_REASON</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
@@ -929,31 +944,31 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_BILLING_ADDRESS_COUNTRY_CODE" class="member-name-link">ERROR_CLICKTOPAY_INVALID_BILLING_ADDRESS_COUNTRY_CODE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the country code in <a href="com/thalesgroup/gemalto/d1/card/BillingAddress.html" title="class in com.thalesgroup.gemalto.d1.card"><code>BillingAddress</code></a> is invalid.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the country code in <a href="com/thalesgroup/gemalto/d1/clicktopay/BillingAddress.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>BillingAddress</code></a> is invalid.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_FIRST_NAME" class="member-name-link">ERROR_CLICKTOPAY_INVALID_FIRST_NAME</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the first name in <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> is invalid.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the first name in <a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> is invalid.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_LANGUAGE" class="member-name-link">ERROR_CLICKTOPAY_INVALID_LANGUAGE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the language in <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> is invalid.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the language in <a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> is invalid.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_LAST_NAME" class="member-name-link">ERROR_CLICKTOPAY_INVALID_LAST_NAME</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1ClickToPay.enrol(String, ConsumerInfo, String, BillingAddress, D1Task.Callback)</code></a>  enrol} API to enrol and the last name in <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> is invalid.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>ClickToPayService.enrol(String, ConsumerInfo, String, BillingAddress, D1Task.Callback)</code></a>  enrol} API to enrol and the last name in <a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> is invalid.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER" class="member-name-link">ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the phone number in <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> is invalid.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the phone number in <a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> is invalid.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER_COUNTRY_CODE" class="member-name-link">ERROR_CLICKTOPAY_INVALID_PHONE_NUMBER_COUNTRY_CODE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the phone number country code in <a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card"><code>ConsumerInfo</code></a> is invalid.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>enrol</code></a> API to enrol and the phone number country code in <a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay"><code>ConsumerInfo</code></a> is invalid.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_AMBIGUOUS_PROFILE" class="member-name-link">ERROR_CLICKTOPAY_SCHEME_AMBIGUOUS_PROFILE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">Multiple consumer profiles were found for the provided identifier; the scheme could not resolve which profile to use.</div>
+<div class="block">Multiple consumer profiles were found for the provided identifier; the scheme could not determine which profile to use.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_CLICKTOPAY_SCHEME_CARD_INELIGIBLE" class="member-name-link">ERROR_CLICKTOPAY_SCHEME_CARD_INELIGIBLE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
@@ -1005,11 +1020,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_D1PAY_NO_CARD_ART_CACHE" class="member-name-link">ERROR_D1PAY_NO_CARD_ART_CACHE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#getCachedCardMetadata(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCachedCardMetadata(String, D1Task.Callback)</code></a> getCachedCardMetadata} API to retrieve the local cached copy of card metadata.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#getCachedCardMetadata(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCachedCardMetadata(String, D1Task.Callback)</code></a> getCachedCardMetadata} API to retrieve the local cached copy of card metadata.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_D1PAY_NO_CARD_METADATA_CACHE" class="member-name-link">ERROR_D1PAY_NO_CARD_METADATA_CACHE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">An error occurred when the integrator calls <a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#getCachedCardMetadata(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCachedCardMetadata(String, D1Task.Callback)</code></a> getCachedCardMetadata} API to retrieve the local cached card metadata and no cached copy is available.</div>
+<div class="block">An error occurred when the integrator called the <a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#getCachedCardMetadata(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1PayWallet.getCachedCardMetadata(String, D1Task.Callback)</code></a> getCachedCardMetadata} API to retrieve the local cached card metadata and no cached copy is available.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_D1PAY_NO_DEFAULT_CARD" class="member-name-link">ERROR_D1PAY_NO_DEFAULT_CARD</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
@@ -1103,7 +1118,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_PIN_MISMATCH" class="member-name-link">ERROR_PIN_MISMATCH</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
-<div class="block">There was a mismatch with the PIN inputs.</div>
+<div class="block">There is a mismatch with the PIN inputs.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#ERROR_PUSH_TOKEN_NOT_FOUND" class="member-name-link">ERROR_PUSH_TOKEN_NOT_FOUND</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
@@ -1152,6 +1167,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Payment deactivation has failed.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#FATAL" class="member-name-link">FATAL</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/authn/D1Authn.html#fetchAuthnRequest(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">fetchAuthnRequest(D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.authn.<a href="com/thalesgroup/gemalto/d1/authn/D1Authn.html" title="interface in com.thalesgroup.gemalto.d1.authn">D1Authn</a></dt>
 <dd>
 <div class="block">Fetches a pending authentication request.</div>
@@ -1398,7 +1415,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#getClickToPayService()" class="member-name-link">getClickToPayService()</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">getClickToPayService to the D1 Click to Pay services.</div>
+<div class="block">getClickToPayService API is used to access D1 Click to Pay services.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html#getCode()" class="member-name-link">getCode()</a> - Method in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Exception.ErrorCode.html" title="enum class in com.thalesgroup.gemalto.d1">D1Exception.ErrorCode</a></dt>
 <dd>
@@ -1643,6 +1660,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html#getExpiryDate()" class="member-name-link">getExpiryDate()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a></dt>
 <dd>
 <div class="block">Gets the expiry date of the D1 Pay digital card in MMYY format.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.html#getFiles()" class="member-name-link">getFiles()</a> - Method in interface com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.html" title="interface in com.thalesgroup.gemalto.d1.log">LogService</a></dt>
+<dd>
+<div class="block">Get secure logs files from the D1 services.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html#getFirstName()" class="member-name-link">getFirstName()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.card">ConsumerInfo</a></dt>
 <dd>
@@ -1917,7 +1938,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html#getPhoneNumberCountryCode()" class="member-name-link">getPhoneNumberCountryCode()</a> - Method in class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/ConsumerInfo.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">ConsumerInfo</a></dt>
 <dd>
-<div class="block">The country code of the phone number according to International calling code format UIT-T E.164.</div>
+<div class="block">The country code of the phone number according to international calling code format UIT-T E.164.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/ChangePINOptions.html#getPinLength()" class="member-name-link">getPinLength()</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/ChangePINOptions.html" title="class in com.thalesgroup.gemalto.d1">ChangePINOptions</a></dt>
 <dd>&nbsp;</dd>
@@ -2165,6 +2186,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Card is inactive.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#INFO" class="member-name-link">INFO</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/DisplayTextView.html#insecureCopyToClipboard()" class="member-name-link">insecureCopyToClipboard()</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/DisplayTextView.html" title="class in com.thalesgroup.gemalto.d1">DisplayTextView</a></dt>
 <dd>
 <div class="block">Copy the text into system clipboard.</div>
@@ -2219,7 +2242,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#isOnCurrentDevice()" class="member-name-link">isOnCurrentDevice()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
-<div class="block">Identify if the digital card is on the current device (only for GooglePay, SamsungPay and D1Pay).</div>
+<div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.html#isOnlinePayment()" class="member-name-link">isOnlinePayment()</a> - Method in class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.html" title="class in com.thalesgroup.gemalto.d1.card.cardservice">CardTransactionRecord</a></dt>
 <dd>
@@ -2290,6 +2313,14 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Logs out of the D1 services for all logged-in consumers</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.d1.log">LogService</a> - Interface in <a href="com/thalesgroup/gemalto/d1/log/package-summary.html">com.thalesgroup.gemalto.d1.log</a></dt>
+<dd>
+<div class="block">Main class of the Log service.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a> - Enum Class in <a href="com/thalesgroup/gemalto/d1/log/package-summary.html">com.thalesgroup.gemalto.d1.log</a></dt>
+<dd>
+<div class="block">Log level</div>
+</dd>
 </dl>
 <h2 class="title" id="I:M">M</h2>
 <dl class="index">
@@ -2347,7 +2378,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.d1.messaging">MessagingService</a> - Interface in <a href="com/thalesgroup/gemalto/d1/messaging/package-summary.html">com.thalesgroup.gemalto.d1.messaging</a></dt>
 <dd>
-<div class="block">Main class of the Messaging service for the Card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">Main class of the Messaging service for the Card issued by D1 and <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.Region.html#MIDDLE_EAST" class="member-name-link">MIDDLE_EAST</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.Region.html" title="enum class in com.thalesgroup.gemalto.d1.card.cardservice">CardControlSettings.Region</a></dt>
 <dd>
@@ -2399,6 +2430,8 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Enumeration type for OEM pay type.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#OFF" class="member-name-link">OFF</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/ContactlessTransactionListener.html#onAuthenticationRequired(com.thalesgroup.gemalto.d1.d1pay.VerificationMethod)" class="member-name-link">onAuthenticationRequired(VerificationMethod)</a> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/ContactlessTransactionListener.html" title="class in com.thalesgroup.gemalto.d1.d1pay">ContactlessTransactionListener</a></dt>
 <dd>
 <div class="block"><b>Conditional</b></div>
@@ -2666,7 +2699,7 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/card/D1PushToECommerce.html#pushToClick2PayMC(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">pushToClick2PayMC(String, ConsumerInfo, String, String, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1PushToECommerce.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushToECommerce</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Please use new API: <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.card.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.card.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>D1ClickToPay.enrol(String, ConsumerInfo, String, BillingAddress, D1Task.Callback)</code></a></div>
+<div class="deprecation-comment">Please use new API: <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html#enrol(java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo,java.lang.String,com.thalesgroup.gemalto.d1.clicktopay.BillingAddress,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>ClickToPayService.enrol(String, com.thalesgroup.gemalto.d1.clicktopay.ConsumerInfo, String, com.thalesgroup.gemalto.d1.clicktopay.BillingAddress, D1Task.Callback)</code></a></div>
 </div>
 </dd>
 </dl>
@@ -2710,7 +2743,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html#registerMessageNotification(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">registerMessageNotification(D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html" title="interface in com.thalesgroup.gemalto.d1.messaging">MessagingService</a></dt>
 <dd>
-<div class="block">To register the notification for card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To register the notification for card issued by D1 and <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/OngoingOperation.html#RENEWAL" class="member-name-link">RENEWAL</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/OngoingOperation.html" title="enum class in com.thalesgroup.gemalto.d1.card.cardservice">OngoingOperation</a></dt>
 <dd>
@@ -2894,6 +2927,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html#setKeyValidityPeriod(int)" class="member-name-link">setKeyValidityPeriod(int)</a> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayConfigParams.html" title="class in com.thalesgroup.gemalto.d1.d1pay">D1PayConfigParams</a></dt>
 <dd>
 <div class="block">Sets the key validity period</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.html#setLevel(com.thalesgroup.gemalto.d1.log.LogService.Level)" class="member-name-link">setLevel(LogService.Level)</a> - Method in interface com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.html" title="interface in com.thalesgroup.gemalto.d1.log">LogService</a></dt>
+<dd>
+<div class="block">Set secure logs level.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardLimitSettings.PurchaseLimit.html#setLimit(java.lang.Long)" class="member-name-link">setLimit(Long)</a> - Method in class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardLimitSettings.PurchaseLimit.html" title="class in com.thalesgroup.gemalto.d1.card.cardservice">CardLimitSettings.PurchaseLimit</a></dt>
 <dd>
@@ -3218,15 +3255,15 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/BindReason.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/BindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">BindReason</a></dt>
 <dd>
-<div class="block">Returns the stable reason code associated with this reason.</div>
+<div class="block">Returns the stable reason code for this reason.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/UnbindReason.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/UnbindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">UnbindReason</a></dt>
 <dd>
-<div class="block">Returns the stable reason code associated with this reason.</div>
+<div class="block">Returns the stable reason code for this reason.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/VerificationReason.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/VerificationReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">VerificationReason</a></dt>
 <dd>
-<div class="block">Returns the stable reason code associated with this reason.</div>
+<div class="block">Returns the stable reason code for this reason.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessageFormat.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessageFormat.html" title="enum class in com.thalesgroup.gemalto.d1.messaging">MessageFormat</a></dt>
 <dd>
@@ -3286,7 +3323,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/PushResponseKey.html#TYPE_MESSAGE_NOTIFICATION" class="member-name-link">TYPE_MESSAGE_NOTIFICATION</a> - Static variable in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/PushResponseKey.html" title="enum class in com.thalesgroup.gemalto.d1">PushResponseKey</a></dt>
 <dd>
-<div class="block">The message received is related to activities in card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>Click to Pay</code></a>.</div>
+<div class="block">The message received is related to activities in card issued by D1 and <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>Click to Pay</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/PushResponseKey.html#TYPE_REPLENISHMENT" class="member-name-link">TYPE_REPLENISHMENT</a> - Static variable in enum class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/PushResponseKey.html" title="enum class in com.thalesgroup.gemalto.d1">PushResponseKey</a></dt>
 <dd>
@@ -3337,7 +3374,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html#unregisterMessageNotification(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">unregisterMessageNotification(D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessagingService.html" title="interface in com.thalesgroup.gemalto.d1.messaging">MessagingService</a></dt>
 <dd>
-<div class="block">To unregister notification for card issued by D1 and <a href="com/thalesgroup/gemalto/d1/card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To unregister notification for card issued by D1 and <a href="com/thalesgroup/gemalto/d1/clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#unsetDefaultPaymentDigitalCard(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">unsetDefaultPaymentDigitalCard(D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayWallet</a></dt>
 <dd>
@@ -3515,6 +3552,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessageFormat.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessageFormat.html" title="enum class in com.thalesgroup.gemalto.d1.messaging">MessageFormat</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -3682,6 +3723,11 @@ the order they are declared.</div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#values()" class="member-name-link">values()</a> - Static method in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/messaging/MessageFormat.html#values()" class="member-name-link">values()</a> - Static method in enum class com.thalesgroup.gemalto.d1.messaging.<a href="com/thalesgroup/gemalto/d1/messaging/MessageFormat.html" title="enum class in com.thalesgroup.gemalto.d1.messaging">MessageFormat</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
@@ -3708,7 +3754,7 @@ the order they are declared.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/VerificationReason.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">VerificationReason</a> - Enum Class in <a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a></dt>
 <dd>
-<div class="block">The reason associated with approving cardholder verification.</div>
+<div class="block">The reason associated with approving the cardholder verification.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/Scheme.html#VISA" class="member-name-link">VISA</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/Scheme.html" title="enum class in com.thalesgroup.gemalto.d1.card">Scheme</a></dt>
 <dd>
@@ -3717,6 +3763,8 @@ the order they are declared.</div>
 </dl>
 <h2 class="title" id="I:W">W</h2>
 <dl class="index">
+<dt><a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html#WARN" class="member-name-link">WARN</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.log.<a href="com/thalesgroup/gemalto/d1/log/LogService.Level.html" title="enum class in com.thalesgroup.gemalto.d1.log">LogService.Level</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.Region.html#WEST_AFRICA" class="member-name-link">WEST_AFRICA</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardControlSettings.Region.html" title="enum class in com.thalesgroup.gemalto.d1.card.cardservice">CardControlSettings.Region</a></dt>
 <dd>
 <div class="block">West Africa region.</div>

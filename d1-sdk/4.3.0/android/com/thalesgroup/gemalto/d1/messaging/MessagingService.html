@@ -74,7 +74,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">MessagingService</span></div>
-<div class="block">Main class of the Messaging service for the Card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">Main class of the Messaging service for the Card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>4.0.0</dd>
@@ -107,12 +107,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#registerMessageNotification(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">registerMessageNotification</a><wbr>(<a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">To register the notification for card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To register the notification for card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unregisterMessageNotification(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">unregisterMessageNotification</a><wbr>(<a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">To unregister notification for card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To unregister notification for card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 </div>
 </div>
 </div>
@@ -133,7 +133,7 @@ loadScripts(document, 'script');</script>
 <h3>registerMessageNotification</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">registerMessageNotification</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</span></div>
-<div class="block">To register the notification for card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.
+<div class="block">To register the notification for card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.
  <p>
  The SDK registers the token to the server. Hence, <a href="../D1Task.Builder.html#setApplicationProfileId(java.lang.String)"><code>D1Task.Builder.setApplicationProfileId(String)</code></a> and
  <a href="../D1Task.html#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)"><code>MessagingService.updatePushToken</code></a> should be called before calling this API.
@@ -160,7 +160,7 @@ loadScripts(document, 'script');</script>
 <h3>unregisterMessageNotification</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">unregisterMessageNotification</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</span></div>
-<div class="block">To unregister notification for card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To unregister notification for card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>callback</code> - The callback is invoked when the operation is completed. Notification is unregistered when the callback is successful.
@@ -181,7 +181,7 @@ loadScripts(document, 'script');</script>
 <h3>getMessageList</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">getMessageList</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Message.html" title="class in com.thalesgroup.gemalto.d1.messaging">Message</a>&gt;&gt;&nbsp;callback)</span></div>
-<div class="block">To retrieve message list for the current consumer. The message is related to activities in the card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To retrieve message list for the current consumer. The message is related to activities in the card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>callback</code> - The callback is invoked when the operation is completed. When the callback is successful, the list of <a href="Message.html" title="class in com.thalesgroup.gemalto.d1.messaging"><code>messages</code></a> is returned.
@@ -204,7 +204,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;messageID,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</span></div>
-<div class="block">To mark the message as read. The message is related to activities in the card issued by D1 and <a href="../card/D1ClickToPay.html" title="interface in com.thalesgroup.gemalto.d1.card"><code>ClickToPay</code></a>.</div>
+<div class="block">To mark the message as read. The message is related to activities in the card issued by D1 and <a href="../clicktopay/ClickToPayService.html" title="interface in com.thalesgroup.gemalto.d1.clicktopay"><code>ClickToPay</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>messageID</code> - The list of message IDs.</dd>

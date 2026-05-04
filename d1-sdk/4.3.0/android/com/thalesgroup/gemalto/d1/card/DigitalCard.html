@@ -195,7 +195,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOnCurrentDevice()" class="member-name-link">isOnCurrentDevice</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Identify if the digital card is on the current device (only for GooglePay, SamsungPay and D1Pay).</div>
+<div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
 </div>
 </div>
 </div>
@@ -273,18 +273,18 @@ loadScripts(document, 'script');</script>
  Device bindings provide details about the card's binding status on different devices.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>cardID</code> - The unique identifier of the digital card. Must not be null.</dd>
-<dd><code>state</code> - The current state of the digital card. Must not be null.</dd>
-<dd><code>scheme</code> - The card scheme (e.g., VISA, MASTERCARD). Must not be null.</dd>
-<dd><code>last4</code> - The last 4 digits of the card. May be null.</dd>
-<dd><code>expiryDate</code> - The expiry date of the card in MMYY format. May be null.</dd>
-<dd><code>deviceName</code> - The name of the device. May be null.</dd>
-<dd><code>deviceType</code> - The type of the device. May be null.</dd>
-<dd><code>deviceID</code> - The unique identifier of the device. May be null.</dd>
-<dd><code>tokenRequestorID</code> - The identifier of the token requestor. May be null.</dd>
-<dd><code>tokenRequestorName</code> - The name of the token requestor. May be null.</dd>
-<dd><code>deviceBindingList</code> - The list of device bindings associated with this card. May be null.</dd>
-<dd><code>isOnCurrentDevice</code> - Whether the card is on the current device.</dd>
+<dd><code>cardID</code> - The unique identifier of the digital card which must not be null.</dd>
+<dd><code>state</code> - The current state of the digital card which must not be null.</dd>
+<dd><code>scheme</code> - The card scheme (e.g., VISA, MASTERCARD) which must not be null.</dd>
+<dd><code>last4</code> - The last 4 digits of the card which may be null.</dd>
+<dd><code>expiryDate</code> - The expiry date of the card in MMYY format which may be null.</dd>
+<dd><code>deviceName</code> - The name of the device which may be null.</dd>
+<dd><code>deviceType</code> - The type of the device which may be null.</dd>
+<dd><code>deviceID</code> - The unique identifier of the device which may be null.</dd>
+<dd><code>tokenRequestorID</code> - The identifier of the token requestor which may be null.</dd>
+<dd><code>tokenRequestorName</code> - The name of the token requestor which may be null.</dd>
+<dd><code>deviceBindingList</code> - The list of device bindings associated with this card which may be null.</dd>
+<dd><code>isOnCurrentDevice</code> - Indicates whether the card is on the current device.</dd>
 <dt>Since:</dt>
 <dd>4.3.0</dd>
 </dl>
@@ -413,7 +413,7 @@ loadScripts(document, 'script');</script>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getTokenRequestorName</span>()</div>
 <div class="block">Gets the name of the digital card's token requestor.
 
- It is only supported for MasterCard.</div>
+ It is only supported for Mastercard.</div>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>The token requestor name.</dd>
@@ -424,7 +424,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isOnCurrentDevice()">
 <h3>isOnCurrentDevice</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isOnCurrentDevice</span>()</div>
-<div class="block">Identify if the digital card is on the current device (only for GooglePay, SamsungPay and D1Pay).</div>
+<div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>3.4.0</dd>
@@ -442,7 +442,7 @@ loadScripts(document, 'script');</script>
  on different devices, including binding references, device names, and binding statuses.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>The list of device bindings. May be null if no bindings are available.</dd>
+<dd>The list of device bindings. This may be null if no bindings are available.</dd>
 <dt>Since:</dt>
 <dd>4.3.0</dd>
 </dl>

@@ -74,7 +74,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">DigitalCardService</span></div>
-<div class="block">Service interface for digital card operations related to cardholder verification and device
+<div class="block">Service interface for digital card operations related to cardholder verification and device binding.
  binding.</div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -100,7 +100,7 @@ loadScripts(document, 'script');</script>
  <a href="BindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">BindReason</a>&nbsp;reason,
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Approves device binding for a digital card.</div>
+<div class="block">Approves the device binding for a digital card.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#approveCardholderVerification(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.VerificationReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">approveCardholderVerification</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
@@ -142,15 +142,15 @@ loadScripts(document, 'script');</script>
  <a href="BindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">BindReason</a>&nbsp;reason,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</span></div>
-<div class="block">Approves device binding for a digital card.</div>
+<div class="block">Approves the device binding for a digital card.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>digitalCardID</code> - The unique identifier of the digital card</dd>
-<dd><code>bindingReference</code> - Corresponds to Visa device index</dd>
-<dd><code>reason</code> - The reason for device binding approval. If not provided, defaults to
+<dd><code>digitalCardID</code> - The unique identifier of the digital card.</dd>
+<dd><code>bindingReference</code> - Corresponds to Visa device index.</dd>
+<dd><code>reason</code> - The reason for device binding approval. If it is not provided, it defaults to
                <a href="BindReason.html#ISSUER_DECISION"><code>BindReason.ISSUER_DECISION</code></a>.</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When successful, the returned argument of
+                 When it is successful, the returned argument of
                  <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
@@ -181,12 +181,12 @@ loadScripts(document, 'script');</script>
 <div class="block">Unbinds a device from a digital card.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>digitalCardID</code> - The unique identifier of the digital card</dd>
-<dd><code>bindingReference</code> - Corresponds to Visa device index</dd>
-<dd><code>reasonCode</code> - The reason for device unbinding. If not provided, defaults to
+<dd><code>digitalCardID</code> - The unique identifier of the digital card.</dd>
+<dd><code>bindingReference</code> - Corresponds to Visa device index.</dd>
+<dd><code>reasonCode</code> - The reason for device unbinding. If it is not provided, it defaults to
                    <a href="UnbindReason.html#ISSUER_DECISION"><code>UnbindReason.ISSUER_DECISION</code></a>.</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When successful, the returned argument of
+                 When it is successful, the returned argument of
                  <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
@@ -215,11 +215,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Approves cardholder verification for a digital card.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>digitalCardID</code> - The unique identifier of the digital card</dd>
-<dd><code>reasonCode</code> - The reason for verification approval. If not provided, defaults to
+<dd><code>digitalCardID</code> - The unique identifier of the digital card.</dd>
+<dd><code>reasonCode</code> - The reason for verification approval. If it is not provided, it defaults to
                    <a href="VerificationReason.html#ISSUER_DECISION"><code>VerificationReason.ISSUER_DECISION</code></a>.</dd>
 <dd><code>callback</code> - The callback for the result.
-                 When successful, the returned argument of
+                 When it is successful, the returned argument of
                  <a href="../D1Task.Callback.html#onSuccess(T)"><code>D1Task.Callback.onSuccess(Object)</code></a> is always null.
                  <br/>Possible errors:<br/>
                  <ul>
