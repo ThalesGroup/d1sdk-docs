@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Test Callback</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 700px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #222;
+    }
+    h1 {
+        font-size: 22px;
+        border-bottom: 2px solid #444;
+        padding-bottom: 8px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px 10px;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+        word-break: break-all;
+    }
+    th {
+        background: #f2f2f2;
+    }
+    .empty {
+        color: #888;
+        font-style: italic;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Test Callback</h1>
+<div id="content"></div>
+
+<script>
+    function getQueryParams() {
+        var params = {};
+        var queryString = window.location.search.substring(1);
+        if (!queryString) return params;
+        var pairs = queryString.split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i].split('=');
+            var key = decodeURIComponent(pair[0]);
+            var value = pair.length > 1 ? decodeURIComponent(pair.slice(1).join('=')) : '';
+            params[key] = value;
+        }
+        return params;
+    }
+
+    var params = getQueryParams();
+    var contentDiv = document.getElementById('content');
+    var keys = Object.keys(params);
+
+    if (keys.length === 0) {
+        contentDiv.innerHTML = '<div class="empty">No parameters were provided on the URI.</div>';
+    } else {
+        var html = '<table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>';
+        keys.forEach(function (key) {
+            html += '<tr><td>' + key + '</td><td>' + params[key] + '</td></tr>';
+        });
+        html += '</tbody></table>';
+        contentDiv.innerHTML = html;
+    }
+</script>
+
+</body>
+</html>

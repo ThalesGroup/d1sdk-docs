@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Visa Implementation</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+        }
+        h1 {
+            font-size: 22px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 8px;
+        }
+        section {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            background: #fafafa;
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .field {
+            margin-bottom: 14px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+        input[readonly] {
+            background: #eee;
+            color: #555;
+        }
+        button {
+            background: #2a6df4;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1a56d6;
+        }
+        .hidden {
+            display: none;
+        }
+        .note {
+            font-size: 12px;
+            color: #777;
+            margin-top: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            word-break: break-all;
+        }
+        th {
+            background: #f2f2f2;
+        }
+        th:first-child, td:first-child {
+            width: 250px;
+            font-weight: bold;
+        }
+        .empty {
+            color: #888;
+            font-style: italic;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Mock Visa Implementation</h1>
+
+<section id="input-parameter-section">
+    <h2>Input Parameter</h2>
+    <div id="input-params-content"></div>
+</section>
+
+
+<section id="output-parameter-section">
+    <h2>Output Parameter</h2>
+
+    <div class="field">
+        <label for="callbackUri">callbackUri</label>
+        <input type="text" id="callbackUri" value="https://paysdk.github.io/testCallback.html">
+    </div>
+
+    <div class="field">
+        <label for="status">status</label>
+        <select id="status">
+            <option value="SUCCESS">SUCCESS</option>
+            <option value="POPUP_WINDOW_TERMINATED">POPUP_WINDOW_TERMINATED</option>
+            <option value="NOTFOUND_AMR_VALUES">NOTFOUND_AMR_VALUES</option>
+        </select>
+    </div>
+
+    <div class="field" id="accessToken-field">
+        <label for="accessToken">accessToken</label>
+        <input type="text" id="accessToken" value="eyJ0eXAiO">
+    </div>
+
+    <div class="field hidden" id="reason-field">
+        <label for="reason">reason</label>
+        <select id="reason">
+            <option value="USER_CANCELLATION">USER_CANCELLATION</option>
+        </select>
+        <div class="note">Only used/visible when status is POPUP_WINDOW_TERMINATED or NOTFOUND_AMR_VALUES</div>
+    </div>
+
+    <button id="submitBtn">Submit</button>
+
+    <div id="auto-submit-notice" style="display: none; margin-top: 15px; padding: 12px; background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px;">
+        <p style="margin: 0; color: #856404; font-size: 14px;">
+            ⏱️ Auto-submitting in <strong id="countdown" style="font-size: 16px; color: #d9534f;">5</strong> seconds...
+            <button id="cancelAutoSubmit" style="margin-left: 15px; padding: 6px 16px; background: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px;">
+                Cancel Auto-Submit
+            </button>
+        </p>
+    </div>
+</section>
+
+<script>
+    // Parse query params from current URL and populate input parameter section
+    function getQueryParams() {
+        var params = {};
+        var queryString = window.location.search.substring(1);
+        if (!queryString) return params;
+        var pairs = queryString.split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i].split('=');
+            var key = decodeURIComponent(pair[0]);
+            var value = pair.length > 1 ? decodeURIComponent(pair.slice(1).join('=')) : '';
+            params[key] = value;
+        }
+        return params;
+    }
+
+    var queryParams = getQueryParams();
+
+    // Render all query parameters in the Input Parameter section (like testCallback.html)
+    var inputParamsContent = document.getElementById('input-params-content');
+    var queryKeys = Object.keys(queryParams);
+
+    if (queryKeys.length === 0) {
+        inputParamsContent.innerHTML = '<div class="empty">No parameters were provided on the URI.</div>';
+    } else {
+        var inputHtml = '<table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody>';
+        queryKeys.forEach(function (key) {
+            inputHtml += '<tr><td>' + key + '</td><td>' + queryParams[key] + '</td></tr>';
+        });
+        inputHtml += '</tbody></table>';
+        inputParamsContent.innerHTML = inputHtml;
+    }
+
+
+    var statusSelect = document.getElementById('status');
+    var reasonField = document.getElementById('reason-field');
+    var accessTokenField = document.getElementById('accessToken-field');
+
+    function toggleReasonField() {
+        var val = statusSelect.value;
+        var reasonSelect = document.getElementById('reason');
+
+        if (val === 'POPUP_WINDOW_TERMINATED' || val === 'NOTFOUND_AMR_VALUES') {
+            reasonField.classList.remove('hidden');
+            accessTokenField.classList.add('hidden');
+
+            // Clear existing options
+            reasonSelect.innerHTML = '';
+
+            // All error options
+            var errorReasons = [
+                'USER_CANCELLATION'
+            ];
+            errorReasons.forEach(function(reason) {
+                var option = document.createElement('option');
+                option.value = reason;
+                option.textContent = reason;
+                reasonSelect.appendChild(option);
+            });
+        } else {
+            reasonField.classList.add('hidden');
+            accessTokenField.classList.remove('hidden');
+        }
+    }
+
+    statusSelect.addEventListener('change', toggleReasonField);
+    toggleReasonField();
+
+    function doSubmit() {
+        var callbackUri = document.getElementById('callbackUri').value.trim();
+        if (!callbackUri) {
+            alert('callbackUri cannot be empty');
+            return;
+        }
+
+        var status = statusSelect.value;
+
+        var resultParams = {};
+
+        // Carry forward all original input query parameters
+        for (var qKey in queryParams) {
+            if (queryParams.hasOwnProperty(qKey)) {
+                resultParams[qKey] = queryParams[qKey];
+            }
+        }
+
+        resultParams['status'] = status;
+
+        if (status === 'POPUP_WINDOW_TERMINATED' || status === 'NOTFOUND_AMR_VALUES') {
+            resultParams['reason'] = document.getElementById('reason').value;
+        } else {
+            var accessToken = document.getElementById('accessToken').value;
+            resultParams['access_token'] = accessToken;
+        }
+
+        // Since static HTML cannot read GET data, we'll use URL hash to pass data
+        // This allows the receiving page to access the data via JavaScript
+        var queryStringParts = [];
+        for (var key in resultParams) {
+            if (resultParams.hasOwnProperty(key)) {
+                queryStringParts.push(encodeURIComponent(key) + '=' + encodeURIComponent(resultParams[key]));
+            }
+        }
+
+        // Create a form for GET submission with data in URL hash
+        var form = document.createElement('form');
+        form.method = 'GET';
+        form.action = callbackUri + '#' + queryStringParts.join('&');
+
+        // Also add parameters as hidden form fields for proper GET
+        for (var key in resultParams) {
+            if (resultParams.hasOwnProperty(key)) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = resultParams[key];
+                form.appendChild(input);
+            }
+        }
+
+        // Append form to body and submit
+        document.body.appendChild(form);
+        form.submit();
+    }
+
+    document.getElementById('submitBtn').addEventListener('click', doSubmit);
+
+    // Pre-fill Output Parameter fields from incoming query parameters (input parameters take priority).
+    // - callbackUri: overrides the default callback URL text box.
+    // - status: pre-selects the matching dropdown option (case-insensitive); if no match, a new option
+    //           is added to the dropdown with that value and selected, so custom/unlisted statuses can be tested.
+    // - accessToken: overrides the default text box value.
+    // - reason: overrides the default text box value (still only shown when status is POPUP_WINDOW_TERMINATED/NOTFOUND_AMR_VALUES).
+    (function prefillFromQueryParams() {
+        var submitParamKey = null;
+        var callbackUriParamKey = null;
+        var statusParamKey = null;
+        var accessTokenParamKey = null;
+        var reasonParamKey = null;
+
+        for (var key in queryParams) {
+            if (queryParams.hasOwnProperty(key)) {
+                var lowerKey = key.toLowerCase();
+                if (lowerKey === 'submit') {
+                    submitParamKey = key;
+                } else if (lowerKey === 'callbackuri') {
+                    callbackUriParamKey = key;
+                } else if (lowerKey === 'status') {
+                    statusParamKey = key;
+                } else if (lowerKey === 'accessToken') {
+                    accessTokenParamKey = key;
+                } else if (lowerKey === 'reason') {
+                    reasonParamKey = key;
+                }
+            }
+        }
+
+        if (callbackUriParamKey) {
+            document.getElementById('callbackUri').value = queryParams[callbackUriParamKey];
+        }
+
+        if (statusParamKey) {
+            var incomingStatus = queryParams[statusParamKey];
+            var matchedOption = null;
+            var options = statusSelect.options;
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].value.toLowerCase() === incomingStatus.toLowerCase()) {
+                    matchedOption = options[i];
+                    break;
+                }
+            }
+
+            if (matchedOption) {
+                statusSelect.value = matchedOption.value;
+            } else {
+                var newOption = document.createElement('option');
+                newOption.value = incomingStatus;
+                newOption.textContent = incomingStatus;
+                statusSelect.appendChild(newOption);
+                statusSelect.value = incomingStatus;
+            }
+
+            toggleReasonField();
+        }
+
+        if (accessTokenParamKey) {
+            document.getElementById('accessToken').value = queryParams[accessTokenParamKey];
+        }
+
+        if (reasonParamKey) {
+            var reasonSelect = document.getElementById('reason');
+            var incomingReason = queryParams[reasonParamKey];
+
+            // Try to find matching option
+            var found = false;
+            for (var i = 0; i < reasonSelect.options.length; i++) {
+                if (reasonSelect.options[i].value === incomingReason) {
+                    reasonSelect.value = incomingReason;
+                    found = true;
+                    break;
+                }
+            }
+
+            // If not found, add it as a custom option
+            if (!found) {
+                var newOption = document.createElement('option');
+                newOption.value = incomingReason;
+                newOption.textContent = incomingReason;
+                reasonSelect.appendChild(newOption);
+                reasonSelect.value = incomingReason;
+            }
+        }
+
+        if (submitParamKey && queryParams[submitParamKey].toLowerCase() === 'true') {
+            doSubmit();
+        }
+    })();
+
+    // Auto-click submitBtn after 5 seconds with countdown display
+    (function autoClickAfterDelay() {
+        var autoClickTimer = null;
+        var countdownInterval = null;
+        var submitBtn = document.getElementById('submitBtn');
+        var autoSubmitNotice = document.getElementById('auto-submit-notice');
+        var countdownElement = document.getElementById('countdown');
+        var cancelBtn = document.getElementById('cancelAutoSubmit');
+        var hasUserClicked = false;
+        var secondsLeft = 5;
+
+        // Show the countdown notice
+        autoSubmitNotice.style.display = 'block';
+
+        // Update countdown every second
+        countdownInterval = setInterval(function() {
+            secondsLeft--;
+            countdownElement.textContent = secondsLeft;
+
+            if (secondsLeft <= 0) {
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+
+        // Start 5-second timer for auto-submit
+        autoClickTimer = setTimeout(function() {
+            if (!hasUserClicked) {
+                console.log('Auto-clicking submit button after 5 seconds of inactivity');
+                autoSubmitNotice.style.display = 'none';
+                doSubmit();
+            }
+        }, 5000);
+
+        // If user clicks Submit manually, cancel everything
+        submitBtn.addEventListener('click', function() {
+            hasUserClicked = true;
+            if (autoClickTimer) {
+                clearTimeout(autoClickTimer);
+            }
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+            autoSubmitNotice.style.display = 'none';
+            console.log('User clicked manually - auto-click cancelled');
+        }, { once: true });
+
+        // If user clicks Cancel button, stop auto-submit
+        cancelBtn.addEventListener('click', function() {
+            hasUserClicked = true;
+            if (autoClickTimer) {
+                clearTimeout(autoClickTimer);
+            }
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+            autoSubmitNotice.style.display = 'none';
+            console.log('Auto-submit cancelled by user');
+        });
+    })();
+</script>
+
+
+
+</body>
+</html>
