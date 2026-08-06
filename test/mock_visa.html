@@ -110,7 +110,7 @@
 
     <div class="field">
         <label for="callbackUri">callbackUri</label>
-        <input type="text" id="callbackUri" value="https://paysdk.github.io/testCallback.html">
+        <input type="text" id="callbackUri" value="https://paysdk.github.io">
     </div>
 
     <div class="field">
@@ -124,7 +124,7 @@
 
     <div class="field" id="accessToken-field">
         <label for="accessToken">accessToken</label>
-        <input type="text" id="accessToken" value="eyJ0eXAiO">
+        <input type="text" id="accessToken" value="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbmYiOnsiYXRrIjoidGVzdCJ9fQ.dGVzdC1zaWduYXR1cmU">
     </div>
 
     <div class="field hidden" id="reason-field">
@@ -242,8 +242,6 @@
             resultParams['access_token'] = accessToken;
         }
 
-        // Since static HTML cannot read GET data, we'll use URL hash to pass data
-        // This allows the receiving page to access the data via JavaScript
         var queryStringParts = [];
         for (var key in resultParams) {
             if (resultParams.hasOwnProperty(key)) {
@@ -251,25 +249,10 @@
             }
         }
 
-        // Create a form for GET submission with data in URL hash
-        var form = document.createElement('form');
-        form.method = 'GET';
-        form.action = callbackUri + '#' + queryStringParts.join('&');
+        var separator = callbackUri.indexOf('?') === -1 ? '?' : '&';
+        var finalUrl = callbackUri + separator + queryStringParts.join('&');
 
-        // Also add parameters as hidden form fields for proper GET
-        for (var key in resultParams) {
-            if (resultParams.hasOwnProperty(key)) {
-                var input = document.createElement('input');
-                input.type = 'hidden';
-                input.name = key;
-                input.value = resultParams[key];
-                form.appendChild(input);
-            }
-        }
-
-        // Append form to body and submit
-        document.body.appendChild(form);
-        form.submit();
+        window.location.href = finalUrl;
     }
 
     document.getElementById('submitBtn').addEventListener('click', doSubmit);
