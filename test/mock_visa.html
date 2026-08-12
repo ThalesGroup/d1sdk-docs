@@ -233,11 +233,11 @@
             }
         }
 
-        resultParams['status'] = status;
-
         if (status === 'POPUP_WINDOW_TERMINATED' || status === 'NOTFOUND_AMR_VALUES') {
+            resultParams['error'] = status;
             resultParams['reason'] = document.getElementById('reason').value;
         } else {
+            resultParams['status'] = status;
             var accessToken = document.getElementById('accessToken').value;
             resultParams['access_token'] = accessToken;
         }
@@ -278,6 +278,8 @@
                 } else if (lowerKey === 'callbackuri') {
                     callbackUriParamKey = key;
                 } else if (lowerKey === 'status') {
+                    statusParamKey = key;
+                } else if (lowerKey === 'error') {
                     statusParamKey = key;
                 } else if (lowerKey === 'accessToken') {
                     accessTokenParamKey = key;
