@@ -1,0 +1,6 @@
+com.thalesgroup.tpcsdk.enums
+com.thalesgroup.tpcsdk.manager
+com.thalesgroup.tpcsdk.manager.exception
+com.thalesgroup.tpcsdk.manager.listener
+com.thalesgroup.tpcsdk.model
+com.thalesgroup.tpcsdk.provisioning
