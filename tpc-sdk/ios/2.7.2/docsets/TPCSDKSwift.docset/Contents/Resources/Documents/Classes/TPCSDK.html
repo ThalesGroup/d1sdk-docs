@@ -345,7 +345,7 @@
    <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplication</span><span class="o">.</span><span class="kt">LaunchOptionsKey</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
     <span class="c1">// Override point for customization after application launch.</span>
 
-    <span class="k">let</span> <span class="nv">tpcServerUrl</span> <span class="o">=</span> <span class="s">"https://hapi.dbp.thalescloud.io/mg/tpc"</span>
+    <span class="k">let</span> <span class="nv">tpcServerUrl</span> <span class="o">=</span> <span class="s">"https://mapi.dbp.thalescloud.io/mg/tpc"</span>
     <span class="k">let</span> <span class="nv">tpcIssuerId</span>  <span class="o">=</span> <span class="s">"TPC_ISSUER"</span>
     <span class="k">try</span><span class="p">?</span> <span class="kt">TPCSDK</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="n">tpcServerUrl</span><span class="p">,</span> <span class="nv">issuerId</span><span class="p">:</span> <span class="n">tpcIssuerId</span><span class="p">)</span>
 
@@ -355,7 +355,7 @@
 <pre class="highlight swift"><code><span class="o">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">application</span><span class="p">:(</span><span class="kt">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="n">application</span> <span class="nv">didFinishLaunchingWithOptions</span><span class="p">:(</span><span class="kt">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">launchOptions</span> <span class="p">{</span>
     <span class="c1">// Override point for [customization after application launch.</span>
 
-    <span class="kt">NSString</span> <span class="o">*</span> <span class="n">tpcServerUrl</span> <span class="o">=</span> <span class="s">@"https://hapi.dbp.thalescloud.io/mg/tpc"</span><span class="p">;</span>
+    <span class="kt">NSString</span> <span class="o">*</span> <span class="n">tpcServerUrl</span> <span class="o">=</span> <span class="s">@"https://mapi.dbp.thalescloud.io/mg/tpc"</span><span class="p">;</span>
     <span class="kt">NSString</span> <span class="o">*</span> <span class="n">tpcIssuerId</span> <span class="o">=</span> <span class="s">@"TPC_ISSUER"</span><span class="p">;</span>
     <span class="kt">NSError</span> <span class="o">*</span> <span class="n">error</span><span class="p">;</span>
     <span class="p">[</span><span class="kt">TPCSDK</span> <span class="nv">configureWithUrl</span><span class="p">:</span><span class="n">tpcServerUrl</span> <span class="nv">issuerId</span><span class="p">:</span><span class="n">tpcIssuerId</span> <span class="nv">error</span><span class="p">:</span><span class="o">&amp;</span><span class="n">error</span><span class="p">];</span>
@@ -387,7 +387,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Provide server URL without trailing slash (example: <a href="https://hapi.dbp.thalescloud.io">https://hapi.dbp.thalescloud.io</a>).</p>
+                                  <p>Provide server URL without trailing slash (example: <a href="https://mapi.dbp.thalescloud.io">https://mapi.dbp.thalescloud.io</a>).</p>
                                 </div>
                               </td>
                             </tr>
