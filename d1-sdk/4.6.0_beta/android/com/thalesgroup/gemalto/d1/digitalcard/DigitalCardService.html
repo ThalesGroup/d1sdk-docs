@@ -74,8 +74,7 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">DigitalCardService</span></div>
-<div class="block">Service interface for digital card operations related to cardholder verification and device binding.
- binding.</div>
+<div class="block">Digital card listing, cardholder verification, and device binding operations.</div>
 <dl class="notes">
 <dt>Since:</dt>
 <dd>4.3.0</dd>
@@ -94,6 +93,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#activateDigitalCard(java.lang.String)" class="member-name-link">activateDigitalCard</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">
+ Activate the digital card which has been digitized but not yet done ID&amp;V (Step up authentication - Yellow Flow inApp Verification).</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType)" class="member-name-link">activateDigitalCard</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
+ <a href="../card/OEMPayType.html" title="enum class in com.thalesgroup.gemalto.d1.card">OEMPayType</a>&nbsp;oemType)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">
+ Activate the digital card which has been digitized but not yet done ID&amp;V (Step up authentication - Yellow Flow inApp Verification).</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#approveBinding(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.BindReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">approveBinding</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;bindingReference,
@@ -101,7 +113,7 @@ loadScripts(document, 'script');</script>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Use <a href="#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>stepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
+<div class="deprecation-comment">Use <a href="#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>getStepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
 </div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code>void</code></div>
@@ -110,28 +122,40 @@ loadScripts(document, 'script');</script>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Use <a href="#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>stepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
+<div class="deprecation-comment">Use <a href="#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>getStepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
 </div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getDigitalCardList(java.lang.String)" class="member-name-link">getDigitalCardList</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Retrieves the digital cards associated with the given card identifier.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)" class="member-name-link">getStepUpAuthenticationResult</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;authenticationID,
+ <a href="stepup/Result.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard.stepup">Result</a>&nbsp;result)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Performs step-up authentication for device binding and cardholder verification.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="stepup/StepUpAuthenticationDetails.html" title="class in com.thalesgroup.gemalto.d1.digitalcard.stepup">StepUpAuthenticationDetails</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#parseStepUpVerificationDetails(java.lang.String)" class="member-name-link">parseStepUpVerificationDetails</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;verificationDetails)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Parses step-up verification details from a Base64-encoded JSON payload.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)" class="member-name-link">stepUpAuthenticationResult</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
- <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;authenticationID,
- <a href="stepup/Result.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard.stepup">Result</a>&nbsp;result)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Performs step-up authentication for device binding and cardholder verification.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unbindDevice(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.UnbindReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">unbindDevice</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unbindDevice(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.UnbindReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">unbindDevice</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;bindingReference,
  <a href="UnbindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">UnbindReason</a>&nbsp;reasonCode,
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Unbinds a device from a digital card.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.DigitalCard,com.thalesgroup.gemalto.d1.digitalcard.CardAction)" class="member-name-link">updateDigitalCard</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
+ <a href="DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a>&nbsp;digitalCard,
+ <a href="CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a>&nbsp;cardAction)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Updates the state of a digital card: resume, suspend or delete it.</div>
 </div>
 </div>
 </div>
@@ -148,6 +172,78 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="getDigitalCardList(java.lang.String)">
+<h3>getDigitalCardList</h3>
+<div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+</span><span class="return-type"><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a>&gt;&gt;</span>&nbsp;<span class="element-name">getDigitalCardList</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID)</span></div>
+<div class="block">Retrieves the digital cards associated with the given card identifier.
+ Cards that have not been digitized produce an empty list. Each card includes
+ device binding information and identifies whether it is on the current device.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cardID</code> - The card identifier.</dd>
+<dt>Returns:</dt>
+<dd>A task returning a non-null digital card list.
+ <p>Possible errors:</p>
+ <ul>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_INVALID_ARGUMENT"><code>D1Exception.ErrorCode.ERROR_INVALID_ARGUMENT</code></a></li>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+ </ul></dd>
+<dt>Since:</dt>
+<dd>4.6.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.DigitalCard,com.thalesgroup.gemalto.d1.digitalcard.CardAction)">
+<h3>updateDigitalCard</h3>
+<div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+</span><span class="return-type"><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">updateDigitalCard</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
+ <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a>&nbsp;digitalCard,
+ <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a>&nbsp;cardAction)</span></div>
+<div class="block">Updates the state of a digital card: resume, suspend or delete it.
+
+ <p>Arguments are validated and the core configuration is checked when this method is called.
+ The state change is performed when the returned task is executed.</p></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cardID</code> - The card identifier.</dd>
+<dd><code>digitalCard</code> - The digital card received from <a href="#getDigitalCardList(java.lang.String)"><code>getDigitalCardList(String)</code></a>.</dd>
+<dd><code>cardAction</code> - The action to perform: <a href="CardAction.html#RESUME"><code>CardAction.RESUME</code></a>, <a href="CardAction.html#SUSPEND"><code>CardAction.SUSPEND</code></a>
+                   or <a href="CardAction.html#DELETE"><code>CardAction.DELETE</code></a>.</dd>
+<dt>Returns:</dt>
+<dd>A task returning <code>true</code> when the digital card state has been updated.
+         <p>Possible errors when executing the task:</p>
+         <ul>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_INVALID_ARGUMENT"><code>D1Exception.ErrorCode.ERROR_INVALID_ARGUMENT</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_MANAGED_BY_D1"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_MANAGED_BY_D1</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_CLIENT_BINDING_STORAGE"><code>D1Exception.ErrorCode.ERROR_CLIENT_BINDING_STORAGE</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_ISSUER_TOKEN_MISSING_CBP"><code>D1Exception.ErrorCode.ERROR_ISSUER_TOKEN_MISSING_CBP</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+             <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+         </ul></dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://developer.android.com/reference/java/lang/IllegalArgumentException.html" title="class or interface in java.lang" class="external-link">IllegalArgumentException</a></code> - when a parameter is null or empty.</dd>
+<dd><code><a href="https://developer.android.com/reference/java/lang/IllegalStateException.html" title="class or interface in java.lang" class="external-link">IllegalStateException</a></code> - when the core module has not been configured.</dd>
+<dt>Since:</dt>
+<dd>4.6.0</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="approveBinding(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.BindReason,com.thalesgroup.gemalto.d1.D1Task.Callback)">
 <h3>approveBinding</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">approveBinding</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
@@ -159,7 +255,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</span></div>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Use <a href="#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>stepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
+<div class="deprecation-comment">Use <a href="#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>getStepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
 </div>
 <div class="block">Approves the device binding for a digital card.</div>
 <dl class="notes">
@@ -232,7 +328,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="../D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;&nbsp;callback)</span></div>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Use <a href="#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>stepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
+<div class="deprecation-comment">Use <a href="#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>getStepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
 </div>
 <div class="block">Approves cardholder verification for a digital card.</div>
 <dl class="notes">
@@ -301,10 +397,10 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)">
-<h3>stepUpAuthenticationResult</h3>
+<section class="detail" id="getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)">
+<h3>getStepUpAuthenticationResult</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
-</span><span class="return-type"><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</span>&nbsp;<span class="element-name">stepUpAuthenticationResult</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+</span><span class="return-type"><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</span>&nbsp;<span class="element-name">getStepUpAuthenticationResult</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;authenticationID,
@@ -342,6 +438,71 @@ loadScripts(document, 'script');</script>
            <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
            <li><a href="../D1Exception.ErrorCode.html#ERROR_INVALID_ARGUMENT"><code>D1Exception.ErrorCode.ERROR_INVALID_ARGUMENT</code></a></li>
          </ul></dd>
+<dt>Since:</dt>
+<dd>4.6.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType)">
+<h3>activateDigitalCard</h3>
+<div class="member-signature"><span class="return-type"><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</span>&nbsp;<span class="element-name">activateDigitalCard</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
+ <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="../card/OEMPayType.html" title="enum class in com.thalesgroup.gemalto.d1.card">OEMPayType</a>&nbsp;oemType)</span></div>
+<div class="block"><p>
+ Activate the digital card which has been digitized but not yet done ID&amp;V (Step up authentication - Yellow Flow inApp Verification).
+ <p>
+ Integrator should call this API when the return state of <a href="../pushprovisioning/PushProvisioningService.html#getCardDigitizationState(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType)"><code>PushProvisioningService.getCardDigitizationState(String, OEMPayType)</code></a> is <a href="../pushprovisioning/CardDigitizationState.html#PENDING_IDV"><code>CardDigitizationState.PENDING_IDV</code></a>
+
+ <p>Possible errors when executing the task:</p>
+ <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD"><code>D1Exception.ErrorCode.ERROR_CARD</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_INVALID_ARGUMENT"><code>D1Exception.ErrorCode.ERROR_INVALID_ARGUMENT</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NO_PENDING_IDV"><code>D1Exception.ErrorCode.ERROR_CARD_NO_PENDING_IDV</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_GPAY"><code>D1Exception.ErrorCode.ERROR_GPAY</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_GPAY_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_GPAY_NOT_SUPPORTED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_SPAY_NOT_SUPPORTED"><code>D1Exception.ErrorCode.ERROR_SPAY_NOT_SUPPORTED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_SPAY"><code>D1Exception.ErrorCode.ERROR_SPAY</code></a></li>
+ </ul></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>cardID</code> - The card identifier.</dd>
+<dd><code>oemType</code> - The oemType (Google Pay or Samsung Pay)</dd>
+<dt>Returns:</dt>
+<dd>A task returning void.</dd>
+<dt>Since:</dt>
+<dd>4.6.0</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="activateDigitalCard(java.lang.String)">
+<h3>activateDigitalCard</h3>
+<div class="member-signature"><span class="return-type"><a href="../Task.html" title="class in com.thalesgroup.gemalto.d1">Task</a>&lt;<a href="https://developer.android.com/reference/java/lang/Void.html" title="class or interface in java.lang" class="external-link">Void</a>&gt;</span>&nbsp;<span class="element-name">activateDigitalCard</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+ <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;digitalCardID)</span></div>
+<div class="block"><p>
+ Activate the digital card which has been digitized but not yet done ID&amp;V (Step up authentication - Yellow Flow inApp Verification).
+ <p>
+ Integrator should call this API to activate a digital card when a wallet app redirect digital card activation to the Issuer app.
+
+ <p>Possible errors when executing the task:</p>
+ <ul>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_LOGGED_IN"><code>D1Exception.ErrorCode.ERROR_NOT_LOGGED_IN</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_NOT_AUTHORIZED"><code>D1Exception.ErrorCode.ERROR_NOT_AUTHORIZED</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_DEVICE_ENVIRONMENT_UNSAFE"><code>D1Exception.ErrorCode.ERROR_DEVICE_ENVIRONMENT_UNSAFE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CORE"><code>D1Exception.ErrorCode.ERROR_CORE</code></a></li>
+                     <li><a href="../D1Exception.ErrorCode.html#ERROR_CARD_NOT_FOUND"><code>D1Exception.ErrorCode.ERROR_CARD_NOT_FOUND</code></a></li>
+ </ul></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>digitalCardID</code> - The digital card identifier</dd>
+<dt>Returns:</dt>
+<dd>A task returning void.</dd>
 <dt>Since:</dt>
 <dd>4.6.0</dd>
 </dl>

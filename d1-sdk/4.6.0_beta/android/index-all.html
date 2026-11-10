@@ -57,15 +57,27 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Account transfer transaction.</div>
 </dd>
-<dt><a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">activateDigitalCard(String, OEMPayType, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a></dt>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#activateDigitalCard(java.lang.String)" class="member-name-link">activateDigitalCard(String)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
 <dd>
 <div class="block">
  Activate the digital card which has been digitized but not yet done ID&amp;V (Step up authentication - Yellow Flow inApp Verification).</div>
 </dd>
-<dt><a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">activateDigitalCard(String, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a></dt>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType)" class="member-name-link">activateDigitalCard(String, OEMPayType)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
 <dd>
 <div class="block">
  Activate the digital card which has been digitized but not yet done ID&amp;V (Step up authentication - Yellow Flow inApp Verification).</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">activateDigitalCard(String, OEMPayType, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Please use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.OEMPayType)"><code>DigitalCardService.activateDigitalCard(String, OEMPayType)</code></a></div>
+</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html#activateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">activateDigitalCard(String, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/D1PushWallet.html" title="interface in com.thalesgroup.gemalto.d1.card">D1PushWallet</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Please use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#activateDigitalCard(java.lang.String)"><code>DigitalCardService.activateDigitalCard(String)</code></a></div>
+</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#activatePhysicalCard(java.lang.String,com.thalesgroup.gemalto.d1.EntryUI,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">activatePhysicalCard(String, EntryUI, D1Task.Callback&lt;Void&gt;)</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
@@ -122,13 +134,13 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#approveBinding(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.BindReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">approveBinding(String, String, BindReason, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>DigitalCardService.stepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
+<div class="deprecation-comment">Use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>DigitalCardService.getStepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
 </div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#approveCardholderVerification(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.VerificationReason,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">approveCardholderVerification(String, VerificationReason, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
-<div class="deprecation-comment">Use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>DigitalCardService.stepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
+<div class="deprecation-comment">Use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)"><code>DigitalCardService.getStepUpAuthenticationResult(String, String, Result)</code></a> instead.</div>
 </div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.TransactionStatus.html#APPROVED" class="member-name-link">APPROVED</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardTransactionRecord.TransactionStatus.html" title="enum class in com.thalesgroup.gemalto.d1.card.cardservice">CardTransactionRecord.TransactionStatus</a></dt>
@@ -319,6 +331,12 @@ loadScripts(document, 'script');</script>
 <div class="block">The physical card associated with the token is stolen.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a> - Enum Class in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard"><code>CardAction</code></a>.</div>
+</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" class="type-name-link" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a> - Enum Class in <a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a></dt>
 <dd>
 <div class="block">Enumeration type for Card Action that is used to update the card status.</div>
 </dd>
@@ -591,7 +609,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a> - package com.thalesgroup.gemalto.d1.digitalcard</dt>
 <dd>
-<div class="block">Service interface for digital card operations related to cardholder verification and device binding.</div>
+<div class="block">DigitalCardService is a helper class for the Digital Card service.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard.stepup</a> - package com.thalesgroup.gemalto.d1.digitalcard.stepup</dt>
 <dd>
@@ -843,6 +861,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#DELETE" class="member-name-link">DELETE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Action to delete the given card.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#DELETE" class="member-name-link">DELETE</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
+<dd>
 <div class="block">Action to delete the given card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/State.html#DELETED" class="member-name-link">DELETED</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/State.html" title="enum class in com.thalesgroup.gemalto.d1.card">State</a></dt>
@@ -887,19 +910,35 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" class="type-name-link" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a> - Class in <a href="com/thalesgroup/gemalto/d1/card/package-summary.html">com.thalesgroup.gemalto.d1.card</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard"><code>DigitalCard</code></a>.</div>
+</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" class="type-name-link" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a> - Class in <a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a></dt>
+<dd>
 <div class="block">Information about the digital card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#%3Cinit%3E(java.lang.String,com.thalesgroup.gemalto.d1.card.State,com.thalesgroup.gemalto.d1.card.Scheme,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)" class="member-name-link">DigitalCard(String, State, Scheme, String, String, String, String, String, String, String, boolean)</a> - Constructor for class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Public Constructor</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#%3Cinit%3E(java.lang.String,com.thalesgroup.gemalto.d1.card.State,com.thalesgroup.gemalto.d1.card.Scheme,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)" class="member-name-link">DigitalCard(String, State, Scheme, String, String, String, String, String, String, String, boolean)</a> - Constructor for class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
 <dd>
 <div class="block">Public Constructor</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#%3Cinit%3E(java.lang.String,com.thalesgroup.gemalto.d1.card.State,com.thalesgroup.gemalto.d1.card.Scheme,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,boolean)" class="member-name-link">DigitalCard(String, State, Scheme, String, String, String, String, String, String, String, List&lt;DeviceBinding&gt;, boolean)</a> - Constructor for class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Public Constructor with DeviceBinding list.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#%3Cinit%3E(java.lang.String,com.thalesgroup.gemalto.d1.card.State,com.thalesgroup.gemalto.d1.card.Scheme,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,boolean)" class="member-name-link">DigitalCard(String, State, Scheme, String, String, String, String, String, String, String, List&lt;DeviceBinding&gt;, boolean)</a> - Constructor for class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
 <div class="block">Public Constructor with DeviceBinding list.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" class="type-name-link" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a> - Interface in <a href="com/thalesgroup/gemalto/d1/digitalcard/package-summary.html">com.thalesgroup.gemalto.d1.digitalcard</a></dt>
 <dd>
-<div class="block">Service interface for digital card operations related to cardholder verification and device binding.</div>
+<div class="block">Digital card listing, cardholder verification, and device binding operations.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html#DIGITIZATION_IN_PROGRESS" class="member-name-link">DIGITIZATION_IN_PROGRESS</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardDigitizationState.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardDigitizationState</a></dt>
 <dd>
@@ -1383,6 +1422,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#fromString(java.lang.String)" class="member-name-link">fromString(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Converts from String to CardAction.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAsset.AssetType.html#fromString(java.lang.String)" class="member-name-link">fromString(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAsset.AssetType.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAsset.AssetType</a></dt>
@@ -1435,6 +1475,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/Status.html#fromString(java.lang.String)" class="member-name-link">fromString(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/Status.html" title="enum class in com.thalesgroup.gemalto.d1.clicktopay">Status</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#fromString(java.lang.String)" class="member-name-link">fromString(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
+<dd>
+<div class="block">Converts from String to CardAction.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DeviceBindingStatus.html#fromString(java.lang.String)" class="member-name-link">fromString(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DeviceBindingStatus.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBindingStatus</a></dt>
 <dd>
 <div class="block">Converts a string value to DeviceBindingStatus enum.</div>
@@ -1599,6 +1643,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getCardID()" class="member-name-link">getCardID()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the unique digital card ID.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/Card.html#getCardID()" class="member-name-link">getCardID()</a> - Method in class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/Card.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">Card</a></dt>
@@ -1612,6 +1657,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/TransactionHistory.html#getCardID()" class="member-name-link">getCardID()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/TransactionHistory.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">TransactionHistory</a></dt>
 <dd>
 <div class="block">Gets the unique D1 Pay digital card ID.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getCardID()" class="member-name-link">getCardID()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
+<div class="block">Gets the unique digital card ID.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/paymentpasskey/PaymentPasskey.html#getCardID()" class="member-name-link">getCardID()</a> - Method in class com.thalesgroup.gemalto.d1.paymentpasskey.<a href="com/thalesgroup/gemalto/d1/paymentpasskey/PaymentPasskey.html" title="class in com.thalesgroup.gemalto.d1.paymentpasskey">PaymentPasskey</a></dt>
 <dd>
@@ -1848,9 +1897,19 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getDeviceBindingList()" class="member-name-link">getDeviceBindingList()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Gets the device binding list associated with this digital card.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getDeviceBindingList()" class="member-name-link">getDeviceBindingList()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
 <div class="block">Gets the device binding list associated with this digital card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getDeviceID()" class="member-name-link">getDeviceID()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Gets the device ID.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getDeviceID()" class="member-name-link">getDeviceID()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
 <dd>
 <div class="block">Gets the device ID.</div>
 </dd>
@@ -1860,9 +1919,14 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getDeviceName()" class="member-name-link">getDeviceName()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device name.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DeviceBinding.html#getDeviceName()" class="member-name-link">getDeviceName()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DeviceBinding.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBinding</a></dt>
+<dd>
+<div class="block">Gets the device name.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getDeviceName()" class="member-name-link">getDeviceName()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
 <dd>
 <div class="block">Gets the device name.</div>
 </dd>
@@ -1879,6 +1943,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the device reference (binding reference).</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getDeviceType()" class="member-name-link">getDeviceType()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Gets the device type.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getDeviceType()" class="member-name-link">getDeviceType()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
 <dd>
 <div class="block">Gets the device type.</div>
 </dd>
@@ -1902,14 +1971,18 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Retrieves the list of D1 Pay digital cards.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#getDigitalCardList(java.lang.String)" class="member-name-link">getDigitalCardList(String)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
+<dd>
+<div class="block">Retrieves the digital cards associated with the given card identifier.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">getDigitalCardList(String, D1Task.Callback&lt;List&lt;DigitalCard&gt;&gt;)</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Retrieves the digital card list for a given <code>cardID</code>.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#getDigitalCardList(java.lang.String)"><code>DigitalCardService.getDigitalCardList(String)</code></a>.</div>
+</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#getDigitalCardService()" class="member-name-link">getDigitalCardService()</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
-<dd>
-<div class="block">Retrieves the DigitalCardService instance for digital card operations.</div>
-</dd>
+<dd>&nbsp;</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/TransactionRecord.html#getDisplayAmount()" class="member-name-link">getDisplayAmount()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/TransactionRecord.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">TransactionRecord</a></dt>
 <dd>
 <div class="block">Retrieves the transaction record amount in ISO 4217 format.</div>
@@ -1956,6 +2029,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getExpiryDate()" class="member-name-link">getExpiryDate()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the expiry date of the digital card in MMYY format.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/Card.html#getExpiryDate()" class="member-name-link">getExpiryDate()</a> - Method in class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/Card.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">Card</a></dt>
@@ -1965,6 +2039,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html#getExpiryDate()" class="member-name-link">getExpiryDate()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a></dt>
 <dd>
 <div class="block">Gets the expiry date of the D1 Pay digital card in MMYY format.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getExpiryDate()" class="member-name-link">getExpiryDate()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
+<div class="block">Gets the expiry date of the digital card in MMYY format.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/StepUpAuthenticationDetails.html#getExpiryDate()" class="member-name-link">getExpiryDate()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.stepup.<a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/StepUpAuthenticationDetails.html" title="class in com.thalesgroup.gemalto.d1.digitalcard.stepup">StepUpAuthenticationDetails</a></dt>
 <dd>
@@ -2057,6 +2135,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getLast4()" class="member-name-link">getLast4()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the last 4 digits of the digital card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/Card.html#getLast4()" class="member-name-link">getLast4()</a> - Method in class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/Card.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">Card</a></dt>
@@ -2066,6 +2145,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html#getLast4()" class="member-name-link">getLast4()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a></dt>
 <dd>
 <div class="block">Gets the last 4 digits of the D1 Pay digital card.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getLast4()" class="member-name-link">getLast4()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
+<div class="block">Gets the last 4 digits of the digital card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/StepUpAuthenticationDetails.html#getLast4()" class="member-name-link">getLast4()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.stepup.<a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/StepUpAuthenticationDetails.html" title="class in com.thalesgroup.gemalto.d1.digitalcard.stepup">StepUpAuthenticationDetails</a></dt>
 <dd>
@@ -2375,6 +2458,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getScheme()" class="member-name-link">getScheme()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the digital card scheme.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/Profile.html#getScheme()" class="member-name-link">getScheme()</a> - Method in class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/Profile.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">Profile</a></dt>
@@ -2388,6 +2472,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/TransactionData.html#getScheme()" class="member-name-link">getScheme()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/TransactionData.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">TransactionData</a></dt>
 <dd>
 <div class="block">Retrieves the card scheme used for this transaction.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getScheme()" class="member-name-link">getScheme()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
+<div class="block">Gets the digital card scheme.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#getSDKVersions()" class="member-name-link">getSDKVersions()</a> - Static method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
@@ -2414,6 +2502,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getState()" class="member-name-link">getState()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the digital card status.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/clicktopay/BillingAddress.html#getState()" class="member-name-link">getState()</a> - Method in class com.thalesgroup.gemalto.d1.clicktopay.<a href="com/thalesgroup/gemalto/d1/clicktopay/BillingAddress.html" title="class in com.thalesgroup.gemalto.d1.clicktopay">BillingAddress</a></dt>
@@ -2423,6 +2512,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html#getState()" class="member-name-link">getState()</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayDigitalCard.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayDigitalCard</a></dt>
 <dd>
 <div class="block">Gets the D1 Pay digital card status.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getState()" class="member-name-link">getState()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
+<div class="block">Gets the digital card status.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/paymentpasskey/PaymentPasskey.html#getState()" class="member-name-link">getState()</a> - Method in class com.thalesgroup.gemalto.d1.paymentpasskey.<a href="com/thalesgroup/gemalto/d1/paymentpasskey/PaymentPasskey.html" title="class in com.thalesgroup.gemalto.d1.paymentpasskey">PaymentPasskey</a></dt>
 <dd>
@@ -2438,6 +2531,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/pushprovisioning/GoogleCardSavedStatusResult.html#getStatusCode()" class="member-name-link">getStatusCode()</a> - Method in class com.thalesgroup.gemalto.d1.pushprovisioning.<a href="com/thalesgroup/gemalto/d1/pushprovisioning/GoogleCardSavedStatusResult.html" title="class in com.thalesgroup.gemalto.d1.pushprovisioning">GoogleCardSavedStatusResult</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#getStepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)" class="member-name-link">getStepUpAuthenticationResult(String, String, Result)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
+<dd>
+<div class="block">Performs step-up authentication for device binding and cardholder verification.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/AuthenticationParameter.html#getSubTitle()" class="member-name-link">getSubTitle()</a> - Method in class com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/AuthenticationParameter.html" title="class in com.thalesgroup.gemalto.d1.d1pay">AuthenticationParameter</a></dt>
 <dd>
 <div class="block">Retrieves the custom sub-title of the authentication screen.</div>
@@ -2464,6 +2561,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getTokenRequestorID()" class="member-name-link">getTokenRequestorID()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Gets the identifier of the digital card's token requestor.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getTokenRequestorID()" class="member-name-link">getTokenRequestorID()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
+<dd>
 <div class="block">Gets the identifier of the digital card's token requestor.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/pushprovisioning/PushProvisioningService.html#getTokenRequestorList(java.lang.String)" class="member-name-link">getTokenRequestorList(String)</a> - Method in interface com.thalesgroup.gemalto.d1.pushprovisioning.<a href="com/thalesgroup/gemalto/d1/pushprovisioning/PushProvisioningService.html" title="interface in com.thalesgroup.gemalto.d1.pushprovisioning">PushProvisioningService</a></dt>
@@ -2481,6 +2583,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Gets the name of the digital card's token requestor.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#getTokenRequestorName()" class="member-name-link">getTokenRequestorName()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Gets the name of the digital card's token requestor.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#getTokenRequestorName()" class="member-name-link">getTokenRequestorName()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
 <dd>
 <div class="block">Gets the name of the digital card's token requestor.</div>
 </dd>
@@ -2671,6 +2778,11 @@ loadScripts(document, 'script');</script>
 <div class="block"><b>VISA only.</b></div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html#isOnCurrentDevice()" class="member-name-link">isOnCurrentDevice()</a> - Method in class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html#isOnCurrentDevice()" class="member-name-link">isOnCurrentDevice()</a> - Method in class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DigitalCard</a></dt>
 <dd>
 <div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
 </dd>
@@ -3280,6 +3392,11 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#RESUME" class="member-name-link">RESUME</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Action to reactivate the given card.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#RESUME" class="member-name-link">RESUME</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
+<dd>
 <div class="block">Action to reactivate the given card.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html#resumeCard(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">resumeCard(String, D1Task.Callback&lt;Void&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.card.cardservice.<a href="com/thalesgroup/gemalto/d1/card/cardservice/CardService.html" title="interface in com.thalesgroup.gemalto.d1.card.cardservice">CardService</a></dt>
@@ -3730,10 +3847,6 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Public constructor.</div>
 </dd>
-<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#stepUpAuthenticationResult(java.lang.String,java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.stepup.Result)" class="member-name-link">stepUpAuthenticationResult(String, String, Result)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
-<dd>
-<div class="block">Performs step-up authentication for device binding and cardholder verification.</div>
-</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/PINEntryUI.html#submit(com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">submit(D1Task.Callback&lt;Void&gt;)</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/PINEntryUI.html" title="class in com.thalesgroup.gemalto.d1">PINEntryUI</a></dt>
 <dd>
 <div class="block">Validates the inputted PIN in PIN entries and submits the PIN change request.</div>
@@ -3756,6 +3869,11 @@ loadScripts(document, 'script');</script>
 <div class="block">Step-up authentication was successful.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#SUSPEND" class="member-name-link">SUSPEND</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
+<dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Action to suspend the given card.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#SUSPEND" class="member-name-link">SUSPEND</a> - Enum constant in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
 <dd>
 <div class="block">Action to suspend the given card.</div>
 </dd>
@@ -3811,6 +3929,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Returns the value as String.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAsset.AssetType.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAsset.AssetType.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAsset.AssetType</a></dt>
@@ -3871,6 +3990,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/BindReason.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/BindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">BindReason</a></dt>
 <dd>
 <div class="block">Returns the stable reason code for this reason.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
+<dd>
+<div class="block">Returns the value as String.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/Reason.html#toString()" class="member-name-link">toString()</a> - Method in enum class com.thalesgroup.gemalto.d1.digitalcard.stepup.<a href="com/thalesgroup/gemalto/d1/digitalcard/stepup/Reason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard.stepup">Reason</a></dt>
 <dd>
@@ -4021,11 +4144,17 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.DigitalCard,com.thalesgroup.gemalto.d1.card.CardAction,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">updateDigitalCard(String, DigitalCard, CardAction, D1Task.Callback&lt;Boolean&gt;)</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
-<div class="block">Update Digital Card status for a given Digital card ID.</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.DigitalCard,com.thalesgroup.gemalto.d1.digitalcard.CardAction)"><code>DigitalCardService.updateDigitalCard(String, com.thalesgroup.gemalto.d1.digitalcard.DigitalCard, com.thalesgroup.gemalto.d1.digitalcard.CardAction)</code></a>.</div>
+</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.d1pay.D1PayDigitalCard,com.thalesgroup.gemalto.d1.card.CardAction,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">updateDigitalCard(String, D1PayDigitalCard, CardAction, D1Task.Callback&lt;Boolean&gt;)</a> - Method in interface com.thalesgroup.gemalto.d1.d1pay.<a href="com/thalesgroup/gemalto/d1/d1pay/D1PayWallet.html" title="interface in com.thalesgroup.gemalto.d1.d1pay">D1PayWallet</a></dt>
 <dd>
 <div class="block">Updates the digital card status of <code>cardID</code> for D1 Pay.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.DigitalCard,com.thalesgroup.gemalto.d1.digitalcard.CardAction)" class="member-name-link">updateDigitalCard(String, DigitalCard, CardAction)</a> - Method in interface com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></dt>
+<dd>
+<div class="block">Updates the state of a digital card: resume, suspend or delete it.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/D1Task.html#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">updatePushToken(String, D1Task.Callback&lt;Void&gt;)</a> - Method in class com.thalesgroup.gemalto.d1.<a href="com/thalesgroup/gemalto/d1/D1Task.html" title="class in com.thalesgroup.gemalto.d1">D1Task</a></dt>
 <dd>
@@ -4070,6 +4199,7 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardActivationMethod.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardActivationMethod.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardActivationMethod</a></dt>
@@ -4170,6 +4300,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/DeviceBindingStatus.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/DeviceBindingStatus.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBindingStatus</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
@@ -4226,6 +4360,7 @@ the order they are declared.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/card/CardAction.html#values()" class="member-name-link">values()</a> - Static method in enum class com.thalesgroup.gemalto.d1.card.<a href="com/thalesgroup/gemalto/d1/card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a></dt>
 <dd>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>
 </dd>
@@ -4347,6 +4482,11 @@ the order they are declared.</div>
 the order they are declared.</div>
 </dd>
 <dt><a href="com/thalesgroup/gemalto/d1/digitalcard/BindReason.html#values()" class="member-name-link">values()</a> - Static method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/BindReason.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">BindReason</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html#values()" class="member-name-link">values()</a> - Static method in enum class com.thalesgroup.gemalto.d1.digitalcard.<a href="com/thalesgroup/gemalto/d1/digitalcard/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.digitalcard">CardAction</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>

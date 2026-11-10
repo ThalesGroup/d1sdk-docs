@@ -76,8 +76,12 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public final class </span><span class="element-name type-name-label">DigitalCard</span>
+<div class="type-signature"><span class="annotations"><a href="https://developer.android.com/reference/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public final class </span><span class="element-name type-name-label">DigitalCard</span>
 <span class="extends-implements">extends <a href="https://developer.android.com/reference/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="../digitalcard/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.digitalcard"><code>DigitalCard</code></a>.</div>
+</div>
 <div class="block">Information about the digital card.</div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -106,6 +110,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;tokenRequestorName,
  boolean&nbsp;isOnCurrentDevice)</code></div>
 <div class="col-last even-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Public Constructor</div>
 </div>
 <div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String,com.thalesgroup.gemalto.d1.card.State,com.thalesgroup.gemalto.d1.card.Scheme,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,boolean)" class="member-name-link">DigitalCard</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
@@ -121,6 +126,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../digitalcard/DeviceBinding.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBinding</a>&gt;&nbsp;deviceBindingList,
  boolean&nbsp;isOnCurrentDevice)</code></div>
 <div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Public Constructor with DeviceBinding list.</div>
 </div>
 </div>
@@ -131,70 +137,82 @@ loadScripts(document, 'script');</script>
 <section class="method-summary" id="method-summary">
 <h2>Method Summary</h2>
 <div id="method-summary-table">
-<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button></div>
+<div class="table-tabs" role="tablist" aria-orientation="horizontal"><button id="method-summary-table-tab0" role="tab" aria-selected="true" aria-controls="method-summary-table.tabpanel" tabindex="0" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table', 3)" class="active-table-tab">All Methods</button><button id="method-summary-table-tab2" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab2', 3)" class="table-tab">Instance Methods</button><button id="method-summary-table-tab4" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab4', 3)" class="table-tab">Concrete Methods</button><button id="method-summary-table-tab6" role="tab" aria-selected="false" aria-controls="method-summary-table.tabpanel" tabindex="-1" onkeydown="switchTab(event)" onclick="show('method-summary-table', 'method-summary-table-tab6', 3)" class="table-tab">Deprecated Methods</button></div>
 <div id="method-summary-table.tabpanel" role="tabpanel">
 <div class="summary-table three-column-summary" aria-labelledby="method-summary-table-tab0">
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCardID()" class="member-name-link">getCardID</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getCardID()" class="member-name-link">getCardID</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the unique digital card ID.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../digitalcard/DeviceBinding.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBinding</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeviceBindingList()" class="member-name-link">getDeviceBindingList</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../digitalcard/DeviceBinding.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBinding</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getDeviceBindingList()" class="member-name-link">getDeviceBindingList</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device binding list associated with this digital card.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeviceID()" class="member-name-link">getDeviceID</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getDeviceID()" class="member-name-link">getDeviceID</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device ID.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeviceName()" class="member-name-link">getDeviceName</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getDeviceName()" class="member-name-link">getDeviceName</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device name.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDeviceType()" class="member-name-link">getDeviceType</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getDeviceType()" class="member-name-link">getDeviceType</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device type.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getExpiryDate()" class="member-name-link">getExpiryDate</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getExpiryDate()" class="member-name-link">getExpiryDate</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the expiry date of the digital card in MMYY format.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLast4()" class="member-name-link">getLast4</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getLast4()" class="member-name-link">getLast4</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the last 4 digits of the digital card.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Scheme.html" title="enum class in com.thalesgroup.gemalto.d1.card">Scheme</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getScheme()" class="member-name-link">getScheme</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="Scheme.html" title="enum class in com.thalesgroup.gemalto.d1.card">Scheme</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getScheme()" class="member-name-link">getScheme</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the digital card scheme.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="State.html" title="enum class in com.thalesgroup.gemalto.d1.card">State</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getState()" class="member-name-link">getState</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="State.html" title="enum class in com.thalesgroup.gemalto.d1.card">State</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getState()" class="member-name-link">getState</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the digital card status.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTokenRequestorID()" class="member-name-link">getTokenRequestorID</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getTokenRequestorID()" class="member-name-link">getTokenRequestorID</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the identifier of the digital card's token requestor.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTokenRequestorName()" class="member-name-link">getTokenRequestorName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getTokenRequestorName()" class="member-name-link">getTokenRequestorName</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the name of the digital card's token requestor.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOnCurrentDevice()" class="member-name-link">isOnCurrentDevice</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#isOnCurrentDevice()" class="member-name-link">isOnCurrentDevice</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
 </div>
 </div>
@@ -238,6 +256,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;tokenRequestorName,
  boolean&nbsp;isOnCurrentDevice)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Public Constructor</div>
 </section>
 </li>
@@ -267,6 +286,7 @@ loadScripts(document, 'script');</script>
  <a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
  <a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../digitalcard/DeviceBinding.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBinding</a>&gt;&nbsp;deviceBindingList,
  boolean&nbsp;isOnCurrentDevice)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Public Constructor with DeviceBinding list.
  
  This constructor allows creation of a DigitalCard with device binding information.
@@ -303,6 +323,7 @@ loadScripts(document, 'script');</script>
 <h3>getCardID</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getCardID</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the unique digital card ID.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -315,6 +336,7 @@ loadScripts(document, 'script');</script>
 <h3>getState</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="State.html" title="enum class in com.thalesgroup.gemalto.d1.card">State</a></span>&nbsp;<span class="element-name">getState</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the digital card status.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -327,6 +349,7 @@ loadScripts(document, 'script');</script>
 <h3>getScheme</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="Scheme.html" title="enum class in com.thalesgroup.gemalto.d1.card">Scheme</a></span>&nbsp;<span class="element-name">getScheme</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the digital card scheme.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -339,6 +362,7 @@ loadScripts(document, 'script');</script>
 <h3>getLast4</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getLast4</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the last 4 digits of the digital card.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -351,6 +375,7 @@ loadScripts(document, 'script');</script>
 <h3>getExpiryDate</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getExpiryDate</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the expiry date of the digital card in MMYY format.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -363,6 +388,7 @@ loadScripts(document, 'script');</script>
 <h3>getDeviceName</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getDeviceName</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device name.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -375,6 +401,7 @@ loadScripts(document, 'script');</script>
 <h3>getDeviceType</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getDeviceType</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device type.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -387,6 +414,7 @@ loadScripts(document, 'script');</script>
 <h3>getDeviceID</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getDeviceID</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device ID.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -399,6 +427,7 @@ loadScripts(document, 'script');</script>
 <h3>getTokenRequestorID</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getTokenRequestorID</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the identifier of the digital card's token requestor.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -411,6 +440,7 @@ loadScripts(document, 'script');</script>
 <h3>getTokenRequestorName</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getTokenRequestorName</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the name of the digital card's token requestor.
 
  It is only supported for Mastercard.</div>
@@ -424,6 +454,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="isOnCurrentDevice()">
 <h3>isOnCurrentDevice</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isOnCurrentDevice</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Identifies if the digital card is on the current device (only for Google Pay, Samsung Pay and NFC Wallet).</div>
 <dl class="notes">
 <dt>Since:</dt>
@@ -436,6 +467,7 @@ loadScripts(document, 'script');</script>
 <h3>getDeviceBindingList</h3>
 <div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/Nullable.html" title="class or interface in androidx.annotation" class="external-link">@Nullable</a>
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../digitalcard/DeviceBinding.html" title="class in com.thalesgroup.gemalto.d1.digitalcard">DeviceBinding</a>&gt;</span>&nbsp;<span class="element-name">getDeviceBindingList</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Gets the device binding list associated with this digital card.
  
  The device binding list contains information about the card's binding status

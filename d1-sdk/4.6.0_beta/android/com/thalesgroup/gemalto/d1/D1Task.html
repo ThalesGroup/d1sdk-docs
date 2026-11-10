@@ -240,17 +240,17 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">getPushWallet to the D1 services.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">getDigitalCardList</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">getDigitalCardList</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&gt;&gt;&nbsp;callback)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Retrieves the digital card list for a given <code>cardID</code>.</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="digitalcard/DigitalCardService.html#getDigitalCardList(java.lang.String)"><code>DigitalCardService.getDigitalCardList(String)</code></a>.</div>
+</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDigitalCardService()" class="member-name-link">getDigitalCardService</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Retrieves the DigitalCardService instance for digital card operations.</div>
-</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="log/LogService.html" title="interface in com.thalesgroup.gemalto.d1.log">LogService</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLogService()" class="member-name-link">getLogService</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
@@ -352,13 +352,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Unregister the Card/Wallet data changed listener</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.DigitalCard,com.thalesgroup.gemalto.d1.card.CardAction,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">updateDigitalCard</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.card.DigitalCard,com.thalesgroup.gemalto.d1.card.CardAction,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">updateDigitalCard</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
  <a href="card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&nbsp;digitalCard,
  <a href="card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&nbsp;callback)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Update Digital Card status for a given Digital card ID.</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="digitalcard/DigitalCardService.html#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.DigitalCard,com.thalesgroup.gemalto.d1.digitalcard.CardAction)"><code>DigitalCardService.updateDigitalCard(String, com.thalesgroup.gemalto.d1.digitalcard.DigitalCard, com.thalesgroup.gemalto.d1.digitalcard.CardAction)</code></a>.</div>
+</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updatePushToken(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)" class="member-name-link">updatePushToken</a><wbr>(<a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;token,
@@ -1030,29 +1032,16 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="getDigitalCardService()">
-<h3>getDigitalCardService</h3>
-<div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
-</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></span>&nbsp;<span class="element-name">getDigitalCardService</span>()</div>
-<div class="block">Retrieves the DigitalCardService instance for digital card operations.
-
- DigitalCardService is a helper class for device binding and cardholder verification
- operations.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>The DigitalCardService instance.</dd>
-<dt>Since:</dt>
-<dd>4.3.0</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="getDigitalCardList(java.lang.String,com.thalesgroup.gemalto.d1.D1Task.Callback)">
 <h3>getDigitalCardList</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">getDigitalCardList</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+<div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">getDigitalCardList</span><wbr><span class="parameters">(<a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="https://developer.android.com/reference/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;cardID,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="card/DigitalCard.html" title="class in com.thalesgroup.gemalto.d1.card">DigitalCard</a>&gt;&gt;&nbsp;callback)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="digitalcard/DigitalCardService.html#getDigitalCardList(java.lang.String)"><code>DigitalCardService.getDigitalCardList(String)</code></a>.</div>
+</div>
 <div class="block">Retrieves the digital card list for a given <code>cardID</code>.
 
  Note: Each `DigitalCard` provides the <a href="card/DigitalCard.html#isOnCurrentDevice()"><code>DigitalCard.isOnCurrentDevice()</code></a> method to identify the digital cards on the current device (only for GooglePay, Samsung Pay and D1 Pay).</div>
@@ -1083,6 +1072,9 @@ loadScripts(document, 'script');</script>
  <a href="card/CardAction.html" title="enum class in com.thalesgroup.gemalto.d1.card">CardAction</a>&nbsp;cardAction,
  <a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
  <a href="D1Task.Callback.html" title="interface in com.thalesgroup.gemalto.d1">D1Task.Callback</a>&lt;<a href="https://developer.android.com/reference/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&nbsp;callback)</span></div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated.</span>
+<div class="deprecation-comment">Since 4.6.0, use <a href="digitalcard/DigitalCardService.html#updateDigitalCard(java.lang.String,com.thalesgroup.gemalto.d1.digitalcard.DigitalCard,com.thalesgroup.gemalto.d1.digitalcard.CardAction)"><code>DigitalCardService.updateDigitalCard(String, com.thalesgroup.gemalto.d1.digitalcard.DigitalCard, com.thalesgroup.gemalto.d1.digitalcard.CardAction)</code></a>.</div>
+</div>
 <div class="block">Update Digital Card status for a given Digital card ID.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -1227,6 +1219,13 @@ loadScripts(document, 'script');</script>
 <dt>Since:</dt>
 <dd>2.0.0</dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getDigitalCardService()">
+<h3>getDigitalCardService</h3>
+<div class="member-signature"><span class="annotations"><a href="https://developer.android.com/reference/androidx/annotation/NonNull.html" title="class or interface in androidx.annotation" class="external-link">@NonNull</a>
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="digitalcard/DigitalCardService.html" title="interface in com.thalesgroup.gemalto.d1.digitalcard">DigitalCardService</a></span>&nbsp;<span class="element-name">getDigitalCardService</span>()</div>
 </section>
 </li>
 <li>
